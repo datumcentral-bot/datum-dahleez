@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Environmental Intelligence System - Future roadmap phases and items",
+  "phases": [
+    {
+      "id": "phase-1",
+      "name": "Foundation",
+      "timeframe": "2025-Q4",
+      "status": "completed",
+      "description": "Establish core platform and initial product catalog.",
+      "items": [
+        {"id": "p1-1", "name": "Launch EIS Beta", "status": "completed", "description": "Initial 18-stage conversation engine"},
+        {"id": "p1-2", "name": "Product Catalog v1", "status": "completed", "description": "500+ interior design products"},
+        {"id": "p1-3", "name": "Space Taxonomy", "status": "completed", "description": "14 categories, 174+ space types"},
+        {"id": "p1-4", "name": "Obsidian Noir UI", "status": "completed", "description": "Premium dark theme design system"}
+      ]
+    },
+    {
+      "id": "phase-2",
+      "name": "Intelligence",
+      "timeframe": "2026-Q1",
+      "status": "in-progress",
+      "description": "Enhance recommendation engine with machine learning.",
+      "items": [
+        {"id": "p2-1", "name": "AI Recommendation Engine", "status": "in-progress", "description": "Collaborative filtering and emotion-based scoring"},
+        {"id": "p2-2", "name": "User Profile Memory", "status": "planned", "description": "Remember preferences across sessions"},
+        {"id": "p2-3", "name": "Emotion Detection API", "status": "planned", "description": "Facial expression analysis for in-person consultations"},
+        {"id": "p2-4", "name": "Dynamic Pricing", "status": "planned", "description": "Budget-aware product ranking"}
+      ]
+    },
+    {
+      "id": "phase-3",
+      "name": "Experience",
+      "timeframe": "2026-Q2",
+      "status": "planned",
+      "description": "Immersive 3D and AR capabilities.",
+      "items": [
+        {"id": "p3-1", "name": "AR Room Preview", "status": "planned", "description": "View products in your actual space via mobile AR"},
+        {"id": "p3-2", "name": "3D Product Configurator", "status": "planned", "description": "Customize finishes and materials in real-time"},
+        {"id": "p3-3", "name": "Spatial Audio Preview", "status": "planned", "description": "Hear how acoustic treatments will sound"},
+        {"id": "p3-4", "name": "Haptic Feedback Integration", "status": "planned", "description": "Feel textures through compatible devices"}
+      ]
+    },
+    {
+      "id": "phase-4",
+      "name": "Ecosystem",
+      "timeframe": "2026-Q3",
+      "status": "planned",
+      "description": "Expand to full home automation and community features.",
+      "items": [
+        {"id": "p4-1", "name": "IoT Device Hub", "status": "planned", "description": "Connect and control all smart devices from one panel"},
+        {"id": "p4-2", "name": "Community Design Gallery", "status": "planned", "description": "Share and discover designs from other users"},
+        {"id": "p4-3", "name": "Designer Marketplace", "status": "planned", "description": "Book professional interior designers through the platform"},
+        {"id": "p4-4", "name": "Global Availability", "status": "planned", "description": "Launch in 20+ countries with localized catalogs"}
+      ]
+    },
+    {
+      "id": "phase-5",
+      "name": "Autonomy",
+      "timeframe": "2027",
+      "status": "planned",
+      "description": "Autonomous design agents and predictive environment systems.",
+      "items": [
+        {"id": "p5-1", "name": "Design Agent AI", "status": "planned", "description": "Autonomous agent that designs entire spaces independently"},
+        {"id": "p5-2", "name": "Predictive Climate Control", "status": "planned", "description": "AI learns preferences and adjusts environment proactively"},
+        {"id": "p5-3", "name": "Health Dashboard", "status": "planned", "description": "Correlate environment settings with occupant health metrics"},
+        {"id": "p5-4", "name": "Voice-First Interface", "status": "planned", "description": "Control entire environment through natural conversation"}
+      ]
+    }
+  ]
+}

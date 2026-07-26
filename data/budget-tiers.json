@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Environmental Intelligence System - 5 budget levels from Comfort to Bespoke",
+  "budgetTiers": [
+    {
+      "id": "comfort",
+      "name": "Comfort",
+      "icon": "🏠",
+      "color": "#D5D8DD",
+      "priceRange": {
+        "min": 50000,
+        "max": 150000,
+        "currency": "AED",
+        "display": "AED 50K - 150K"
+      },
+      "description": "Thoughtful design with quality essentials. Perfect for new beginnings.",
+      "characteristics": [
+        "Curated ready-made collections",
+        "Standard material grades",
+        "Local craftsmanship",
+        "Efficient installation timeline",
+        "Warranty included"
+      ],
+      "targetEmotions": ["calm", "content", "happy", "safe"],
+      "typicalSpaces": ["apartment", "townhouse", "student-dormitory", "bedroom"],
+      "financing": {
+        "available": true,
+        "options": ["0% APR 12 Months", "Low Interest 24 Months"]
+      },
+      "membershipEquivalent": "explorer"
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "icon": "⭐",
+      "color": "#D4AF37",
+      "priceRange": {
+        "min": 150000,
+        "max": 500000,
+        "currency": "AED",
+        "display": "AED 150K - 500K"
+      },
+      "description": "Elevated quality with premium materials and bespoke touches.",
+      "characteristics": [
+        "Semi-custom options",
+        "Premium material grades",
+        "Regional and imported options",
+        "Professional installation",
+        "Extended warranty",
+        "Designer consultation included"
+      ],
+      "targetEmotions": ["energized", "inspired", "luxurious", "welcoming"],
+      "typicalSpaces": ["villa", "penthouse", "executive-office", "living-room", "dining-room"],
+      "financing": {
+        "available": true,
+        "options": ["0% APR 24 Months", "Low Interest 36 Months", "Construction Link"]
+      },
+      "membershipEquivalent": "designer"
+    },
+    {
+      "id": "luxury",
+      "name": "Luxury",
+      "icon": "💎",
+      "color": "#D4AF37",
+      "priceRange": {
+        "min": 500000,
+        "max": 1500000,
+        "currency": "AED",
+        "display": "AED 500K - 1.5M"
+      },
+      "description": "Exclusive materials, artisan craftsmanship, and sophisticated automation.",
+      "characteristics": [
+        "Fully bespoke options",
+        "Rare and exotic materials",
+        "International sourcing",
+        "Dedicated project manager",
+        "Smart home integration",
+        "Concierge service"
+      ],
+      "targetEmotions": ["luxurious", "indulgent", "proud", "romantic", "mysterious"],
+      "typicalSpaces": ["mansion", "luxury-hotel-suite", "spa-bathroom", "home-theater", "boardroom"],
+      "financing": {
+        "available": true,
+        "options": ["Custom Payment Plans", "Bank Partnerships", "Cryptocurrency Accepted"]
+      },
+      "membershipEquivalent": "curator"
+    },
+    {
+      "id": "signature",
+      "name": "Signature",
+      "icon": "👑",
+      "color": "#D4AF37",
+      "priceRange": {
+        "min": 1500000,
+        "max": 5000000,
+        "currency": "AED",
+        "display": "AED 1.5M - 5M"
+      },
+      "description": "Bespoke masterworks. One-of-a-kind environments that tell your story.",
+      "characteristics": [
+        "Completely custom design",
+        "Limited edition materials",
+        "Worldwide artisan partnerships",
+        "Full-service turnkey delivery",
+        "Permanent design team",
+        "Lifetime maintenance package"
+      ],
+      "targetEmotions": ["empowered", "spiritual", "grounded", "inspired"],
+      "typicalSpaces": ["penthouse", "villa", "mansion", "commercial-hq", "hotel-lobby", "spa-resort"],
+      "financing": {
+        "available": true,
+        "options": ["Private Banking", "Asset-Backed", "Equity Partnership"]
+      },
+      "membershipEquivalent": "curator"
+    },
+    {
+      "id": "bespoke",
+      "name": "Bespoke",
+      "icon": "🌟",
+      "color": "#D4AF37",
+      "priceRange": {
+        "min": 5000000,
+        "max": null,
+        "currency": "AED",
+        "display": "AED 5M+"
+      },
+      "description": "The pinnacle of environmental design. Unlimited budget, absolute vision.",
+      "characteristics": [
+        "No creative limits",
+        "Rare museum-grade materials",
+        "Celebrity architect collaboration",
+        "Global sourcing at any cost",
+        "Dedicated in-house team",
+        "Perpetual innovation partnership"
+      ],
+      "targetEmotions": ["mysterious", "luxurious", "spiritual", "adventurous"],
+      "typicalSpaces": ["private-island", "superyacht", "sky-villa", "cultural-institution", "embassy"],
+      "financing": {
+        "available": true,
+        "options": ["Private Wealth Management", "Family Office", "Bespoke Terms"]
+      },
+      "membershipEquivalent": "partner"
+    }
+  ]
+}

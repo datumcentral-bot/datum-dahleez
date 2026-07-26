@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | DATUM DAHLEEZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="progress-track"><div class="progress-fill" id="progress"></div></div>
+
+    <nav class="nav">
+        <div class="nav__logo">Datum Dahleez</div>
+        <div class="nav__links">
+            <a href="index.html" class="nav__link">EIS Platform</a>
+            <a href="admin.html" class="nav__link">Admin</a>
+            <a href="collections.html" class="nav__link">Collections</a>
+        </div>
+    </nav>
+
+    <header class="catalog-header">
+        <div class="container">
+            <div class="catalog-header__title display">Product Catalog</div>
+            <div class="catalog-header__subtitle">Explore our complete knowledge base of interior design products, materials, technologies, and services — curated across 20+ disciplines.</div>
+        </div>
+    </header>
+
+    <div class="catalog-filters">
+        <div class="filter-group">
+            <label>Search</label>
+            <input type="text" id="search-input" placeholder="Search products, materials, technologies...">
+        </div>
+        <div class="filter-group">
+            <label>Level</label>
+            <select id="level-filter">
+                <option value="">All Levels</option>
+                <option value="6">Level 6 - Materials</option>
+                <option value="7">Level 7 - Wall Systems</option>
+                <option value="8">Level 8 - Flooring</option>
+                <option value="9">Level 9 - Ceilings</option>
+                <option value="10">Level 10 - Colors</option>
+                <option value="11">Level 11 - Lighting</option>
+                <option value="12">Level 12 - HVAC</option>
+                <option value="13">Level 13 - Smart Building</option>
+                <option value="14">Level 14 - Audio Visual</option>
+                <option value="15">Level 15 - Furniture</option>
+                <option value="16">Level 16 - Decor</option>
+                <option value="17">Level 17 - Tools</option>
+                <option value="18">Level 18 - Software</option>
+                <option value="19">Level 19 - Documentation</option>
+                <option value="20">Level 20 - Services</option>
+                <option value="21">Level 21 - DD-100</option>
+                <option value="22">Level 22 - DD-101</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Category</label>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Sort By</label>
+            <select id="sort-filter">
+                <option value="name-asc">Name A-Z</option>
+                <option value="name-desc">Name Z-A</option>
+                <option value="price-asc">Price Low-High</option>
+                <option value="price-desc">Price High-Low</option>
+                <option value="newest">Newest</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>&nbsp;</label>
+            <button class="btn btn--primary" id="apply-filters">Apply Filters</button>
+        </div>
+    </div>
+
+    <section class="section section--dark">
+        <div class="container">
+            <div class="flex flex--between flex--center mb--2">
+                <h2 class="display" id="results-count">Loading products...</h2>
+                <button class="btn btn--ghost btn--sm" id="reset-filters">Reset</button>
+            </div>
+            <div class="grid grid--3" id="product-grid">
+                <p style="color: var(--muted);">Loading catalog...</p>
+            </div>
+            <div id="pagination" class="flex flex--center gap--1 mt--2"></div>
+        </div>
+    </section>
+
+    <script src="js/data/loader.js"></script>
+    <script src="js/eis/router.js"></script>
+    <script src="js/eis/engine.js"></script>
+    <script src="js/eis/renderer.js"></script>
+    <script src="js/eis/recommender.js"></script>
+    <script src="js/eis/walkthrough.js"></script>
+    <script>
+        const dataLoader = new DataLoader();
+        let allProducts = [];
+        let filteredProducts = [];
+        let currentPage = 1;
+        const perPage = 24;
+
+        function renderProductCard(product) {
+            const price = product.priceRange ? `PKR ${product.priceRange.min.toLocaleString()} - ${product.priceRange.max.toLocaleString()}` : 'Price on request';
+            return `
+                <div class="product-card" data-id="${product.id}" data-name="${product.name.toLowerCase()}" data-category="${product.category}" data-level="${product.level}" data-price="${product.priceRange?.min || 0}">
+                    <div class="product-card__image">
+                        <img src="https://via.placeholder.com/400x300/1D1D1D/D4AF37?text=${encodeURIComponent(product.name.substring(0, 20))}" alt="${product.name}" loading="lazy">
+                    </div>
+                    <div class="product-card__body">
+                        <div class="product-card__title">${product.name}</div>
+                        <div class="product-card__desc">${product.description}</div>
+                        <div class="product-card__meta">
+                            <span class="product-card__price">${price}</span>
+                            <div class="product-card__actions">
+                                <span class="badge badge--gold">L${product.level}</span>
+                                <button class="btn btn--sm" onclick="alert('Product inquiry: ${product.id}')">Inquire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredProducts.length / perPage);
+            const container = document.getElementById('pagination');
+            if (totalPages <= 1) { container.innerHTML = ''; return; }
+            let html = '';
+            for (let i = 1; i <= totalPages; i++) {
+                html += `<button class="btn btn--sm ${i === currentPage ? 'btn--primary' : ''}" onclick="goToPage(${i})">${i}</button>`;
+            }
+            container.innerHTML = html;
+        }
+
+        window.goToPage = function(page) {
+            currentPage = page;
+            renderProducts();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        function renderProducts() {
+            const grid = document.getElementById('product-grid');
+            const start = (currentPage - 1) * perPage;
+            const pageProducts = filteredProducts.slice(start, start + perPage);
+            document.getElementById('results-count').textContent = `${filteredProducts.length} Products Found`;
+            grid.innerHTML = pageProducts.map(renderProductCard).join('');
+            renderPagination();
+        }
+
+        function applyFilters() {
+            const search = document.getElementById('search-input').value.toLowerCase();
+            const level = document.getElementById('level-filter').value;
+            const category = document.getElementById('category-filter').value;
+            const sort = document.getElementById('sort-filter').value;
+
+            filteredProducts = allProducts.filter(p => {
+                const matchesSearch = !search || p.name.toLowerCase().includes(search) || p.description.toLowerCase().includes(search) || p.tags.some(t => t.toLowerCase().includes(search));
+                const matchesLevel = !level || p.level.toString() === level;
+                const matchesCategory = !category || p.category === category;
+                return matchesSearch && matchesLevel && matchesCategory;
+            });
+
+            filteredProducts.sort((a, b) => {
+                switch (sort) {
+                    case 'name-asc': return a.name.localeCompare(b.name);
+                    case 'name-desc': return b.name.localeCompare(a.name);
+                    case 'price-asc': return (a.priceRange?.min || 0) - (b.priceRange?.min || 0);
+                    case 'price-desc': return (b.priceRange?.min || 0) - (a.priceRange?.min || 0);
+                    case 'newest': return new Date(b.updatedAt) - new Date(a.updatedAt);
+                    default: return 0;
+                }
+            });
+
+            currentPage = 1;
+            renderProducts();
+        }
+
+        function populateCategoryFilter() {
+            const categories = [...new Set(allProducts.map(p => p.category))];
+            const select = document.getElementById('category-filter');
+            categories.forEach(cat => {
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                select.appendChild(option);
+            });
+        }
+
+        document.getElementById('apply-filters').addEventListener('click', applyFilters);
+        document.getElementById('search-input').addEventListener('keypress', e => { if (e.key === 'Enter') applyFilters(); });
+        document.getElementById('reset-filters').addEventListener('click', () => {
+            document.getElementById('search-input').value = '';
+            document.getElementById('level-filter').value = '';
+            document.getElementById('category-filter').value = '';
+            document.getElementById('sort-filter').value = 'name-asc';
+            applyFilters();
+        });
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                allProducts = await dataLoader.load('products', '../data/products.json');
+                filteredProducts = [...allProducts];
+                populateCategoryFilter();
+                renderProducts();
+            } catch (err) {
+                document.getElementById('product-grid').innerHTML = '<p style="color: var(--error);">Failed to load products.</p>';
+                console.error(err);
+            }
+        });
+    </script>
+</body>
+</html>

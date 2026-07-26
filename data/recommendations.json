@@ -1,0 +1,526 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Environmental Intelligence System - Maps emotions and space types to 20 curated store collections with reasoning",
+  "rules": [
+    {
+      "id": "calm-bedroom",
+      "emotions": ["calm", "serene", "peaceful", "content"],
+      "spaces": ["bedroom", "master-bedroom", "nursery", "ensuite", "spa-bathroom"],
+      "budgetTiers": ["comfort", "premium", "luxury", "signature", "bespoke"],
+      "collections": [
+        {
+          "id": "bedroom-basics",
+          "name": "Bedroom Basics",
+          "priority": 1,
+          "why": "Soft textures and calming colors anchor the peaceful bedroom vibe",
+          "icon": "🛏️",
+          "link": "/collections/bedroom-basics"
+        },
+        {
+          "id": "lighting-ambient",
+          "name": "Ambient Lighting",
+          "priority": 2,
+          "why": "Warm dimmable light supports circadian rhythm and relaxation",
+          "icon": "💡",
+          "link": "/collections/lighting-ambient"
+        },
+        {
+          "id": "curtains-blinds",
+          "name": "Curtains & Blinds",
+          "priority": 3,
+          "why": "Blackout and sheer combinations control light for deep rest",
+          "icon": "🪟",
+          "link": "/collections/curtains-blinds"
+        },
+        {
+          "id": "smart-home",
+          "name": "Smart Home",
+          "priority": 4,
+          "why": "Automated climate and lighting create seamless comfort",
+          "icon": "🏠",
+          "link": "/collections/smart-home"
+        }
+      ]
+    },
+    {
+      "id": "energized-living",
+      "emotions": ["energized", "motivated", "happy", "joyful", "excited"],
+      "spaces": ["living-room", "family-room", "reception", "home-office", "executive-office"],
+      "budgetTiers": ["premium", "luxury", "signature", "bespoke"],
+      "collections": [
+        {
+          "id": "lighting-architectural",
+          "name": "Architectural Lighting",
+          "priority": 1,
+          "why": "Dynamic scenes transform energy and focus",
+          "icon": "💡",
+          "link": "/collections/lighting-architectural"
+        },
+        {
+          "id": "smart-home",
+          "name": "Smart Home",
+          "priority": 2,
+          "why": "Voice-controlled environments respond to your rhythm",
+          "icon": "🏠",
+          "link": "/collections/smart-home"
+        },
+        {
+          "id": "audio-systems",
+          "name": "Audio Systems",
+          "priority": 3,
+          "why": "Upbeat soundscapes energize the atmosphere",
+          "icon": "🔊",
+          "link": "/collections/audio-systems"
+        },
+        {
+          "id": "flooring",
+          "name": "Flooring",
+          "priority": 4,
+          "why": "Reflective surfaces amplify light and vitality",
+          "icon": "🪵",
+          "link": "/collections/flooring"
+        }
+      ]
+    },
+    {
+      "id": "focused-work",
+      "emotions": ["focused", "productive", "curious"],
+      "spaces": ["home-office", "executive-office", "boardroom", "study-room", "classroom", "library"],
+      "budgetTiers": ["comfort", "premium", "luxury", "signature"],
+      "collections": [
+        {
+          "id": "lighting-task",
+          "name": "Task Lighting",
+          "priority": 1,
+          "why": "High-CRI task lights reduce eye strain and boost concentration",
+          "icon": "💡",
+          "link": "/collections/lighting-task"
+        },
+        {
+          "id": "acoustic",
+          "name": "Acoustic Treatment",
+          "priority": 2,
+          "why": "Noise control creates the ultimate focused environment",
+          "icon": "🔇",
+          "link": "/collections/acoustic"
+        },
+        {
+          "id": "workspace-furniture",
+          "name": "Workspace Furniture",
+          "priority": 3,
+          "why": "Ergonomic design supports long periods of deep work",
+          "icon": "🪑",
+          "link": "/collections/workspace-furniture"
+        },
+        {
+          "id": "smart-desk",
+          "name": "Smart Desk Solutions",
+          "priority": 4,
+          "why": "Height-adjustable and connected desks adapt to your flow",
+          "icon": "🖥️",
+          "link": "/collections/smart-desk"
+        }
+      ]
+    },
+    {
+      "id": "luxury-bespoke",
+      "emotions": ["luxurious", "indulgent", "proud", "romantic"],
+      "spaces": ["penthouse", "villa", "mansion", "luxury-hotel-suite", "bridal-suite", "spa-bathroom", "executive-office"],
+      "budgetTiers": ["luxury", "signature", "bespoke"],
+      "collections": [
+        {
+          "id": "luxury-materials",
+          "name": "Luxury Materials",
+          "priority": 1,
+          "why": "Marble, brass, and bespoke finishes define opulence",
+          "icon": "💎",
+          "link": "/collections/luxury-materials"
+        },
+        {
+          "id": "lighting-scenic",
+          "name": "Scenic Lighting",
+          "priority": 2,
+          "why": "Bespoke chandeliers and sculptural light create drama",
+          "icon": "✨",
+          "link": "/collections/lighting-scenic"
+        },
+        {
+          "id": "art-decor",
+          "name": "Art & Decor",
+          "priority": 3,
+          "why": "Curated art and sculptures express personal legacy",
+          "icon": "🎨",
+          "link": "/collections/art-decor"
+        },
+        {
+          "id": "bespoke-furniture",
+          "name": "Bespoke Furniture",
+          "priority": 4,
+          "why": "Custom pieces crafted to your exact specification",
+          "icon": "🪑",
+          "link": "/collections/bespoke-furniture"
+        }
+      ]
+    },
+    {
+      "id": "wellness-healing",
+      "emotions": ["calm", "peaceful", "rejuvenated", "spiritual"],
+      "spaces": ["spa-bathroom", "sauna", "steam-room", "meditation-room", "prayer-room", "wellness-room", "gym"],
+      "budgetTiers": ["premium", "luxury", "signature"],
+      "collections": [
+        {
+          "id": "wellness-spa",
+          "name": "Wellness & Spa",
+          "priority": 1,
+          "why": "Hydrotherapy and sensory immersion restore the body",
+          "icon": "🧘",
+          "link": "/collections/wellness-spa"
+        },
+        {
+          "id": "lighting-wellness",
+          "name": "Wellness Lighting",
+          "priority": 2,
+          "why": "Circadian and color therapy lights regulate mood",
+          "icon": "🌅",
+          "link": "/collections/lighting-wellness"
+        },
+        {
+          "id": "air-quality",
+          "name": "Air Quality Systems",
+          "priority": 3,
+          "why": "Clean air is the foundation of health",
+          "icon": "🌬️",
+          "link": "/collections/air-quality"
+        },
+        {
+          "id": "smart-health",
+          "name": "Smart Health Integration",
+          "priority": 4,
+          "why": "Connected wellness tech tracks and optimizes your health",
+          "icon": "⌚",
+          "link": "/collections/smart-health"
+        }
+      ]
+    },
+    {
+      "id": "connected-social",
+      "emotions": ["connected", "loved", "welcoming", "playful", "joyful"],
+      "spaces": ["living-room", "dining-room", "reception", "family-room", "outdoor-kitchen", "restaurant-furniture"],
+      "budgetTiers": ["premium", "luxury", "signature"],
+      "collections": [
+        {
+          "id": "lighting-social",
+          "name": "Social Lighting",
+          "priority": 1,
+          "why": "Layered light creates inviting gathering spaces",
+          "icon": "💡",
+          "link": "/collections/lighting-social"
+        },
+        {
+          "id": "audio-entertainment",
+          "name": "Entertainment Audio",
+          "priority": 2,
+          "why": "Whole-room audio sets the social tone",
+          "icon": "🎵",
+          "link": "/collections/audio-entertainment"
+        },
+        {
+          "id": "furniture-living",
+          "name": "Living Furniture",
+          "priority": 3,
+          "why": "Comfortable layouts encourage conversation",
+          "icon": "🛋️",
+          "link": "/collections/furniture-living"
+        },
+        {
+          "id": "outdoor-living",
+          "name": "Outdoor Living",
+          "priority": 4,
+          "why": "Extend your indoor comfort to the outdoors",
+          "icon": "🌿",
+          "link": "/collections/outdoor-living"
+        }
+      ]
+    },
+    {
+      "id": "creative-studio",
+      "emotions": ["inspired", "creative", "curious", "adventurous"],
+      "spaces": ["home-office", "architecture-office", "software-engineering-office", "engineering-lab", "studio"],
+      "budgetTiers": ["premium", "luxury", "signature", "bespoke"],
+      "collections": [
+        {
+          "id": "lighting-studio",
+          "name": "Studio Lighting",
+          "priority": 1,
+          "why": "Precision lighting reveals detail and inspires craft",
+          "icon": "💡",
+          "link": "/collections/lighting-studio"
+        },
+        {
+          "id": "art-supplies",
+          "name": "Creative Tools",
+          "priority": 2,
+          "why": "Premium materials fuel creative exploration",
+          "icon": "🎨",
+          "link": "/collections/art-supplies"
+        },
+        {
+          "id": "tech-integration",
+          "name": "Tech Integration",
+          "priority": 3,
+          "why": "Seamless tech removes friction from creation",
+          "icon": "💻",
+          "link": "/collections/tech-integration"
+        },
+        {
+          "id": "storage-organization",
+          "name": "Storage & Organization",
+          "priority": 4,
+          "why": "Orderly spaces free the mind for creativity",
+          "icon": "🗂️",
+          "link": "/collections/storage-organization"
+        }
+      ]
+    },
+    {
+      "id": "retail-experience",
+      "emotions": ["welcoming", "excited", "luxurious", "curious"],
+      "spaces": ["retail-store", "showroom", "pop-up", "exhibition", "mall"],
+      "budgetTiers": ["premium", "luxury", "signature"],
+      "collections": [
+        {
+          "id": "retail-lighting",
+          "name": "Retail Lighting",
+          "priority": 1,
+          "why": "Accent lighting directs attention and elevates products",
+          "icon": "💡",
+          "link": "/collections/retail-lighting"
+        },
+        {
+          "id": "visual-merchandising",
+          "name": "Visual Merchandising",
+          "priority": 2,
+          "why": "Display systems tell compelling product stories",
+          "icon": "🎭",
+          "link": "/collections/visual-merchandising"
+        },
+        {
+          "id": "flooring-commercial",
+          "name": "Commercial Flooring",
+          "priority": 3,
+          "why": "Durable yet luxurious surfaces withstand traffic",
+          "icon": "🪵",
+          "link": "/collections/flooring-commercial"
+        },
+        {
+          "id": "signage",
+          "name": "Signage & Wayfinding",
+          "priority": 4,
+          "why": "Clear wayfinding enhances the customer journey",
+          "icon": "🚦",
+          "link": "/collections/signage"
+        }
+      ]
+    },
+    {
+      "id": "healing-healthcare",
+      "emotions": ["safe", "calm", "peaceful", "cared-for"],
+      "spaces": ["hospital-room", "clinic", "waiting-area", "surgery", "rehab-center"],
+      "budgetTiers": ["premium", "luxury", "signature"],
+      "collections": [
+        {
+          "id": "healthcare-lighting",
+          "name": "Healthcare Lighting",
+          "priority": 1,
+          "why": "Tunable white supports patient recovery and staff alertness",
+          "icon": "💡",
+          "link": "/collections/healthcare-lighting"
+        },
+        {
+          "id": " antimicrobial-surfaces",
+          "name": "Antimicrobial Surfaces",
+          "priority": 2,
+          "why": "Hygienic materials protect vulnerable populations",
+          "icon": "🛡️",
+          "link": "/collections/antimicrobial-surfaces"
+        },
+        {
+          "id": "air-quality-medical",
+          "name": "Medical Air Systems",
+          "priority": 3,
+          "why": "Advanced filtration reduces infection risk",
+          "icon": "🌬️",
+          "link": "/collections/air-quality-medical"
+        },
+        {
+          "id": "wayfinding",
+          "name": "Wayfinding Systems",
+          "priority": 4,
+          "why": "Clear navigation reduces patient anxiety",
+          "icon": "🚦",
+          "link": "/collections/wayfinding"
+        }
+      ]
+    },
+    {
+      "id": "learning-education",
+      "emotions": ["focused", "curious", "inspired", "energized"],
+      "spaces": ["classroom", "university-lecture-hall", "kindergarten", "library", "study-room"],
+      "budgetTiers": ["comfort", "premium", "luxury"],
+      "collections": [
+        {
+          "id": "lighting-education",
+          "name": "Education Lighting",
+          "priority": 1,
+          "why": "Daylight-matching light improves concentration and test scores",
+          "icon": "💡",
+          "link": "/collections/lighting-education"
+        },
+        {
+          "id": "acoustic-classroom",
+          "name": "Classroom Acoustics",
+          "priority": 2,
+          "why": "Clear speech intelligibility enhances learning",
+          "icon": "🎧",
+          "link": "/collections/acoustic-classroom"
+        },
+        {
+          "id": "furniture-education",
+          "name": "Flexible Furniture",
+          "priority": 3,
+          "why": "Agile spaces adapt to collaborative and individual learning",
+          "icon": "🪑",
+          "link": "/collections/furniture-education"
+        },
+        {
+          "id": "tech-classroom",
+          "name": "Classroom Tech",
+          "priority": 4,
+          "why": "Integrated AV supports modern pedagogy",
+          "icon": "🖥️",
+          "link": "/collections/tech-classroom"
+        }
+      ]
+    },
+    {
+      "id": "outdoor-garden",
+      "emotions": ["grounded", "peaceful", "joyful", "connected"],
+      "spaces": ["garden", "patio", "pergola", "outdoor-kitchen", "terrace", "vertical-garden"],
+      "budgetTiers": ["comfort", "premium", "luxury", "signature"],
+      "collections": [
+        {
+          "id": "outdoor-lighting",
+          "name": "Outdoor Lighting",
+          "priority": 1,
+          "why": "Landscape lighting extends the outdoor experience",
+          "icon": "💡",
+          "link": "/collections/outdoor-lighting"
+        },
+        {
+          "id": "outdoor-furniture",
+          "name": "Outdoor Furniture",
+          "priority": 2,
+          "why": "Weatherproof comfort invites outdoor living",
+          "icon": "🪑",
+          "link": "/collections/outdoor-furniture"
+        },
+        {
+          "id": "landscape",
+          "name": "Landscape & Garden",
+          "priority": 3,
+          "why": "Living design connects architecture to nature",
+          "icon": "🌿",
+          "link": "/collections/landscape"
+        },
+        {
+          "id": "water-features",
+          "name": "Water Features",
+          "priority": 4,
+          "why": "The sound of water sooths and masks noise",
+          "icon": "⛲",
+          "link": "/collections/water-features"
+        }
+      ]
+    },
+    {
+      "id": "spiritual-retreat",
+      "emotions": ["spiritual", "peaceful", "grounded", "calm"],
+      "spaces": ["prayer-room", "meditation-room", "temple", "mosque", "church", "ashram"],
+      "budgetTiers": ["premium", "luxury", "signature", "bespoke"],
+      "collections": [
+        {
+          "id": "lighting-spiritual",
+          "name": "Spiritual Lighting",
+          "priority": 1,
+          "why": "Candlelight and stained glass create transcendence",
+          "icon": "🕯️",
+          "link": "/collections/lighting-spiritual"
+        },
+        {
+          "id": "sacred-materials",
+          "name": "Sacred Materials",
+          "priority": 2,
+          "why": "Natural stone, wood, and brass inspire reverence",
+          "icon": "🕌",
+          "link": "/collections/sacred-materials"
+        },
+        {
+          "id": "acoustic-sacred",
+          "name": "Sacred Acoustics",
+          "priority": 3,
+          "why": "Reverberation and resonance elevate chant and prayer",
+          "icon": "🎵",
+          "link": "/collections/acoustic-sacred"
+        },
+        {
+          "id": "art-spiritual",
+          "name": "Spiritual Art",
+          "priority": 4,
+          "why": "Iconography and calligraphy deepen devotion",
+          "icon": "🎨",
+          "link": "/collections/art-spiritual"
+        }
+      ]
+    },
+    {
+      "id": "general-fallback",
+      "emotions": ["neutral", "happy", "content"],
+      "spaces": ["*"],
+      "budgetTiers": ["comfort", "premium", "luxury", "signature", "bespoke"],
+      "collections": [
+        {
+          "id": "lighting-general",
+          "name": "General Lighting",
+          "priority": 1,
+          "why": "Good lighting improves any space",
+          "icon": "💡",
+          "link": "/collections/lighting-general"
+        },
+        {
+          "id": "flooring-general",
+          "name": "Flooring",
+          "priority": 2,
+          "why": "The foundation of every interior",
+          "icon": "🪵",
+          "link": "/collections/flooring"
+        },
+        {
+          "id": "curtains-general",
+          "name": "Curtains & Blinds",
+          "priority": 3,
+          "why": "Light control and privacy for any room",
+          "icon": "🪟",
+          "link": "/collections/curtains-blinds"
+        },
+        {
+          "id": "smart-home-general",
+          "name": "Smart Home",
+          "priority": 4,
+          "why": "Convenience and efficiency for modern living",
+          "icon": "🏠",
+          "link": "/collections/smart-home"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,595 @@
+﻿{
+    "schemaVersion":  "1.0",
+    "description":  "DATUM DAHLEEZ Knowledge Graph - Complete Interior Design, Architecture, and Smart Environment Taxonomy",
+    "levels":  [
+                   {
+                       "id":  "level-0",
+                       "order":  0,
+                       "name":  "Client Discovery",
+                       "description":  "Understanding the client, their needs, goals, and vision",
+                       "categories":  [
+                                          {
+                                              "id":  "client-registration",
+                                              "name":  "Client Registration",
+                                              "tags":  [
+                                                           "onboarding",
+                                                           "profile"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "customer-profile",
+                                              "name":  "Customer Profile",
+                                              "tags":  [
+                                                           "profile",
+                                                           "demographics"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "family-profile",
+                                              "name":  "Family Profile",
+                                              "tags":  [
+                                                           "residential",
+                                                           "family"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "business-profile",
+                                              "name":  "Business Profile",
+                                              "tags":  [
+                                                           "commercial",
+                                                           "business"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "lifestyle-analysis",
+                                              "name":  "Lifestyle Analysis",
+                                              "tags":  [
+                                                           "lifestyle",
+                                                           "behavior"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "emotional-dna",
+                                              "name":  "Emotional DNA",
+                                              "tags":  [
+                                                           "emotions",
+                                                           "psychology"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "space-dna",
+                                              "name":  "Space DNA",
+                                              "tags":  [
+                                                           "space",
+                                                           "analysis"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "budget-analysis",
+                                              "name":  "Budget Analysis",
+                                              "tags":  [
+                                                           "budget",
+                                                           "finance"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "timeline",
+                                              "name":  "Timeline",
+                                              "tags":  [
+                                                           "schedule",
+                                                           "planning"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "vision-statement",
+                                              "name":  "Vision Statement",
+                                              "tags":  [
+                                                           "vision",
+                                                           "goals"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "goals",
+                                              "name":  "Goals",
+                                              "tags":  [
+                                                           "objectives",
+                                                           "targets"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "pain-points",
+                                              "name":  "Pain Points",
+                                              "tags":  [
+                                                           "problems",
+                                                           "issues"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "future-plans",
+                                              "name":  "Future Plans",
+                                              "tags":  [
+                                                           "expansion",
+                                                           "growth"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "consultation-notes",
+                                              "name":  "Consultation Notes",
+                                              "tags":  [
+                                                           "notes",
+                                                           "meetings"
+                                                       ]
+                                          }
+                                      ]
+                   },
+                   {
+                       "id":  "level-1",
+                       "order":  1,
+                       "name":  "Property Types",
+                       "description":  "Primary property classifications",
+                       "categories":  [
+                                          {
+                                              "id":  "residential",
+                                              "name":  "Residential",
+                                              "tags":  [
+                                                           "home",
+                                                           "living"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "commercial",
+                                              "name":  "Commercial",
+                                              "tags":  [
+                                                           "office",
+                                                           "business"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "retail",
+                                              "name":  "Retail",
+                                              "tags":  [
+                                                           "shop",
+                                                           "store"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "healthcare",
+                                              "name":  "Healthcare",
+                                              "tags":  [
+                                                           "medical",
+                                                           "hospital"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "hospitality",
+                                              "name":  "Hospitality",
+                                              "tags":  [
+                                                           "hotel",
+                                                           "guest"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "industrial",
+                                              "name":  "Industrial",
+                                              "tags":  [
+                                                           "factory",
+                                                           "manufacturing"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "religious",
+                                              "name":  "Religious",
+                                              "tags":  [
+                                                           "worship",
+                                                           "spiritual"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "institutional",
+                                              "name":  "Institutional",
+                                              "tags":  [
+                                                           "organization",
+                                                           "facility"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "educational",
+                                              "name":  "Educational",
+                                              "tags":  [
+                                                           "school",
+                                                           "learning"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "government",
+                                              "name":  "Government",
+                                              "tags":  [
+                                                           "public",
+                                                           "official"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "entertainment",
+                                              "name":  "Entertainment",
+                                              "tags":  [
+                                                           "leisure",
+                                                           "media"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "sports",
+                                              "name":  "Sports",
+                                              "tags":  [
+                                                           "athletic",
+                                                           "recreation"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "transportation",
+                                              "name":  "Transportation",
+                                              "tags":  [
+                                                           "transit",
+                                                           "mobility"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "public-spaces",
+                                              "name":  "Public Spaces",
+                                              "tags":  [
+                                                           "community",
+                                                           "shared"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "mixed-use",
+                                              "name":  "Mixed Use",
+                                              "tags":  [
+                                                           "combined",
+                                                           "versatile"
+                                                       ]
+                                          }
+                                      ]
+                   },
+                   {
+                       "id":  "level-2",
+                       "order":  2,
+                       "name":  "Building Types",
+                       "description":  "Specific building type classifications",
+                       "categories":  [
+                                          {
+                                              "id":  "villa",
+                                              "name":  "Villa",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "luxury",
+                                                           "detached"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "apartment",
+                                              "name":  "Apartment",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "multi-unit",
+                                                           "condo"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "duplex",
+                                              "name":  "Duplex",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "double",
+                                                           "split"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "penthouse",
+                                              "name":  "Penthouse",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "luxury",
+                                                           "top-floor"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "townhouse",
+                                              "name":  "Townhouse",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "row",
+                                                           "narrow"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "farmhouse",
+                                              "name":  "Farmhouse",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "rural",
+                                                           "country"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "mansion",
+                                              "name":  "Mansion",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "large",
+                                                           "estate"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "studio",
+                                              "name":  "Studio",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "small",
+                                                           "open"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "tiny-home",
+                                              "name":  "Tiny Home",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "compact",
+                                                           "minimal"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "serviced-apartment",
+                                              "name":  "Serviced Apartment",
+                                              "parentId":  "residential",
+                                              "tags":  [
+                                                           "hotel",
+                                                           "temporary"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "office-building",
+                                              "name":  "Office Building",
+                                              "parentId":  "commercial",
+                                              "tags":  [
+                                                           "workplace",
+                                                           "corporate"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "coworking",
+                                              "name":  "Coworking Space",
+                                              "parentId":  "commercial",
+                                              "tags":  [
+                                                           "shared",
+                                                           "flexible"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "mall",
+                                              "name":  "Mall",
+                                              "parentId":  "retail",
+                                              "tags":  [
+                                                           "shopping",
+                                                           "multi-store"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "shop",
+                                              "name":  "Shop",
+                                              "parentId":  "retail",
+                                              "tags":  [
+                                                           "retail",
+                                                           "storefront"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "restaurant",
+                                              "name":  "Restaurant",
+                                              "parentId":  "hospitality",
+                                              "tags":  [
+                                                           "dining",
+                                                           "food"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "hotel",
+                                              "name":  "Hotel",
+                                              "parentId":  "hospitality",
+                                              "tags":  [
+                                                           "accommodation",
+                                                           "lodging"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "hospital",
+                                              "name":  "Hospital",
+                                              "parentId":  "healthcare",
+                                              "tags":  [
+                                                           "medical",
+                                                           "emergency"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "clinic",
+                                              "name":  "Clinic",
+                                              "parentId":  "healthcare",
+                                              "tags":  [
+                                                           "outpatient",
+                                                           "care"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "factory",
+                                              "name":  "Factory",
+                                              "parentId":  "industrial",
+                                              "tags":  [
+                                                           "manufacturing",
+                                                           "production"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "warehouse",
+                                              "name":  "Warehouse",
+                                              "parentId":  "industrial",
+                                              "tags":  [
+                                                           "storage",
+                                                           "logistics"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "mosque",
+                                              "name":  "Mosque",
+                                              "parentId":  "religious",
+                                              "tags":  [
+                                                           "islamic",
+                                                           "prayer"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "church",
+                                              "name":  "Church",
+                                              "parentId":  "religious",
+                                              "tags":  [
+                                                           "christian",
+                                                           "worship"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "school",
+                                              "name":  "School",
+                                              "parentId":  "educational",
+                                              "tags":  [
+                                                           "learning",
+                                                           "students"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "university",
+                                              "name":  "University",
+                                              "parentId":  "educational",
+                                              "tags":  [
+                                                           "higher-education",
+                                                           "campus"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "museum",
+                                              "name":  "Museum",
+                                              "parentId":  "entertainment",
+                                              "tags":  [
+                                                           "culture",
+                                                           "exhibition"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "theater",
+                                              "name":  "Theater",
+                                              "parentId":  "entertainment",
+                                              "tags":  [
+                                                           "performance",
+                                                           "arts"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "airport",
+                                              "name":  "Airport",
+                                              "parentId":  "transportation",
+                                              "tags":  [
+                                                           "aviation",
+                                                           "transit"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "library",
+                                              "name":  "Library",
+                                              "parentId":  "institutional",
+                                              "tags":  [
+                                                           "books",
+                                                           "study"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "data-center",
+                                              "name":  "Data Center",
+                                              "parentId":  "commercial",
+                                              "tags":  [
+                                                           "servers",
+                                                           "IT"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "laboratory",
+                                              "name":  "Laboratory",
+                                              "parentId":  "institutional",
+                                              "tags":  [
+                                                           "research",
+                                                           "testing"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "stadium",
+                                              "name":  "Stadium",
+                                              "parentId":  "sports",
+                                              "tags":  [
+                                                           "sports",
+                                                           "venue"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "gym",
+                                              "name":  "Gym",
+                                              "parentId":  "sports",
+                                              "tags":  [
+                                                           "fitness",
+                                                           "exercise"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "spa",
+                                              "name":  "Spa",
+                                              "parentId":  "hospitality",
+                                              "tags":  [
+                                                           "wellness",
+                                                           "relaxation"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "banquet-hall",
+                                              "name":  "Banquet Hall",
+                                              "parentId":  "hospitality",
+                                              "tags":  [
+                                                           "events",
+                                                           "celebrations"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "convention-center",
+                                              "name":  "Convention Center",
+                                              "parentId":  "commercial",
+                                              "tags":  [
+                                                           "events",
+                                                           "conferences"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "prison",
+                                              "name":  "Prison",
+                                              "parentId":  "government",
+                                              "tags":  [
+                                                           "correctional",
+                                                           "security"
+                                                       ]
+                                          },
+                                          {
+                                              "id":  "courthouse",
+                                              "name":  "Courthouse",
+                                              "parentId":  "government",
+                                              "tags":  [
+                                                           "legal",
+                                                           "justice"
+                                                       ]
+                                          }
+                                      ]
+                   }
+               ]
+}

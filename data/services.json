@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Environmental Intelligence System - Service catalog with icons and collection links",
+  "services": [
+    {
+      "id": "space-planning",
+      "name": "Space Planning",
+      "icon": "📐",
+      "category": "Design Services",
+      "description": "Optimize your space layout for flow, function, and emotion.",
+      "features": ["3D Space Planning", "Furniture Layout Optimization", "Traffic Flow Analysis", "Zoning Strategy"],
+      "collections": ["workspace-furniture", "furniture-living", "storage-organization"],
+      "priceFrom": 5000,
+      "duration": "2-4 Weeks",
+      "membersOnly": false
+    },
+    {
+      "id": "lighting-design",
+      "name": "Lighting Design",
+      "icon": "💡",
+      "category": "Design Services",
+      "description": "Layer ambient, task, and accent lighting to sculpt atmosphere.",
+      "features": ["Circadian Lighting", "Scene Programming", "Lux Level Calculation", "Color Temperature Tuning"],
+      "collections": ["lighting-ambient", "lighting-architectural", "lighting-task", "lighting-scenic"],
+      "priceFrom": 8000,
+      "duration": "1-3 Weeks",
+      "membersOnly": false
+    },
+    {
+      "id": "acoustic-design",
+      "name": "Acoustic Design",
+      "icon": "🎧",
+      "category": "Design Services",
+      "description": "Control sound absorption, diffusion, and isolation.",
+      "features": ["RT60 Analysis", "Noise Mapping", "Material Selection", "Speaker Placement"],
+      "collections": ["acoustic", "audio-systems", "acoustic-classroom"],
+      "priceFrom": 6000,
+      "duration": "2-4 Weeks",
+      "membersOnly": false
+    },
+    {
+      "id": "interior-design",
+      "name": "Full Interior Design",
+      "icon": "🎨",
+      "category": "Design Services",
+      "description": "Complete turnkey interior design from concept to completion.",
+      "features": ["Mood Board Creation", "Material Palettes", "Furniture Sourcing", "Project Management"],
+      "collections": ["art-decor", "bespoke-furniture", "luxury-materials", "flooring"],
+      "priceFrom": 25000,
+      "duration": "3-6 Months",
+      "membersOnly": false
+    },
+    {
+      "id": "vr-walkthrough",
+      "name": "VR Walkthrough",
+      "icon": "🥽",
+      "category": "Digital Experience",
+      "description": "Immersive virtual reality preview of your designed space.",
+      "features": ["Photorealistic Rendering", "Real-Time Lighting", "Material Swap", "VR Headset Compatible"],
+      "collections": ["smart-home", "lighting-architectural"],
+      "priceFrom": 15000,
+      "duration": "2-4 Weeks",
+      "membersOnly": true
+    },
+    {
+      "id": "consultation",
+      "name": "Design Consultation",
+      "icon": "🗣️",
+      "category": "Advisory",
+      "description": "One-on-one expert guidance for your specific challenges.",
+      "features": ["Expert Match", "1-Hour Session", "Follow-Up Report", "Product Recommendations"],
+      "collections": ["*"],
+      "priceFrom": 500,
+      "duration": "1 Hour",
+      "membersOnly": false
+    },
+    {
+      "id": "smart-home-integration",
+      "name": "Smart Home Integration",
+      "icon": "🏠",
+      "category": "Technology",
+      "description": "Seamless IoT integration for lighting, climate, and security.",
+      "features": ["Home Automation", "Voice Control Setup", "Scene Automation", "Remote Monitoring"],
+      "collections": ["smart-home", "smart-desk", "smart-health"],
+      "priceFrom": 10000,
+      "duration": "2-4 Weeks",
+      "membersOnly": false
+    },
+    {
+      "id": "project-management",
+      "name": "Project Management",
+      "icon": "📊",
+      "category": "Delivery",
+      "description": "End-to-end project oversight with milestone tracking.",
+      "features": ["Timeline Management", "Vendor Coordination", "Quality Control", "Budget Tracking"],
+      "collections": ["*"],
+      "priceFrom": 12000,
+      "duration": "Variable",
+      "membersOnly": false
+    },
+    {
+      "id": "maintenance",
+      "name": "Maintenance & Care",
+      "icon": "🔧",
+      "category": "Aftercare",
+      "description": "Ongoing maintenance plans for lasting beauty.",
+      "features": ["Annual Inspection", "Fabric Care", "Electronics Update", "Priority Support"],
+      "collections": ["*"],
+      "priceFrom": 2000,
+      "duration": "Annual",
+      "membersOnly": true
+    },
+    {
+      "id": "bespoke-crafting",
+      "name": "Bespoke Crafting",
+      "icon": "🛠️",
+      "category": "Custom Fabrication",
+      "description": "One-of-a-kind furniture and fixtures built to your vision.",
+      "features": ["Custom Design", "Material Selection", "Artisan Craftsmanship", "Installation"],
+      "collections": ["bespoke-furniture", "luxury-materials", "art-decor"],
+      "priceFrom": 50000,
+      "duration": "3-6 Months",
+      "membersOnly": true
+    }
+  ]
+}

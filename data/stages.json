@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Environmental Intelligence System - 18-stage adaptive conversation flow",
+  "stages": [
+    {
+      "id": "welcome",
+      "order": 1,
+      "type": "intro",
+      "title": "Welcome to Environmental Intelligence",
+      "subtitle": "Design how your space makes you feel",
+      "description": "Our AI will guide you through a personalized journey to understand your space, emotions, and aspirations. Answer a few questions and we will curate the perfect environment for you.",
+      "icon": "✨",
+      "next": "space-type"
+    },
+    {
+      "id": "space-type",
+      "order": 2,
+      "type": "selection",
+      "title": "What space are you designing?",
+      "description": "Choose the primary environment you want to transform.",
+      "options": [
+        {"id": "residential", "label": "Residential", "icon": "🏠", "category": "residential"},
+        {"id": "bedroom", "label": "Bedroom", "icon": "🛏️", "category": "bedroom"},
+        {"id": "living", "label": "Living", "icon": "🛋️", "category": "living"},
+        {"id": "dining-kitchen", "label": "Dining & Kitchen", "icon": "🍽️", "category": "dining-kitchen"},
+        {"id": "wellness", "label": "Wellness", "icon": "🧘", "category": "wellness"},
+        {"id": "work-study", "label": "Work & Study", "icon": "💼", "category": "work-study"},
+        {"id": "hospitality", "label": "Hospitality", "icon": "🏨", "category": "hospitality"},
+        {"id": "retail", "label": "Retail", "icon": "🏪", "category": "retail"},
+        {"id": "healthcare", "label": "Healthcare", "icon": "🏥", "category": "healthcare"},
+        {"id": "education", "label": "Education", "icon": "🎓", "category": "education"},
+        {"id": "entertainment", "label": "Entertainment", "icon": "🎭", "category": "entertainment"},
+        {"id": "spiritual", "label": "Spiritual", "icon": "🕌", "category": "spiritual"},
+        {"id": "transport", "label": "Transport", "icon": "✈️", "category": "transport"},
+        {"id": "outdoor", "label": "Outdoor", "icon": "🌿", "category": "outdoor"}
+      ],
+      "next": "primary-purpose",
+      "logic": {
+        "storeSelectedSpace": true,
+        "trackCategory": true
+      }
+    },
+    {
+      "id": "primary-purpose",
+      "order": 3,
+      "type": "selection",
+      "title": "What is the primary purpose?",
+      "description": "Help us understand how this space is mainly used.",
+      "options": [
+        {"id": "rest-relaxation", "label": "Rest & Relaxation", "icon": "😌"},
+        {"id": "social-gathering", "label": "Social Gathering", "icon": "🗣️"},
+        {"id": "focus-work", "label": "Focus & Work", "icon": "🎯"},
+        {"id": "creative-expression", "label": "Creative Expression", "icon": "🎨"},
+        {"id": "healing-wellness", "label": "Healing & Wellness", "icon": "💆"},
+        {"id": "entertainment", "label": "Entertainment", "icon": "🎬"},
+        {"id": "spiritual-practice", "label": "Spiritual Practice", "icon": "🧘"},
+        {"id": "learning", "label": "Learning & Education", "icon": "📚"},
+        {"id": "commercial", "label": "Commercial Activity", "icon": "💼"},
+        {"id": "mixed-use", "label": "Mixed Use", "icon": "🔀"}
+      ],
+      "next": "occupants",
+      "logic": {
+        "storePurpose": true,
+        "influenceRecommendations": true
+      }
+    },
+    {
+      "id": "occupants",
+      "order": 4,
+      "type": "selection",
+      "title": "Who primarily uses this space?",
+      "description": "Select all that apply.",
+      "options": [
+        {"id": "individual", "label": "Individual / Solo", "icon": "👤"},
+        {"id": "couple", "label": "Couple / Partners", "icon": "👫"},
+        {"id": "family-young-children", "label": "Family with Young Children", "icon": "👶"},
+        {"id": "family-teens", "label": "Family with Teenagers", "icon": "🧑"},
+        {"id": "extended-family", "label": "Extended Family", "icon": "👨‍👩‍👧‍👦"},
+        {"id": "elderly", "label": "Elderly / Seniors", "icon": "👴"},
+        {"id": "pets", "label": "Pets Included", "icon": "🐕"},
+        {"id": "employees", "label": "Employees / Staff", "icon": "👔"},
+        {"id": "clients", "label": "Clients / Customers", "icon": "🤝"},
+        {"id": "patients", "label": "Patients / Residents", "icon": "🏥"},
+        {"id": "students", "label": "Students / Learners", "icon": "🎓"},
+        {"id": "guests", "label": "Guests / Visitors", "icon": "🚶"}
+      ],
+      "multiSelect": true,
+      "next": "daily-rhythm",
+      "logic": {
+        "storeOccupants": true,
+        "affectSafety": true
+      }
+    },
+    {
+      "id": "daily-rhythm",
+      "order": 5,
+      "type": "selection",
+      "title": "What is the daily rhythm?",
+      "description": "When is this space most active?",
+      "options": [
+        {"id": "morning", "label": "Morning Person (6am-12pm)", "icon": "🌅"},
+        {"id": "afternoon", "label": "Afternoon Focus (12pm-5pm)", "icon": "☀️"},
+        {"id": "evening", "label": "Evening Wind-down (5pm-10pm)", "icon": "🌆"},
+        {"id": "night", "label": "Night Owl (10pm-6am)", "icon": "🌙"},
+        {"id": "continuous", "label": "24/7 Active", "icon": "🔄"},
+        {"id": "weekend", "label": "Weekend Only", "icon": "📅"}
+      ],
+      "next": "natural-light",
+      "logic": {
+        "storeRhythm": true,
+        "influenceLighting": true
+      }
+    },
+    {
+      "id": "natural-light",
+      "order": 6,
+      "type": "selection",
+      "title": "How do you feel about natural light?",
+      "description": "Natural light profoundly affects mood and energy.",
+      "options": [
+        {"id": "maximize", "label": "Maximize It", "icon": "☀️", "value": "high"},
+        {"id": "balanced", "label": "Balanced with Shading", "icon": "🌤️", "value": "medium"},
+        {"id": "minimize", "label": "Prefer Controlled Light", "icon": "🌑", "value": "low"},
+        {"id": "north-facing", "label": "North-Facing / Low Sun", "icon": "🌥️", "value": "low"},
+        {"id": "south-facing", "label": "South-Facing / Bright", "icon": "🌞", "value": "high"},
+        {"id": "artificial-only", "label": "Artificial Lighting Only", "icon": "💡", "value": "none"}
+      ],
+      "next": "acoustic-needs",
+      "logic": {
+        "storeLightPreference": true,
+        "suggestWindowTreatments": true
+      }
+    },
+    {
+      "id": "acoustic-needs",
+      "order": 7,
+      "type": "selection",
+      "title": "What are your acoustic needs?",
+      "description": "Sound shapes our experience of space.",
+      "options": [
+        {"id": "silent", "label": "Complete Silence", "icon": "🤫", "value": "high"},
+        {"id": "calm", "label": "Calm Background", "icon": "🎵", "value": "medium"},
+        {"id": "lively", "label": "Lively & Social", "icon": "🎉", "value": "low"},
+        {"id": "immersive-audio", "label": "Immersive Audio / Cinema", "icon": "🎧", "value": "high"},
+        {"id": "privacy", "label": "Sound Privacy Needed", "icon": "🔇", "value": "high"},
+        {"id": "open", "label": "Open / Echo-Friendly", "icon": "🏛️", "value": "low"}
+      ],
+      "next": "air-quality",
+      "logic": {
+        "storeAcousticNeeds": true,
+        "suggestAcousticTreatments": true
+      }
+    },
+    {
+      "id": "air-quality",
+      "order": 8,
+      "type": "selection",
+      "title": "How important is air quality?",
+      "description": "Clean air is the foundation of healthy spaces.",
+      "options": [
+        {"id": "critical", "label": "Critical (Allergies / Health)", "icon": "🌬️", "value": "high"},
+        {"id": "important", "label": "Important", "icon": "🍃", "value": "medium"},
+        {"id": "standard", "label": "Standard Ventilation", "icon": "💨", "value": "low"},
+        {"id": "humid-tropical", "label": "Humid / Tropical Climate", "icon": "💦", "value": "high"},
+        {"id": "dry-arid", "label": "Dry / Arid Climate", "icon": "🏜️", "value": "medium"},
+        {"id": "odor-sensitive", "label": "Odor Sensitive", "icon": "👃", "value": "high"}
+      ],
+      "next": "temperature-preference",
+      "logic": {
+        "storeAirQuality": true,
+        "suggestAirSystems": true
+      }
+    },
+    {
+      "id": "temperature-preference",
+      "order": 9,
+      "type": "selection",
+      "title": "What is your temperature preference?",
+      "description": "Thermal comfort is essential for well-being.",
+      "options": [
+        {"id": "cool", "label": "Cool (18-20°C)", "icon": "❄️", "value": "low"},
+        {"id": "moderate", "label": "Moderate (21-23°C)", "icon": "🌡️", "value": "medium"},
+        {"id": "warm", "label": "Warm (24-26°C)", "icon": "🔥", "value": "high"},
+        {"id": "hot", "label": "Hot Climate (>30°C)", "icon": "☀️", "value": "high"},
+        {"id": "cold", "label": "Cold Climate (<15°C)", "icon": "🥶", "value": "low"},
+        {"id": "variable", "label": "Variable / Seasonal", "icon": "📊", "value": "variable"}
+      ],
+      "next": "emotional-goal",
+      "logic": {
+        "storeTemperaturePreference": true,
+        "suggestHVAC": true
+      }
+    },
+    {
+      "id": "emotional-goal",
+      "order": 10,
+      "type": "selection",
+      "title": "What emotion do you want to feel?",
+      "description": "Spaces evoke powerful emotions. Choose the feeling you want to cultivate.",
+      "options": [
+        {"id": "calm", "label": "Calm & Serene", "icon": "🕊️", "emotion": "calm"},
+        {"id": "energized", "label": "Energized & Motivated", "icon": "⚡", "emotion": "energized"},
+        {"id": "inspired", "label": "Inspired & Creative", "icon": "💡", "emotion": "inspired"},
+        {"id": "safe", "label": "Safe & Secure", "icon": "🛡️", "emotion": "safe"},
+        {"id": "connected", "label": "Connected & Loved", "icon": "💖", "emotion": "connected"},
+        {"id": "focused", "label": "Focused & Productive", "icon": "🎯", "emotion": "focused"},
+        {"id": "luxurious", "label": "Luxurious & Indulgent", "icon": "👑", "emotion": "luxurious"},
+        {"id": "grounded", "label": "Grounded & Natural", "icon": "🌱", "emotion": "grounded"},
+        {"id": "playful", "label": "Playful & Joyful", "icon": "🎈", "emotion": "playful"},
+        {"id": "mysterious", "label": "Mysterious & Dramatic", "icon": "🌑", "emotion": "mysterious"}
+      ],
+      "next": "current-emotion",
+      "logic": {
+        "storeTargetEmotion": true,
+        "coreRecommendationInput": true
+      }
+    },
+    {
+      "id": "current-emotion",
+      "order": 11,
+      "type": "selection",
+      "title": "How do you currently feel in this space?",
+      "description": "Understanding the current state helps us bridge the gap.",
+      "options": [
+        {"id": "stressed", "label": "Stressed / Anxious", "emotion": "negative", "icon": "😰"},
+        {"id": "bored", "label": "Bored / Uninspired", "emotion": "negative", "icon": "😐"},
+        {"id": "overwhelmed", "label": "Overwhelmed / Chaotic", "emotion": "negative", "icon": "😵"},
+        {"id": "lonely", "label": "Lonely / Disconnected", "emotion": "negative", "icon": "😔"},
+        {"id": "uncomfortable", "label": "Uncomfortable / Distracted", "emotion": "negative", "icon": "😣"},
+        {"id": "neutral", "label": "Neutral / Okay", "emotion": "neutral", "icon": "😶"},
+        {"id": "content", "label": "Content / Peaceful", "emotion": "positive", "icon": "😌"},
+        {"id": "happy", "label": "Happy / Joyful", "emotion": "positive", "icon": "😊"},
+        {"id": "inspired", "label": "Inspired / Creative", "emotion": "positive", "icon": "✨"},
+        {"id": "peaceful", "label": "Peaceful / Meditative", "emotion": "positive", "icon": "🧘"}
+      ],
+      "next": "sensory-priority",
+      "logic": {
+        "storeCurrentEmotion": true,
+        "calculateGap": true,
+        "prioritizePainPoints": true
+      }
+    },
+    {
+      "id": "sensory-priority",
+      "order": 12,
+      "type": "selection",
+      "title": "Which sensory elements matter most?",
+      "description": "Rank the senses that define your ideal experience.",
+      "options": [
+        {"id": "vision", "label": "Vision / Color & Light", "icon": "👁️", "sense": "vision"},
+        {"id": "sound", "label": "Sound / Acoustics", "icon": "🎧", "sense": "sound"},
+        {"id": "smell", "label": "Smell / Fragrance", "icon": "👃", "sense": "smell"},
+        {"id": "touch", "label": "Touch / Texture", "icon": "✋", "sense": "touch"},
+        {"id": "temperature", "label": "Temperature / Climate", "icon": "🌡️", "sense": "temperature"},
+        {"id": "air-quality", "label": "Air Quality / Freshness", "icon": "🌬️", "sense": "airQuality"}
+      ],
+      "multiSelect": true,
+      "maxSelect": 3,
+      "next": "budget-range",
+      "logic": {
+        "storeSensoryPriority": true,
+        "weightRecommendations": true
+      }
+    },
+    {
+      "id": "budget-range",
+      "order": 13,
+      "type": "selection",
+      "title": "What is your budget range?",
+      "description": "Select the tier that best fits your investment.",
+      "options": [
+        {"id": "comfort", "label": "Comfort", "icon": "🏠", "tier": "comfort", "range": "AED 50K - 150K"},
+        {"id": "premium", "label": "Premium", "icon": "⭐", "tier": "premium", "range": "AED 150K - 500K"},
+        {"id": "luxury", "label": "Luxury", "icon": "💎", "tier": "luxury", "range": "AED 500K - 1.5M"},
+        {"id": "signature", "label": "Signature", "icon": "👑", "tier": "signature", "range": "AED 1.5M - 5M"},
+        {"id": "bespoke", "label": "Bespoke", "icon": "🌟", "tier": "bespoke", "range": "AED 5M+"}
+      ],
+      "next": "style-preference",
+      "logic": {
+        "storeBudgetTier": true,
+        "filterProducts": true,
+        "suggestFinancing": true
+      }
+    },
+    {
+      "id": "style-preference",
+      "order": 14,
+      "type": "selection",
+      "title": "What is your design style?",
+      "description": "Choose the aesthetic that resonates with you.",
+      "options": [
+        {"id": "minimal", "label": "Minimal", "icon": "⬜"},
+        {"id": "modern", "label": "Modern", "icon": "🔷"},
+        {"id": "contemporary", "label": "Contemporary", "icon": "🔶"},
+        {"id": "classic", "label": "Classic", "icon": "🏛️"},
+        {"id": "industrial", "label": "Industrial", "icon": "🏭"},
+        {"id": "scandinavian", "label": "Scandinavian", "icon": "🌲"},
+        {"id": "japandi", "label": "Japandi", "icon": "🎋"},
+        {"id": "bohemian", "label": "Bohemian", "icon": "🌺"},
+        {"id": "art-deco", "label": "Art Deco", "icon": "🎰"},
+        {"id": "mid-century", "label": "Mid-Century Modern", "icon": "🪑"},
+        {"id": "luxury", "label": "Ultra Luxury", "icon": "💎"},
+        {"id": "organic", "label": "Organic / Biophilic", "icon": "🌿"},
+        {"id": "futuristic", "label": "Futuristic", "icon": "🚀"},
+        {"id": "eclectic", "label": "Eclectic", "icon": "🎨"}
+      ],
+      "next": "theme-selection",
+      "logic": {
+        "storeStylePreference": true,
+        "curateCollections": true
+      }
+    },
+    {
+      "id": "theme-selection",
+      "order": 15,
+      "type": "theme-gallery",
+      "title": "Choose Your Design Theme",
+      "description": "Select a Datum Dahleez theme that matches your vision. Each theme includes curated materials, colors, and spatial concepts.",
+      "next": "timeline",
+      "logic": {
+        "storeTheme": true,
+        "influenceRecommendations": true
+      }
+    },
+    {
+      "id": "timeline",
+      "order": 16,
+      "type": "selection",
+      "title": "What is your project timeline?",
+      "description": "When do you want to complete this transformation?",
+      "options": [
+        {"id": "asap", "label": "ASAP (Under 1 Month)", "icon": "🚀"},
+        {"id": "short", "label": "Short Term (1-3 Months)", "icon": "⏳"},
+        {"id": "medium", "label": "Medium Term (3-6 Months)", "icon": "📅"},
+        {"id": "long", "label": "Long Term (6-12 Months)", "icon": "🗓️"},
+        {"id": "phased", "label": "Phased Rollout", "icon": "📐"},
+        {"id": "no-rush", "label": "No Rush", "icon": "🐢"}
+      ],
+      "next": "walkthrough",
+      "logic": {
+        "storeTimeline": true,
+        "suggestPhasedApproach": true
+      }
+    },
+    {
+      "id": "walkthrough",
+      "order": 17,
+      "type": "experience",
+      "title": "Dream Walkthrough",
+      "description": "Experience your future space through our guided visualization.",
+      "duration": "60s",
+      "next": "recommendations",
+      "logic": {
+        "generateWalkthrough": true,
+        "useAllStateInputs": true
+      }
+    },
+    {
+      "id": "recommendations",
+      "order": 18,
+      "type": "results",
+      "title": "Your Curated Recommendations",
+      "description": "Based on your inputs, here are the perfect collections and products for your space.",
+      "next": "membership",
+      "logic": {
+        "runRecommender": true,
+        "displayRankedCollections": true,
+        "showWhyExplanations": true
+      }
+    },
+    {
+      "id": "membership",
+      "order": 19,
+      "type": "conversion",
+      "title": "Unlock Your Full Potential",
+      "description": "Join the DATUM DAHLEEZ membership for exclusive access to premium collections, design consultations, and early access to new products.",
+      "next": "complete",
+      "logic": {
+        "showMembershipTiers": true,
+        "offerExclusiveBenefits": true
+      }
+    }
+  ]
+}

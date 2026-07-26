@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DD-101 THEAMES - Datum Dahleez design themes with reference imagery",
+  "themes": [
+    {
+      "id": "dd-t100",
+      "code": "DD-T100",
+      "name": "Nature",
+      "folder": "DD-T100 -NATURE",
+      "icon": "🌿",
+      "description": "Organic, biophilic designs inspired by the natural world",
+      "subThemes": [
+        { "id": "bloom-space", "name": "Bloom Space", "folder": "BLOOM SPACE", "images": ["BLOOM SPACE.PNG"] },
+        { "id": "cottage", "name": "Cottage", "folder": "COTTAGE", "images": ["COTTAGE.jpg"] },
+        { "id": "forest-view", "name": "Forest View", "folder": "FOREST VIEW", "images": ["FORST VIEW.png"] },
+        { "id": "nature-facade", "name": "Nature Facade", "folder": "NATURE FACADE", "images": ["NATURE FACADE.PNG"] },
+        { "id": "oasis-hut", "name": "Oasis Hut", "folder": "OASIS HUT", "images": ["OASIS HUT.PNG"] },
+        { "id": "the-green-house", "name": "The Green House", "folder": "THE GREEN HOUSE", "images": ["THE GREEN HOUSE.jpg"] },
+        { "id": "the-nest", "name": "The Nest", "folder": "THE NEST", "images": ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg","14.jpg"] }
+      ]
+    },
+    {
+      "id": "dd-t200",
+      "code": "DD-T200",
+      "name": "Modern and Sleek",
+      "folder": "DD-T200 - MODREN AND SLEEK",
+      "icon": "✨",
+      "description": "Contemporary minimalism with clean lines and refined surfaces",
+      "subThemes": [
+        { "id": "evolve-hub", "name": "Evolve Hub", "folder": "EVOLVE HUB", "images": ["EVOLVE HUB.png"] },
+        { "id": "lumina-loft", "name": "Lumina Loft", "folder": "LUMINA LOFT", "images": ["2.jpg","4.jpg","5.jpg","6.jpeg","23.jpg","55.webp","LUMINA LOFT.jpeg"] },
+        { "id": "nexsus-point", "name": "Nexsus Point", "folder": "NEXSUS POINT", "images": ["NEXUS POINT.PNG","NEXUS POINT 2.PNG","NEXUS POINT3.PNG"] },
+        { "id": "syengry-hall", "name": "Syengry Hall", "folder": "SYENGRY HALL", "images": ["1.jpg","2.jpg","3.jpg"] },
+        { "id": "vertex-room", "name": "Vertex Room", "folder": "VERTEX ROOM", "images": ["07-1.jpg","2.png","VERTEX ROOM.PNG","VERTEX.webp"] }
+      ]
+    },
+    {
+      "id": "dd-t300",
+      "code": "DD-T300",
+      "name": "Playfull and Fun",
+      "folder": "DD-T300- PLAYFULL & FUN",
+      "icon": "🎨",
+      "description": "Bold, energetic, and playful spatial experiences",
+      "subThemes": [
+        { "id": "brainstroom-bulevard", "name": "Brainstroom Bulevard", "folder": "BRAINSTROOM BULEVARD", "images": ["b1.jpg","b2.jpg","b3.jpg","b5.jpg","BRAINSTROOM BULEVARD.jpeg","BRAINSTROOM BULEVARD2.jpeg","e8875175f6cc0ea7ede0f264b9ba0ed5-1024x576.jpg","word-image-152.jpeg","word-image-156.jpeg","brightbinder_57706_A_comparison_image_showing_a_room_with_bubbl_c3f20744-251d-4ebd-b1ff-a01ae06f6a80-1024x576.png","brightbinder_57706_A_comparison_image_showing_a_room_with_bubbl_2f3150cd-5312-420b-bd63-c0f60d653fbf-1024x574.png","brightbinder_57706_An_image_displaying_a_variety_of_acoustic_tr_7d1e567d-00ed-4206-bbc5-0048615b3cb6-1024x576.png","brightbinder_57706_An_image_showcasing_a_diverse_range_of_high-_5621fcf2-72c8-4f8c-96b1-70256dd418ef-1024x576.png"] },
+        { "id": "bubble-break-room", "name": "Bubble Break Room", "folder": "BUBBLE BREAK ROOM", "images": [] },
+        { "id": "coffe-corner", "name": "Coffe Corner", "folder": "COFFE CORNER", "images": ["office-coffee-spaces-2-1 (1).webp","office-coffee-spaces-2-1.webp","office-coffee-spaces-2-2.webp","office-coffee-spaces-5.webp"] },
+        { "id": "the-heive", "name": "The Heive", "folder": "THE HEIVE", "images": ["10.jpg","15-Forschungsprojekt_Hive_an_der_University_of_Waterloo.jpg","1644217669_222.jpg","2688bb9237eaa91dfe81043e79c3d0de.jpg","312eb10aa318b95f50ed953a77956457.jpg","3d-printed-masonry-wall-the-introduction-of-digital-craftsmanship_9.jpg","Hive+1+drawing.jpg","Hive-Barnwood-Elite-Tile-3-1-1200x675.jpg","Hive-Barnwood-Elite-Tile3-1-1200x675.jpg","images.jpeg","jangeorge-interior-design-b_b-italia-hive-small-table-103.webp","Kuudes_Hive_interior_1.jpg","Large+hive+detail+new.jpg","Panchkon_9.jpg","the-hive-a-towering-mesh-structure-in-kew-gardens-representing-a-real-bee-hive-an-interlocking-frame-2CGC4M7.jpg"] }
+      ]
+    }
+  ]
+}

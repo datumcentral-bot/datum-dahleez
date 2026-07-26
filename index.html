@@ -1,585 +1,990 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datum Dahleez Store | Professional Interior Design</title>
-    <meta name="description" content="Professional interior design solutions for residential, office, hospital, and business spaces. Shop furniture, lighting, flooring, and decorative items.">
-    <meta name="keywords" content="interior design, furniture, lighting, flooring, decoration, hospital interior, office furniture, podcast studio, co-working space, branding, vinyl">
-    <meta name="author" content="Datum Dahleez">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://datumcentral-bot.github.io/datum-dahleez">
-    <meta property="og:title" content="Datum Dahleez Store | Professional Interior Design">
-    <meta property="og:description" content="Professional interior design solutions for residential, office, hospital, and business spaces.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://datumcentral-bot.github.io/datum-dahleez">
-    <meta property="og:image" content="https://datumcentral-bot.github.io/datum-dahleez/images/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Datum Dahleez Store | Professional Interior Design">
-    <meta name="twitter:description" content="Professional interior design solutions for residential, office, hospital, and business spaces.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Datum Dahleez | Emotional Space Intelligence</title>
+    <meta name="description" content="The world's first emotional space intelligence platform. Design how your space makes you feel.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --bg: #090909;
+            --bg-2: #0e0e0e;
+            --surface: #141414;
+            --card: #1D1D1D;
+            --elevated: #242424;
+            --border: #313131;
+            --silver: #D5D8DD;
+            --soft-silver: #B6BCC5;
+            --gold: #D4AF37;
+            --gold-hover: #E7C55B;
+            --gold-glow: rgba(212, 175, 55, 0.2);
+            --gold-subtle: rgba(212, 175, 55, 0.08);
+            --success: #4CAF50;
+            --warning: #FFB300;
+            --error: #E53935;
+            --info: #3A86FF;
+            --text: #f0f0f0;
+            --muted: #888;
+            --subtle: #555;
         }
 
-        :root {
-            --primary-color: #667eea;
-            --secondary-color: #764ba2;
-            --text-dark: #2d3748;
-            --text-light: #718096;
-            --bg-light: #f7fafc;
-            --white: #ffffff;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
             line-height: 1.6;
-            color: var(--text-dark);
-            background: var(--white);
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 1rem 0;
+        .display { font-family: 'Cormorant Garamond', Georgia, serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+
+        /* Cursor */
+        #cursor {
             position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: var(--shadow);
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            background: radial-gradient(circle, var(--gold-glow) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            transition: opacity 0.4s;
         }
 
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        @media (max-width: 640px) {
+            html, body { cursor: auto; }
+            #cursor { display: none; }
+        }
+
+        /* Screens */
+        .screen {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.8s ease;
+            z-index: 1;
+            overflow-y: auto;
+        }
+
+        .screen.active {
+            opacity: 1;
+            pointer-events: auto;
+            z-index: 10;
+        }
+
+        .screen-inner {
+            width: 100%;
+            max-width: 860px;
+            padding: 6rem 2rem 8rem;
+        }
+
+        /* Progress */
+        .progress-track {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--border);
+            z-index: 100;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--gold), var(--gold-hover));
+            width: 0%;
+            transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Nav */
+        .nav-row {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(to top, var(--bg) 60%, transparent);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            z-index: 50;
+            gap: 1rem;
         }
 
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            text-decoration: none;
-            color: white;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
+        .btn {
+            padding: 0.9rem 1.75rem;
+            background: transparent;
+            color: var(--text);
+            border: 1px solid var(--border);
+            font-family: inherit;
+            font-size: 0.8rem;
             font-weight: 500;
-            transition: opacity 0.3s ease;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: none;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.35s ease;
         }
 
-        .nav-menu a:hover {
-            opacity: 0.8;
+        .btn:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-2px);
         }
 
-        .cart-icon {
-            position: relative;
-            font-size: 1.2rem;
+        .btn-primary {
+            background: var(--gold);
+            color: var(--bg);
+            border-color: var(--gold);
+            font-weight: 600;
         }
 
-        .cart-count {
-            position: absolute;
-            top: -8px;
-            right: -10px;
-            background: #ff4757;
-            color: white;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
+        .btn-primary:hover {
+            background: var(--gold-hover);
+            border-color: var(--gold-hover);
+            color: var(--bg);
+        }
+
+        .btn-ghost {
+            border-color: transparent;
+            color: var(--gold);
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--gold);
+        }
+
+        /* Typography */
+        .eyebrow {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.25rem;
+            display: block;
+        }
+
+        .title {
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .title strong {
+            font-weight: 500;
+            color: var(--gold);
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            max-width: 600px;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .card {
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 1rem;
+            padding: 1.2rem 1.4rem;
+            background: rgba(255,255,255,0.012);
+            border: 1px solid var(--border);
+            cursor: none;
+            transition: all 0.35s ease;
+            user-select: none;
+        }
+
+        .card:hover {
+            border-color: var(--border);
+            background: var(--gold-subtle);
+            transform: translateX(6px);
+        }
+
+        .card.selected {
+            border-color: var(--gold);
+            background: rgba(212, 175, 55, 0.06);
+        }
+
+        .card-num {
+            width: 32px;
+            height: 32px;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--border);
+            color: var(--subtle);
             font-size: 0.75rem;
-            font-weight: 600;
+            font-weight: 500;
+            flex-shrink: 0;
+            transition: all 0.35s ease;
+            font-family: 'JetBrains Mono', monospace;
         }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 150px 20px 100px;
-            text-align: center;
-            margin-top: 60px;
+        .card:hover .card-num, .card.selected .card-num {
+            border-color: var(--gold);
+            color: var(--gold);
         }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: 700;
-            line-height: 1.2;
+        .card-text {
+            flex: 1;
+            font-size: 0.95rem;
         }
 
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+        .card-badge {
+            color: var(--gold);
+            font-size: 0.85rem;
+            opacity: 0;
+            transition: opacity 0.3s;
         }
 
-        .cta-button {
-            display: inline-block;
-            background: white;
-            color: var(--primary-color);
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        .card.selected .card-badge { opacity: 1; }
+
+        /* Forms */
+        .form-grid {
+            display: grid;
+            gap: 1.25rem;
+            margin-top: 1.5rem;
         }
 
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        .field label {
+            display: block;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 0.6rem;
         }
 
-        /* Categories Section */
-        .categories {
-            padding: 80px 20px;
-            max-width: 1200px;
+        .field input,
+        .field textarea,
+        .field select {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+            cursor: none;
+        }
+
+        .field input:focus,
+        .field textarea:focus,
+        .field select:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        .field textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Blueprint */
+        #blueprint, #dream {
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .doc {
+            max-width: 880px;
+            width: 100%;
+            padding: 3rem 2rem 6rem;
             margin: 0 auto;
+        }
+
+        .doc-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-top: 2rem;
+        }
+
+        .doc-eyebrow {
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.25rem;
+        }
+
+        .doc-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .doc-subtitle {
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.006);
         }
 
         .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: var(--text-dark);
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
         }
 
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+        .section h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
         }
 
-        .category-card {
-            background: var(--white);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease;
-            cursor: pointer;
+        .section p, .section li {
+            color: #999;
+            font-size: 0.95rem;
+            line-height: 1.8;
         }
 
-        .category-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .category-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-        }
-
-        .category-card h3 {
-            margin-bottom: 10px;
-            color: var(--text-dark);
-        }
-
-        .category-card p {
-            color: var(--text-light);
-        }
-
-        /* Features Section */
-        .features {
-            padding: 80px 20px;
-            background: var(--bg-light);
-        }
-
-        .features-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
-        }
-
-        .feature-card {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        .feature-card h3 {
-            margin-bottom: 15px;
-            color: var(--text-dark);
-        }
-
-        .feature-card p {
-            color: var(--text-light);
-        }
-
-        /* Business Section */
-        .business {
-            padding: 80px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .business-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .business-card {
-            background: var(--white);
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: var(--shadow);
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .business-card h3 {
-            margin-bottom: 15px;
-            color: var(--text-dark);
-        }
-
-        .business-card p {
-            color: var(--text-light);
-            margin-bottom: 20px;
-        }
-
-        .business-card ul {
+        .section ul {
             list-style: none;
             padding-left: 0;
         }
 
-        .business-card ul li {
-            padding: 5px 0;
-            color: var(--text-light);
+        .section ul li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
         }
 
-        .business-card ul li:before {
-            content: "✓ ";
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--text-dark);
-            color: white;
-            padding: 50px 20px 20px;
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            opacity: 1;
-        }
-
-        .social-links {
-            margin-bottom: 30px;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
-        }
-
-        .social-links a:hover {
-            opacity: 1;
-        }
-
-        .copyright {
+        .section ul li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
             opacity: 0.6;
+        }
+
+        .cards {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .product {
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.01);
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.35s ease;
+            cursor: none;
+        }
+
+        .product:hover {
+            border-color: var(--gold);
+            transform: translateY(3px);
+            background: rgba(212, 175, 55, 0.03);
+        }
+
+        .product-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+            gap: 1rem;
+        }
+
+        .product-name {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .product-price {
+            color: var(--gold);
+            font-weight: 500;
             font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .product-why {
+            color: var(--muted);
+            font-size: 0.88rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+
+        .product-link {
+            font-size: 0.72rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .product:hover .product-link { opacity: 1; }
+
+        .palette {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1.25rem;
+        }
+
+        .swatch {
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 5rem;
+            padding: 3.5rem 2rem;
+            border: 1px solid var(--border);
+            background: var(--gold-subtle);
+        }
+
+        .cta blockquote {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: var(--text);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .cta p {
+            color: var(--muted);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .membership {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .member-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.25rem;
+            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.008);
+        }
+
+        .member-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .member-text h4 {
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 0.35rem;
+        }
+
+        .member-text p {
+            font-size: 0.88rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* Arrival */
+        #arrival {
+            align-items: center;
+            background: var(--bg);
+        }
+
+        .arrival-grid {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            animation: gridIn 2.5s ease 0.3s forwards;
+            pointer-events: none;
+        }
+
+        @keyframes gridIn { to { opacity: 1; } }
+
+        .arrival-door {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 300px;
+            border: 1px solid var(--gold);
+            opacity: 0;
+            animation: doorIn 2s ease 1.2s forwards;
+            pointer-events: none;
+        }
+
+        .arrival-door::before {
+            content: '';
+            position: absolute;
+            inset: -40px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            opacity: 0;
+            animation: glowIn 3s ease 1.8s forwards;
+        }
+
+        @keyframes doorIn {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+            100% { opacity: 0.4; transform: translate(-50%, -50%) scale(1); }
+        }
+
+        @keyframes glowIn { to { opacity: 1; } }
+
+        .arrival-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 700px;
+            padding: 2rem;
+        }
+
+        .arrival-logo {
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.7em;
+            text-transform: uppercase;
+            color: var(--gold);
+            opacity: 0;
+            animation: fadeUp 1.5s ease 2.2s forwards;
+            margin-bottom: 4rem;
+        }
+
+        .arrival-text {
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            font-weight: 300;
+            line-height: 1.5;
+            opacity: 0;
+            animation: fadeUp 1.5s ease 2.8s forwards;
+        }
+
+        .arrival-text strong {
+            font-weight: 500;
+            color: var(--gold);
+        }
+
+        .arrival-btn {
+            margin-top: 3.5rem;
+            padding: 1.2rem 3.5rem;
+            background: transparent;
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            font-family: inherit;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            cursor: pointer;
+            opacity: 0;
+            animation: fadeUp 1.5s ease 3.6s forwards;
+            transition: all 0.5s ease;
+        }
+
+        .arrival-btn:hover {
+            background: var(--gold);
+            color: var(--bg);
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Processing */
+        .processing {
+            text-align: center;
+            padding-top: 20vh;
+        }
+
+        .processing-text {
+            font-size: 0.7rem;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        .processing-bar {
+            width: 160px;
+            height: 1px;
+            background: var(--border);
+            margin: 2rem auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .processing-bar::after {
+            content: '';
+            position: absolute;
+            left: -100%;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, var(--gold), var(--gold-hover));
+            animation: process 1.8s ease infinite;
+        }
+
+        @keyframes process {
+            0% { left: -100%; }
+            100% { left: 100%; }
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
+        @media (max-width: 640px) {
+            html, body { cursor: auto; }
+            .screen { padding: 0; cursor: auto; }
+            .screen-inner { padding: 5rem 1.25rem 7rem; }
+            .doc { padding: 3rem 1.25rem 5rem; }
+            .section { padding: 1.5rem; }
+            .nav-row { padding: 1rem; }
+            .arrival-content { padding: 1.5rem; }
+            .card, .product, .btn, input, textarea, select { cursor: auto; }
+        }
 
-            .nav-menu {
-                gap: 15px;
-                font-size: 0.9rem;
-            }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-            .section-title {
-                font-size: 2rem;
-            }
+        .eis-stage { display: flex; flex-direction: column; align-items: center; padding: 6rem 2rem 8rem; min-height: 100vh; }
+        .eis-card { width: 100%; max-width: 860px; }
+        .eis-card__header { margin-bottom: 2rem; }
+        .eis-card__title-group { margin-top: 0.5rem; }
+        .eis-card__title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin: 0; line-height: 1.2; }
+        .eis-card__subtitle { color: var(--muted); font-size: 1rem; margin-top: 0.75rem; }
+        .eis-card__body { margin-top: 1.5rem; }
+        .eis-selection__description { color: var(--soft-silver); font-size: 0.95rem; margin-bottom: 1.5rem; }
+        .eis-options { display: grid; gap: 1rem; }
+        .eis-options--grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+        .eis-option { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 1.5rem; background: rgba(255,255,255,0.012); border: 1px solid var(--border); color: var(--text); font-family: inherit; font-size: 0.9rem; cursor: none; transition: all 0.35s ease; user-select: none; text-align: left; }
+        .eis-option:hover { border-color: var(--border); background: var(--gold-subtle); transform: translateX(6px); }
+        .eis-option--selected { border-color: var(--gold); background: rgba(212, 175, 55, 0.06); }
+        .eis-option__icon { font-size: 1.25rem; width: 2rem; text-align: center; }
+        .eis-option__label { flex: 1; }
+        .eis-option__check { color: var(--gold); opacity: 0; transition: opacity 0.3s; }
+        .eis-option--selected .eis-option__check { opacity: 1; }
+        .eis-navigation { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; }
+        .eis-btn { padding: 0.9rem 1.75rem; background: transparent; color: var(--text); border: 1px solid var(--border); font-family: inherit; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; cursor: none; text-decoration: none; transition: all 0.35s ease; }
+        .eis-btn--primary { border-color: var(--gold); color: var(--gold); }
+        .eis-btn--primary:hover { background: var(--gold); color: var(--bg); }
+        .eis-btn--lg { padding: 1rem 2rem; font-size: 0.85rem; }
+        .eis-progress { margin-top: 1.5rem; }
+        .eis-progress__bar { height: 2px; background: var(--border); overflow: hidden; width: 100%; }
+        .eis-progress__bar:after { content: ''; display: block; height: 100%; background: linear-gradient(90deg, var(--gold), var(--gold-hover)); width: 0%; transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .eis-progress__label { display: block; margin-top: 0.5rem; font-size: 0.75rem; color: var(--muted); }
+        .eis-error { padding: 0.75rem 1rem; background: rgba(229, 57, 53, 0.1); border: 1px solid var(--error); color: var(--error); font-size: 0.85rem; margin: 1rem 0; }
+        .eis-loading { display: flex; align-items: center; gap: 1rem; padding: 2rem; background: var(--gold-subtle); border: 1px solid var(--gold); margin: 1.5rem 0; }
+        .eis-loader__spinner { width: 24px; height: 24px; border: 2px solid var(--border); border-top-color: var(--gold); border-radius: 50%; animation: spin 0.8s linear infinite; }
+        .eis-loader__text { color: var(--text); font-size: 0.9rem; }
+        .eis-experience__preview { margin-top: 1.5rem; }
+        .eis-walkthrough { padding: 2rem 0; }
+        .eis-walkthrough__header { margin-bottom: 2rem; }
+        .eis-walkthrough__title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin: 0; }
+        .eis-walkthrough__meta { display: block; margin-top: 0.5rem; color: var(--muted); font-size: 0.8rem; }
+        .eis-walkthrough__quote { font-size: 1.1rem; color: var(--soft-silver); margin: 1.5rem 0; padding: 1.5rem; border-left: 2px solid var(--gold); background: var(--gold-subtle); }
+        .eis-walkthrough__scenes { display: flex; flex-direction: column; gap: 1.25rem; margin: 2rem 0; }
+        .eis-walkthrough__scene { display: flex; gap: 1rem; padding: 1.25rem; border: 1px solid var(--border); background: var(--surface); }
+        .eis-walkthrough__scene-number { color: var(--gold); font-size: 0.8rem; }
+        .eis-walkthrough__scene-title { margin: 0 0 0.25rem; font-size: 1rem; }
+        .eis-walkthrough__scene-desc { margin: 0; color: var(--soft-silver); font-size: 0.9rem; }
+        .eis-walkthrough__scene-sensory { display: block; margin-top: 0.75rem; font-size: 0.75rem; color: var(--subtle); }
+        .eis-walkthrough__profile { padding-top: 2rem; border-top: 1px solid var(--border); }
+        .eis-walkthrough__profile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem; margin-top: 1rem; }
+        .eis-walkthrough__profile-item { padding: 1rem; border: 1px solid var(--border); background: var(--surface); }
+        .eis-walkthrough__profile-icon { font-size: 1.25rem; display: block; margin-bottom: 0.25rem; }
+        .eis-walkthrough__profile-label { display: block; font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.25rem; }
+        .eis-walkthrough__profile-value { font-size: 0.85rem; color: var(--text); }
+        .eis-results__collections { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem; }
+        .eis-recommendation { padding: 1.5rem; border: 1px solid var(--border); background: var(--surface); transition: all 0.35s ease; }
+        .eis-recommendation:hover { border-color: var(--gold); }
+        .eis-recommendation__head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.75rem; }
+        .eis-recommendation__name { font-size: 1.05rem; font-weight: 500; }
+        .eis-recommendation__price { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--gold); }
+        .eis-recommendation__why { color: var(--soft-silver); font-size: 0.9rem; margin-bottom: 0.75rem; }
+        .eis-recommendation__link { color: var(--gold); font-size: 0.8rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; }
+        .eis-theme-gallery { display: flex; flex-direction: column; gap: 1.5rem; }
+        .eis-theme-gallery__description { color: var(--soft-silver); font-size: 0.95rem; margin-bottom: 1.5rem; }
+        .eis-theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+        .eis-theme-card { display: flex; flex-direction: column; gap: 0.75rem; padding: 0; background: rgba(255,255,255,0.012); border: 1px solid var(--border); color: var(--text); font-family: inherit; cursor: none; transition: all 0.35s ease; user-select: none; text-align: left; overflow: hidden; }
+        .eis-theme-card:hover { border-color: var(--border); background: var(--gold-subtle); transform: translateY(-4px); }
+        .eis-theme-card--selected { border-color: var(--gold); background: rgba(212, 175, 55, 0.06); }
+        .eis-theme-card__image { width: 100%; aspect-ratio: 16/10; background-color: var(--surface); background-repeat: no-repeat; }
+        .eis-theme-card__label { padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 0.25rem; }
+        .eis-theme-card__label strong { font-size: 0.95rem; font-weight: 500; }
+        .eis-theme-card__label span { font-size: 0.78rem; color: var(--muted); }
+        .eis-theme-card__check { position: absolute; top: 0.75rem; right: 0.75rem; width: 28px; height: 28px; display: grid; place-items: center; background: var(--gold); color: var(--bg); font-size: 0.8rem; font-weight: 700; border-radius: 50%; opacity: 0; transition: opacity 0.3s; }
+        .eis-theme-card--selected .eis-theme-card__check { opacity: 1; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @media (max-width: 640px) {
+            .eis-options--grid { grid-template-columns: 1fr; }
+            .eis-theme-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <a href="index.html" class="logo">Datum Dahleez</a>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="datum-dahleez.store/index.html">Shop</a></li>
-                    <li><a href="#categories">Categories</a></li>
-                    <li><a href="#business">Business</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="javascript:void(0)" id="login-link" onclick="showLogin()">Login</a></li>
-                    <li><a href="javascript:void(0)" id="logout-link" onclick="customerAccounts.logout()" style="display:none">Logout</a></li>
-                    <li>
-                        <a href="javascript:void(0)" class="cart-icon" onclick="showCheckout()">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="cart-count" id="cart-count">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div id="cursor"></div>
+    <div class="progress-track"><div class="progress-fill" id="progress"></div></div>
+    <div id="eis-container" class="screen active"></div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to Datum Dahleez</h1>
-        <p>Professional interior design solutions for residential, office, hospital, and business spaces. Quality furniture, lighting, flooring, and decorative items delivered worldwide.</p>
-        <a href="datum-dahleez.store/index.html" class="cta-button">Explore Our Collection</a>
-    </section>
+    <script>
+        // Cursor
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', e => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
 
-    <!-- Categories Section -->
-    <section class="categories" id="categories">
-        <h2 class="section-title">Our Product Categories</h2>
-        <div class="category-grid">
-            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#furniture'">
-                <div class="category-icon">🪑</div>
-                <h3>Furniture & Fixtures</h3>
-                <p>Office, residential, and commercial furniture solutions</p>
-            </div>
-            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#lighting'">
-                <div class="category-icon">💡</div>
-                <h3>Lighting Solutions</h3>
-                <p>Modern LED, pendant lights, chandeliers, and smart lighting</p>
-            </div>
-            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#flooring'">
-                <div class="category-icon">🪵</div>
-                <h3>Flooring & Surfaces</h3>
-                <p>Wood, marble, tiles, and premium flooring materials</p>
-            </div>
-            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#decor'">
-                <div class="category-icon">🎨</div>
-                <h3>Decor & Accessories</h3>
-                <p>Wall art, plants, decorative items, and accessories</p>
-            </div>
-            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#podcast'">
-                <div class="category-icon">🎙️</div>
-                <h3>Podcast Studios</h3>
-                <p>Professional studio furniture and acoustic solutions</p>
-            </div>
-            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#branding'">
-                <div class="category-icon">✂️</div>
-                <h3>Branding & Signage</h3>
-                <p>Custom vinyl, signage, and visual identity solutions</p>
-            </div>
-        </div>
-    </section>
+        // Load EIS engine modules and bootstrap
+        async function boot() {
+            const eisDir = 'js/eis/';
+            const modules = ['loader.js', 'router.js', 'engine.js', 'renderer.js', 'recommender.js', 'walkthrough.js'];
+            for (const mod of modules) {
+                await new Promise((resolve, reject) => {
+                    const script = document.createElement('script');
+                    script.src = eisDir + mod;
+                    script.onload = resolve;
+                    script.onerror = () => reject(new Error('Failed to load ' + mod));
+                    document.head.appendChild(script);
+                });
+            }
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="features-container">
-            <h2 class="section-title">Why Choose Datum Dahleez</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🏢</div>
-                    <h3>Business Focus</h3>
-                    <p>Specialized solutions for offices, hospitals, co-working spaces, and podcast studios. Institutional pricing available.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛠️</div>
-                    <h3>Quality Materials</h3>
-                    <p>Premium flooring, furniture, lighting, and decorative materials sourced from trusted manufacturers worldwide.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💼</div>
-                    <h3>Professional Service</h3>
-                    <p>Expert consultation, custom quotes, bulk pricing, and dedicated support for business customers.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Global Reach</h3>
-                    <p>Serving clients worldwide with professional delivery and installation services available in major cities.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Best Prices</h3>
-                    <p>Competitive pricing with bulk discounts for businesses. Transparent pricing with no hidden costs.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure Shopping</h3>
-                    <p>Safe and secure checkout with multiple payment options. Your data is always protected.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            const container = document.getElementById('eis-container');
+            const progress = document.getElementById('progress');
 
-    <!-- Business Section -->
-    <section class="business" id="business">
-        <h2 class="section-title">Solutions for Businesses</h2>
-        <div class="business-grid">
-            <div class="business-card">
-                <h3>🏥 Hospitals & Medical</h3>
-                <p>Complete interior design solutions for healthcare facilities.</p>
-                <ul>
-                    <li>Medical office furniture</li>
-                    <li>Patient room interiors</li>
-                    <li>Reception and waiting areas</li>
-                    <li>Specialized lighting</li>
-                </ul>
-            </div>
-            <div class="business-card">
-                <h3>🏢 Offices & Co-working</h3>
-                <p>Modern workspace solutions for productivity and comfort.</p>
-                <ul>
-                    <li>Office furniture systems</li>
-                    <li>Meeting room setups</li>
-                    <li>Ergonomic workstations</li>
-                    <li>Collaborative spaces</li>
-                </ul>
-            </div>
-            <div class="business-card">
-                <h3>🎙️ Podcast Studios</h3>
-                <p>Professional audio production environments.</p>
-                <ul>
-                    <li>Studio furniture and desks</li>
-                    <li>Acoustic panels</li>
-                    <li>Equipment mounting</li>
-                    <li>Lighting for video</li>
-                </ul>
-            </div>
-            <div class="business-card">
-                <h3>🛍️ Retail & Showrooms</h3>
-                <p>Engaging retail environments that drive sales.</p>
-                <ul>
-                    <li>Display fixtures</li>
-                    <li>Lighting design</li>
-                    <li>Flooring solutions</li>
-                    <li>Branding integration</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            const dataLoader = new DataLoader();
+            const router = new Router();
+            const renderer = new Renderer(container);
+            const recommender = new Recommender({ dataLoader });
+            const walkthrough = new Walkthrough({ dataLoader });
 
-    <!-- Contact Section -->
-    <section class="business" id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="business-grid">
-            <div class="business-card">
-                <h3>📞 Contact Us</h3>
-                <p>Have a question? We'd love to hear from you.</p>
-                <form id="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
-                    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
-                    <input type="text" name="subject" placeholder="Subject" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
-                    <textarea name="message" rows="5" placeholder="Your Message" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;"></textarea>
-                    <button type="submit" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-weight: 600; margin-top: 10px;">Send Message</button>
-                </form>
-            </div>
-            <div class="business-card">
-                <h3>📋 Request a Quote</h3>
-                <p>Get a custom quote for your project.</p>
-                <form id="quote-form">
-                    <input type="text" name="company" placeholder="Company Name" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
-                    <input type="text" name="contactName" placeholder="Contact Name" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
-                    <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
-                    <input type="tel" name="phone" placeholder="Phone" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
-                    <select name="projectType" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
-                        <option value="">Select Project Type</option>
-                        <option value="office">Office Interior</option>
-                        <option value="hospital">Hospital/Medical</option>
-                        <option value="podcast">Podcast Studio</option>
-                        <option value="coworking">Co-working Space</option>
-                        <option value="residential">Residential</option>
-                        <option value="retail">Retail/Showroom</option>
-                        <option value="branding">Branding & Signage</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <textarea name="description" rows="4" placeholder="Project Description" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;"></textarea>
-                    <button type="submit" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-weight: 600; margin-top: 10px;">Request Quote</button>
-                </form>
-            </div>
-        </div>
-    </section>
+            const themesData = await dataLoader.load('themes', '../data/themes.json').catch(() => ({ themes: [] }));
+            window.__eisThemeData = themesData;
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="datum-dahleez.store/index.html">Shop</a>
-                <a href="#categories">Categories</a>
-                <a href="#business">Business</a>
-                <a href="#contact">Contact</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-            </div>
-            <p class="copyright">&copy; 2026 Datum Dahleez. All rights reserved. | Professional Interior Design Solutions</p>
-        </div>
-    </footer>
+            const engine = new ConversationEngine({
+                dataLoader,
+                router,
+                renderer,
+                onStageChange(nextStage, state) {
+                    renderer.render(nextStage, state, stageCallbacks);
+                    const p = engine.getProgress();
+                    if (progress) progress.style.width = p.percentage + '%';
+                },
+                onComplete(state) {
+                    showResults(state);
+                },
+                onError(err) {
+                    console.error('EIS Error:', err);
+                    renderer.showError(err.message || 'Something went wrong');
+                }
+            });
 
-    <!-- Scripts -->
-    <script src="js/shopping-cart.js"></script>
-    <script src="js/customer-accounts.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/payment.js"></script>
-    <script src="js/email.js"></script>
-    <script src="js/main.js"></script>
+            window.eisEngine = engine;
+
+            const stageCallbacks = {
+                onStart() {
+                    engine.advance();
+                },
+                onOptionSelect(stage, option, optionEl) {
+                    engine.submitAnswer(stage.id, option.id);
+                    if (stage.type === 'theme-gallery') {
+                        const cards = document.querySelectorAll('.eis-theme-card');
+                        cards.forEach(c => c.classList.remove('eis-theme-card--selected'));
+                        const selected = document.querySelector(`[data-theme-id="${option.id}"]`);
+                        if (selected) selected.classList.add('eis-theme-card--selected');
+                    } else {
+                        renderer.updateOptionSelection(optionEl, !optionEl.classList.contains('eis-option--selected'));
+                    }
+                },
+                onNext(stage) {
+                    engine.advance();
+                },
+                onNavigationRender(stage, nav, state) {
+                    const backBtn = document.createElement('button');
+                    backBtn.className = 'eis-btn';
+                    backBtn.textContent = 'Back';
+                    backBtn.addEventListener('click', () => {
+                        const prev = engine.goBack();
+                        if (prev) renderer.render(prev, state, stageCallbacks);
+                    });
+                    nav.appendChild(backBtn);
+
+                    const nextBtn = document.createElement('button');
+                    nextBtn.className = 'eis-btn eis-btn--primary';
+                    nextBtn.textContent = 'Continue';
+                    nextBtn.addEventListener('click', () => stageCallbacks.onNext(stage));
+                    nav.appendChild(nextBtn);
+                },
+                onResultsReady(stage, container) {
+                    recommender.getRecommendations(engine.getState()).then(result => {
+                        container.innerHTML = result.collections.map(col => `
+                            <div class="eis-recommendation">
+                                <div class="eis-recommendation__head">
+                                    <div class="eis-recommendation__name">${col.name}</div>
+                                    <div class="eis-recommendation__score">${Math.round(col.score)}% match</div>
+                                </div>
+                                <p class="eis-recommendation__why">${col.reasoning}</p>
+                                <a href="${col.url || 'datum-dahleez.store/collections.html'}" target="_blank" class="eis-recommendation__link">View Collection</a>
+                            </div>
+                        `).join('');
+                    }).catch(err => {
+                        container.innerHTML = '<p style="color: var(--muted);">Curating your recommendations...</p>';
+                    });
+                },
+                onConversionReady(stage, container) {
+                    container.innerHTML = `
+                        <div class="section">
+                            <div class="section-title">Membership</div>
+                            <p style="margin-bottom: 1rem; color: #999;">Join for exclusive access.</p>
+                            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                                <a href="datum-dahleez.store/collections.html" class="btn btn-primary">Browse Collections</a>
+                                <button class="btn" onclick="window.restart()">Start Over</button>
+                            </div>
+                        </div>
+                    `;
+                },
+                onExperienceStart(stage, preview) {
+                    const state = engine.getState();
+                    walkthrough.generate(state).then(data => {
+                        preview.innerHTML = '';
+                        walkthrough.renderToDOM(preview, data);
+                        setTimeout(() => engine.advance(), 1000);
+                    }).catch(() => {
+                        preview.innerHTML = '<p style="color: var(--soft-silver);">Experience ready.</p>';
+                        setTimeout(() => engine.advance(), 1000);
+                    });
+                }
+            };
+
+            const initialized = await engine.init();
+            if (!initialized) {
+                container.innerHTML = '<p style="color: var(--muted);">Loading conversation data...</p>';
+                return;
+            }
+
+            engine.advance().then(() => {});
+        }
+
+        window.restart = function() {
+            if (window.eisEngine) {
+                window.eisEngine.reset();
+                window.eisEngine.advance().then(() => {});
+            }
+            document.getElementById('progress').style.width = '0%';
+        };
+
+        window.showResults = async function(state) {
+            const dataLoader = new DataLoader();
+            const recommender = new Recommender({ dataLoader });
+            const walkthrough = new Walkthrough({ dataLoader });
+
+            document.getElementById('progress').style.width = '100%';
+            const container = document.getElementById('eis-container');
+            container.innerHTML = '<div class="processing"><div class="processing-text">Composing Your Environmental Blueprint</div><div class="processing-bar"></div></div>';
+
+            setTimeout(async () => {
+                const recs = await recommender.getRecommendations(state);
+                const wt = await walkthrough.generate(state);
+                const theme = state.metadata?.theme;
+                const themeLabel = theme ? theme.replace(/-/g, ' ') : '';
+
+                container.innerHTML = `
+                    <div class="doc">
+                        <div class="doc-header">
+                            <div class="doc-eyebrow">Dream Space Blueprint</div>
+                            <h1 class="doc-title display">${(state.metadata.selectedSpace || state.metadata.selectedCategory || 'Your Space').replace(/-/g, ' ')}</h1>
+                            <p class="doc-subtitle">Environment Intelligence System${themeLabel ? ' · ' + themeLabel : ''}</p>
+                        </div>
+
+                        ${theme ? `
+                        <div class="section">
+                            <div class="section-title">Selected Theme</div>
+                            <p style="color: var(--soft-silver);">${themeLabel} — All material, color, and lighting recommendations below are curated to align with this theme.</p>
+                        </div>
+                        ` : ''}
+
+                        <div class="section">
+                            <div class="section-title">Curated Recommendations</div>
+                            <div class="eis-results__collections">${recs.collections.map(col => `
+                                <div class="eis-recommendation">
+                                    <div class="eis-recommendation__head">
+                                        <div class="eis-recommendation__name">${col.name}</div>
+                                        <div class="eis-recommendation__price">${col.tier ? 'AED ' + col.tier : ''}</div>
+                                    </div>
+                                    <p class="eis-recommendation__why">${col.reasoning}</p>
+                                    <a href="${col.url || 'datum-dahleez.store/collections.html'}" target="_blank" class="eis-recommendation__link">View Collection</a>
+                                </div>
+                            `).join('')}</div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title">Dream Walkthrough</div>
+                            <div id="walkthrough-render"></div>
+                        </div>
+
+                        <div class="section">
+                            <div class="section-title">Your Journey</div>
+                            <p style="margin-bottom: 1rem; color: #999;">Your relationship with Datum Dahleez continues long after this project is complete.</p>
+                            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                                <button class="btn btn-primary" onclick="document.getElementById('walkthrough-render').scrollIntoView({behavior:'smooth'})">Experience Walkthrough</button>
+                                <a href="datum-dahleez.store/collections.html" class="btn">Browse All Solutions</a>
+                                <button class="btn" onclick="window.restart()">Start Over</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                const wtContainer = document.getElementById('walkthrough-render');
+                if (wtContainer) {
+                    walkthrough.renderToDOM(wtContainer, wt);
+                }
+            }, 2400);
+        };
+
+        // Initialize EIS
+        document.addEventListener('DOMContentLoaded', () => {
+            boot();
+        });
+    </script>
 </body>
 </html>

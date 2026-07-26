@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Environmental Intelligence System - Membership tiers and benefits",
+  "tiers": [
+    {
+      "id": "explorer",
+      "name": "Explorer",
+      "price": "Free",
+      "icon": "🧭",
+      "color": "#D5D8DD",
+      "description": "Perfect for getting started with environmental intelligence.",
+      "benefits": [
+        "Access to basic EIS questionnaire",
+        "5 free recommendations per month",
+        "Standard product catalog access",
+        "Email support",
+        "Community forum access"
+      ],
+      "limits": {
+        "recommendationsPerMonth": 5,
+        "savedSpaces": 1,
+        "consultationsPerYear": 0,
+        "discountPercentage": 0
+      },
+      "cta": "Get Started",
+      "popular": false
+    },
+    {
+      "id": "designer",
+      "name": "Designer",
+      "price": "AED 299/month",
+      "icon": "✏️",
+      "color": "#D4AF37",
+      "description": "For serious design enthusiasts and homeowners.",
+      "benefits": [
+        "Unlimited EIS recommendations",
+        "VR Walkthrough access",
+        "Save unlimited spaces",
+        "10% off all products",
+        "Priority email support",
+        "Exclusive collection previews",
+        "Design consultation (1 per quarter)",
+        "Member-only flash sales"
+      ],
+      "limits": {
+        "recommendationsPerMonth": -1,
+        "savedSpaces": -1,
+        "consultationsPerYear": 4,
+        "discountPercentage": 10
+      },
+      "cta": "Start Free Trial",
+      "popular": true
+    },
+    {
+      "id": "curator",
+      "name": "Curator",
+      "price": "AED 899/month",
+      "icon": "👑",
+      "color": "#D4AF37",
+      "description": "For professional designers and luxury clients.",
+      "benefits": [
+        "Everything in Designer",
+        "20% off all products",
+        "Unlimited VR Walkthroughs",
+        "Dedicated account manager",
+        "Bespoke crafting access",
+        "Priority installation scheduling",
+        "Exclusive event invitations",
+        "Early access to new collections",
+        "Custom mood board creation",
+        "White-label reporting for professionals"
+      ],
+      "limits": {
+        "recommendationsPerMonth": -1,
+        "savedSpaces": -1,
+        "consultationsPerYear": 12,
+        "discountPercentage": 20
+      },
+      "cta": "Start Free Trial",
+      "popular": false
+    },
+    {
+      "id": "partner",
+      "name": "Partner",
+      "price": "Custom",
+      "icon": "🤝",
+      "color": "#D4AF37",
+      "description": "For enterprise clients, developers, and design firms.",
+      "benefits": [
+        "Everything in Curator",
+        "30%+ volume discounts",
+        "API access for integration",
+        "White-label EIS engine",
+        "Custom training and onboarding",
+        "Dedicated technical support",
+        "Co-branding opportunities",
+        "Custom product development",
+        "Global logistics support",
+        "SLA guarantees"
+      ],
+      "limits": {
+        "recommendationsPerMonth": -1,
+        "savedSpaces": -1,
+        "consultationsPerYear": -1,
+        "discountPercentage": 30
+      },
+      "cta": "Contact Sales",
+      "popular": false
+    }
+  ]
+}

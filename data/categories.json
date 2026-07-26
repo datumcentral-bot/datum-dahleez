@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DD-100 CATAGORIES - Datum Dahleez product/service categories",
+  "categories": [
+    { "id": "american-furniture", "name": "American Furniture", "folder": "AMERICAN FURNITURE", "icon": "🪑", "description": "Classic and contemporary American furniture designs" },
+    { "id": "ceilings", "name": "Ceilings", "folder": "CEILINGS", "icon": "⬆️", "description": "Ceiling systems, finishes, and architectural solutions" },
+    { "id": "charcoal-infused-water", "name": "Charcoal Infused Water", "folder": "CHARCHOLE INFUSED WATEER", "icon": "💧", "description": "Wellness water solutions and filtration systems" },
+    { "id": "decoratives", "name": "Decoratives", "folder": "DECORATIVES", "icon": "🏺", "description": "Decorative accessories and ornamental pieces" },
+    { "id": "fire-fighting-equipment", "name": "Fire Fighting Equipment", "folder": "FIRE FIGHTING EQUIPMENT", "icon": "🧯", "description": "Safety equipment and fire suppression systems" },
+    { "id": "flooring", "name": "Flooring", "folder": "FLOORING", "icon": "🟫", "description": "Flooring materials, tiles, wood, and surfaces" },
+    { "id": "ikea-like", "name": "IKEA Like", "folder": "IKEA LIKE", "icon": "📦", "description": "Modular and flat-pack furniture solutions" },
+    { "id": "lighting-and-lamps", "name": "Lighting and Lamps", "folder": "LIGHTING AND LAMPS", "icon": "💡", "description": "Lighting fixtures, lamps, and illumination design" },
+    { "id": "office-and-commercial-fragrances", "name": "Office and Commercial Fragrances", "folder": "OFFICE AND COMMERCIAL FRAGNANCES", "icon": "🌿", "description": "Scent solutions for commercial spaces" },
+    { "id": "office-cleaning-services", "name": "Office Cleaning Services", "folder": "OFFICE CLEANING SERVIES", "icon": "🧹", "description": "Professional cleaning and maintenance services" },
+    { "id": "perfume-for-bosses", "name": "Perfume for Bosses", "folder": "PERFUME FOR BOSSES", "icon": "👑", "description": "Executive and premium fragrance collections" },
+    { "id": "planner-kits", "name": "Planner Kits", "folder": "PLANNER KITS", "icon": "📋", "description": "Planning and organization toolkits" },
+    { "id": "plantation", "name": "Plantation", "folder": "PLANTATION", "icon": "🌱", "description": "Indoor plants and green wall solutions" },
+    { "id": "traditional-furniture", "name": "Traditional Furniture", "folder": "TRADITIONAL FURNITURE", "icon": "🪚", "description": "Handcrafted traditional and heritage furniture" },
+    { "id": "walls", "name": "Walls", "folder": "WALLS", "icon": "🧱", "description": "Wall finishes, treatments, and cladding" },
+    { "id": "windows", "name": "Windows", "folder": "WINDOWS", "icon": "🪟", "description": "Window systems, glazing, and treatments" }
+  ]
+}

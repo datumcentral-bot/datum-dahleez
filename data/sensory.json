@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Environmental Intelligence System - Sensory dimension options for environment design",
+  "dimensions": {
+    "vision": {
+      "id": "vision",
+      "label": "Vision",
+      "icon": "👁️",
+      "description": "Color, light quality, and visual harmony",
+      "options": [
+        {"id": "bright-daylight", "label": "Bright Daylight", "lux": "500-1000"},
+        {"id": "soft-glow", "label": "Soft Glow", "lux": "100-300"},
+        {"id": "warm-amber", "label": "Warm Amber", "lux": "50-150", "kelvin": "2700K"},
+        {"id": "cool-white", "label": "Cool White", "lux": "300-500", "kelvin": "4000K"},
+        {"id": "dramatic-contrast", "label": "Dramatic Contrast", "lux": "variable"},
+        {"id": "color-therapy", "label": "Color Therapy", "lux": "variable"},
+        {"id": "natural-spectrum", "label": "Natural Full Spectrum", "lux": "500-750", "kelvin": "6500K"},
+        {"id": "dim-ambient", "label": "Dim Ambient", "lux": "20-50"},
+        {"id": "task-focused", "label": "Task-Focused", "lux": "500-1000"},
+        {"id": "accent-lighting", "label": "Accent Lighting Only", "lux": "50-200"}
+      ]
+    },
+    "sound": {
+      "id": "sound",
+      "label": "Sound",
+      "icon": "🎧",
+      "description": "Acoustics, music, and sonic environment",
+      "options": [
+        {"id": "silence", "label": "Silence / Near-Silence", "db": "< 20"},
+        {"id": "library-quiet", "label": "Library Quiet", "db": "20-30"},
+        {"id": "conversation", "label": "Conversation Level", "db": "40-60"},
+        {"id": "background-music", "label": "Background Music", "db": "40-50"},
+        {"id": "immersive-audio", "label": "Immersive Audio", "db": "variable"},
+        {"id": "nature-sounds", "label": "Nature Soundscape", "db": "30-45"},
+        {"id": "white-noise", "label": "White Noise / Masking", "db": "40-50"},
+        {"id": "live-acoustics", "label": "Live Acoustics / Concert", "db": "80-100"},
+        {"id": "spatial-audio", "label": "3D Spatial Audio", "db": "variable"},
+        {"id": "speech-privacy", "label": "Speech Privacy", "db": "40-50"}
+      ]
+    },
+    "smell": {
+      "id": "smell",
+      "label": "Smell",
+      "icon": "👃",
+      "description": "Fragrance, aromatherapy, and olfactory experience",
+      "options": [
+        {"id": "unscented", "label": "Unscented / Neutral", "intensity": "none"},
+        {"id": "subtle-fresh", "label": "Subtle Fresh (Linen / Cotton)", "intensity": "low"},
+        {"id": "citrus-energizing", "label": "Citrus Energizing", "intensity": "medium"},
+        {"id": "lavender-calm", "label": "Lavender Calm", "intensity": "medium"},
+        {"id": "sand-wood", "label": "Sandalwood Grounding", "intensity": "medium"},
+        {"id": "pine-forest", "label": "Pine / Forest", "intensity": "medium"},
+        {"id": "floral-romantic", "label": "Floral Romantic", "intensity": "medium"},
+        {"id": "spicy-warm", "label": "Spicy Warm", "intensity": "high"},
+        {"id": "ocean-breeze", "label": "Ocean Breeze", "intensity": "low"},
+        {"id": "custom-blend", "label": "Custom Signature Blend", "intensity": "variable"}
+      ]
+    },
+    "touch": {
+      "id": "touch",
+      "label": "Touch",
+      "icon": "✋",
+      "description": "Texture, material feel, and tactile comfort",
+      "options": [
+        {"id": "smooth-cool", "label": "Smooth & Cool (Marble / Glass)", "material": "hard"},
+        {"id": "warm-wood", "label": "Warm Wood", "material": "organic"},
+        {"id": "soft-fabric", "label": "Soft Fabric (Velvet / Linen)", "material": "textile"},
+        {"id": "rough-natural", "label": "Rough Natural (Stone / Brick)", "material": "hard"},
+        {"id": "plush-carpet", "label": "Plush Carpet", "material": "textile"},
+        {"id": "cool-metal", "label": "Cool Metal", "material": "metal"},
+        {"id": "warm-leather", "label": "Warm Leather", "material": "organic"},
+        {"id": "crisp-cotton", "label": "Crisp Cotton", "material": "textile"},
+        {"id": "bamboo-natural", "label": "Bamboo Natural", "material": "organic"},
+        {"id": "silk-luxury", "label": "Silk Luxury", "material": "textile"}
+      ]
+    },
+    "temperature": {
+      "id": "temperature",
+      "label": "Temperature",
+      "icon": "🌡️",
+      "description": "Climate control and thermal comfort",
+      "options": [
+        {"id": "cool-refreshing", "label": "Cool & Refreshing (18-20°C)", "celsius": "18-20"},
+        {"id": "moderate-comfort", "label": "Moderate Comfort (21-23°C)", "celsius": "21-23"},
+        {"id": "warm-cozy", "label": "Warm & Cozy (24-26°C)", "celsius": "24-26"},
+        {"id": "hot-climate", "label": "Hot Climate (>30°C)", "celsius": ">30"},
+        {"id": "cold-climate", "label": "Cold Climate (<15°C)", "celsius": "<15"},
+        {"id": "radiant-heat", "label": "Radiant Heat (Underfloor)", "type": "radiant"},
+        {"id": "forced-air", "label": "Forced Air Conditioning", "type": "forced"},
+        {"id": "evaporative", "label": "Evaporative Cooling", "type": "evaporative"},
+        {"id": "smart-climate", "label": "Smart Climate Zone", "type": "smart"},
+        {"id": "natural-ventilation", "label": "Natural Ventilation", "type": "passive"}
+      ]
+    },
+    "airQuality": {
+      "id": "airQuality",
+      "label": "Air Quality",
+      "icon": "🌬️",
+      "description": "Freshness, filtration, and atmospheric health",
+      "options": [
+        {"id": "hepa-filtered", "label": "HEPA Filtered", "rating": "high"},
+        {"id": "activated-carbon", "label": "Activated Carbon", "rating": "high"},
+        {"id": "uv-purified", "label": "UV Purified", "rating": "high"},
+        {"id": "ventilated", "label": "Natural Ventilation", "rating": "medium"},
+        {"id": "air-purifier", "label": "Air Purifier Present", "rating": "medium"},
+        {"id": "dehumidified", "label": "Dehumidified", "rating": "medium"},
+        {"id": "humidified", "label": "Humidified", "rating": "medium"},
+        {"id": "aromatherapy", "label": "Aromatherapy Diffused", "rating": "low"},
+        {"id": "standard", "label": "Standard AC", "rating": "low"},
+        {"id": "scented-candles", "label": "Scented Candles / Incense", "rating": "low"}
+      ]
+    }
+  }
+}

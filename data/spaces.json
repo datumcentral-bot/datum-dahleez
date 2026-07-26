@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Environmental Intelligence System - Space taxonomy",
+  "categories": [
+    {
+      "id": "residential",
+      "name": "Residential",
+      "icon": "🏠",
+      "spaces": [
+        {"id": "home", "name": "Home", "aliases": ["House", "Bungalow", "Detached"]},
+        {"id": "apartment", "name": "Apartment", "aliases": ["Flat", "Condominium", "Condo"]},
+        {"id": "penthouse", "name": "Penthouse", "aliases": ["Sky Home", "Top Floor"]},
+        {"id": "villa", "name": "Villa", "aliases": ["Private Villa", "Standalone Villa"]},
+        {"id": "farmhouse", "name": "Farmhouse", "aliases": ["Rural Home", "Country House"]},
+        {"id": "townhouse", "name": "Townhouse", "aliases": ["Town Home", "Row House"]},
+        {"id": "duplex", "name": "Duplex", "aliases": ["Double Home", "Split Level"]},
+        {"id": "tiny-home", "name": "Tiny Home", "aliases": ["Small Home", "Micro Home"]},
+        {"id": "mansion", "name": "Mansion", "aliases": ["Large Estate", "Palace"]},
+        {"id": "serviced-apartment", "name": "Serviced Apartment", "aliases": ["Corporate Housing"]}
+      ]
+    },
+    {
+      "id": "bedroom",
+      "name": "Bedroom",
+      "icon": "🛏️",
+      "spaces": [
+        {"id": "master-bedroom", "name": "Master Bedroom", "aliases": ["Primary Bedroom", "Main Bedroom"]},
+        {"id": "childrens-bedroom", "name": "Children's Bedroom", "aliases": ["Kids Room", "Child Bedroom"]},
+        {"id": "teenagers-bedroom", "name": "Teenager's Bedroom", "aliases": ["Teen Room"]},
+        {"id": "guest-bedroom", "name": "Guest Bedroom", "aliases": ["Guest Room", "Spare Room"]},
+        {"id": "guest-suite", "name": "Guest Suite", "aliases": ["Suite"]},
+        {"id": "luxury-hotel-suite", "name": "Luxury Hotel Suite", "aliases": ["Presidential Suite"]},
+        {"id": "bridal-suite", "name": "Bridal Suite", "aliases": ["Honeymoon Suite"]},
+        {"id": "student-dormitory", "name": "Student Dormitory", "aliases": ["Dorm Room", "Hostel"]},
+        {"id": "retirement-home-room", "name": "Retirement Home Room", "aliases": ["Elderly Room", "Senior Living"]},
+        {"id": "nursery", "name": "Nursery", "aliases": ["Baby Room", "Infant Room"]},
+        {"id": "walk-in-wardrobe", "name": "Walk-in Wardrobe", "aliases": ["Dressing Room", "Closet"]},
+        {"id": "ensuite", "name": "Ensuite", "aliases": ["Attached Bathroom"]}
+      ]
+    },
+    {
+      "id": "living",
+      "name": "Living",
+      "icon": "🛋️",
+      "spaces": [
+        {"id": "living-room", "name": "Living Room", "aliases": ["Lounge", "Sitting Room", "Drawing Room"]},
+        {"id": "family-room", "name": "Family Room", "aliases": ["Family Lounge"]},
+        {"id": "media-room", "name": "Media Room", "aliases": ["Home Theater", "Cinema Room"]},
+        {"id": "home-theater", "name": "Home Theater", "aliases": ["Private Cinema", "Movie Room"]},
+        {"id": "reception", "name": "Reception", "aliases": ["Living Area", "Common Area"]}
+      ]
+    },
+    {
+      "id": "dining-kitchen",
+      "name": "Dining & Kitchen",
+      "icon": "🍽️",
+      "spaces": [
+        {"id": "dining-room", "name": "Dining Room", "aliases": ["Dining Area", "Eat-in Kitchen"]},
+        {"id": "kitchen", "name": "Kitchen", "aliases": ["Cook Kitchen", "Main Kitchen"]},
+        {"id": "outdoor-kitchen", "name": "Outdoor Kitchen", "aliases": ["BBQ Area", "Garden Kitchen"]},
+        {"id": "pantry", "name": "Pantry", "aliases": ["Storage Kitchen", "Larder"]},
+        {"id": "butlers-pantry", "name": "Butler's Pantry", "aliases": ["Service Pantry"]}
+      ]
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness",
+      "icon": "🧘",
+      "spaces": [
+        {"id": "bathroom", "name": "Bathroom", "aliases": ["Toilet", "Washroom", "Restroom"]},
+        {"id": "spa-bathroom", "name": "Spa Bathroom", "aliases": ["Luxury Bath", "Soaking Tub"]},
+        {"id": "gym", "name": "Gym", "aliases": ["Fitness Room", "Home Gym", "Exercise Room"]},
+        {"id": "meditation-room", "name": "Meditation Room", "aliases": ["Zen Room", "Mindfulness Room"]},
+        {"id": "prayer-room", "name": "Prayer Room", "aliases": ["Mosque", "Temple", "Church", "Place of Worship"]},
+        {"id": "wellness-room", "name": "Wellness Room", "aliases": ["Spa Room", "Recovery Room"]},
+        {"id": "sauna", "name": "Sauna", "aliases": ["Steam Room", "Heat Room"]},
+        {"id": "steam-room", "name": "Steam Room", "aliases": ["Steam Bath"]}
+      ]
+    },
+    {
+      "id": "work-study",
+      "name": "Work & Study",
+      "icon": "💼",
+      "spaces": [
+        {"id": "home-office", "name": "Home Office", "aliases": ["Study", "Work From Home Office"]},
+        {"id": "executive-office", "name": "Executive Office", "aliases": ["CEO Office", "Director Office"]},
+        {"id": "architecture-office", "name": "Architecture Office", "aliases": ["Design Studio", "Architecture Firm"]},
+        {"id": "software-engineering-office", "name": "Software Engineering Office", "aliases": ["Dev Office", "Tech Office", "Programming Office"]},
+        {"id": "engineering-lab", "name": "Engineering Laboratory", "aliases": ["Lab", "R&D Lab"]},
+        {"id": "library", "name": "Library", "aliases": ["Home Library", "Reading Room"]},
+        {"id": "study-room", "name": "Study Room", "aliases": ["Home Study"]},
+        {"id": "classroom", "name": "Classroom", "aliases": ["Teaching Room"]},
+        {"id": "university-lecture-hall", "name": "University Lecture Hall", "aliases": ["Lecture Hall", "Auditorium"]},
+        {"id": "kindergarten", "name": "Kindergarten", "aliases": ["Play School", "Pre-School"]},
+        {"id": "boardroom", "name": "Boardroom", "aliases": ["Conference Room", "Meeting Room"]},
+        {"id": "reception", "name": "Reception", "aliases": ["Front Desk", "Lobby"]},
+        {"id": "waiting-lounge", "name": "Waiting Lounge", "aliases": ["Waiting Area", "Lounge"]}
+      ]
+    },
+    {
+      "id": "creative-media",
+      "name": "Creative & Media",
+      "icon": "🎙️",
+      "spaces": [
+        {"id": "podcast-studio", "name": "Podcast Studio", "aliases": ["Podcast Room", "Recording Studio"]},
+        {"id": "streaming-studio", "name": "Streaming Studio", "aliases": ["Stream Room", "Live Stream"]},
+        {"id": "youtube-studio", "name": "YouTube Studio", "aliases": ["Content Studio", "Creator Space"]},
+        {"id": "music-production-studio", "name": "Music Production Studio", "aliases": ["Music Studio", "Recording Studio"]},
+        {"id": "photography-studio", "name": "Photography Studio", "aliases": ["Photo Studio", "Shoot Room"]},
+        {"id": "content-creator-studio", "name": "Content Creator Studio", "aliases": ["Creator Studio"]},
+        {"id": "art-studio", "name": "Art Studio", "aliases": ["Art Room", "Painting Studio"]},
+        {"id": "design-studio", "name": "Design Studio", "aliases": ["Creative Studio", "Design Office"]}
+      ]
+    },
+    {
+      "id": "hospitality",
+      "name": "Hospitality",
+      "icon": "🏨",
+      "spaces": [
+        {"id": "hotel-lobby", "name": "Hotel Lobby", "aliases": ["Lobby", "Reception Area"]},
+        {"id": "hotel-suite", "name": "Hotel Suite", "aliases": ["Guest Suite", "Hotel Room"]},
+        {"id": "restaurant", "name": "Restaurant", "aliases": ["Dining Restaurant", "Fine Dining"]},
+        {"id": "coffee-shop", "name": "Coffee Shop", "aliases": ["Cafe", "Coffee House"]},
+        {"id": "bakery", "name": "Bakery", "aliases": ["Bake Shop", "Pastry Shop"]},
+        {"id": "spa", "name": "Spa", "aliases": ["Wellness Spa", "Beauty Spa"]},
+        {"id": "salon", "name": "Salon", "aliases": ["Hair Salon", "Beauty Salon"]},
+        {"id": "wedding-hall", "name": "Wedding Hall", "aliases": ["Banquet Hall", "Marriage Hall"]},
+        {"id": "banquet-hall", "name": "Banquet Hall", "aliases": ["Event Hall", "Function Hall"]},
+        {"id": "event-hall", "name": "Event Hall", "aliases": ["Function Room", "Event Space"]},
+        {"id": "cocktail-bar", "name": "Cocktail Bar", "aliases": ["Bar", "Lounge Bar"]}
+      ]
+    },
+    {
+      "id": "retail-commercial",
+      "name": "Retail & Commercial",
+      "icon": "🏢",
+      "spaces": [
+        {"id": "retail-shop", "name": "Retail Shop", "aliases": ["Store", "Shop"]},
+        {"id": "luxury-boutique", "name": "Luxury Boutique", "aliases": ["High-End Store", "Designer Store"]},
+        {"id": "jewelry-store", "name": "Jewelry Store", "aliases": ["Jewellery Shop", "Gem Store"]},
+        {"id": "showroom", "name": "Showroom", "aliases": ["Display Room", "Product Showroom"]},
+        {"id": "exhibition-pavilion", "name": "Exhibition Pavilion", "aliases": ["Expo Hall", "Trade Show"]},
+        {"id": "pop-up-store", "name": "Pop-up Store", "aliases": ["Temporary Store", "Flash Retail"]},
+        {"id": "museum", "name": "Museum", "aliases": ["Gallery Museum", "Exhibit Space"]},
+        {"id": "gallery", "name": "Gallery", "aliases": ["Art Gallery", "Exhibition Space"]},
+        {"id": "airport-lounge", "name": "Airport Lounge", "aliases": ["VIP Lounge", "Airport VIP"]},
+        {"id": "corporate-hq", "name": "Corporate Headquarters", "aliases": ["HQ", "Head Office"]},
+        {"id": "waiting-area", "name": "Waiting Area", "aliases": ["Waiting Lounge", "Reception"]},
+        {"id": "conference-room", "name": "Conference Room", "aliases": ["Meeting Room", "Boardroom"]}
+      ]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare",
+      "icon": "🏥",
+      "spaces": [
+        {"id": "hospital-icu", "name": "Hospital ICU", "aliases": ["Intensive Care Unit", "Critical Care"]},
+        {"id": "operating-theatre", "name": "Operating Theatre", "aliases": ["Operating Room", "OR", "Surgery Room"]},
+        {"id": "recovery-ward", "name": "Recovery Ward", "aliases": ["Recovery Room", "Post-Op"]},
+        {"id": "mental-health-room", "name": "Mental Health Room", "aliases": ["Therapy Room", "Counseling Room"]},
+        {"id": "therapy-space", "name": "Therapy Space", "aliases": ["Treatment Room", "Therapy Office"]},
+        {"id": "dental-clinic", "name": "Dental Clinic", "aliases": ["Dental Office", "Dentist"]},
+        {"id": "waiting-lounge", "name": "Waiting Lounge", "aliases": ["Waiting Room", "Patient Lounge"]},
+        {"id": "examination-room", "name": "Examination Room", "aliases": ["Exam Room", "Consultation Room"]}
+      ]
+    },
+    {
+      "id": "industrial",
+      "name": "Industrial & Technical",
+      "icon": "🏭",
+      "spaces": [
+        {"id": "factory-office", "name": "Factory Office", "aliases": ["Industrial Office", "Plant Office"]},
+        {"id": "warehouse-office", "name": "Warehouse Office", "aliases": ["Warehouse Control", "Logistics Office"]},
+        {"id": "data-center", "name": "Data Center", "aliases": ["Server Room", "IT Infrastructure"]},
+        {"id": "security-control-room", "name": "Security Control Room", "aliases": ["Control Room", "Monitoring Room"]},
+        {"id": "control-room", "name": "Control Room", "aliases": ["Operations Center", "Command Center"]}
+      ]
+    },
+    {
+      "id": "entertainment",
+      "name": "Entertainment",
+      "icon": "🎬",
+      "spaces": [
+        {"id": "cinema", "name": "Cinema", "aliases": ["Movie Theater", "Private Cinema"]},
+        {"id": "gaming-lounge", "name": "Gaming Lounge", "aliases": ["Gaming Room", "Game Room"]},
+        {"id": "event-stage", "name": "Event Stage", "aliases": ["Performance Stage", "Concert Stage"]},
+        {"id": "broadcast-studio", "name": "Broadcast Studio", "aliases": ["TV Studio", "Media Studio"]},
+        {"id": "karaoke-room", "name": "Karaoke Room", "aliases": ["KTV", "Singing Room"]}
+      ]
+    },
+    {
+      "id": "outdoor",
+      "name": "Outdoor & Landscape",
+      "icon": "🌿",
+      "spaces": [
+        {"id": "garden", "name": "Garden", "aliases": ["Backyard", "Yard", "Courtyard"]},
+        {"id": "terrace", "name": "Terrace", "aliases": ["Patio", "Deck", "Veranda"]},
+        {"id": "balcony", "name": "Balcony", "aliases": ["Balcony Terrace"]},
+        {"id": "rooftop", "name": "Rooftop", "aliases": ["Roof Deck", "Rooftop Garden"]},
+        {"id": "pool-area", "name": "Pool Area", "aliases": ["Swimming Pool", "Pool Deck"]},
+        {"id": "outdoor-living", "name": "Outdoor Living", "aliases": ["Al Fresco", "Outdoor Lounge"]},
+        {"id": "garden-room", "name": "Garden Room", "aliases": ["Conservatory", "Sunroom"]},
+        {"id": "driveway", "name": "Driveway", "aliases": ["Garage Entry", "Parking"]},
+        {"id": "garage", "name": "Garage", "aliases": ["Carport", "Vehicle Storage"]}
+      ]
+    },
+    {
+      "id": "religious",
+      "name": "Religious & Spiritual",
+      "icon": "🕌",
+      "spaces": [
+        {"id": "prayer-hall", "name": "Prayer Hall", "aliases": ["Prayer Room", "Musalla"]},
+        {"id": "mosque", "name": "Mosque", "aliases": ["Masjid", "Islamic Center"]},
+        {"id": "church", "name": "Church", "aliases": ["Chapel", "Cathedral"]},
+        {"id": "temple", "name": "Temple", "aliases": ["Mandir", "Hindu Temple"]},
+        {"id": "gurdwara", "name": "Gurdwara", "aliases": ["Sikh Temple"]},
+        {"id": "meditation-hall", "name": "Meditation Hall", "aliases": ["Meditation Center", "Zen Hall"]},
+        {"id": "yoga-studio", "name": "Yoga Studio", "aliases": ["Yoga Room", "Wellness Studio"]}
+      ]
+    },
+    {
+      "id": "specialized",
+      "name": "Specialized",
+      "icon": "🔬",
+      "spaces": [
+        {"id": "laboratory", "name": "Laboratory", "aliases": ["Lab", "Research Lab", "Science Lab"]},
+        {"id": "clean-room", "name": "Clean Room", "aliases": ["Controlled Environment", "ISO Room"]},
+        {"id": "server-room", "name": "Server Room", "aliases": ["Data Center", "IT Room"]},
+        {"id": "recording-studio", "name": "Recording Studio", "aliases": ["Audio Studio", "Sound Studio"]},
+        {"id": "broadcast-control", "name": "Broadcast Control", "aliases": ["Control Room", "Broadcast Desk"]},
+        {"id": "archive", "name": "Archive", "aliases": ["Storage Archive", "Records Room"]},
+        {"id": "conservation-room", "name": "Conservation Room", "aliases": ["Preservation Room", "Museum Storage"]},
+        {"id": "vault", "name": "Vault", "aliases": ["Secure Vault", "Storage Vault"]}
+      ]
+    }
+  ]
+}

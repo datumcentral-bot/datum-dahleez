@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/champagne.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2024-10-29T10:25:15+00:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550186643803</id>
+    <published>2024-10-29T10:25:15+00:00</published>
+    <updated>2024-10-29T10:25:15+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-champagne-carbon-eb03"/>
+    <title>Datum Dahleez CHAMPAGNE CARBON EB03</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/c9_786d28de-c6c0-48cd-9b82-be1dbbf2e496.jpg?v=1742416345"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            320.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The EB03 cuvée is a 2013 vintage, which has initial scents of citrus, followed by aromas of spring flowers, then a growing intensity toward yellow citrus, toasty notes and aromatic herbs. On the palate it provides an initial intensity, followed by a creamier more velvety texture. The finish reveals hints of acidity. The grape variety is 100% Chardonnay Grand Cru, which will enhance a delicate recipe such as a scallop ceviche, a red tuna sashimi or a filet of Saint-Pierre with citrus fruits. The 750ml bottle is wrapped with Carbon Fiber. Packaging includes luxury box and free delivery all over Europe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>champagne</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550186643803</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">320.00</s:price>
+      <s:sku>EB03</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550185103707</id>
+    <published>2024-10-29T10:25:00+00:00</published>
+    <updated>2024-10-29T10:25:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-champagne-carbon-eb02"/>
+    <title>Datum Dahleez CHAMPAGNE CARBON EB02</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/c5_ee7fb0ca-d3d4-4a2a-8bfe-f6fe0a1ae029.jpg?v=1742416346"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            320.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The EB02 cuvée is a vintage blanc de blancs 2006 boasts robe and fine bubbles, before opening-up to a large aromatic pallet with acacia notes, hazelnuts and stone fruits. The grape variety is 100% Chardonnay Grand Cru, which can be tasted both for aperitive, during a gastronomic meal or a happy moment of life, with raw ham of Pata Negra or a delicious caviar, this cuvée pairs well with all occasions. The 750ml bottle is wrapped with Carbon Fiber. Packaging includes luxury box and free delivery all over Europe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>champagne</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550185103707</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">320.00</s:price>
+      <s:sku>EB02</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550183563611</id>
+    <published>2024-10-29T10:24:47+00:00</published>
+    <updated>2024-10-29T10:24:47+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-champagne-carbon-eb01"/>
+    <title>Datum Dahleez CHAMPAGNE CARBON EB01</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/c13_1_cc859739-9b84-4cf5-bcd1-3dcbb2072ad3.jpg?v=1742416347"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            320.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The EB01 champagne is a vintage 2002 champagne created from 90% Chardonnay and 10% Pinot Noir. Blossoming floral aromas in the glass and everlasting smoothness and roundness on your pallet. A full-bodied vintage with crispy essences waltzes with lace-like bubbles in infinite whirls. The champagne unfolds a horizon of delightful green fruits and nuts, amplified by a jolting note of salty-minerality. The 750ml bottle is wrapped with Carbon Fiber. Packaging includes luxury box and free delivery all over Europe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>champagne</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550183563611</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">320.00</s:price>
+      <s:sku>EB01</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

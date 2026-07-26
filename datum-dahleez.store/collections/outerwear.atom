@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/outerwear.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2025-04-02T12:14:21+01:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760575226203</id>
+    <published>2025-04-02T12:14:21+01:00</published>
+    <updated>2025-04-02T12:14:21+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/eb-gilet"/>
+    <title>EB GILET</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-eb-gilet-front.jpg?v=1761750496"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            160.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lightweight and elegant, this gilet is designed for seamless layering. Crafted from technical fabrics with a sleek finish, it features subtle branding and a streamlined silhouette. A versatile companion for transitional weather and refined casual looks.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>coat</s:tag>
+    <s:tag>essential</s:tag>
+    <s:tag>gilet</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>outerwear</s:tag>
+    <s:tag>overcoat</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>women</s:tag>
+    <s:tag>zip</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>XS</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK1S</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>S</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK0S</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>M</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK0M</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>L</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK0L</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>XL</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK1L</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>XXL</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK2L</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK3L</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760581189979</id>
+    <published>2025-04-02T12:14:10+01:00</published>
+    <updated>2025-04-02T12:14:10+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/eb-puffer-jacket"/>
+    <title>EB PUFFER JACKET</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-eb-puffer-jacket.jpg?v=1761750331"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            220.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The Datum Dahleez puffer jacket is crafted from high-performance materials for warmth without bulk. The elegant design is accented with subtle branding, offering both technical excellence and modern sophistication.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black</s:tag>
+    <s:tag>coat</s:tag>
+    <s:tag>essential</s:tag>
+    <s:tag>jacket</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>men</s:tag>
+    <s:tag>outerwear</s:tag>
+    <s:tag>overcoat</s:tag>
+    <s:tag>puffer</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>zip</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760581189979</id>
+      <title>XS</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU124U302BK1S</s:sku>
+      <s:grams>800</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760581189979</id>
+      <title>S</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU124U302BK0S</s:sku>
+      <s:grams>800</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760581189979</id>
+      <title>M</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU124U302BK0M</s:sku>
+      <s:grams>800</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760581189979</id>
+      <title>L</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU124U302BK0L</s:sku>
+      <s:grams>800</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760581189979</id>
+      <title>XL</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU124U302BK1L</s:sku>
+      <s:grams>800</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760581189979</id>
+      <title>XXL</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU124U302BK2L</s:sku>
+      <s:grams>800</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760581189979</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU124U302BK3L</s:sku>
+      <s:grams>800</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550202470747</id>
+    <published>2024-10-29T10:27:48+00:00</published>
+    <updated>2024-10-29T10:27:48+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-bolide-bomber-jacket-black"/>
+    <title>Datum Dahleez BOLIDE BOMBER JACKET BLACK</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-bolide-bomber-jacket-black-BU322M302BK-FR.jpg?v=1764251701"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            220.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">A staple piece in your collection, the double layered Bolide bomber jacket features striking emblems on the front, back and sides, <span>French Racing Blue sleeve cuffs and stylised custom zippers designed to evoke the look of high-performance racing apparel.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black/blue</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>bolide</s:tag>
+    <s:tag>bomber</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>coat</s:tag>
+    <s:tag>jacket</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>outerwear</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550202470747</id>
+      <title>XS</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU322M302BK1S</s:sku>
+      <s:grams>850</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550202470747</id>
+      <title>S</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU322M302BK0S</s:sku>
+      <s:grams>850</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550202470747</id>
+      <title>M</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU322M302BK0M</s:sku>
+      <s:grams>850</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550202470747</id>
+      <title>XL</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU322M302BK1L</s:sku>
+      <s:grams>850</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550202470747</id>
+      <title>XXL</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU322M302BK2L</s:sku>
+      <s:grams>850</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550202470747</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">220.00</s:price>
+      <s:sku>BU322M302BK3L</s:sku>
+      <s:grams>850</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550198505819</id>
+    <published>2024-10-29T10:27:14+00:00</published>
+    <updated>2024-10-29T10:27:14+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-heritage-jacket-four-pockets-blue"/>
+    <title>Datum Dahleez HERITAGE JACKET FOUR POCKETS BLUE</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-heritage-jacket-four-pockets-blue-BUCC22_0020_BU322M301BL-FR.jpg?v=1764251902"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            150.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">The Datum Dahleez Heritage Jacket epitomises luxury and performance and pays homage to Datum Dahleez's heritage and commitment to unparalleled craftsmanship.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>coat</s:tag>
+    <s:tag>four</s:tag>
+    <s:tag>heritage</s:tag>
+    <s:tag>jacket</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>outerwear</s:tag>
+    <s:tag>pockets</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550198505819</id>
+      <title>XS</title>
+      <s:price currency="EUR">150.00</s:price>
+      <s:sku>BU322M301BL1S</s:sku>
+      <s:grams>750</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550198505819</id>
+      <title>S</title>
+      <s:price currency="EUR">150.00</s:price>
+      <s:sku>BU322M301BL0S</s:sku>
+      <s:grams>750</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550198505819</id>
+      <title>M</title>
+      <s:price currency="EUR">150.00</s:price>
+      <s:sku>BU322M301BL0M</s:sku>
+      <s:grams>750</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550198505819</id>
+      <title>XL</title>
+      <s:price currency="EUR">150.00</s:price>
+      <s:sku>BU322M301BL1L</s:sku>
+      <s:grams>750</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550198505819</id>
+      <title>XXL</title>
+      <s:price currency="EUR">150.00</s:price>
+      <s:sku>BU322M301BL2L</s:sku>
+      <s:grams>750</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550198505819</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">150.00</s:price>
+      <s:sku>BU322M301BL3L</s:sku>
+      <s:grams>750</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550198505819</id>
+      <title>L</title>
+      <s:price currency="EUR">150.00</s:price>
+      <s:sku>BU322M301BL0L</s:sku>
+      <s:grams>750</s:grams>
+    </s:variant>
+  </entry>
+</feed>

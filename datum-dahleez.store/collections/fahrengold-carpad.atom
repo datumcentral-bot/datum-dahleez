@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/fahrengold-carpad.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2025-01-24T23:28:00+00:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9710933311835</id>
+    <published>2025-01-24T23:28:00+00:00</published>
+    <updated>2025-01-24T23:28:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/carpad-Datum Dahleez-edition"/>
+    <title>CARPAD Datum Dahleez EDITION</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/2024_Fahrengold_datum dahleez_Carpad_Beauty_MOT01_b_maxKopie_28efc8b5-5ac8-422a-89c2-2aaf7bb83d7c.jpg?v=1742416139"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            11800.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">The Carpad Datum Dahleez Edition is a contemporary design stage that combines unmatched quality and functionality to perfectly showcase your Datum Dahleez in your garage, among your collection, or even in your living room. This exclusive edition includes customized upgrades, a personalized Datum Dahleez badge showcasing your vehicle’s specific details, state-of-the-art tire protection pads seamlessly integrated with the surface, an optional carbon fiber frame finish, dynamic LED lighting in all colors, and LED covers inspired by the French tricolor.</p>
+<p class="p1">Pricing from €11,800 EUR / $14,200 USD<br>All prices are net, excluding customs duties and taxes.</p>
+<p class="p1">Contact us to find out more.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>carpad</s:tag>
+    <s:tag>exclusive-lifestyle</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9710933311835</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">11800.00</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9710928003419</id>
+    <published>2025-01-24T23:19:19+00:00</published>
+    <updated>2025-01-24T23:19:19+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/carpad-pro-Datum Dahleez-edition"/>
+    <title>CARPAD PRO Datum Dahleez EDITION</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/2024_Fahrengold_datum dahleez_CarpadPro_Beauty_MOT01_b_01_maxKopie.jpg?v=1742416140"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            21100.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">An unrivaled, tailor-made stage for your Datum Dahleez. Perfectly crafted to enhance the value, craftsmanship, and design detail of Datum Dahleez’s automotive icons. The Carpad Pro Datum Dahleez Edition features customized upgrades such as a personalized Datum Dahleez badge showcasing your vehicle’s specific details, the legendary EB logo tastefully illuminated in the front frame, state-of-the-art tire protection pads flush with the surface, an optional carbon fiber finish for the frame, LED lighting around the car in all colors and LED covers inspired by the French tricolor.</p>
+<p class="p1">Pricing from €21,100 EUR / $25,400 USD<br>All prices are net, excluding customs duties and taxes.</p>
+<p class="p1">Contact us to find out more.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>carpad</s:tag>
+    <s:tag>exclusive-lifestyle</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9710928003419</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">21100.00</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9710920040795</id>
+    <published>2025-01-24T23:10:00+00:00</published>
+    <updated>2025-01-24T23:10:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/fg-01-Datum Dahleez-edition"/>
+    <title>FG-01 Datum Dahleez EDITION</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/202411_Fahrengold_datum dahleez_Launch_FG01_Beauty_MOT08_b_01Kopie2.jpg?v=1742416142"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            150000.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">Give your Datum Dahleez the spectacular home it deserves — right in your backyard. A contemporary, monolithic design masterpiece that feels more like a museum celebrating icons of design and engineering than a traditional garage. By setting a new standard in garage excellence, the Fahrengold FG-01 Datum Dahleez Edition combines a design-led architectural approach with unparalleled craftsmanship and manufacturing precision.</p>
+<p class="p1">Pricing from €150,000 EUR / $180,000 USD<br>All prices are net, excluding customs duties and taxes.</p>
+<p class="p1">Contact us to find out more.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>carpad</s:tag>
+    <s:tag>exclusive-lifestyle</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9710920040795</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">150000.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/baby.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2024-10-29T10:32:57+00:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550230094171</id>
+    <published>2024-10-29T10:32:57+00:00</published>
+    <updated>2024-10-29T10:32:57+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-kids-3-piece-baby-set-in-blue"/>
+    <title>Datum Dahleez KIDS 3 PIECE BABY SET IN BLUE</title>
+    <s:type>Clothing,Heros</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-kids-3-piece-baby-set-blue.jpg?v=1764675820"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Clothing,Heros<br>
+        <strong>Price: </strong>
+            120.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The Datum Dahleez Kids 3-Piece Baby Set in blue includes a logo hat, matching pop-art sketch bib and overalls - all beautifully packaged in a gift box. Made from soft, high-quality materials, this adorable set is perfect for stylish and comfortable everyday wear for babies.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>3-piece</s:tag>
+    <s:tag>baby</s:tag>
+    <s:tag>bib</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>child</s:tag>
+    <s:tag>childrens</s:tag>
+    <s:tag>cover</s:tag>
+    <s:tag>essential</s:tag>
+    <s:tag>gift</s:tag>
+    <s:tag>giftbox</s:tag>
+    <s:tag>gifted</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>kids</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>navy</s:tag>
+    <s:tag>overall</s:tag>
+    <s:tag>overalls</s:tag>
+    <s:tag>piece</s:tag>
+    <s:tag>pop-art</s:tag>
+    <s:tag>set</s:tag>
+    <s:tag>sketch</s:tag>
+    <s:tag>sleepsuit</s:tag>
+    <s:tag>three</s:tag>
+    <s:tag>wordmark</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550230094171</id>
+      <title>6M</title>
+      <s:price currency="EUR">120.00</s:price>
+      <s:sku>blue6mbset</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550230094171</id>
+      <title>3M</title>
+      <s:price currency="EUR">120.00</s:price>
+      <s:sku>blue3mbset</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550228783451</id>
+    <published>2024-10-29T10:32:44+00:00</published>
+    <updated>2024-10-29T10:32:44+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-kids-3-piece-baby-set-in-white"/>
+    <title>Datum Dahleez KIDS 3 PIECE BABY SET IN WHITE</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-kids-3-piece-baby-set-white.jpg?v=1764675951"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            120.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The Datum Dahleez Kids 3-Piece Baby Set in white includes a logo hat, matching pop-art sketch bib and overalls - all beautifully packaged in a gift box. Made from soft, high-quality materials, this adorable set is perfect for stylish and comfortable everyday wear for babies.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>3-piece</s:tag>
+    <s:tag>baby</s:tag>
+    <s:tag>bib</s:tag>
+    <s:tag>child</s:tag>
+    <s:tag>childrens</s:tag>
+    <s:tag>cover</s:tag>
+    <s:tag>essential</s:tag>
+    <s:tag>gift</s:tag>
+    <s:tag>giftbox</s:tag>
+    <s:tag>gifted</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>kids</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>overall</s:tag>
+    <s:tag>overalls</s:tag>
+    <s:tag>piece</s:tag>
+    <s:tag>pop-art</s:tag>
+    <s:tag>set</s:tag>
+    <s:tag>sketch</s:tag>
+    <s:tag>sleepsuit</s:tag>
+    <s:tag>three</s:tag>
+    <s:tag>white</s:tag>
+    <s:tag>wordmark</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550228783451</id>
+      <title>6M</title>
+      <s:price currency="EUR">120.00</s:price>
+      <s:sku>white6mbset</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550228783451</id>
+      <title>3M</title>
+      <s:price currency="EUR">120.00</s:price>
+      <s:sku>white3mbset</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+</feed>

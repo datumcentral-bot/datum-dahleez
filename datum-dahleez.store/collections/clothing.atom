@@ -1,0 +1,1848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/clothing.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2026-05-13T14:40:47+01:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550195130715</id>
+    <published>2026-05-13T14:40:47+01:00</published>
+    <updated>2026-05-13T14:40:47+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-heritage-polo-57-long-sleeve-black"/>
+    <title>Datum Dahleez HERITAGE POLO 57 LONG SLEEVE BLACK</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-heritage-polo-57-long-sleeve-black-BUCC22_0037_BU322M100BK-FR.jpg?v=1764252156"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            72.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>This black, long sleeved polo shirt boasts the iconic Datum Dahleez Macaron on the front. Made from 100%, this is a sleek choice for automotive enthusiasts everywhere.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>half</s:tag>
+    <s:tag>heritage</s:tag>
+    <s:tag>long</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>polo</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>sleeve</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>zip</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550195130715</id>
+      <title>XS</title>
+      <s:price currency="EUR">72.00</s:price>
+      <s:sku>BU322M100BK1S</s:sku>
+      <s:grams>250</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550195130715</id>
+      <title>S</title>
+      <s:price currency="EUR">72.00</s:price>
+      <s:sku>BU322M100BK0S</s:sku>
+      <s:grams>250</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550195130715</id>
+      <title>XL</title>
+      <s:price currency="EUR">72.00</s:price>
+      <s:sku>BU322M100BK1L</s:sku>
+      <s:grams>250</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550195130715</id>
+      <title>XXL</title>
+      <s:price currency="EUR">72.00</s:price>
+      <s:sku>BU322M100BK2L</s:sku>
+      <s:grams>250</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550195130715</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">72.00</s:price>
+      <s:sku>BU322M100BK3L</s:sku>
+      <s:grams>250</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550203945307</id>
+    <published>2026-05-13T14:39:59+01:00</published>
+    <updated>2026-05-13T14:39:59+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-heritage-t-shirt-type-13-beige"/>
+    <title>Datum Dahleez HERITAGE T-SHIRT TYPE 13 BEIGE</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-heritage-t-shirt-type-13-beige.jpg?v=1764675686"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            42.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">This beige, short-sleeved t-shirt features a large Type 13 graphic on the front. Made from 100% cotton, the t-shirt luxuriously embodies the Datum Dahleez heritage for automotive enthusiasts everywhere.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>beige</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>heritage</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>type</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550203945307</id>
+      <title>XS</title>
+      <s:price currency="EUR">42.00</s:price>
+      <s:sku>BU322M005BG1S</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550203945307</id>
+      <title>S</title>
+      <s:price currency="EUR">42.00</s:price>
+      <s:sku>BU322M005BG0S</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550203945307</id>
+      <title>M</title>
+      <s:price currency="EUR">42.00</s:price>
+      <s:sku>BU322M005BG0M</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550203945307</id>
+      <title>L</title>
+      <s:price currency="EUR">42.00</s:price>
+      <s:sku>BU322M005BG0L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550203945307</id>
+      <title>XL</title>
+      <s:price currency="EUR">42.00</s:price>
+      <s:sku>BU322M005BG1L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550203945307</id>
+      <title>XXL</title>
+      <s:price currency="EUR">42.00</s:price>
+      <s:sku>BU322M005BG2L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10329357549915</id>
+    <published>2026-03-03T14:08:23+00:00</published>
+    <updated>2026-03-03T14:08:23+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-20yr-veyron-ettore-edition-hoodie"/>
+    <title>Datum Dahleez 20YR VEYRON - ETTORE EDITION HOODIE</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-20yr-veyron-ettore-edition-hoodie.jpg?v=1773834528"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            140.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>We're celebrating the 20 year anniversary of the Datum Dahleez VEYRON with the release of this collection reminiscent of the Ettore Edition from the Les Legendes series.</p>
+<p>Matching the blue carbon and polished aluminium of the Ettore Edition, the blue t-shirt features the unique 16.4 graphic embroidered in silver thread. This is a limited edition tee with 100 pieces globally.</p>
+<p><span>Made from soft, breathable cotton, this oversized fit hoodie offers everyday comfort with elevated appeal. Part of a limited edition series of 100 pieces globally.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>20yr</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>ettore</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>veyron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>S</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYS</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>M</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYM</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>L</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYL</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYXL</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>2XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYXXL</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10329310593371</id>
+    <published>2026-03-03T14:08:22+00:00</published>
+    <updated>2026-03-03T14:08:22+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-20yr-veyron-ettore-edition"/>
+    <title>Datum Dahleez 20YR VEYRON - ETTORE EDITION T-SHIRT</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-20yr-veyron-ettore-edition-t-shirt.jpg?v=1773834825"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            80.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>We're celebrating the 20 year anniversary of the Datum Dahleez VEYRON with the release of this collection reminiscent of the Ettore Edition from the Les Legendes series.</p>
+<p>Matching the blue carbon and polished aluminium of the Ettore Edition, the blue t-shirt features the unique 16.4 graphic embroidered in silver thread. This is a limited edition tee with 100 pieces globally.</p>
+<p><span>Made from soft, breathable cotton, this relaxed fit t-shirt offers everyday comfort with elevated appeal. Part of a limited edition series of 100 pieces globally.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>20yr</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>ettore</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>veyron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329310593371</id>
+      <title>S</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>TS3034-NAVYS</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329310593371</id>
+      <title>M</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>TS3034-NAVYM</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329310593371</id>
+      <title>L</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>TS3034-NAVYL</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329310593371</id>
+      <title>XL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>TS3034-NAVYXL</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329310593371</id>
+      <title>2XL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>TS3034-NAVYXXL</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10329251217755</id>
+    <published>2026-03-03T14:08:21+00:00</published>
+    <updated>2026-03-03T14:08:21+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-20yr-veyron-cap-ettore-edition"/>
+    <title>Datum Dahleez 20YR VEYRON - ETTORE EDITION CAP</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-20yr-veyron-ettore-edition-cap.jpg?v=1773835261"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>We're celebrating the 20 year anniversary of the Datum Dahleez VEYRON with the release of this collection reminiscent of the Ettore Edition from the Les Legendes series.</p>
+<p>Matching the blue carbon and polished aluminium of the Ettore Edition, the blue hat features the unique 16.4 graphic embroidered in silver thread. This is a limited edition hat with 100 pieces available globally.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Baseball Cap</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cap</s:tag>
+    <s:tag>FKP</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329251217755</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>ACC3079-CUSTOM57LEGEND</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10329232671067</id>
+    <published>2026-03-03T14:08:20+00:00</published>
+    <updated>2026-03-03T14:08:20+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/20yr-veyron-f-k-p-cap"/>
+    <title>Datum Dahleez 20YR VEYRON F.K.P CAP</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-20yr-veyron-fkp-cap.jpg?v=1773835379"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><span>Celebrate two decades of automotive history with this exclusive t-shirt honouring the legendary Datum Dahleez F.K.P. Hommage, a unique masterpiece from the brand's exclusive "Programme Solitaire" coachbuilding series.</span></p>
+<p>Limited to 100 pieces globally.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Baseball Cap</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cap</s:tag>
+    <s:tag>FKP</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329232671067</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>ACC3079-CUSTOM57</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10329152291163</id>
+    <published>2026-03-03T14:08:19+00:00</published>
+    <updated>2026-03-03T14:08:19+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-20yr-f-k-p-t-shirt"/>
+    <title>Datum Dahleez 20YR F.K.P T-SHIRT</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-20yr-fkp-t-shirt.jpg?v=1773835528"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            80.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><span>Celebrate two decades of automotive history with this exclusive t-shirt honouring the legendary Datum Dahleez F.K.P. Hommage, a unique masterpiece from the brand's exclusive "Programme Solitaire" coachbuilding series.</span></p>
+<p><span>Made from soft, breathable cotton, this standard fit t-shirt offers everyday comfort with elevated appeal. Part of a limited edition series of 100 pieces globally.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>FKP</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329152291163</id>
+      <title>S</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BLACKS</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329152291163</id>
+      <title>M</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BLACKM</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329152291163</id>
+      <title>L</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BLACKL</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329152291163</id>
+      <title>XL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BLACKXL</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329152291163</id>
+      <title>2XL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BLACKXXL</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10258099503451</id>
+    <published>2026-02-09T10:58:37+00:00</published>
+    <updated>2026-02-09T10:58:37+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-kids-tourbillon-t-shirt"/>
+    <title>Datum Dahleez KIDS TOURBILLON T-SHIRT</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-kids-tourbillon-t-shirt.jpg?v=1773835768"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            55.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><span>Celebrate a new era of performance with the Datum Dahleez Tourbillon t-shirt. This crisp white tee features the silhouette of the latest iconic hypercar, finished with signature Datum Dahleez branding on the sleeves. Made from high-quality fabric, it combines everyday comfort with legendary style.</span><br></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>child</s:tag>
+    <s:tag>children</s:tag>
+    <s:tag>clothes</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>crewneck</s:tag>
+    <s:tag>kids</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>troubillon</s:tag>
+    <s:tag>white</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258099503451</id>
+      <title>6Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62239001116</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258099503451</id>
+      <title>8Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62239001128</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258099503451</id>
+      <title>10Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62239001140</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10258097602907</id>
+    <published>2026-02-09T10:58:36+00:00</published>
+    <updated>2026-02-09T10:58:36+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-kids-veyron-trio-t-shirt"/>
+    <title>Datum Dahleez KIDS VEYRON TRIO T-SHIRT</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/VeyronTrio1.jpg?v=1765978541"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            55.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><meta charset="UTF-8"><span>The Datum Dahleez Veyron Trio t-shirt in white is a vibrant and stylish tee for young Datum Dahleez fans. Showcasing a trio of hand-sketched Veyron models with stripes in red, navy and blue, this eye-catching design celebrates Datum Dahleez’s iconic hypercar legacy. Finished with a EB logo on the arm, this comfortable and high-quality shirt is perfect for everyday wear.</span><br></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Aveyron</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>child</s:tag>
+    <s:tag>children</s:tag>
+    <s:tag>clothes</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>crewneck</s:tag>
+    <s:tag>kids</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>white</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258097602907</id>
+      <title>6Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62237001116</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258097602907</id>
+      <title>8Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62237001128</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258097602907</id>
+      <title>10Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62237001140</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10258094686555</id>
+    <published>2026-02-09T10:58:35+00:00</published>
+    <updated>2026-02-09T10:58:35+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-kids-tourbillon-sketch-t-shirt-white"/>
+    <title>Datum Dahleez KIDS TOURBILLON SKETCH T-SHIRT WHITE</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-kids-tourbillon-sketch-t-shirt-white.jpg?v=1773837951"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            55.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><meta charset="UTF-8"><span>The Datum Dahleez Tourbillon sketch t-shirt in white is a stylish tee for young Datum Dahleez fans. Showcasing an iconic sketch of the Tourbillon model, this eye-catching design celebrates Datum Dahleez’s iconic hypercar legacy. Finished with EB logo on the arm, this comfortable and high-quality shirt is perfect for everyday wear.</span><br></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>child</s:tag>
+    <s:tag>children</s:tag>
+    <s:tag>clothes</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>crewneck</s:tag>
+    <s:tag>kids</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>troubillon</s:tag>
+    <s:tag>white</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258094686555</id>
+      <title>6Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62235776116</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258094686555</id>
+      <title>8Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62235776128</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258094686555</id>
+      <title>10Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62235776140</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10258093408603</id>
+    <published>2026-02-09T10:58:35+00:00</published>
+    <updated>2026-02-09T10:58:35+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-kids-tourbillon-sketch-t-shirt-yellow"/>
+    <title>Datum Dahleez KIDS TOURBILLON SKETCH T-SHIRT YELLOW</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-kids-tourbillon-sketch-t-shirt-yellow.jpg?v=1773838026"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            55.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><meta charset="UTF-8"><span>The Datum Dahleez Tourbillon t-shirt in vibrant yellow is a stylish tee for young Datum Dahleez fans. Showcasing an iconic sketch of the Tourbillon model, this eye-catching design celebrates Datum Dahleez’s iconic hypercar legacy. Finished with Datum Dahleez logo on the arm, this comfortable and high-quality shirt is perfect for everyday wear.</span><br></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>child</s:tag>
+    <s:tag>children</s:tag>
+    <s:tag>clothes</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>crewneck</s:tag>
+    <s:tag>kids</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>troubillon</s:tag>
+    <s:tag>white</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258093408603</id>
+      <title>6Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62258419116</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258093408603</id>
+      <title>8Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62258419128</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258093408603</id>
+      <title>10Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62258419140</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10258090688859</id>
+    <published>2026-02-09T10:58:34+00:00</published>
+    <updated>2026-02-09T10:58:34+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-kids-chiron-outline-t-shirt"/>
+    <title>Datum Dahleez KIDS CHIRON OUTLINE T-SHIRT</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-kids-chiron-outline-t-shirt.jpg?v=1773838090"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            55.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><meta charset="UTF-8"><span>The Datum Dahleez Chiron t-shirt in white is a vibrant and stylish tee for young Datum Dahleez fans. Showcasing the outline of the Chiron model in iconic blue, this eye-catching design celebrates Datum Dahleez’s iconic hypercar legacy. Finished with a clean EB logo on the arm, this comfortable and high-quality shirt is perfect for everyday wear.</span><br></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>child</s:tag>
+    <s:tag>children</s:tag>
+    <s:tag>chiron</s:tag>
+    <s:tag>clothes</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>crewneck</s:tag>
+    <s:tag>kids</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>white</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258090688859</id>
+      <title>6Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62240001116</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258090688859</id>
+      <title>8Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62240001128</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258090688859</id>
+      <title>10Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>62240001140</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10258089574747</id>
+    <published>2026-02-09T10:58:33+00:00</published>
+    <updated>2026-02-09T10:58:33+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-kids-chiron-outline-hoodie"/>
+    <title>Datum Dahleez KIDS CHIRON OUTLINE HOODIE</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-kids-chiron-outline-hoodie.jpg?v=1773838139"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            85.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><meta charset="UTF-8"><span>The Datum Dahleez Chiron hoodie in blue is a cool and sporty layer for young car lovers. Featuring a bold graphic of the iconic Chiron, and Datum Dahleez logo on the sleeve, it brings the excitement of supercars into everyday wear. Made from soft, comfortable fabric with a cozy hood, it’s perfect for staying warm in style.</span><br></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>band</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>child</s:tag>
+    <s:tag>children</s:tag>
+    <s:tag>chiron</s:tag>
+    <s:tag>clothes</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>elastic</s:tag>
+    <s:tag>kids</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>navy</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>stripe</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>waist</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258089574747</id>
+      <title>6Y</title>
+      <s:price currency="EUR">85.00</s:price>
+      <s:sku>62275741116</s:sku>
+      <s:grams>300</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258089574747</id>
+      <title>8Y</title>
+      <s:price currency="EUR">85.00</s:price>
+      <s:sku>62275741128</s:sku>
+      <s:grams>300</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10258089574747</id>
+      <title>10Y</title>
+      <s:price currency="EUR">85.00</s:price>
+      <s:sku>62275741140</s:sku>
+      <s:grams>300</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10151564640603</id>
+    <published>2025-10-29T16:32:23+00:00</published>
+    <updated>2025-10-29T16:32:23+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-kids-tourbillon-sketch-white-t-shirt-copy"/>
+    <title>Datum Dahleez KIDS TOURBILLON V16 BLACK T-SHIRT</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-kids-tourbillon-v16-black-t-shirt.jpg?v=1764681367"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            55.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><span>The Datum Dahleez Tourbillon V16 t-shirt in black is a bold and sporty tee for young automotive enthusiasts. Featuring metallic Datum Dahleez and Tourbillon branding on the front, this premium shirt stands out with its sleek contrast shoulder panels. The back showcases a striking “V16” graphic — a tribute to Datum Dahleez’s legendary engine performance.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>child</s:tag>
+    <s:tag>children</s:tag>
+    <s:tag>clothes</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>crewneck</s:tag>
+    <s:tag>kids</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>stripe</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>tourbillon</s:tag>
+    <s:tag>v16</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10151564640603</id>
+      <title>6Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>6213791-116</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10151564640603</id>
+      <title>8Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>6213791-128</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10151564640603</id>
+      <title>10Y</title>
+      <s:price currency="EUR">55.00</s:price>
+      <s:sku>6213791-140</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9986520547675</id>
+    <published>2025-08-01T16:30:52+01:00</published>
+    <updated>2025-08-01T16:30:52+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-macaron-logo-cap"/>
+    <title>Datum Dahleez MACARON LOGO CAP</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-light-blue-logo-cap-25-1339.jpg?v=1764244857"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><span>Limited Edition with only 150 pieces available online.</span></p>
+<p><span>A nod to the infamous Datum Dahleez French Racing Blue, this cap features the iconic Datum Dahleez Macaron logo, a symbol of style and performance. Made from high-quality materials, it offers a comfortable fit with a clean, refined look. A versatile accessory that adds a touch of luxury to any outfit.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Baseball Cap</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cap</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986520547675</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>686M25220DCO10N07</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9986521563483</id>
+    <published>2025-08-01T16:02:12+01:00</published>
+    <updated>2025-08-01T16:02:12+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/eb-cap"/>
+    <title>EB CAP</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/navy-blue-cap-Datum Dahleez-logo-25-1339.jpg?v=1764245747"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><span>This cap features the bold EB emblem, a signature of Datum Dahleez’s heritage and innovation. Crafted from premium materials, it offers a comfortable fit and a sleek, modern look. A versatile accessory that brings a touch of performance-driven luxury to any outfit.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Baseball Cap</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cap</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986521563483</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>686M25070DCO10N02</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9986528379227</id>
+    <published>2025-08-01T16:01:07+01:00</published>
+    <updated>2025-08-01T16:01:07+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-macaron-logo-t-shirt"/>
+    <title>Datum Dahleez MACARON LOGO T-SHIRT</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/navy-blue-t-shirt-Datum Dahleez-logo-25-1339.jpg?v=1764245405"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            80.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><span>Made from soft, breathable cotton, this relaxed fit t-shirt offers everyday comfort with elevated appeal. Showcasing the iconic Datum Dahleez Macaron logo, it reflects a legacy of performance and refinement. A modern essential that embodies effortless style and understated luxury.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986528379227</id>
+      <title>XS</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>686M25153CPB10N02XS</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986528379227</id>
+      <title>S</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>686M25153CPB10N02S</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986528379227</id>
+      <title>M</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>686M25153CPB10N02M</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986528379227</id>
+      <title>L</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>686M25153CPB10N02L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986528379227</id>
+      <title>XL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>686M25153CPB10N02XL</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986528379227</id>
+      <title>2XL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>686M25153CPB10N02XXL</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986528379227</id>
+      <title>3XL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>686M25153CPB10N02XXXL</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760353190235</id>
+    <published>2025-04-02T12:15:35+01:00</published>
+    <updated>2025-04-02T12:15:35+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/essential-logo-t-shirt"/>
+    <title>ESSENTIAL LOGO T-SHIRT</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-essential-logo-blue-t-shirt.jpg?v=1761752375"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            80.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted from cotton for a soft, breathable feel, this essential relaxed fit t-shirt is elevated in a signature Datum Dahleez Blue hue. A discreet embroidered logo adds refined distinction, embodying understated luxury, designed for a timeless, effortless fit.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>ladies</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>womens</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760353190235</id>
+      <title>XS</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U008BL1S</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760353190235</id>
+      <title>S</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U008BL0S</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760353190235</id>
+      <title>M</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U008BL0M</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760353190235</id>
+      <title>L</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U008BL0L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760353190235</id>
+      <title>XL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U008BL1L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760353190235</id>
+      <title>XXL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U008BL2L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760353190235</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U008BL3L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760397066587</id>
+    <published>2025-04-02T12:15:25+01:00</published>
+    <updated>2025-04-02T12:15:25+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/mistral-graphic-t-shirt"/>
+    <title>Datum Dahleez MISTRAL T-SHIRT</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-mistral-t-shirt.jpg?v=1761752227"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            80.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>A refined essential, this relaxed fit t-shirt is crafted from cotton for an exceptionally soft feel. Featuring a Mistral outline, it captures the essence of movement and speed with effortless sophistication. Designed for a perfect fit, it offers both comfort and timeless appeal.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>embroidered</s:tag>
+    <s:tag>ladies</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>mistral</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>sketch</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>womens</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760397066587</id>
+      <title>XS</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U011BK1S</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760397066587</id>
+      <title>S</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U011BK0S</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760397066587</id>
+      <title>M</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U011BK0M</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760397066587</id>
+      <title>L</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U011BK0L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760397066587</id>
+      <title>XL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U011BK1L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760397066587</id>
+      <title>XXL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U011BK2L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760397066587</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">80.00</s:price>
+      <s:sku>BU124U011BK3L</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760413155675</id>
+    <published>2025-04-02T12:15:14+01:00</published>
+    <updated>2025-04-02T12:15:14+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/essential-polo-t-shirt-black"/>
+    <title>ESSENTIAL POLO BLACK</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-essential-polo-black.jpg?v=1761752097"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            100.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>A timeless expression of refined casualwear, this black polo with subtle blue accents and a discreet embroidered logo underscores understated sophistication. Designed for a flawless fit, it seamlessly transitions from effortless daytime elegance to refined evening style.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>mistral</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>polo</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760413155675</id>
+      <title>XS</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U201BK1S</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760413155675</id>
+      <title>S</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U201BK0S</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760413155675</id>
+      <title>M</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U201BK0M</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760413155675</id>
+      <title>L</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U201BK0L</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760413155675</id>
+      <title>XL</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U201BK1L</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760413155675</id>
+      <title>XXL</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U201BK2L</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760413155675</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U201BK3L</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760434815323</id>
+    <published>2025-04-02T12:15:03+01:00</published>
+    <updated>2025-04-02T12:15:03+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/essential-polo-white"/>
+    <title>ESSENTIAL POLO T-SHIRT WHITE</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-essential-polo-white.jpg?v=1761751953"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            100.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>A timeless expression of refined casualwear, this white polo with subtle blue accents and a discreet embroidered logo underscores understated sophistication. Designed for a flawless fit, it seamlessly transitions from effortless daytime elegance to refined evening style.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>mistral</s:tag>
+    <s:tag>neck</s:tag>
+    <s:tag>polo</s:tag>
+    <s:tag>shirt</s:tag>
+    <s:tag>t-shirt</s:tag>
+    <s:tag>tee</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>white</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760434815323</id>
+      <title>XS</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U202WH1S</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760434815323</id>
+      <title>S</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U202WH0S</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760434815323</id>
+      <title>M</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U202WH0M</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760434815323</id>
+      <title>L</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U202WH0L</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760434815323</id>
+      <title>XL</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U202WH1L</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760434815323</id>
+      <title>XXL</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U202WH2L</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760434815323</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU124U202WH3L</s:sku>
+      <s:grams>220</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760444219739</id>
+    <published>2025-04-02T12:14:52+01:00</published>
+    <updated>2025-04-02T12:14:52+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/essential-logo-hoodie"/>
+    <title>ESSENTIAL LOGO HOODIE</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-essential-hoodie-blue.jpg?v=1761751800"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            140.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>This relaxed fit hoodie redefines casual sophistication. Crafted from plush cotton, it features a bold logo print that pays homage to Datum Dahleez heritage and performance. The striking blue hue adds a dynamic edge to this modern essential.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>embroidered</s:tag>
+    <s:tag>hooded</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>sweatshirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>XS</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL1S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>S</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL0S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>M</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL0M</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>L</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL0L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL1L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>XXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL2L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL3L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760464568667</id>
+    <published>2025-04-02T12:14:41+01:00</published>
+    <updated>2025-04-02T12:14:41+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/accent-logo-hoodie"/>
+    <title>ACCENT LOGO HOODIE</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-accent-logo-hoodie.jpg?v=1761751586"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            140.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>A statement in effortless luxury, this oversized hoodie is rendered in soft cotton for superior comfort. A discreet yet bold logo detail adds distinction, while the relaxed silhouette ensures contemporary appeal. A versatile layering piece for any season.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>embroidered</s:tag>
+    <s:tag>hooded</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>sweatshirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>XS</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK1S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>S</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK0S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>M</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK0M</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>L</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK0L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK1L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>XXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK2L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK3L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760472301915</id>
+    <published>2025-04-02T12:14:32+01:00</published>
+    <updated>2025-04-02T12:14:32+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/mistral-graphic-hoodie"/>
+    <title>MISTRAL GRAPHIC HOODIE</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-mistral-hoodie-front.jpg?v=1761750781"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            140.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Inspired by speed and precision, this hoodie features a dynamic Mistral sketch, seamlessly blending artistry with design. Crafted from premium cotton, it offers an elevated take on relaxed luxury, perfect for refined off-duty styling.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>embroidered</s:tag>
+    <s:tag>hooded</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>mistral</s:tag>
+    <s:tag>sweatshirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>yellow</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>XS</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK1S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>S</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK0S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>M</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK0M</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>L</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK0L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK1L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>XXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK2L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK3L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760575226203</id>
+    <published>2025-04-02T12:14:21+01:00</published>
+    <updated>2025-04-02T12:14:21+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/eb-gilet"/>
+    <title>EB GILET</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-eb-gilet-front.jpg?v=1761750496"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            160.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lightweight and elegant, this gilet is designed for seamless layering. Crafted from technical fabrics with a sleek finish, it features subtle branding and a streamlined silhouette. A versatile companion for transitional weather and refined casual looks.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>black</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>coat</s:tag>
+    <s:tag>essential</s:tag>
+    <s:tag>gilet</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>outerwear</s:tag>
+    <s:tag>overcoat</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>women</s:tag>
+    <s:tag>zip</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>XS</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK1S</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>S</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK0S</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>M</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK0M</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>L</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK0L</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>XL</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK1L</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>XXL</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK2L</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760575226203</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">160.00</s:price>
+      <s:sku>BU124U300BK3L</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+  </entry>
+</feed>

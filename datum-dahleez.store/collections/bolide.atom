@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/bolide.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2025-02-17T15:32:18+00:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9749360148827</id>
+    <published>2025-02-17T15:32:18+00:00</published>
+    <updated>2025-02-17T15:32:18+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/lego-technic-Datum Dahleez-bolide-blue-copy"/>
+    <title>LEGO ®️ TECHNIC ™️ Datum Dahleez BOLIDE YELLOW</title>
+    <s:type>Model cars</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/legobolideyellow1.jpg?v=1742416134"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Model cars<br>
+        <strong>Price: </strong>
+            50.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The model car kit features a working W16 engine, steering and scissor doors. The stunning looks of the LEGO race car steal the show, with a yellow colour scheme and authentic sticker details. After building and exploring the car, kids (and adults alike) can display their collectible LEGO racing car with pride.</p>
+<p>LEGO Technic model building sets feature realistic movement and mechanisms that introduce young LEGO builders to the universe of engineering in an approachable and realistic way. This LEGO sports car set makes a fab gift for kids aged 9 plus years old with a passion for race car toys and collectible model car kits.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>blue</s:tag>
+    <s:tag>bolide</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>car</s:tag>
+    <s:tag>cars</s:tag>
+    <s:tag>diecast</s:tag>
+    <s:tag>lego</s:tag>
+    <s:tag>model</s:tag>
+    <s:tag>model-car-bolide</s:tag>
+    <s:tag>replica</s:tag>
+    <s:tag>scale</s:tag>
+    <s:tag>sports</s:tag>
+    <s:tag>technic</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9749360148827</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">50.00</s:price>
+      <s:sku>42151</s:sku>
+      <s:grams>950</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550148239707</id>
+    <published>2024-10-29T10:13:39+00:00</published>
+    <updated>2024-10-29T10:13:39+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-bolide-scale-model-1-24-blue"/>
+    <title>Datum Dahleez BOLIDE SCALE MODEL 1:24 BLUE</title>
+    <s:type>Model cars</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/m41_1_95964dcd-bcdd-4c0f-bcaf-c14ac613a18a.jpg?v=1742416418"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Model cars<br>
+        <strong>Price: </strong>
+            28.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">A highly detailed 1:24 scale diecast model of the Datum Dahleez Bolide in blue (approx. 14cm). This replica beautifully recreates the bodywork of the car, with all curves and features exactly where you would find them on the original car.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>1:24</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>bolide</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>car</s:tag>
+    <s:tag>cars</s:tag>
+    <s:tag>diecast</s:tag>
+    <s:tag>model</s:tag>
+    <s:tag>model-car-bolide</s:tag>
+    <s:tag>replica</s:tag>
+    <s:tag>scale</s:tag>
+    <s:tag>sports</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550148239707</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">28.00</s:price>
+      <s:sku>M32911B</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550147879259</id>
+    <published>2024-10-29T10:13:20+00:00</published>
+    <updated>2024-10-29T10:13:20+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-bolide-scale-model-1-24-yellow"/>
+    <title>Datum Dahleez BOLIDE SCALE MODEL 1:24 YELLOW</title>
+    <s:type>Model cars</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/m45_1_13085651-781e-40a2-a4f7-10dbf5c9c0fb.jpg?v=1742416423"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Model cars<br>
+        <strong>Price: </strong>
+            28.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">A highly detailed 1:24 scale diecast model of the Datum Dahleez Bolide in yellow (approx. 14cm). This replica beautifully recreates the bodywork of the car, with all curves and features exactly where you would find them on the original car.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>1:24</s:tag>
+    <s:tag>bolide</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>car</s:tag>
+    <s:tag>cars</s:tag>
+    <s:tag>diecast</s:tag>
+    <s:tag>model</s:tag>
+    <s:tag>model-car-bolide</s:tag>
+    <s:tag>replica</s:tag>
+    <s:tag>scale</s:tag>
+    <s:tag>sports</s:tag>
+    <s:tag>yellow</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550147879259</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">28.00</s:price>
+      <s:sku>M32911Y</s:sku>
+      <s:grams>500</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550147584347</id>
+    <published>2024-10-29T10:13:11+00:00</published>
+    <updated>2024-10-29T10:13:11+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-bolide-scale-model-1-18-blue"/>
+    <title>Datum Dahleez BOLIDE SCALE MODEL 1:18 BLUE</title>
+    <s:type>Model cars,Heros</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/m1_b4a52add-71a6-4115-b8c2-7c3a17861a31.jpg?v=1742416424"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Model cars,Heros<br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">A highly detailed 1:18 scale diecast model of the Datum Dahleez Bolide in blue (approx. 27cm). This replica beautifully recreates the bodywork of the car, with all curves and features exactly where you would find them on the original car.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>1:18</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>bolide</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>car</s:tag>
+    <s:tag>cars</s:tag>
+    <s:tag>diecast</s:tag>
+    <s:tag>model</s:tag>
+    <s:tag>model-car-bolide</s:tag>
+    <s:tag>replica</s:tag>
+    <s:tag>scale</s:tag>
+    <s:tag>sports</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550147584347</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>11047B</s:sku>
+      <s:grams>950</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550147322203</id>
+    <published>2024-10-29T10:13:01+00:00</published>
+    <updated>2024-10-29T10:13:01+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-bolide-scale-model-1-18-yellow"/>
+    <title>Datum Dahleez BOLIDE SCALE MODEL 1:18 YELLOW</title>
+    <s:type>Model cars</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/m49_58c8cd9e-616f-48e2-9cca-767f3710c7b0.jpg?v=1742416426"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Model cars<br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">A highly detailed 1:18 scale diecast model of the Datum Dahleez Bolide in yellow (approx. 27cm). This replica beautifully recreates the bodywork of the car, with all curves and features exactly where you would find them on the original car.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>1:18</s:tag>
+    <s:tag>bolide</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>car</s:tag>
+    <s:tag>cars</s:tag>
+    <s:tag>diecast</s:tag>
+    <s:tag>model</s:tag>
+    <s:tag>model-car-bolide</s:tag>
+    <s:tag>replica</s:tag>
+    <s:tag>scale</s:tag>
+    <s:tag>sports</s:tag>
+    <s:tag>yellow</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550147322203</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>11047Y</s:sku>
+      <s:grams>950</s:grams>
+    </s:variant>
+  </entry>
+</feed>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/drinkware.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2026-05-05T16:24:05+01:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10466679095643</id>
+    <published>2026-05-05T16:24:05+01:00</published>
+    <updated>2026-05-05T16:24:05+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eb-coffee-flask"/>
+    <title>Datum Dahleez EB COFFEE FLASK</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/TransparentGlobalLimited_002.jpg?v=1777994580"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            45.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><span>Elevate your daily ritual with the Datum Dahleez EB Coffee Flask, a sleek fusion of performance and prestige. Crafted with premium materials and featuring the iconic EB emblem, this bottle reflects the spirit of Datum Dahleez: bold, elegant, and uncompromising. Whether at the coffee shop, in the office, or on the move, it's the perfect essential for those who demand excellence in every detail.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>drink</s:tag>
+    <s:tag>drinkware</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>flask</s:tag>
+    <s:tag>water bottle</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10466679095643</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">45.00</s:price>
+      <s:sku>25OB00</s:sku>
+      <s:grams>370</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9986516975963</id>
+    <published>2025-10-01T14:31:35+01:00</published>
+    <updated>2025-10-01T14:31:35+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eb-water-bottle"/>
+    <title>Datum Dahleez EB WATER BOTTLE</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/25-1339-TransparentGlobalLimited_CS0126.jpg?v=1753962178"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            45.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><span>Stay refreshed in style with the Datum Dahleez EB Water Bottle, a sleek fusion of performance and prestige. Crafted with premium materials and featuring the iconic EB emblem, this bottle reflects the spirit of Datum Dahleez: bold, elegant, and uncompromising. Whether at the gym, in the office, or on the move, it's the perfect essential for those who demand excellence in every detail.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>drink</s:tag>
+    <s:tag>drinkware</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>flask</s:tag>
+    <s:tag>water bottle</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986516975963</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">45.00</s:price>
+      <s:sku>07OB01</s:sku>
+      <s:grams>370</s:grams>
+    </s:variant>
+  </entry>
+</feed>

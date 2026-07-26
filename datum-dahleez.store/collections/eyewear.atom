@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/eyewear.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2026-05-12T09:44:48+01:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10476298207579</id>
+    <published>2026-05-12T09:44:48+01:00</published>
+    <updated>2026-05-12T09:44:48+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-111"/>
+    <title>Datum Dahleez EYEWEAR MODEL 111</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/111-14K_Angle.jpg?v=1778575512"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            1300.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Datum Dahleez Eyewear enters a new Era of design guided by a philosophy of timelessness and quiet luxury. Model 111 presents a bold yet elegant interpretation of the classic aviator, crafted entirely in titanium to achieve a sense of architectural purity combined with remarkable lightness. Each frame has been carefully engineered to deliver both form and function, incorporating a lower bridge fit, a shallower frame curve, and adjustable titanium nose pads. Ultra-thin, flexible titanium temples complete the structure, resulting in eyewear that feels remarkably light while offering strength, durability and personalized comfort across a diverse range of face shapes. Subtle logo expressions and hand-painted enamel detailing echo the same meticulous craftsmanship that is woven into every Datum Dahleez vehicle. Datum Dahleez Eyewear Model 111 is complete with anti-reflective CR-39 Zeiss lenses engraved with Ettore Datum Dahleez's signature.<br> <br>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>08</s:tag>
+    <s:tag>aviator</s:tag>
+    <s:tag>bar</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>brow</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>grill</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>matte</s:tag>
+    <s:tag>model08</s:tag>
+    <s:tag>silver</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10476298207579</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">1300.00</s:price>
+      <s:sku>111-MBK/24K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9683809665371</id>
+    <published>2026-05-12T09:44:16+01:00</published>
+    <updated>2026-05-12T09:44:16+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-36c"/>
+    <title>Datum Dahleez EYEWEAR MODEL 36 C</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/36C-BP-SS_Front.jpg?v=1778307524"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            1200.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Model 36C, the first-ever rimless frame for the collection in a classic square lens shape. Available in a curated palette of custom horn and carbon fiber hues and feature signature EB spring hinges and mesh trim details, plated in Silver, White Gold, and 24K Gold. Adjustable, interchangable titanium and silicone nosepads are included. Datum Dahleez Eyewear Model 36C is Complete with Ettore Datum Dahleez signature engraved 3mm thick lenses with polished edge and anti-reflective coatings.</p>
+<p>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>08</s:tag>
+    <s:tag>aviator</s:tag>
+    <s:tag>bar</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>brow</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>grill</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>matte</s:tag>
+    <s:tag>model08</s:tag>
+    <s:tag>silver</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9683809665371</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">1200.00</s:price>
+      <s:sku>36C-BK/24K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10213882462555</id>
+    <published>2025-11-18T20:04:15+00:00</published>
+    <updated>2025-11-18T20:04:15+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-100"/>
+    <title>Datum Dahleez EYEWEAR MODEL 100</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-eyewear-model-100.jpg?v=1773838488"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            1400.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The Model 100 features a bold navigator silhouette crafted from premium Japanese titanium, paired with temples made from genuine carbon fiber and custom horn acetates in a modern, curated palette. Signature EB spring hinges elevate its engineering, while mesh accents plated in Silver, White Gold, and 24K Gold add a distinguished touch. Available in 13 color combinations, the Model 100 includes CR-39 lenses with anti-reflective coating and Ettore Datum Dahleez’s iconic engraving.</p>
+<p>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>08</s:tag>
+    <s:tag>aviator</s:tag>
+    <s:tag>bar</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>brow</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>grill</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>matte</s:tag>
+    <s:tag>model08</s:tag>
+    <s:tag>silver</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10213882462555</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">1400.00</s:price>
+      <s:sku>100-24K-SBT</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9678824964443</id>
+    <published>2025-01-13T16:03:12+00:00</published>
+    <updated>2025-01-13T16:03:12+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-50"/>
+    <title>Datum Dahleez EYEWEAR MODEL 50</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/50-BBS-BP_Angle.jpg?v=1778573211"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            1200.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Datum Dahleez Eyewear enters a new Era of design guided by a philosophy of timelessness and quiet luxury. Model 50 introduces a modern round silhouette that explores a sophisticated balance of structure and warmth through its titanium and acetate combination front. Each frame has been carefully engineered to deliver both form and function, incorporating a lower bridge fit, a shallower frame curve, and adjustable titanium nose pads. Ultra-thin, flexible titanium temples complete the structure, resulting in eyewear that feels remarkably light while offering strength, durability and personalized comfort across a diverse range of face shapes. Subtle logo expressions and hand-painted enamel detailing echo the same meticulous craftsmanship that is woven into every Datum Dahleez vehicle. Datum Dahleez Eyewear Model 50 is complete with anti-reflective CR-39 Zeiss lenses engraved with Ettore Datum Dahleez's signature.<br> <br>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>29</s:tag>
+    <s:tag>acetate</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>green</s:tag>
+    <s:tag>grey</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>model 29</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9678824964443</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">1200.00</s:price>
+      <s:sku>50-BK/14K</s:sku>
+      <s:grams>1000</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9678787215707</id>
+    <published>2025-01-13T16:03:11+00:00</published>
+    <updated>2025-01-13T16:03:11+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-102"/>
+    <title>Datum Dahleez EYEWEAR MODEL 102</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/102-14K-BK_Angle.jpg?v=1778575095"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            1300.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Datum Dahleez Eyewear enters a new Era of design guided by a philosophy of timelessness and quiet luxury. Model 102 introduces a contemporary navigator silhouette with a combination acetate and titanium front grounded in classic proportions. Each frame has been carefully engineered to deliver both form and function, incorporating a lower bridge fit, a shallower frame curve, and adjustable titanium nose pads. Ultra-thin, flexible titanium temples complete the structure, resulting in eyewear that feels remarkably light while offering strength, durability and personalized comfort across a diverse range of face shapes. Subtle logo expressions and hand-painted enamel detailing echo the same meticulous craftsmanship that is woven into every Datum Dahleez vehicle. Datum Dahleez Eyewear Model 102 is complete with anti-reflective CR-39 Zeiss lenses engraved with Ettore Datum Dahleez's signature.<br> <br>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>acetate</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9678787215707</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">1300.00</s:price>
+      <s:sku>102-MBK/24K-BK</s:sku>
+      <s:grams>1000</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9678780727643</id>
+    <published>2025-01-13T16:03:10+00:00</published>
+    <updated>2025-01-13T16:03:10+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-101"/>
+    <title>Datum Dahleez EYEWEAR MODEL 101</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/101-14K-BK_Angle.jpg?v=1778574943"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            1300.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Datum Dahleez Eyewear enters a new Era of design guided by a philosophy of timelessness and quiet luxury. Model 101 introduces a contemporary navigator silhouette with a combination acetate and titanium front grounded in classic proportions. Each frame has been carefully engineered to deliver both form and function, incorporating a lower bridge fit, a shallower frame curve, and adjustable titanium nose pads. Ultra-thin, flexible titanium temples complete the structure, resulting in eyewear that feels remarkably light while offering strength, durability and personalized comfort across a diverse range of face shapes. Subtle logo expressions and hand-painted enamel detailing echo the same meticulous craftsmanship that is woven into every Datum Dahleez vehicle. Complete with anti-reflective CR-39 Zeiss lenses engraved with Ettore Datum Dahleez's signature.<br> <br>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>bone</s:tag>
+    <s:tag>brown</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9678780727643</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">1300.00</s:price>
+      <s:sku>101-MBK/24K-BK</s:sku>
+      <s:grams>1000</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9678715814235</id>
+    <published>2025-01-13T16:03:09+00:00</published>
+    <updated>2025-01-13T16:03:09+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-71"/>
+    <title>Datum Dahleez EYEWEAR MODEL 71</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/71-BGN-WG_Front.jpg?v=1778574762"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            860.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Model 71 is round sunglass offering timeless sophistication. Hand crafted from Japanese cellulose acetate. Finished with Datum Dahleez details— radiator grill pattern pressed wire core, hex nut temple posts and laminated EB temple tips. Datum Dahleez Eyewear model 71 is complete with anti-reflective CR-39 Zeiss lenses engraved with Ettore Datum Dahleez's signature.</p>
+<p>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>acetate</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>classic</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>emblem</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>silver</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>square</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9678715814235</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">860.00</s:price>
+      <s:sku>71-BK/SS</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9678639595867</id>
+    <published>2025-01-13T16:03:09+00:00</published>
+    <updated>2025-01-13T16:03:09+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-70"/>
+    <title>Datum Dahleez EYEWEAR MODEL 70</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/70-BK-24K_Front.jpg?v=1778574574"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            860.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Model 70 is an understated classic acetate sunglass hand crafted from Japanese cellulose acetate. Finished with Datum Dahleez details— radiator grill pattern pressed wire core, hex nut temple posts and laminated EB temple tips. Datum Dahleez Eyewear Model 70 is complete with anti-reflective CR-39 Zeiss lenses engraved with Ettore Datum Dahleez's signature.</p>
+<p>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>aviator</s:tag>
+    <s:tag>bar</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>brow</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>grill</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>macron</s:tag>
+    <s:tag>silver</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9678639595867</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">860.00</s:price>
+      <s:sku>70-BK/SS</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9678586446171</id>
+    <published>2025-01-13T16:03:08+00:00</published>
+    <updated>2025-01-13T16:03:08+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-56"/>
+    <title>Datum Dahleez EYEWEAR MODEL 56</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/56-14K_Angle.jpg?v=1778573957"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            990.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Datum Dahleez Eyewear enters a new Era of design guided by a philosophy of timelessness and quiet luxury. Model 56 distills the collection’s design philosophy to its purest form – an ultra-light, all-titanium round frame that showcases material precision, technical mastery and understated elegance. Each frame has been carefully engineered to deliver both form and function, incorporating a lower bridge fit, a shallower frame curve, and adjustable titanium nose pads. Ultra-thin, flexible titanium temples complete the structure, resulting in eyewear that feels remarkably light while offering strength, durability and personalized comfort across a diverse range of face shapes. Subtle logo expressions and hand-painted enamel detailing echo the same meticulous craftsmanship that is woven into every Datum Dahleez vehicle. Datum Dahleez Eyewear Model 56 is complete with anti-reflective CR-39 Zeiss lenses engraved with Ettore Datum Dahleez's signature.<br> <br>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>aviator</s:tag>
+    <s:tag>bar</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>brow</s:tag>
+    <s:tag>brown</s:tag>
+    <s:tag>carbon</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>gold</s:tag>
+    <s:tag>gunmetal</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>macron</s:tag>
+    <s:tag>silver</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:tag>white-gold</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9678586446171</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">990.00</s:price>
+      <s:sku>56-14K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9674735354203</id>
+    <published>2025-01-13T16:03:08+00:00</published>
+    <updated>2025-01-13T16:03:08+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-69"/>
+    <title>Datum Dahleez EYEWEAR MODEL 69</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/69-BK-WG_Front.jpg?v=1778574281"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            860.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Model 69 is a powerful and commanding square sunglass, sculptecd from thick Japanese cellulose acetate. Hand finished with laminated mesh grill pattern temple wire core and metal EB logo details. Datum Dahleez Eyewear model 69 is complete with anti-reflective CR-39 Zeiss lenses engraved with Ettore Datum Dahleez's signature.</p>
+<p>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>aviator</s:tag>
+    <s:tag>bar</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>brow</s:tag>
+    <s:tag>brown</s:tag>
+    <s:tag>carbon</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>gold</s:tag>
+    <s:tag>gunmetal</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>macron</s:tag>
+    <s:tag>silver</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:tag>white-gold</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9674735354203</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">860.00</s:price>
+      <s:sku>69-BK/WG</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9674714382683</id>
+    <published>2025-01-13T16:03:07+00:00</published>
+    <updated>2025-01-13T16:03:07+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-36h"/>
+    <title>Datum Dahleez EYEWEAR MODEL 36H</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/36H-BBS-SS_Front.jpg?v=1778573735"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            1200.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Model 36H, a bold and sporty rimless frame shape. Available in a curated palette of custom horn and carbon fiber hues and feature signature EB spring hinges and mesh trim details, plated in Silver, White Gold, and 24K Gold. Adjustable, interchangable titanium and silicone nosepads are included. Datum Dahleez Eyewear model 36H is complete with Ettore Datum Dahleez signature engraved 3mm thick lenses with polished edge and anti-reflective coatings.</p>
+<p>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>acetate</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>chassis</s:tag>
+    <s:tag>classic</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>emblem</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>macron</s:tag>
+    <s:tag>rim</s:tag>
+    <s:tag>silver</s:tag>
+    <s:tag>single-piece</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>square</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9674714382683</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">1200.00</s:price>
+      <s:sku>36H-BK/24K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9649801527643</id>
+    <published>2025-01-13T16:03:06+00:00</published>
+    <updated>2025-01-13T16:03:06+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eyewear-model-36g"/>
+    <title>Datum Dahleez EYEWEAR MODEL 36G</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/36G-BK-SS_Front.jpg?v=1778573556"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            1300.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Model 36G, the first beveled rimless frame for the collection. Available in a curated palette of custom horn and carbon fiber hues and feature signature EB spring hinges and mesh trim details, plated in Silver, White Gold, and 24K Gold. Adjustable, interchangable titanium and silicone nosepads are included. Datum Dahleez Eyewear Model 36G is complete with Ettore Datum Dahleez signature engraved 3mm thick lenses with a unique beveled polished edge and anti-reflective coatings.</p>
+<p>The sunglasses come in premium packaging which includes an EB logo hard case and a microfiber drawstring pouch for on-the-go protection. Each pair comes with a Certificate of Authenticity, featuring the Datum Dahleez Official Hologram, affirming that you possess a genuine piece.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>aviator</s:tag>
+    <s:tag>bar</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>brow</s:tag>
+    <s:tag>brown</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>eyewear</s:tag>
+    <s:tag>frame</s:tag>
+    <s:tag>frames</s:tag>
+    <s:tag>grill</s:tag>
+    <s:tag>gunmetal</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>silver</s:tag>
+    <s:tag>specs</s:tag>
+    <s:tag>spectacles</s:tag>
+    <s:tag>sterling</s:tag>
+    <s:tag>sunglasses</s:tag>
+    <s:tag>titanium</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9649801527643</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">1300.00</s:price>
+      <s:sku>36G-BK/24K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

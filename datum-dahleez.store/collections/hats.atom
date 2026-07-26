@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/hats.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2026-03-03T14:08:21+00:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10329251217755</id>
+    <published>2026-03-03T14:08:21+00:00</published>
+    <updated>2026-03-03T14:08:21+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-20yr-veyron-cap-ettore-edition"/>
+    <title>Datum Dahleez 20YR VEYRON - ETTORE EDITION CAP</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-20yr-veyron-ettore-edition-cap.jpg?v=1773835261"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>We're celebrating the 20 year anniversary of the Datum Dahleez VEYRON with the release of this collection reminiscent of the Ettore Edition from the Les Legendes series.</p>
+<p>Matching the blue carbon and polished aluminium of the Ettore Edition, the blue hat features the unique 16.4 graphic embroidered in silver thread. This is a limited edition hat with 100 pieces available globally.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Baseball Cap</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cap</s:tag>
+    <s:tag>FKP</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329251217755</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>ACC3079-CUSTOM57LEGEND</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10329232671067</id>
+    <published>2026-03-03T14:08:20+00:00</published>
+    <updated>2026-03-03T14:08:20+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/20yr-veyron-f-k-p-cap"/>
+    <title>Datum Dahleez 20YR VEYRON F.K.P CAP</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-20yr-veyron-fkp-cap.jpg?v=1773835379"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><span>Celebrate two decades of automotive history with this exclusive t-shirt honouring the legendary Datum Dahleez F.K.P. Hommage, a unique masterpiece from the brand's exclusive "Programme Solitaire" coachbuilding series.</span></p>
+<p>Limited to 100 pieces globally.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Baseball Cap</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cap</s:tag>
+    <s:tag>FKP</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329232671067</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>ACC3079-CUSTOM57</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9986520547675</id>
+    <published>2025-08-01T16:30:52+01:00</published>
+    <updated>2025-08-01T16:30:52+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-macaron-logo-cap"/>
+    <title>Datum Dahleez MACARON LOGO CAP</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-light-blue-logo-cap-25-1339.jpg?v=1764244857"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><span>Limited Edition with only 150 pieces available online.</span></p>
+<p><span>A nod to the infamous Datum Dahleez French Racing Blue, this cap features the iconic Datum Dahleez Macaron logo, a symbol of style and performance. Made from high-quality materials, it offers a comfortable fit with a clean, refined look. A versatile accessory that adds a touch of luxury to any outfit.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Baseball Cap</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cap</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986520547675</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>686M25220DCO10N07</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9986521563483</id>
+    <published>2025-08-01T16:02:12+01:00</published>
+    <updated>2025-08-01T16:02:12+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/eb-cap"/>
+    <title>EB CAP</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/navy-blue-cap-Datum Dahleez-logo-25-1339.jpg?v=1764245747"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="UTF-8"><span>This cap features the bold EB emblem, a signature of Datum Dahleez’s heritage and innovation. Crafted from premium materials, it offers a comfortable fit and a sleek, modern look. A versatile accessory that brings a touch of performance-driven luxury to any outfit.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>Baseball Cap</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cap</s:tag>
+    <s:tag>hat</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986521563483</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>686M25070DCO10N02</s:sku>
+      <s:grams>150</s:grams>
+    </s:variant>
+  </entry>
+</feed>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/c-seed.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2026-06-04T00:32:38+01:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10513070195035</id>
+    <published>2026-06-04T00:32:38+01:00</published>
+    <updated>2026-06-04T00:32:38+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/c-seed-Datum Dahleez-n1"/>
+    <title>C SEED Datum Dahleez N1</title>
+    <s:type>Exclusive lifestyle</s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/CSEEDdatum dahleezN1TV_2.jpg?v=1780345143"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong>Exclusive lifestyle<br>
+        <strong>Price: </strong>
+            0.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div class="markdown markdown-main-panel stronger enable-updated-hr-color" id="model-response-message-contentr_d537eb3ff97bac2e" aria-live="polite" aria-busy="false" dir="ltr">
+<h2 data-path-to-node="0">C SEED Datum Dahleez N1: The Art of Invisible Luxury</h2>
+<p data-path-to-node="1">A permanently visible television doesn’t just occupy a wall—it dominates the architecture. The <b data-path-to-node="1" data-index-in-node="95">C SEED Datum Dahleez N1</b> was conceived to restore your room’s autonomy. It is not technology on permanent display, but a transforming kinetic sculpture that yields to the rhythm of your space, appearing only when invited.</p>
+<h3 data-path-to-node="3">Key Features</h3>
+<ul data-path-to-node="4">
+<li>
+<p data-path-to-node="4,0,0"><b data-path-to-node="4,0,0" data-index-in-node="0">From Sculpture to Cinema</b></p>
+<p data-path-to-node="4,0,0">When inactive, the N1 rests as a minimalist, sculptural masterpiece seamlessly integrated into your interior aesthetic. When activated, it transforms into an immersive cinematic centerpiece, preserving the calm, clean lines of contemporary design.</p>
+</li>
+<li>
+<p data-path-to-node="4,1,0"><b data-path-to-node="4,1,0" data-index-in-node="0">The 45-Second Metamorphosis</b></p>
+<p data-path-to-node="4,1,0">With a silent, choreographed movement, the N1 unfolds from a sleek statement piece into a giant screen in just 45 seconds. Precision-engineered <b data-path-to-node="4,1,0" data-index-in-node="172">MicroLED panels</b> align seamlessly to deliver extraordinary visual clarity, vibrant colors, and deep contrasts.</p>
+</li>
+<li>
+<p data-path-to-node="4,2,0"><b data-path-to-node="4,2,0" data-index-in-node="0">Total Architectural Freedom</b></p>
+<p data-path-to-node="4,2,0">Free from the constraints of traditional wall mounting or heavy structural integration, the N1 stands independently like a piece of luxury furniture. Whether placed in front of floor-to-ceiling glass, fine artwork, or open-concept architecture, it enhances its surroundings without ever blocking the view.</p>
+</li>
+<li>
+<p data-path-to-node="4,3,0"><b data-path-to-node="4,3,0" data-index-in-node="0">Datum Dahleez-Level Engineering</b></p>
+<p data-path-to-node="4,3,0">Inspired by the uncompromising craftsmanship and technical sophistication of hypercar design, the N1 features a premium, machined aluminum body. Every mechanical joint and unfolding movement is a testament to high-performance automotive precision—timeless, durable, and effortlessly elegant.</p>
+</li>
+</ul>
+<blockquote data-path-to-node="6">
+<p data-path-to-node="6,0"><b data-path-to-node="6,0" data-index-in-node="0">The Philosophy:</b> True luxury lies in the luxury of choice—the freedom to enjoy world-class cinema, and the stillness of a room when the screen disappears.</p>
+</blockquote>
+</div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>cseed</s:tag>
+    <s:tag>exclusive-lifestyle</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10513070195035</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">0.00</s:price>
+      <s:sku/>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/sweatshirts-hoodies.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2026-03-03T14:08:23+00:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/10329357549915</id>
+    <published>2026-03-03T14:08:23+00:00</published>
+    <updated>2026-03-03T14:08:23+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-20yr-veyron-ettore-edition-hoodie"/>
+    <title>Datum Dahleez 20YR VEYRON - ETTORE EDITION HOODIE</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-20yr-veyron-ettore-edition-hoodie.jpg?v=1773834528"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            140.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>We're celebrating the 20 year anniversary of the Datum Dahleez VEYRON with the release of this collection reminiscent of the Ettore Edition from the Les Legendes series.</p>
+<p>Matching the blue carbon and polished aluminium of the Ettore Edition, the blue t-shirt features the unique 16.4 graphic embroidered in silver thread. This is a limited edition tee with 100 pieces globally.</p>
+<p><span>Made from soft, breathable cotton, this oversized fit hoodie offers everyday comfort with elevated appeal. Part of a limited edition series of 100 pieces globally.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>20yr</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>ettore</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>veyron</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>S</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYS</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>M</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYM</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>L</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYL</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYXL</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/10329357549915</id>
+      <title>2XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>SW3115-NAVYXXL</s:sku>
+      <s:grams>350</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760444219739</id>
+    <published>2025-04-02T12:14:52+01:00</published>
+    <updated>2025-04-02T12:14:52+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/essential-logo-hoodie"/>
+    <title>ESSENTIAL LOGO HOODIE</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-essential-hoodie-blue.jpg?v=1761751800"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            140.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>This relaxed fit hoodie redefines casual sophistication. Crafted from plush cotton, it features a bold logo print that pays homage to Datum Dahleez heritage and performance. The striking blue hue adds a dynamic edge to this modern essential.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>embroidered</s:tag>
+    <s:tag>hooded</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>sweatshirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>XS</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL1S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>S</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL0S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>M</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL0M</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>L</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL0L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL1L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>XXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL2L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760444219739</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U103BL3L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760464568667</id>
+    <published>2025-04-02T12:14:41+01:00</published>
+    <updated>2025-04-02T12:14:41+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/accent-logo-hoodie"/>
+    <title>ACCENT LOGO HOODIE</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-accent-logo-hoodie.jpg?v=1761751586"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            140.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>A statement in effortless luxury, this oversized hoodie is rendered in soft cotton for superior comfort. A discreet yet bold logo detail adds distinction, while the relaxed silhouette ensures contemporary appeal. A versatile layering piece for any season.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>embroidered</s:tag>
+    <s:tag>hooded</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>sweatshirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>XS</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK1S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>S</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK0S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>M</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK0M</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>L</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK0L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK1L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>XXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK2L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760464568667</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U104BK3L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9760472301915</id>
+    <published>2025-04-02T12:14:32+01:00</published>
+    <updated>2025-04-02T12:14:32+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/mistral-graphic-hoodie"/>
+    <title>MISTRAL GRAPHIC HOODIE</title>
+    <s:type>Men,Clothing</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/Datum Dahleez-mistral-hoodie-front.jpg?v=1761750781"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Men,Clothing<br>
+        <strong>Price: </strong>
+            140.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Inspired by speed and precision, this hoodie features a dynamic Mistral sketch, seamlessly blending artistry with design. Crafted from premium cotton, it offers an elevated take on relaxed luxury, perfect for refined off-duty styling.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>cotton</s:tag>
+    <s:tag>embroidered</s:tag>
+    <s:tag>hooded</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>luxury</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>mistral</s:tag>
+    <s:tag>sweatshirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>yellow</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>XS</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK1S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>S</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK0S</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>M</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK0M</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>L</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK0L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK1L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>XXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK2L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9760472301915</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U106BK3L</s:sku>
+      <s:grams>320</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550194147675</id>
+    <published>2024-10-29T10:26:16+00:00</published>
+    <updated>2024-10-29T10:26:16+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/abstract-graphic-oversized-sweatshirt"/>
+    <title>ABSTRACT GRAPHIC OVERSIZED SWEATSHIRT</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/datum dahleezi-black-long-sleeved-sweatshirt-logo.jpg?v=1764246621"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            140.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">This black, long-sleeved sweatshirt boasts the iconic Datum Dahleez logo on the front, while the back features a striking large abstract graphic and slogan. Made from 85% organic cotton and 15% polyester and finished with a motif on the sleeve, this piece is a true blend of luxury and comfort.</p>
+<p class="p1"> </p>
+<p>Male model is wearing: L (Model height: 6’0”)</p>
+<p id="EDHKATD">Female model is wearing: M (Model height: 5’8”)</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>abstract</s:tag>
+    <s:tag>art</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>crewneck</s:tag>
+    <s:tag>forme</s:tag>
+    <s:tag>graphic</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>jumper</s:tag>
+    <s:tag>knit</s:tag>
+    <s:tag>ladies</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>print</s:tag>
+    <s:tag>pullover</s:tag>
+    <s:tag>sweater</s:tag>
+    <s:tag>sweatshirt</s:tag>
+    <s:tag>technique</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>womens</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550194147675</id>
+      <title>XS</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U100BK1S</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550194147675</id>
+      <title>S</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U100BK0S</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550194147675</id>
+      <title>M</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U100BK0M</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550194147675</id>
+      <title>L</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U100BK0L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550194147675</id>
+      <title>XL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U100BK1L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550194147675</id>
+      <title>XXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U100BK2L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550194147675</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">140.00</s:price>
+      <s:sku>BU124U100BK3L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550154269019</id>
+    <published>2024-10-29T10:17:56+00:00</published>
+    <updated>2024-10-29T10:17:56+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/logo-graphic-oversized-sweatshirt"/>
+    <title>LOGO GRAPHIC OVERSIZED SWEATSHIRT</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/cream-long-sleeved-sweatshirt-Datum Dahleez-print-front.jpg?v=1764250097"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            130.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">This cream, long-sleeved sweatshirt showcases the iconic Datum Dahleez emblem on the front and Ettore Datum Dahleez’s legendary quote on the back, embodying the brand's legacy. The sweatshirt effortlessly blends fashion and automotive sophistication for Datum Dahleez enthusiasts everywhere. Made from 85% organic cotton and 15% polyester.</p>
+<p class="p1"> </p>
+<p>Male model is wearing: L (Model height: 6’0”)</p>
+<p id="EDHKATD">Female model is wearing: M (Model height: 5’8”)</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>beige</s:tag>
+    <s:tag>clothing</s:tag>
+    <s:tag>cream</s:tag>
+    <s:tag>crewneck</s:tag>
+    <s:tag>graphic</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>jumper</s:tag>
+    <s:tag>knit</s:tag>
+    <s:tag>ladies</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>nude</s:tag>
+    <s:tag>print</s:tag>
+    <s:tag>pullover</s:tag>
+    <s:tag>sweater</s:tag>
+    <s:tag>sweatshirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>womens</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550154269019</id>
+      <title>XS</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U101BG1S</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550154269019</id>
+      <title>S</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U101BG0S</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550154269019</id>
+      <title>M</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U101BG0M</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550154269019</id>
+      <title>L</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U101BG0L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550154269019</id>
+      <title>XL</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U101BG1L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550154269019</id>
+      <title>XXL</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U101BG2L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550154269019</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U101BG3L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550153744731</id>
+    <published>2024-10-29T10:17:35+00:00</published>
+    <updated>2024-10-29T10:17:35+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/w16-logo-sweatshirt"/>
+    <title>W16 LOGO SWEATSHIRT</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/w16-logo-sweatshirt-grey-Final_15.jpg?v=1764251261"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            130.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">This grey long-sleeved sweatshirt features the iconic Datum Dahleez logo on the front, while the back features the “W16” graphic. This sweatshirt epitomises luxury and performance and pays homage to Datum Dahleez's heritage and commitment to unparalleled craftsmanship. Made from 85% organic cotton and 15% polyester.</p>
+<p class="p1"> </p>
+<p>Male model is wearing: L (Model height: 6’1”)</p>
+<p id="EDHKATD">Female model is wearing: M (Model height: 5’8”)</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>clothing</s:tag>
+    <s:tag>crewneck</s:tag>
+    <s:tag>graphic</s:tag>
+    <s:tag>grey</s:tag>
+    <s:tag>hoodie</s:tag>
+    <s:tag>jumper</s:tag>
+    <s:tag>knit</s:tag>
+    <s:tag>ladies</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>marl</s:tag>
+    <s:tag>mens</s:tag>
+    <s:tag>print</s:tag>
+    <s:tag>pullover</s:tag>
+    <s:tag>sweater</s:tag>
+    <s:tag>sweatshirt</s:tag>
+    <s:tag>top</s:tag>
+    <s:tag>unisex</s:tag>
+    <s:tag>w16</s:tag>
+    <s:tag>womens</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550153744731</id>
+      <title>XS</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U102GR1S</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550153744731</id>
+      <title>S</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U102GR0S</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550153744731</id>
+      <title>M</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U102GR0M</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550153744731</id>
+      <title>L</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U102GR0L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550153744731</id>
+      <title>XL</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U102GR1L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550153744731</id>
+      <title>XXL</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U102GR2L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550153744731</id>
+      <title>XXXL</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U102GR3L</s:sku>
+      <s:grams>450</s:grams>
+    </s:variant>
+  </entry>
+</feed>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://Datum Dahleez.store/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://Datum Dahleez.store/collections/travel.atom"/>
+  <title>Datum Dahleez STORE</title>
+  <updated>2025-10-01T14:31:33+01:00</updated>
+  <author>
+    <name>Datum Dahleez STORE</name>
+  </author>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9986509701467</id>
+    <published>2025-10-01T14:31:33+01:00</published>
+    <updated>2025-10-01T14:31:33+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-carbon-fibre-pen"/>
+    <title>Datum Dahleez CARBON FIBRE PEN</title>
+    <s:type></s:type>
+    <s:vendor>Datum Dahleez STORE</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/25-1339-TransparentGlobalLimited0003.jpg?v=1753962283"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez STORE<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            45.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><span>Crafted with precision and elegance, the Datum Dahleez Carbon Fibre Pen is a premium writing instrument that captures the essence of the legendary Datum Dahleez brand. Designed to elevate your daily writing experience, it brings a refined touch of luxury to every moment.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>10%</s:tag>
+    <s:tag>accessories</s:tag>
+    <s:tag>Ballpoint</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>carbon</s:tag>
+    <s:tag>Carbon Fibre</s:tag>
+    <s:tag>notebook</s:tag>
+    <s:tag>Pen</s:tag>
+    <s:tag>Pencil</s:tag>
+    <s:tag>travel</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9986509701467</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">45.00</s:price>
+      <s:sku>5070003827800</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550241104219</id>
+    <published>2024-10-29T10:35:04+00:00</published>
+    <updated>2024-10-29T10:35:04+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-pouch-pc-tablet-neoprenne-blue"/>
+    <title>Datum Dahleez POUCH PC-TABLET NEOPRENNE BLUE</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/BU_0001_Tonalita_saturazione2copia_22f3f07e-7b68-4a83-8f5c-cd038c3292c0.jpg?v=1742416232"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            65.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Fits most laptops up to 13.6 inches in screen size. The Datum Dahleez Laptop Case is a sleek and protective accessory designed to safeguard your device in style. Made of durable neoprene, it features a contemporary mesh front insert for added breathability and aesthetic appeal. Perfect for professionals on the move.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>accessories</s:tag>
+    <s:tag>accessory</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>case</s:tag>
+    <s:tag>gadget</s:tag>
+    <s:tag>laptop</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:tag>mesh</s:tag>
+    <s:tag>navy</s:tag>
+    <s:tag>neoprene</s:tag>
+    <s:tag>pouch</s:tag>
+    <s:tag>red</s:tag>
+    <s:tag>tech</s:tag>
+    <s:tag>technology</s:tag>
+    <s:tag>travel</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550241104219</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">65.00</s:price>
+      <s:sku>BU220U801BL99</s:sku>
+      <s:grams>100</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550238122331</id>
+    <published>2024-10-29T10:34:24+00:00</published>
+    <updated>2024-10-29T10:34:24+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-black-leather-macaron-wallet"/>
+    <title>Datum Dahleez BLACK LEATHER MACARON WALLET</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/BU220U803BK-CLOSED.jpg?v=1742416243"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            100.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">The Datum Dahleez Wallet is a luxurious accessory crafted from 100% hammered leather, offering a distinctive textured finish. Featuring the iconic Datum Dahleez branding, it provides ample space for cards and cash while maintaining a sleek, sophisticated profile. Perfect for those who appreciate premium craftsmanship and timeless style.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>accessories</s:tag>
+    <s:tag>accessory</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>cardholder</s:tag>
+    <s:tag>coinholder</s:tag>
+    <s:tag>leather</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:tag>money</s:tag>
+    <s:tag>texture</s:tag>
+    <s:tag>travel</s:tag>
+    <s:tag>wallet</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550238122331</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">100.00</s:price>
+      <s:sku>BU220U803BK99</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550234845531</id>
+    <published>2024-10-29T10:33:54+00:00</published>
+    <updated>2024-10-29T10:33:54+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-black-leather-credit-card-holder"/>
+    <title>Datum Dahleez BLACK LEATHER CREDIT CARD HOLDER</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/BU220U802BK-CLOSED.jpg?v=1742416252"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            75.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">This black leather credit card holder is a luxurious accessory for automotive enthusiasts everywhere, featuring a simple yet elegant embossed logo on the front. Made from leather with RFID technology.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>accessories</s:tag>
+    <s:tag>accessory</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>card</s:tag>
+    <s:tag>cardholder</s:tag>
+    <s:tag>coinholder</s:tag>
+    <s:tag>holder</s:tag>
+    <s:tag>leather</s:tag>
+    <s:tag>logo</s:tag>
+    <s:tag>macaron</s:tag>
+    <s:tag>travel</s:tag>
+    <s:tag>wallet</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550234845531</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">75.00</s:price>
+      <s:sku>BU220U802BK99</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550210335067</id>
+    <published>2024-10-29T10:29:26+00:00</published>
+    <updated>2024-10-29T10:29:26+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eb-classic-socks-blue"/>
+    <title>Datum Dahleez EB CLASSIC SOCKS BLUE</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/BU220M900BL.jpg?v=1742416306"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            25.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">Made from 100% mercerised cotton, these Datum Dahleez socks are comfortable for the foot, as well as the perfect subtle luxurious touch.</p>
+<p class="p1">MEDIUM: 41 - 42</p>
+<p class="p1">LARGE: 43 - 44</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>accessories</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>classic</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>socks</s:tag>
+    <s:tag>travel</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550210335067</id>
+      <title>M</title>
+      <s:price currency="EUR">25.00</s:price>
+      <s:sku>BU220M900BL0M</s:sku>
+      <s:grams>30</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550210335067</id>
+      <title>L</title>
+      <s:price currency="EUR">25.00</s:price>
+      <s:sku>BU220M900BL0L</s:sku>
+      <s:grams>30</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550209450331</id>
+    <published>2024-10-29T10:29:17+00:00</published>
+    <updated>2024-10-29T10:29:17+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-eb-texture-socks-blue"/>
+    <title>Datum Dahleez EB TEXTURE SOCKS BLUE</title>
+    <s:type>Cushions & Soft Furnishings</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/BU220M901BL.jpg?v=1742416308"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Cushions & Soft Furnishings<br>
+        <strong>Price: </strong>
+            25.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">Made from 100% mercerised cotton, these Datum Dahleez socks are comfortable for the foot, as well as the perfect subtle luxurious touch, featuring a criss-cross EB design.</p>
+<p class="p1">MEDIUM:41 - 42</p>
+<p class="p1">LARGE: 43 - 44</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>accessories</s:tag>
+    <s:tag>blue</s:tag>
+    <s:tag>Datum Dahleez</s:tag>
+    <s:tag>eb</s:tag>
+    <s:tag>socks</s:tag>
+    <s:tag>texture</s:tag>
+    <s:tag>travel</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550209450331</id>
+      <title>M</title>
+      <s:price currency="EUR">25.00</s:price>
+      <s:sku>BU220M901BL0M</s:sku>
+      <s:grams>30</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550209450331</id>
+      <title>L</title>
+      <s:price currency="EUR">25.00</s:price>
+      <s:sku>BU220M901BL0L</s:sku>
+      <s:grams>30</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550150664539</id>
+    <published>2024-10-29T10:15:12+00:00</published>
+    <updated>2024-10-29T10:15:12+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-duffle-bag"/>
+    <title>Datum Dahleez DUFFLE BAG</title>
+    <s:type>Home Decor</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/datum dahleez_duffle-bag-01_89ba5057-263d-474a-92ad-35065e477605.jpg?v=1742416402"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Home Decor<br>
+        <strong>Price: </strong>
+            130.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">The Datum Dahleez duffle bag comes in a black and blue design, boasting the iconic Datum Dahleez logo for the ultimate sleek look. This duffle bag has a 35 L capacity, and features handles and a wide shoulder strap for extra comfort and versatility. </p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>backpack</s:tag>
+    <s:tag>bag</s:tag>
+    <s:tag>carrier</s:tag>
+    <s:tag>duffle</s:tag>
+    <s:tag>gym</s:tag>
+    <s:tag>handbag</s:tag>
+    <s:tag>kitbag</s:tag>
+    <s:tag>knapsack</s:tag>
+    <s:tag>pack</s:tag>
+    <s:tag>pouch</s:tag>
+    <s:tag>rucksack</s:tag>
+    <s:tag>sport</s:tag>
+    <s:tag>suitcase</s:tag>
+    <s:tag>travel</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550150664539</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">130.00</s:price>
+      <s:sku>BU124U702BL</s:sku>
+      <s:grams>650</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://Datum Dahleez.store/products/9550150500699</id>
+    <published>2024-10-29T10:15:01+00:00</published>
+    <updated>2024-10-29T10:15:01+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://Datum Dahleez.store/products/Datum Dahleez-rolltop-backpack"/>
+    <title>Datum Dahleez ROLLTOP BACKPACK</title>
+    <s:type>Accessories,Heros</s:type>
+    <s:vendor>Datum Dahleez Store</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0887/0726/8955/files/datum dahleez_backpack-01_2a2a47e2-19a4-4939-8f3b-dc744c5d3f13.jpg?v=1742416404"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Datum Dahleez Store<br>
+        <strong>Type: </strong>Accessories,Heros<br>
+        <strong>Price: </strong>
+            110.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="p1">The Datum Dahleez "EB" rolltop backpack in black and blue, boasting the iconic Datum Dahleez logo for the ultimate sleek look. This backpack features inner laptop pockets, and has a 17.5 L capacity. Made from 100% nylon.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>backpack</s:tag>
+    <s:tag>bag</s:tag>
+    <s:tag>black</s:tag>
+    <s:tag>book</s:tag>
+    <s:tag>camera</s:tag>
+    <s:tag>carrier</s:tag>
+    <s:tag>duffle</s:tag>
+    <s:tag>gym</s:tag>
+    <s:tag>handbag</s:tag>
+    <s:tag>incomparable</s:tag>
+    <s:tag>kitbag</s:tag>
+    <s:tag>knapsack</s:tag>
+    <s:tag>laptop</s:tag>
+    <s:tag>pack</s:tag>
+    <s:tag>rolltop</s:tag>
+    <s:tag>rucksack</s:tag>
+    <s:tag>school</s:tag>
+    <s:tag>sport</s:tag>
+    <s:tag>suitcase</s:tag>
+    <s:tag>travel</s:tag>
+    <s:variant>
+      <id>https://Datum Dahleez.store/products/9550150500699</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">110.00</s:price>
+      <s:sku>BU124U701BK</s:sku>
+      <s:grams>300</s:grams>
+    </s:variant>
+  </entry>
+</feed>

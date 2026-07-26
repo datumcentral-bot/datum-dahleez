@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datum Dahleez Store | Professional Interior Design</title>
+    <meta name="description" content="Professional interior design solutions for residential, office, hospital, and business spaces. Shop furniture, lighting, flooring, and decorative items.">
+    <meta name="keywords" content="interior design, furniture, lighting, flooring, decoration, hospital interior, office furniture, podcast studio, co-working space, branding, vinyl">
+    <meta name="author" content="Datum Dahleez">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://datumcentral-bot.github.io/datum-dahleez">
+    <meta property="og:title" content="Datum Dahleez Store | Professional Interior Design">
+    <meta property="og:description" content="Professional interior design solutions for residential, office, hospital, and business spaces.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datumcentral-bot.github.io/datum-dahleez">
+    <meta property="og:image" content="https://datumcentral-bot.github.io/datum-dahleez/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Datum Dahleez Store | Professional Interior Design">
+    <meta name="twitter:description" content="Professional interior design solutions for residential, office, hospital, and business spaces.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--white);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            opacity: 0.8;
+        }
+
+        .cart-icon {
+            position: relative;
+            font-size: 1.2rem;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background: #ff4757;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 150px 20px 100px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Categories Section */
+        .categories {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--text-dark);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .category-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .category-card h3 {
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .category-card p {
+            color: var(--text-light);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 20px;
+            background: var(--bg-light);
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+        }
+
+        /* Business Section */
+        .business {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .business-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .business-card h3 {
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .business-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .business-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .business-card ul li {
+            padding: 5px 0;
+            color: var(--text-light);
+        }
+
+        .business-card ul li:before {
+            content: "✓ ";
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 50px 20px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .social-links {
+            margin-bottom: 30px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-menu {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Datum Dahleez</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="datum-dahleez.store/index.html">Shop</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#business">Business</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0)" id="login-link" onclick="showLogin()">Login</a></li>
+                    <li><a href="javascript:void(0)" id="logout-link" onclick="customerAccounts.logout()" style="display:none">Logout</a></li>
+                    <li>
+                        <a href="javascript:void(0)" class="cart-icon" onclick="showCheckout()">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Datum Dahleez</h1>
+        <p>Professional interior design solutions for residential, office, hospital, and business spaces. Quality furniture, lighting, flooring, and decorative items delivered worldwide.</p>
+        <a href="datum-dahleez.store/index.html" class="cta-button">Explore Our Collection</a>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h2 class="section-title">Our Product Categories</h2>
+        <div class="category-grid">
+            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#furniture'">
+                <div class="category-icon">🪑</div>
+                <h3>Furniture & Fixtures</h3>
+                <p>Office, residential, and commercial furniture solutions</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#lighting'">
+                <div class="category-icon">💡</div>
+                <h3>Lighting Solutions</h3>
+                <p>Modern LED, pendant lights, chandeliers, and smart lighting</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#flooring'">
+                <div class="category-icon">🪵</div>
+                <h3>Flooring & Surfaces</h3>
+                <p>Wood, marble, tiles, and premium flooring materials</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#decor'">
+                <div class="category-icon">🎨</div>
+                <h3>Decor & Accessories</h3>
+                <p>Wall art, plants, decorative items, and accessories</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#podcast'">
+                <div class="category-icon">🎙️</div>
+                <h3>Podcast Studios</h3>
+                <p>Professional studio furniture and acoustic solutions</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='datum-dahleez.store/index.html#branding'">
+                <div class="category-icon">✂️</div>
+                <h3>Branding & Signage</h3>
+                <p>Custom vinyl, signage, and visual identity solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <h2 class="section-title">Why Choose Datum Dahleez</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3>Business Focus</h3>
+                    <p>Specialized solutions for offices, hospitals, co-working spaces, and podcast studios. Institutional pricing available.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Quality Materials</h3>
+                    <p>Premium flooring, furniture, lighting, and decorative materials sourced from trusted manufacturers worldwide.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Professional Service</h3>
+                    <p>Expert consultation, custom quotes, bulk pricing, and dedicated support for business customers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Reach</h3>
+                    <p>Serving clients worldwide with professional delivery and installation services available in major cities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with bulk discounts for businesses. Transparent pricing with no hidden costs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Shopping</h3>
+                    <p>Safe and secure checkout with multiple payment options. Your data is always protected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Section -->
+    <section class="business" id="business">
+        <h2 class="section-title">Solutions for Businesses</h2>
+        <div class="business-grid">
+            <div class="business-card">
+                <h3>🏥 Hospitals & Medical</h3>
+                <p>Complete interior design solutions for healthcare facilities.</p>
+                <ul>
+                    <li>Medical office furniture</li>
+                    <li>Patient room interiors</li>
+                    <li>Reception and waiting areas</li>
+                    <li>Specialized lighting</li>
+                </ul>
+            </div>
+            <div class="business-card">
+                <h3>🏢 Offices & Co-working</h3>
+                <p>Modern workspace solutions for productivity and comfort.</p>
+                <ul>
+                    <li>Office furniture systems</li>
+                    <li>Meeting room setups</li>
+                    <li>Ergonomic workstations</li>
+                    <li>Collaborative spaces</li>
+                </ul>
+            </div>
+            <div class="business-card">
+                <h3>🎙️ Podcast Studios</h3>
+                <p>Professional audio production environments.</p>
+                <ul>
+                    <li>Studio furniture and desks</li>
+                    <li>Acoustic panels</li>
+                    <li>Equipment mounting</li>
+                    <li>Lighting for video</li>
+                </ul>
+            </div>
+            <div class="business-card">
+                <h3>🛍️ Retail & Showrooms</h3>
+                <p>Engaging retail environments that drive sales.</p>
+                <ul>
+                    <li>Display fixtures</li>
+                    <li>Lighting design</li>
+                    <li>Flooring solutions</li>
+                    <li>Branding integration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="business" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="business-grid">
+            <div class="business-card">
+                <h3>📞 Contact Us</h3>
+                <p>Have a question? We'd love to hear from you.</p>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <input type="text" name="subject" placeholder="Subject" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <textarea name="message" rows="5" placeholder="Your Message" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                    <button type="submit" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-weight: 600; margin-top: 10px;">Send Message</button>
+                </form>
+            </div>
+            <div class="business-card">
+                <h3>📋 Request a Quote</h3>
+                <p>Get a custom quote for your project.</p>
+                <form id="quote-form">
+                    <input type="text" name="company" placeholder="Company Name" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <input type="text" name="contactName" placeholder="Contact Name" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <input type="email" name="email" placeholder="Email" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <input type="tel" name="phone" placeholder="Phone" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
+                    <select name="projectType" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="">Select Project Type</option>
+                        <option value="office">Office Interior</option>
+                        <option value="hospital">Hospital/Medical</option>
+                        <option value="podcast">Podcast Studio</option>
+                        <option value="coworking">Co-working Space</option>
+                        <option value="residential">Residential</option>
+                        <option value="retail">Retail/Showroom</option>
+                        <option value="branding">Branding & Signage</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea name="description" rows="4" placeholder="Project Description" required style="width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                    <button type="submit" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-weight: 600; margin-top: 10px;">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="datum-dahleez.store/index.html">Shop</a>
+                <a href="#categories">Categories</a>
+                <a href="#business">Business</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p class="copyright">&copy; 2026 Datum Dahleez. All rights reserved. | Professional Interior Design Solutions</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/shopping-cart.js"></script>
+    <script src="js/customer-accounts.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/payment.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

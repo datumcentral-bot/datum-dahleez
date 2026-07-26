@@ -1,0 +1,12 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+bugatti.store	TRUE	/	FALSE	1999999999	_shopify_analytics	:AZ-ZcqMiAAEAnQn7KCY7xWlTslMiDF6fg9OnQCV-HqrXwa0wn68lUFSAreXiRRRKC-C1COTpPOuQSACzXM1zxd--iaYg7iqGbfdZCzw:
+bugatti.store	TRUE	/	FALSE	1999999999	_shopify_marketing	:AZ-ZcqMjAAEAGSdMmbie2LbutC6tf7THUDxbZ42nQxo8S25ZqRXLBMnRNzwNQ9h9WBTvp6Xn1xFeGuOpnA-moTIOslA:
+bugatti.store	TRUE	/	FALSE	1999999999	_shopify_essential	:AZ-ZcqGoAAEAiV3gpym_c_1GO7VGxBhQMkwXbySazV6aU5gEjjTWJd3JVaCyOQ2eKe6vvZjQhHfpdvJJ_j7wpbYhBGjYtfh160rCc9HbX6-64w7SsrQAG4PFkf95fc9zxwbhDaeADybL5e4fWe2vH3cfipN268U1W5Y9YX6W3NV-zbjFKbmjQzrOPiU5UtXVAmcAKdB3uUY54P_PaFfN_gj53VR6x-xdHY8UPdYDYKjzqxycvQx2eRFAZEbCxFY5Q2DIg9bbtwXTTw8Tdh9M0cld0Z2SG2fFeWVMmmV_WALiViC25KLx5IYwT7sbwNcDEeEiCP-gY8uAoQej_xBAaD8u3eQyRiai-mcdQ7gQyMCZl1bZ9VMyD9_6c70bm83g8gwgx8zJIQ93Eip7qWp35C3zd5o5QWy5DguAkQ:
+bugatti.store	TRUE	/	FALSE	1999999999	Priority	High
+bugatti.store	TRUE	/	FALSE	1999999999	localization	PK
+bugatti.store	TRUE	/	FALSE	1999999999	cart_currency	USD
+bugatti.store	TRUE	/	FALSE	1999999999	_shopify_y	2de635a3-319c-42f6-ab60-cbe4ea8d6393
+bugatti.store	TRUE	/	FALSE	1999999999	_shopify_s	e97ce56e-40fa-4d3c-9224-86d9ca56886f
+bugatti.store	TRUE	/	FALSE	1999999999	SameSite	Lax
+

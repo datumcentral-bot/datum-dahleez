@@ -689,6 +689,8 @@
 
         .eis-stage { display: flex; flex-direction: column; align-items: center; padding: 6rem 2rem 8rem; min-height: 100vh; }
         .eis-card { width: 100%; max-width: 860px; }
+        .eis-card__icon { margin-bottom: 1rem; }
+        .eis-card__icon svg { width: 2rem; height: 2rem; display: block; }
         .eis-card__header { margin-bottom: 2rem; }
         .eis-card__title-group { margin-top: 0.5rem; }
         .eis-card__title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin: 0; line-height: 1.2; }
@@ -700,7 +702,8 @@
         .eis-option { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 1.5rem; background: rgba(255,255,255,0.012); border: 1px solid var(--border); color: var(--text); font-family: inherit; font-size: 0.9rem; cursor: none; transition: all 0.35s ease; user-select: none; text-align: left; }
         .eis-option:hover { border-color: var(--border); background: var(--gold-subtle); transform: translateX(6px); }
         .eis-option--selected { border-color: var(--gold); background: rgba(212, 175, 55, 0.06); }
-        .eis-option__icon { font-size: 1.25rem; width: 2rem; text-align: center; }
+        .eis-option__icon { width: 2rem; text-align: center; }
+        .eis-option__icon svg { width: 1.25rem; height: 1.25rem; display: block; margin: 0 auto; }
         .eis-option__label { flex: 1; }
         .eis-option__check { color: var(--gold); opacity: 0; transition: opacity 0.3s; }
         .eis-option--selected .eis-option__check { opacity: 1; }
@@ -732,7 +735,8 @@
         .eis-walkthrough__profile { padding-top: 2rem; border-top: 1px solid var(--border); }
         .eis-walkthrough__profile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem; margin-top: 1rem; }
         .eis-walkthrough__profile-item { padding: 1rem; border: 1px solid var(--border); background: var(--surface); }
-        .eis-walkthrough__profile-icon { font-size: 1.25rem; display: block; margin-bottom: 0.25rem; }
+        .eis-walkthrough__profile-icon { display: block; margin-bottom: 0.25rem; }
+        .eis-walkthrough__profile-icon svg { width: 1.25rem; height: 1.25rem; }
         .eis-walkthrough__profile-label { display: block; font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.25rem; }
         .eis-walkthrough__profile-value { font-size: 0.85rem; color: var(--text); }
         .eis-results__collections { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem; }
@@ -778,7 +782,7 @@
         // Load EIS engine modules and bootstrap
         async function boot() {
             const eisDir = 'js/eis/';
-            const modules = ['loader.js', 'router.js', 'engine.js', 'renderer.js', 'recommender.js', 'walkthrough.js'];
+            const modules = ['icons.js', 'loader.js', 'router.js', 'engine.js', 'renderer.js', 'recommender.js', 'walkthrough.js'];
             for (const mod of modules) {
                 await new Promise((resolve, reject) => {
                     const script = document.createElement('script');

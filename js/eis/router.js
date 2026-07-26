@@ -5,9 +5,50 @@
 
 class Router {
     constructor(stagesData) {
+        if (stagesData && Array.isArray(stagesData.stages)) {
+            stagesData.stages = this.sanitizeIcons(stagesData.stages);
+        }
         this.stages = (stagesData && Array.isArray(stagesData.stages)) ? stagesData.stages : [];
         this.rules = new Map();
         this.buildRules();
+    }
+
+    sanitizeIcons(stages) {
+        if (!Array.isArray(stages)) return stages;
+        const stageIconMap = {
+            welcome: 'welcome',
+            'space-type': 'residential',
+            'primary-purpose': 'social-gathering',
+            occupants: 'individual',
+            'daily-rhythm': 'morning',
+            'natural-light': 'maximize',
+            acoustic: 'silent',
+            'air-quality': 'standard',
+            temperature: 'moderate',
+            'current-emotion': 'neutral',
+            'target-emotion': 'calm',
+            'sensory-priority': 'sensory',
+            'budget-tier': 'comfort',
+            'style-preference': 'modern',
+            timeline: 'asap',
+            'theme-gallery': 'nature',
+            'final-review': 'comfort',
+            complete: 'membership'
+        };
+        return stages.map(stage => {
+            if (typeof stage.icon === 'string' && stage.icon.length > 2) {
+                stage.icon = stageIconMap[stage.id] || stage.id;
+            }
+            if (Array.isArray(stage.options)) {
+                stage.options = stage.options.map(opt => {
+                    if (typeof opt.icon === 'string' && opt.icon.length > 2) {
+                        opt.icon = opt.id;
+                    }
+                    return opt;
+                });
+            }
+            return stage;
+        });
     }
 
     buildRules() {

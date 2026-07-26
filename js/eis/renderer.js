@@ -92,7 +92,7 @@ class Renderer {
         if (stage.icon) {
             const icon = document.createElement('div');
             icon.className = 'eis-card__icon';
-            icon.textContent = stage.icon;
+            icon.innerHTML = getDDIcon(stage.icon);
             header.appendChild(icon);
         }
 
@@ -163,7 +163,7 @@ class Renderer {
             if (option.icon) {
                 const icon = document.createElement('span');
                 icon.className = 'eis-option__icon';
-                icon.textContent = option.icon;
+                icon.innerHTML = getDDIcon(option.icon);
                 optionEl.appendChild(icon);
             }
 

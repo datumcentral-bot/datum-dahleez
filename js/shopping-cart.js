@@ -33,12 +33,18 @@ class ShoppingCart {
             this.cart.push({ ...product, quantity: 1 });
         }
         this.saveCart();
-        this.showNotification(`${product.name} added to cart!`);
+        this.showNotification(`Rs.{product.name} added to cart!`);
+        if (typeof renderCart === 'function') {
+            renderCart();
+        }
     }
 
     removeItem(productId) {
         this.cart = this.cart.filter(item => item.id !== productId);
         this.saveCart();
+        if (typeof renderCart === 'function') {
+            renderCart();
+        }
     }
 
     updateQuantity(productId, quantity) {

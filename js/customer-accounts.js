@@ -66,7 +66,7 @@ class CustomerAccounts {
             if (loginLink) loginLink.style.display = 'none';
             if (logoutLink) logoutLink.style.display = 'inline-block';
             if (userNameDisplay) {
-                userNameDisplay.textContent = `Welcome, ${this.currentUser.firstName}`;
+                userNameDisplay.textContent = `Welcome, Rs.{this.currentUser.firstName}`;
                 userNameDisplay.style.display = 'inline';
             }
         } else {

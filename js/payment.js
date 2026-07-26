@@ -34,27 +34,21 @@ class PaymentProcessor {
             <div id="checkout-modal" class="modal">
                 <div class="modal-content">
                     <span class="close-btn">&times;</span>
-                    <h2>Checkout</h2>
+                    <h2>Checkout - Cash on Delivery</h2>
                     <div class="checkout-options">
                         <div class="checkout-option">
-                            <h3>Option 1: Manual Payment</h3>
-                            <p>Bank transfer or cash on delivery</p>
-                            <button onclick="paymentProcessor.processManualPayment()">Continue with Manual Payment</button>
-                        </div>
-                        <div class="checkout-option">
-                            <h3>Option 2: Card Payment</h3>
-                            <p>Pay with credit/debit card</p>
-                            <button onclick="paymentProcessor.processCardPayment()">Pay Now</button>
+                            <h3>Cash on Delivery</h3>
+                            <p>Pay with cash when your order is delivered. Available in all major cities of Pakistan.</p>
+                            <button onclick="paymentProcessor.processCashOnDelivery()">Place Order - Cash on Delivery</button>
                         </div>
                     </div>
                 </div>
             </div>
-        `;
         document.body.insertAdjacentHTML('beforeend', checkoutOptions);
         this.showModal();
     }
 
-    processManualPayment() {
+    processCashOnDelivery() {
         const cart = JSON.parse(localStorage.getItem('datum_dahleez_cart') || '[]');
         const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
@@ -65,7 +59,7 @@ class PaymentProcessor {
             items: cart,
             total: total,
             status: 'pending',
-            paymentMethod: 'manual',
+            paymentMethod: 'cash_on_delivery',
             createdAt: new Date().toISOString()
         };
 
@@ -77,7 +71,7 @@ class PaymentProcessor {
         // Clear cart
         localStorage.removeItem('datum_dahleez_cart');
 
-        alert(`Order placed successfully!\n\nOrder ID: ${orderId}\nTotal: $${total.toFixed(2)}\n\nPlease complete payment via bank transfer within 24 hours.`);
+        alert(`Order placed successfully!\n\nOrder ID: ${orderId}\nTotal: Rs. ${total.toFixed(2)}\n\nPayment: Cash on Delivery\n\nThank you for shopping with Datum Dahleez!`);
         this.hideModal();
         window.location.reload();
     }

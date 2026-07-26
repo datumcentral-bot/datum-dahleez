@@ -269,29 +269,29 @@ class ProductDatabase {
         );
 
         productsContainer.innerHTML = products.map(product => `
-            <div class="product-card" data-category="${product.category}">
+            <div class="product-card" data-category="Rs.{product.category}">
                 <div class="product-image">
-                    <img src="${product.image}" alt="${product.name}" loading="lazy">
-                    ${product.featured ? '<span class="featured-badge">Featured</span>' : ''}
-                    ${!product.inStock ? '<span class="out-of-stock">Out of Stock</span>' : ''}
+                    <img src="Rs.{product.image}" alt="Rs.{product.name}" loading="lazy">
+                    Rs.{product.featured ? '<span class="featured-badge">Featured</span>' : ''}
+                    Rs.{!product.inStock ? '<span class="out-of-stock">Out of Stock</span>' : ''}
                 </div>
                 <div class="product-info">
-                    <h3>${product.name}</h3>
-                    <p class="product-description">${product.description}</p>
+                    <h3>Rs.{product.name}</h3>
+                    <p class="product-description">Rs.{product.description}</p>
                     <div class="product-meta">
-                        <span class="product-category">${product.category}</span>
-                        <span class="product-unit">per ${product.unit}</span>
+                        <span class="product-category">Rs.{product.category}</span>
+                        <span class="product-unit">per Rs.{product.unit}</span>
                     </div>
                     <div class="product-footer">
-                        <span class="product-price">$${product.price.toFixed(2)}</span>
+                        <span class="product-price">Rs.Rs.{product.price.toFixed(2)}</span>
                         <button class="add-to-cart-btn" 
-                                data-product-id="${product.id}" 
-                                data-product-name="${product.name}" 
-                                data-product-price="${product.price}"
-                                data-product-image="${product.image}"
-                                data-product-category="${product.category}"
-                                ${!product.inStock ? 'disabled' : ''}>
-                            ${product.inStock ? 'Add to Cart' : 'Out of Stock'}
+                                data-product-id="Rs.{product.id}" 
+                                data-product-name="Rs.{product.name}" 
+                                data-product-price="Rs.{product.price}"
+                                data-product-image="Rs.{product.image}"
+                                data-product-category="Rs.{product.category}"
+                                Rs.{!product.inStock ? 'disabled' : ''}>
+                            Rs.{product.inStock ? 'Add to Cart' : 'Out of Stock'}
                         </button>
                     </div>
                 </div>
@@ -344,26 +344,26 @@ class ProductDatabase {
         }
 
         container.innerHTML = results.map(product => `
-            <div class="product-card" data-category="${product.category}">
+            <div class="product-card" data-category="Rs.{product.category}">
                 <div class="product-image">
-                    <img src="${product.image}" alt="${product.name}" loading="lazy">
-                    ${product.featured ? '<span class="featured-badge">Featured</span>' : ''}
+                    <img src="Rs.{product.image}" alt="Rs.{product.name}" loading="lazy">
+                    Rs.{product.featured ? '<span class="featured-badge">Featured</span>' : ''}
                 </div>
                 <div class="product-info">
-                    <h3>${product.name}</h3>
-                    <p class="product-description">${product.description}</p>
+                    <h3>Rs.{product.name}</h3>
+                    <p class="product-description">Rs.{product.description}</p>
                     <div class="product-meta">
-                        <span class="product-category">${product.category}</span>
-                        <span class="product-unit">per ${product.unit}</span>
+                        <span class="product-category">Rs.{product.category}</span>
+                        <span class="product-unit">per Rs.{product.unit}</span>
                     </div>
                     <div class="product-footer">
-                        <span class="product-price">$${product.price.toFixed(2)}</span>
+                        <span class="product-price">Rs.Rs.{product.price.toFixed(2)}</span>
                         <button class="add-to-cart-btn" 
-                                data-product-id="${product.id}" 
-                                data-product-name="${product.name}" 
-                                data-product-price="${product.price}"
-                                data-product-image="${product.image}"
-                                data-product-category="${product.category}">
+                                data-product-id="Rs.{product.id}" 
+                                data-product-name="Rs.{product.name}" 
+                                data-product-price="Rs.{product.price}"
+                                data-product-image="Rs.{product.image}"
+                                data-product-category="Rs.{product.category}">
                             Add to Cart
                         </button>
                     </div>

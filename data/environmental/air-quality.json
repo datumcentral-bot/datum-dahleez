@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Air Quality Intelligence",
+  "strategies": [
+    {"level": "critical", "cadrPerPerson": 100, "filterType": "HEPA H13", "co2Target": "<600ppm", "fragrance": "none"},
+    {"level": "important", "cadrPerPerson": 60, "filterType": "HEPA H11", "co2Target": "<800ppm", "fragrance": "optional"},
+    {"level": "standard", "cadrPerPerson": 30, "filterType": "MERV-13", "co2Target": "<1000ppm", "fragrance": "optional"},
+    {"level": "odor-sensitive", "cadrPerPerson": 60, "filterType": "Activated Carbon + HEPA", "co2Target": "<800ppm", "fragrance": "none"}
+  ]
+}

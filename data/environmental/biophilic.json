@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Biophilic Design Engine - Plants, water features, natural integration",
+  "plants": [
+    {"id": "snake-plant", "name": "Snake Plant", "lightRequirement": "low", "maintenanceDifficulty": 1, "airPurifying": true, "suitableSpaces": ["bedroom", "living-room", "office", "bathroom"], "maxHeight": "1m"},
+    {"id": "fiddle-leaf-fig", "name": "Fiddle Leaf Fig", "lightRequirement": "medium", "maintenanceDifficulty": 3, "airPurifying": false, "suitableSpaces": ["living-room", "reception", "lobby"], "maxHeight": "3m"},
+    {"id": "monstera", "name": "Monstera", "lightRequirement": "medium", "maintenanceDifficulty": 2, "airPurifying": true, "suitableSpaces": ["living-room", "bedroom", "office"], "maxHeight": "2m"},
+    {"id": "pothos", "name": "Pothos", "lightRequirement": "low", "maintenanceDifficulty": 1, "airPurifying": true, "suitableSpaces": ["bathroom", "kitchen", "office", "bedroom"], "maxHeight": "2m"},
+    {"id": "bamboo-palm", "name": "Bamboo Palm", "lightRequirement": "medium", "maintenanceDifficulty": 2, "airPurifying": true, "suitableSpaces": ["living-room", "lobby", "reception"], "maxHeight": "3m"}
+  ],
+  "waterFeatures": [
+    {"id": "tabletop-fountain", "name": "Tabletop Fountain", "size": "small", "soundLevel": "gentle", "suitableSpaces": ["bedroom", "office", "reception"]},
+    {"id": "wall-cascade", "name": "Wall Cascade", "size": "medium", "soundLevel": "moderate", "suitableSpaces": ["lobby", "reception", "living-room"]},
+    {"id": "reflecting-pool", "name": "Reflecting Pool", "size": "large", "soundLevel": "still", "suitableSpaces": ["garden", "terrace", "courtyard", "lobby"]}
+  ]
+}

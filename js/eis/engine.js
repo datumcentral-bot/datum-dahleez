@@ -229,6 +229,7 @@ class ConversationEngine {
         
         if (!nextStage) {
             this.state.metadata.completedAt = new Date().toISOString();
+            this.persistSession();
             if (this.callbacks.onComplete) {
                 this.callbacks.onComplete(this.state);
             }
@@ -321,6 +322,21 @@ class ConversationEngine {
                 profile.projectHistory = history;
             }
             localStorage.setItem('eis_customer_profile', JSON.stringify(profile));
+            
+            const sessionsHistory = JSON.parse(localStorage.getItem('eis_sessions_history') || '[]');
+            if (this.state.metadata?.completedAt) {
+                sessionsHistory.push({
+                    sessionId: this.state.metadata.sessionId,
+                    completedAt: this.state.metadata.completedAt,
+                    space: this.state.metadata.selectedSpace || this.state.metadata.selectedCategory,
+                    emotion: this.state.metadata.targetEmotion,
+                    budget: this.state.metadata.budgetTier,
+                    style: this.state.metadata.stylePreference,
+                    theme: this.state.metadata.theme
+                });
+                if (sessionsHistory.length > 50) sessionsHistory.shift();
+                localStorage.setItem('eis_sessions_history', JSON.stringify(sessionsHistory));
+            }
         } catch (e) {
             console.warn('Failed to persist customer profile:', e);
         }

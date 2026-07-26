@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ HVAC Intelligence - Equipment sizing and strategy",
+  "rules": [
+    {"spaceType": "residential", "btuPerSqft": 30, "ducting": "ducted-minisplit", "smartControl": true},
+    {"spaceType": "commercial", "btuPerSqft": 40, "ducting": "central-vrf", "smartControl": true},
+    {"spaceType": "hospital", "btuPerSqft": 50, "ducting": "central-airhandling", "smartControl": true, "filterGrade": "HEPA"},
+    {"spaceType": "server-room", "btuPerSqft": 80, "ducting": "precision-cooling", "smartControl": true, "redundancy": true}
+  ]
+}

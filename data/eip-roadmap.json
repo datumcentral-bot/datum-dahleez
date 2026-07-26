@@ -1,0 +1,753 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Environmental Intelligence Platform - Complete Implementation Roadmap",
+  "platformName": "Environmental Intelligence Platform (EIP)",
+  "currentProgress": "65%",
+  "sprints": [
+    {
+      "id": "sprint-1",
+      "name": "Adaptive Consultation & Space Intelligence",
+      "status": "in-progress",
+      "modules": [
+        {
+          "id": "module-consultation-engine",
+          "name": "Adaptive Consultation Logic",
+          "progress": "80%",
+          "stages": [
+            {
+              "id": "stage-consult-1",
+              "name": "Session Persistence & Resume",
+              "description": "Save consultation state to localStorage; auto-restore on revisit.",
+              "acceptanceCriteria": [
+                "Engine state serializes to JSON and stores under key 'eis_session'",
+                "On boot, if valid session exists, restore to last incomplete stage",
+                "User can manually restart from dashboard",
+                "Data persists across page reloads and browser restarts"
+              ],
+              "file": "js/eis/engine.js",
+              "dependencies": ["stage-consult-2"]
+            },
+            {
+              "id": "stage-consult-2",
+              "name": "Multi-Stakeholder Mode",
+              "description": "Support multiple respondents (e.g., husband/wife/designer) contributing to one project brief.",
+              "acceptanceCriteria": [
+                "Session tracks contributor roles",
+                "Each contributor's answers tagged with role",
+                "Conflict resolution UI when answers differ",
+                "Consolidated brief generated at completion"
+              ],
+              "file": "js/eis/engine.js",
+              "dependencies": ["stage-consult-1"]
+            },
+            {
+              "id": "stage-consult-3",
+              "name": "Question Weighting Engine",
+              "description": "Critical questions weighted higher; impact downstream recommendations.",
+              "acceptanceCriteria": [
+                "Stage config supports weight property (1-10)",
+                "Weights influence recommendation score multipliers",
+                "Low-weight answers do not derail core recommendations",
+                "Visible in blueprint report as 'Key Drivers'"
+              ],
+              "file": "js/eis/stages.json",
+              "dependencies": ["stage-consult-1"]
+            },
+            {
+              "id": "stage-consult-4",
+              "name": "Confidence Scoring",
+              "description": "Each recommendation shows confidence % based on answer completeness.",
+              "acceptanceCriteria": [
+                "Score calculated from number of answered stages vs total",
+                "Displayed alongside each recommendation card",
+                "Low confidence triggers follow-up questions before results"
+              ],
+              "file": "js/eis/recommender.js",
+              "dependencies": ["stage-consult-3"]
+            },
+            {
+              "id": "stage-consult-5",
+              "name": "AI Memory Between Sessions",
+              "description": "Remember customer preferences and history across sessions.",
+              "acceptanceCriteria": [
+                "Customer profile stored in localStorage",
+                "Previous project history visible in dashboard",
+                "Preferences auto-populate known answers"
+              ],
+              "file": "js/eis/engine.js",
+              "dependencies": ["stage-consult-1"]
+            }
+          ]
+        },
+        {
+          "id": "module-space-intelligence",
+          "name": "Space Intelligence Database",
+          "progress": "70%",
+          "stages": [
+            {
+              "id": "stage-space-1",
+              "name": "Expanded Space Taxonomy",
+              "description": "Every space has: area range, volume range, occupant capacity, climate zone suitability, default lux levels, default acoustic targets, default temp range.",
+              "acceptanceCriteria": [
+                "All 14 space categories expanded with 50+ subtypes each",
+                "Each space record has: id, name, category, areaSqftMin, areaSqftMax, defaultLux, defaultTempC, acousticTargetRT60, climateZones",
+                "Aliases normalized for natural language matching"
+              ],
+              "file": "data/spaces.json",
+              "dependencies": []
+            },
+            {
+              "id": "stage-space-2",
+              "name": "Room Characteristics Matrix",
+              "description": "Map spaces to compatible materials, styles, and products.",
+              "acceptanceCriteria": [
+                "Each space references compatibleMaterials array",
+                "Each space references incompatibleMaterials array",
+                "Each space references preferredStyles array",
+                "Each space references productCategoryPreferences"
+              ],
+              "file": "data/spaces.json",
+              "dependencies": ["stage-space-1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sprint-2",
+      "name": "Knowledge Graph & Sensory Engines",
+      "status": "planned",
+      "modules": [
+        {
+          "id": "module-product-graph",
+          "name": "Product Knowledge Graph",
+          "progress": "60%",
+          "stages": [
+            {
+              "id": "stage-product-1",
+              "name": "Product Intelligence Enrichment",
+              "description": "Every product gains rich metadata beyond current catalog fields.",
+              "acceptanceCriteria": [
+                "Each product has: compatibleSpaces, compatibleStyles, compatibleEmotions, incompatibleSpaces, incompatibleStyles",
+                "Each product has: maintenanceSchedule, cleaningMethod, installationComplexity, durabilityRating (1-5)",
+                "Each product has: climateSuitability, sustainabilityScore, warrantyYears, expectedLifespanYears",
+                "Each product has: relatedProducts (upsell/cross-sell), alternativeProducts (substitutes)",
+                "Each product has: applicableBudgetTiers array"
+              ],
+              "file": "data/products.json",
+              "dependencies": []
+            },
+            {
+              "id": "stage-product-2",
+              "name": "Compatibility Matrix",
+              "description": "System knows which products work together, conflict, or require each other.",
+              "acceptanceCriteria": [
+                "compatibleWith: explicit product pairs",
+                "incompatibleWith: explicit product pairs with reason",
+                "requires: prerequisite products",
+                "enhances: products that amplify this product's effect"
+              ],
+              "file": "data/products.json",
+              "dependencies": ["stage-product-1"]
+            },
+            {
+              "id": "stage-product-3",
+              "name": "Product Confidence Scoring",
+              "description": "Each recommendation tied to product shows confidence based on knowledge graph completeness.",
+              "acceptanceCriteria": [
+                "Missing metadata reduces confidence",
+                "Complete metadata = high confidence",
+                "Displayed as star rating or percentage"
+              ],
+              "file": "js/eis/recommender.js",
+              "dependencies": ["stage-product-2"]
+            }
+          ]
+        },
+        {
+          "id": "module-materials",
+          "name": "Materials Library",
+          "progress": "30%",
+          "stages": [
+            {
+              "id": "stage-mat-1",
+              "name": "Material Intelligence Taxonomy",
+              "description": "Comprehensive library of interior design materials with technical and sensory data.",
+              "acceptanceCriteria": [
+                "Each material has: id, name, category, subcategory, textureDescription, tactileRating (1-5)",
+                "Each material has: acousticAbsorption (NRC value), thermalConductivity, lightReflectance",
+                "Each material has: maintenanceLevel, durability, sustainabilityScore, cost Tier",
+                "Each material has: compatibleWith array, incompatibleWith array",
+                "Each material has: suitableSpaces array, suitableStyles array"
+              ],
+              "file": "data/materials.json",
+              "dependencies": []
+            },
+            {
+              "id": "stage-mat-2",
+              "name": "Material Compatibility Engine",
+              "description": "Rules for combining materials in same space.",
+              "acceptanceCriteria": [
+                "Clashing material pairs flagged",
+                "Complementary pairs suggested",
+                "Contrast rules defined"
+              ],
+              "file": "data/materials.json",
+              "dependencies": ["stage-mat-1"]
+            }
+          ]
+        },
+        {
+          "id": "module-color-psychology",
+          "name": "Color Psychology Engine",
+          "progress": "30%",
+          "stages": [
+            {
+              "id": "stage-color-1",
+              "name": "Color Intelligence Database",
+              "description": "Every color linked to emotion, energy level, and spatial effect.",
+              "acceptanceCriteria": [
+                "Each color has: hex, name, emotionEffect, energyLevel (1-10), lightReflectance, heatAbsorption",
+                "Complementary, analogous, and triadic relationships defined",
+                "Room-direction suitability (north/south/east/west facing)"
+              ],
+              "file": "data/colors.json",
+              "dependencies": []
+            },
+            {
+              "id": "stage-color-2",
+              "name": "Color Palettes by Theme",
+              "description": "Curated palettes for each design theme with psychological reasoning.",
+              "acceptanceCriteria": [
+                "Each theme has 3-5 predefined palettes",
+                "Each palette has: primary, secondary, accent, neutral, statement",
+                "Reasoning explains why palette suits theme's emotional goal"
+              ],
+              "file": "data/colors.json",
+              "dependencies": ["stage-color-1"]
+            }
+          ]
+        },
+        {
+          "id": "module-lighting",
+          "name": "Lighting Intelligence Engine",
+          "progress": "40%",
+          "stages": [
+            {
+              "id": "stage-light-1",
+              "name": "Lux Calculation Engine",
+              "description": "Calculate required lumens and lux levels for any space type.",
+              "acceptanceCriteria": [
+                "Default lux values mapped per space type in spaces.json",
+                "Formula: totalLumens = areaSqft * luxTarget",
+                "Adjusts for ceiling height, wall reflectance, task type"
+              ],
+              "file": "js/eis/lighting.js",
+              "dependencies": ["stage-space-1"]
+            },
+            {
+              "id": "stage-light-2",
+              "name": "Lighting Scene Presets",
+              "description": "Circadian, cinematic, task, and ambient presets.",
+              "acceptanceCriteria": [
+                "Preset IDs: circadian-day, circadian-evening, cinematic, task-focused, ambient-glow",
+                "Each preset defines: colorTempK, brightness%, sceneDuration, transitionTime",
+                "Presets auto-suggested based on dailyRhythm answer"
+              ],
+              "file": "data/lighting-presets.json",
+              "dependencies": []
+            },
+            {
+              "id": "stage-light-3",
+              "name": "Product-to-Light Mapping",
+              "description": "Every lighting product tagged with compatible spaces and scenes.",
+              "acceptanceCriteria": [
+                "Products in lighting categories have: beamAngle, cri, ipRating, dimmable, compatibleScenes",
+                "Recommender can suggest complete lighting plan per room"
+              ],
+              "file": "data/products.json",
+              "dependencies": ["stage-light-1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sprint-3",
+      "name": "Explainable Recommendations & Blueprint Reports",
+      "status": "planned",
+      "modules": [
+        {
+          "id": "module-explainable-rec",
+          "name": "Explainable Recommendation Engine",
+          "progress": "65%",
+          "stages": [
+            {
+              "id": "stage-xrec-1",
+              "name": "Why-Explanation Generator",
+              "description": "Every recommendation explains the reasoning in natural language.",
+              "acceptanceCriteria": [
+                "Each recommendation card has: primaryReason, supportingReasons[], counterConsiderations[]",
+                "Primary reason references the user's specific answer",
+                "Supporting reasons reference matching metadata"
+              ],
+              "file": "js/eis/recommender.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-xrec-2",
+              "name": "Counter-Suggestion Logic",
+              "description": "If user preference conflicts with optimal design, show alternative with explanation.",
+              "acceptanceCriteria": [
+                "When user picks option X but Y is objectively better for their goal, show Y as 'Alternative'",
+                "Politely explain tension (e.g., 'You chose dark walls for a room with limited daylight. Lighter finishes would reflect more natural light and improve circadian health.')"
+              ],
+              "file": "js/eis/recommender.js",
+              "dependencies": ["stage-xrec-1"]
+            },
+            {
+              "id": "stage-xrec-3",
+              "name": "Confidence Calibration",
+              "description": "Recommendation confidence accurately reflects knowledge gaps.",
+              "acceptanceCriteria": [
+                "Confidence = f(answerCompleteness, metadataRichness, productKnowledgeCompleteness)",
+                "If confidence < 60%, prompt user for additional inputs before final results"
+              ],
+              "file": "js/eis/recommender.js",
+              "dependencies": ["stage-xrec-2"]
+            }
+          ]
+        },
+        {
+          "id": "module-blueprint",
+          "name": "Dream Blueprint Generator",
+          "progress": "70%",
+          "stages": [
+            {
+              "id": "stage-blueprint-1",
+              "name": "Structured Blueprint Reports",
+              "description": "Auto-generated multi-section report after consultation.",
+              "acceptanceCriteria": [
+                "Sections: Executive Summary, Space DNA, Emotional DNA, Design Philosophy, Material Strategy, Lighting Plan, Air & Wellness Strategy, Furniture Strategy, Technology Strategy, Budget Options, Implementation Roadmap, Maintenance Guide",
+                "Each section 2-4 paragraphs with specific recommendations",
+                "Exportable as PDF via browser print"
+              ],
+              "file": "js/eis/blueprint.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-blueprint-2",
+              "name": "Visual Blueprint Aesthetics",
+              "description": "Blueprint rendered in obsidian-noir styling with blueprint grid background.",
+              "acceptanceCriteria": [
+                "Background: blueprint.css pattern overlay",
+                "Section dividers: gold lines with measurement markers",
+                "Monospace technical data, serif headings"
+              ],
+              "file": "css/blueprint.css",
+              "dependencies": ["stage-blueprint-1"]
+            }
+          ]
+        },
+        {
+          "id": "module-customer-dashboard",
+          "name": "Customer Dashboard",
+          "progress": "25%",
+          "stages": [
+            {
+              "id": "stage-dash-1",
+              "name": "Project Management Dashboard",
+              "description": "Customer view of their projects, consultations, and orders.",
+              "acceptanceCriteria": [
+                "Saved projects list with status",
+                "Active consultation threads",
+                "Order history and tracking",
+                "Saved mood boards and product wishlists",
+                "Multiple properties managed"
+              ],
+              "file": "customer.html + js/customer-dashboard.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-dash-2",
+              "name": "Member Benefits Portal",
+              "description": "Exclusive access for membership tiers.",
+              "acceptanceCriteria": [
+                "Tier-specific catalog access",
+                "Priority consultation booking",
+                "Early access to new collections",
+                "Member-only pricing display"
+              ],
+              "file": "customer.html + js/membership.js",
+              "dependencies": ["stage-dash-1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sprint-4",
+      "name": "Commercial Engine & Administration",
+      "status": "planned",
+      "modules": [
+        {
+          "id": "module-commercial",
+          "name": "Commercial Engine",
+          "progress": "15%",
+          "stages": [
+            {
+              "id": "stage-commercial-1",
+              "name": "Quotation Builder",
+              "description": "Generate professional quotes from recommendation carts.",
+              "acceptanceCriteria": [
+                "Quote items: products, services, materials, labor",
+                "Line-item markup and discount support",
+                "PDF export with company branding"
+              ],
+              "file": "js/commercial/quotation.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-commercial-2",
+              "name": "BOQ Generator",
+              "description": "Bill of Quantities with spec-level detail.",
+              "acceptanceCriteria": [
+                "Grouped by trade: civil, MEP, joinery, FF&E",
+                "Unit, quantity, rate, amount columns",
+                "Export to Excel/CSV"
+              ],
+              "file": "js/commercial/boq.js",
+              "dependencies": ["stage-commercial-1"]
+            },
+            {
+              "id": "stage-commercial-3",
+              "name": "Procurement Lists",
+              "description": "Convert BOQ to vendor-ready procurement lists.",
+              "acceptanceCriteria": [
+                "Split by vendor category",
+                "Vendor assignment per line item",
+                "RFQ-ready formatting"
+              ],
+              "file": "js/commercial/procurement.js",
+              "dependencies": ["stage-commercial-2"]
+            },
+            {
+              "id": "stage-commercial-4",
+              "name": "Installation Workflow",
+              "description": "Track installation tasks, milestones, and quality checks.",
+              "acceptanceCriteria": [
+                "Task board per project",
+                "Milestone dates and dependencies",
+                "Photo evidence upload",
+                "Sign-off workflow"
+              ],
+              "file": "js/commercial/installation.js",
+              "dependencies": ["stage-commercial-3"]
+            }
+          ]
+        },
+        {
+          "id": "module-admin",
+          "name": "Admin Portal",
+          "progress": "20%",
+          "stages": [
+            {
+              "id": "stage-admin-1",
+              "name": "Product Management",
+              "description": "CRUD for products, materials, categories.",
+              "acceptanceCriteria": [
+                "Bulk import via CSV/JSON",
+                "Image management with CDN",
+                "Version history"
+              ],
+              "file": "admin.html + js/admin/product-manager.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-admin-2",
+              "name": "Customer & Order Management",
+              "description": "View customers, orders, consultations, and projects.",
+              "acceptanceCriteria": [
+                "Customer list with search/filter",
+                "Order status workflow",
+                "Consultation thread viewer"
+              ],
+              "file": "admin.html + js/admin/crm.js",
+              "dependencies": ["stage-admin-1"]
+            },
+            {
+              "id": "stage-admin-3",
+              "name": "AI & Content Management",
+              "description": "Manage prompt templates, recommendation rules, and content.",
+              "acceptanceCriteria": [
+                "Recommendation rule editor with live preview",
+                "Prompt template versioning",
+                "Theme and material library admin"
+              ],
+              "file": "admin.html + js/admin/ai-manager.js",
+              "dependencies": ["stage-admin-1"]
+            }
+          ]
+        },
+        {
+          "id": "module-membership",
+          "name": "Membership System",
+          "progress": "15%",
+          "stages": [
+            {
+              "id": "stage-membership-1",
+              "name": "Tiered Membership Model",
+              "description": "Comfort, Premium, Luxury, Signature, Bespoke tiers with escalating benefits.",
+              "acceptanceCriteria": [
+                "Each tier has: price, benefits list, exclusive collections, consultation priority",
+                "Self-service upgrade/downgrade",
+                "Grace period and proration"
+              ],
+              "file": "data/membership.json + js/membership.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-membership-2",
+              "name": "Long-term Engagement Engine",
+              "description": "Keep customers engaged post-project.",
+              "acceptanceCriteria": [
+                "Annual space health check reminders",
+                "Seasonal product recommendations",
+                "Referral rewards program"
+              ],
+              "file": "js/membership/engagement.js",
+              "dependencies": ["stage-membership-1"]
+            }
+          ]
+        },
+        {
+          "id": "module-ai-reports",
+          "name": "AI Report Generation",
+          "progress": "30%",
+          "stages": [
+            {
+              "id": "stage-report-1",
+              "name": "Report Generator Core",
+              "description": "Template-based report generation from consultation state.",
+              "acceptanceCriteria": [
+                "Templates for: Consultation Summary, Emotional DNA Report, Space DNA Report, Design Philosophy Report, Material Report, Lighting Report, Air & Wellness Report, Furniture Strategy, Technology Strategy, Budget Options, Implementation Roadmap, Maintenance Guide",
+                "Markdown-to-HTML conversion",
+                "PDF export via print CSS"
+              ],
+              "file": "js/reports/generator.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-report-2",
+              "name": "Report Delivery System",
+              "description": "Email, in-app, and download delivery.",
+              "acceptanceCriteria": [
+                "In-app PDF viewer",
+                "Email delivery with branding",
+                "Shareable link with expiry"
+              ],
+              "file": "js/reports/delivery.js",
+              "dependencies": ["stage-report-1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sprint-5",
+      "name": "Environmental Intelligence Systems",
+      "status": "planned",
+      "modules": [
+        {
+          "id": "module-environmental",
+          "name": "Environmental Systems Intelligence",
+          "progress": "30%",
+          "stages": [
+            {
+              "id": "stage-env-1",
+              "name": "HVAC Intelligence",
+              "description": "Recommend HVAC specs based on space analysis.",
+              "acceptanceCriteria": [
+                "BTU calculation per space type",
+                "Ducting strategy recommendations",
+                "Smart thermostat integration points"
+              ],
+              "file": "data/environmental/hvac.json",
+              "dependencies": ["stage-space-1"]
+            },
+            {
+              "id": "stage-env-2",
+              "name": "Air Quality Intelligence",
+              "description": "Air purification, ventilation, and fragrance strategies.",
+              "acceptanceCriteria": [
+                "CADR recommendations per space",
+                "Filter type selection",
+                "Fragrance pairing by emotion"
+              ],
+              "file": "data/environmental/air-quality.json",
+              "dependencies": ["stage-env-1"]
+            },
+            {
+              "id": "stage-env-3",
+              "name": "Biophilic Design Engine",
+              "description": "Plants, water features, and natural material integration.",
+              "acceptanceCriteria": [
+                "Plant recommendations by space type and light level",
+                "Maintenance difficulty rating",
+                "Air-purifying benefits quantified"
+              ],
+              "file": "data/environmental/biophilic.json",
+              "dependencies": ["stage-env-2"]
+            }
+          ]
+        },
+        {
+          "id": "module-smart-building",
+          "name": "Smart Building Integration",
+          "progress": "25%",
+          "stages": [
+            {
+              "id": "stage-smart-1",
+              "name": "IoT Control Layer",
+              "description": "Unified control for lighting, HVAC, AV, and security.",
+              "acceptanceCriteria": [
+                "Protocol support: KNX, Zigbee, Z-Wave, Matter",
+                "Scene automation builder",
+                "Energy monitoring dashboard"
+              ],
+              "file": "js/smart-building/iot.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-smart-2",
+              "name": "Energy Optimization",
+              "description": "Reduce energy consumption through smart scheduling.",
+              "acceptanceCriteria": [
+                "Occupancy-based controls",
+                "Daylight harvesting integration",
+                "Utility cost projections"
+              ],
+              "file": "js/smart-building/energy.js",
+              "dependencies": ["stage-smart-1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sprint-6",
+      "name": "AI Design Brain & Advanced Features",
+      "status": "planned",
+      "modules": [
+        {
+          "id": "module-ai-brain",
+          "name": "AI Design Brain",
+          "progress": "25%",
+          "stages": [
+            {
+              "id": "stage-aibrain-1",
+              "name": "Problem-Solving Reasoning",
+              "description": "AI explains 'why' not just 'what' for every recommendation.",
+              "acceptanceCriteria": [
+                "Natural language explanations referencing space analysis",
+                "Trade-off explanations when budget conflicts with optimal",
+                "Step-by-step reasoning chain visible in blueprint"
+              ],
+              "file": "js/ai-brain/reasoning.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-aibrain-2",
+              "name": "Contextual Q&A",
+              "description": "Customer can ask follow-up questions and get contextual answers.",
+              "acceptanceCriteria": [
+                "Chat interface during consultation",
+                "Answers reference previous inputs",
+                "Can modify recommendations based on Q&A"
+              ],
+              "file": "js/ai-brain/chat.js",
+              "dependencies": ["stage-aibrain-1"]
+            },
+            {
+              "id": "stage-aibrain-3",
+              "name": "Predictive Analytics",
+              "description": "Predict future needs based on lifestyle trends.",
+              "acceptanceCriteria": [
+                "Seasonal adjustments predicted",
+                "Family growth scenarios",
+                "Technology obsolescence warnings"
+              ],
+              "file": "js/ai-brain/predictive.js",
+              "dependencies": ["stage-aibrain-2"]
+            }
+          ]
+        },
+        {
+          "id": "module-future",
+          "name": "Future Systems",
+          "progress": "10%",
+          "stages": [
+            {
+              "id": "stage-future-1",
+              "name": "AR Visualization",
+              "description": "WebAR product placement in real spaces.",
+              "acceptanceCriteria": [
+                "Model-viewer integration",
+                "Room-scale AR on mobile",
+                "Product swap in AR view"
+              ],
+              "file": "js/future/ar.js",
+              "dependencies": []
+            },
+            {
+              "id": "stage-future-2",
+              "name": "Digital Twin Integration",
+              "description": "Realtime environmental monitoring twin of designed space.",
+              "acceptanceCriteria": [
+                "IoT sensor feed visualization",
+                "Anomaly alerts",
+                "Usage analytics dashboard"
+              ],
+              "file": "js/future/digital-twin.js",
+              "dependencies": ["stage-future-1"]
+            },
+            {
+              "id": "stage-future-3",
+              "name": "Voice Concierge",
+              "description": "Natural language control of entire environment.",
+              "acceptanceCriteria": [
+                "Web Speech API integration",
+                "Multi-language support",
+                "Context-aware commands"
+              ],
+              "file": "js/future/voice.js",
+              "dependencies": ["stage-future-1"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "implementationOrder": [
+    "stage-consult-1",
+    "stage-space-1",
+    "stage-consult-2",
+    "stage-consult-3",
+    "stage-consult-4",
+    "stage-product-1",
+    "stage-mat-1",
+    "stage-color-1",
+    "stage-light-1",
+    "stage-xrec-1",
+    "stage-blueprint-1",
+    "stage-dash-1",
+    "stage-commercial-1",
+    "stage-admin-1",
+    "stage-membership-1",
+    "stage-report-1",
+    "stage-env-1",
+    "stage-smart-1",
+    "stage-aibrain-1",
+    "stage-future-1"
+  ]
+}

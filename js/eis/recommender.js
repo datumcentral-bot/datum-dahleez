@@ -22,13 +22,15 @@ class Recommender {
             emotionsData,
             budgetData,
             spacesData,
-            themesData
+            themesData,
+            stagesData
         ] = await Promise.all([
             this.dataLoader.load('recommendations', '../data/recommendations.json'),
             this.dataLoader.load('emotions', '../data/emotions.json'),
             this.dataLoader.load('budgetTiers', '../data/budget-tiers.json'),
             this.dataLoader.load('spaces', '../data/spaces.json'),
-            this.dataLoader.load('themes', '../data/themes.json')
+            this.dataLoader.load('themes', '../data/themes.json'),
+            this.dataLoader.load('stages', '../data/stages.json')
         ]);
 
         const targetEmotion = state.metadata?.targetEmotion;
@@ -45,6 +47,8 @@ class Recommender {
             selectedSpace,
             budgetTier
         );
+
+        const confidence = this.calculateConfidence(state, stagesData);
 
         const scoredCollections = matchedRules.map(rule => {
             const score = this.calculateScore({
@@ -64,6 +68,7 @@ class Recommender {
             return {
                 ...rule,
                 score,
+                confidence: Math.round(score * (confidence.confidence / 100)),
                 reasoning: this.buildReasoning(rule, score, targetEmotion, selectedSpace, selectedTheme, themesData)
             };
         });
@@ -81,6 +86,7 @@ class Recommender {
                 stylePreference,
                 selectedTheme
             },
+            confidence,
             generatedAt: new Date().toISOString()
         };
     }
@@ -156,6 +162,31 @@ class Recommender {
         score += emotionalGapBonus;
 
         return Math.min(100, Math.round(score));
+    }
+
+    calculateConfidence(state, stagesData) {
+        if (!state || !state.answers) return { confidence: 0, missingInputs: [] };
+        
+        const criticalFields = ['selectedSpace', 'purpose', 'targetEmotion', 'budgetTier', 'stylePreference'];
+        const optionalFields = ['currentEmotion', 'rhythm', 'lightPreference', 'acousticNeeds', 'airQuality', 'temperaturePreference', 'theme', 'timeline'];
+        
+        const answeredCritical = criticalFields.filter(f => state.metadata && state.metadata[f]).length;
+        const answeredOptional = optionalFields.filter(f => state.metadata && state.metadata[f]).length;
+        
+        const criticalScore = (answeredCritical / criticalFields.length) * 70;
+        const optionalScore = (answeredOptional / optionalFields.length) * 20;
+        const completionBonus = Math.min(10, Math.round((Object.keys(state.answers).length / Math.max(1, (stagesData ? stagesData.stages.length : 18))) * 10));
+        
+        const confidence = Math.round(criticalScore + optionalScore + completionBonus);
+        
+        const missingInputs = criticalFields.filter(f => !state.metadata || !state.metadata[f]);
+        
+        return {
+            confidence: Math.min(100, confidence),
+            missingInputs,
+            completedStages: Object.keys(state.answers).length,
+            totalStages: stagesData ? stagesData.stages.length : 18
+        };
     }
 
     buildReasoning(rule, score, targetEmotion, selectedSpace, selectedTheme, themesData) {

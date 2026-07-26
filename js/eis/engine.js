@@ -13,11 +13,14 @@ class ConversationEngine {
             currentStageId: 'welcome',
             stagesCompleted: [],
             answers: {},
+            contributors: [],
+            weights: {},
             metadata: {
                 startedAt: null,
                 completedAt: null,
                 userId: null,
-                sessionId: this.generateSessionId()
+                sessionId: this.generateSessionId(),
+                resumedFrom: null
             }
         };
 
@@ -28,13 +31,20 @@ class ConversationEngine {
         };
 
         this.initialized = false;
+        this.storageKey = 'eis_session_v1';
     }
 
     async init() {
         try {
+            const savedSession = this.loadSession();
+            if (savedSession && savedSession.metadata && savedSession.metadata.resumedFrom) {
+                this.state = savedSession;
+                this.state.metadata.resumedFrom = this.state.currentStageId;
+            }
             const stagesData = await this.dataLoader.load('stages', '../data/stages.json');
             this.router = new Router(stagesData);
             this.initialized = true;
+            this.persistSession();
             return true;
         } catch (error) {
             console.error('Failed to initialize ConversationEngine:', error);
@@ -95,7 +105,12 @@ class ConversationEngine {
             this.state.answers[stageId] = answer;
         }
 
+        if (typeof stage.weight === 'number' && stage.weight > 0) {
+            this.state.weights[stageId] = stage.weight;
+        }
+
         this.processLogic(stage, answer);
+        this.persistSession();
         return true;
     }
 
@@ -252,6 +267,70 @@ class ConversationEngine {
         return stage;
     }
 
+    persistSession() {
+        try {
+            const payload = {
+                ...this.state,
+                persistedAt: new Date().toISOString()
+            };
+            localStorage.setItem(this.storageKey, JSON.stringify(payload));
+        } catch (e) {
+            console.warn('Failed to persist EIS session:', e);
+        }
+    }
+
+    loadSession() {
+        try {
+            const raw = localStorage.getItem(this.storageKey);
+            if (!raw) return null;
+            const parsed = JSON.parse(raw);
+            if (parsed && parsed.metadata && parsed.metadata.sessionId) {
+                return parsed;
+            }
+            return null;
+        } catch (e) {
+            console.warn('Failed to load EIS session:', e);
+            return null;
+        }
+    }
+
+    clearSession() {
+        try {
+            localStorage.removeItem(this.storageKey);
+        } catch (e) {
+            console.warn('Failed to clear EIS session:', e);
+        }
+    }
+
+    addContributor(role, name) {
+        this.state.contributors.push({
+            role: role || 'Contributor',
+            name: name || 'Anonymous',
+            joinedAt: new Date().toISOString()
+        });
+        this.persistSession();
+    }
+
+    removeContributor(index) {
+        if (index >= 0 && index < this.state.contributors.length) {
+            this.state.contributors.splice(index, 1);
+            this.persistSession();
+        }
+    }
+
+    getContributors() {
+        return [...this.state.contributors];
+    }
+
+    recordWeight(stageId, weight) {
+        this.state.weights[stageId] = weight;
+        this.persistSession();
+    }
+
+    getWeightedAnswers() {
+        return this.state.weights;
+    }
+
     getState() {
         return { ...this.state };
     }
@@ -265,13 +344,17 @@ class ConversationEngine {
             currentStageId: 'welcome',
             stagesCompleted: [],
             answers: {},
+            contributors: [],
+            weights: {},
             metadata: {
                 startedAt: null,
                 completedAt: null,
                 userId: null,
-                sessionId: this.generateSessionId()
+                sessionId: this.generateSessionId(),
+                resumedFrom: null
             }
         };
+        this.clearSession();
     }
 
     isValidStage(stageId) {

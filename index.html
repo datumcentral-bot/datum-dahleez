@@ -744,9 +744,10 @@
         .eis-recommendation:hover { border-color: var(--gold); }
         .eis-recommendation__head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.75rem; }
         .eis-recommendation__name { font-size: 1.05rem; font-weight: 500; }
-        .eis-recommendation__price { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--gold); }
+        .eis-recommendation__score { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--gold); }
         .eis-recommendation__why { color: var(--soft-silver); font-size: 0.9rem; margin-bottom: 0.75rem; }
         .eis-recommendation__link { color: var(--gold); font-size: 0.8rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; }
+        .eis-confidence-note { padding: 0.75rem 1rem; background: rgba(212,175,55,0.08); border: 1px solid var(--border); margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--muted); }
         .eis-theme-gallery { display: flex; flex-direction: column; gap: 1.5rem; }
         .eis-theme-gallery__description { color: var(--soft-silver); font-size: 0.95rem; margin-bottom: 1.5rem; }
         .eis-theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
@@ -861,11 +862,15 @@
                 },
                 onResultsReady(stage, container) {
                     recommender.getRecommendations(engine.getState()).then(result => {
-                        container.innerHTML = result.collections.map(col => `
+                        const conf = result.confidence || { confidence: 0, missingInputs: [] };
+                        const missingNote = conf.missingInputs && conf.missingInputs.length > 0 
+                            ? `<div class="eis-confidence-note" style="font-size:0.8rem;color:var(--muted);margin-bottom:1rem;">Confidence: ${conf.confidence}% ${conf.missingInputs.length ? '(' + conf.missingInputs.join(', ') + ')' : ''}</div>` 
+                            : '';
+                        container.innerHTML = missingNote + result.collections.map(col => `
                             <div class="eis-recommendation">
                                 <div class="eis-recommendation__head">
                                     <div class="eis-recommendation__name">${col.name}</div>
-                                    <div class="eis-recommendation__score">${Math.round(col.score)}% match</div>
+                                    <div class="eis-recommendation__score">${Math.round(col.score)}% match · ${col.confidence || 0}% confidence</div>
                                 </div>
                                 <p class="eis-recommendation__why">${col.reasoning}</p>
                                 <a href="${col.url || 'datum-dahleez.store/collections.html'}" target="_blank" class="eis-recommendation__link">View Collection</a>
@@ -931,6 +936,7 @@
                 const wt = await walkthrough.generate(state);
                 const theme = state.metadata?.theme;
                 const themeLabel = theme ? theme.replace(/-/g, ' ') : '';
+                const conf = recs.confidence || { confidence: 0, missingInputs: [] };
 
                 container.innerHTML = `
                     <div class="doc">
@@ -938,6 +944,7 @@
                             <div class="doc-eyebrow">Dream Space Blueprint</div>
                             <h1 class="doc-title display">${(state.metadata.selectedSpace || state.metadata.selectedCategory || 'Your Space').replace(/-/g, ' ')}</h1>
                             <p class="doc-subtitle">Environment Intelligence System${themeLabel ? ' · ' + themeLabel : ''}</p>
+                            <p style="color:var(--muted);font-size:0.8rem;">Confidence: ${conf.confidence}%${conf.missingInputs && conf.missingInputs.length ? ' · Missing: ' + conf.missingInputs.join(', ') : ''}</p>
                         </div>
 
                         ${theme ? `

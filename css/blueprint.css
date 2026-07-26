@@ -1,0 +1,35 @@
+/* DATUM DAHLEEZ Blueprint Document Styling */
+.blueprint {
+    background-image:
+        linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.blueprint__section {
+    position: relative;
+}
+
+.blueprint__section::before {
+    content: attr(data-section-number);
+    position: absolute;
+    left: -2rem;
+    top: 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--gold);
+    opacity: 0.5;
+}
+
+@media print {
+    .blueprint {
+        background-image: none;
+        padding: 0;
+    }
+    .blueprint__section {
+        page-break-inside: avoid;
+    }
+}

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/blueprint.css">
     <style>
         :root {
             --bg: #090909;
@@ -794,7 +795,7 @@
         // Load EIS engine modules and bootstrap
         async function boot() {
             const eisDir = 'js/eis/';
-            const modules = ['icons.js', 'loader.js', 'router.js', 'engine.js', 'renderer.js', 'recommender.js', 'walkthrough.js'];
+            const modules = ['icons.js', 'loader.js', 'router.js', 'engine.js', 'renderer.js', 'recommender.js', 'lighting.js', 'walkthrough.js', 'blueprint.js'];
             for (const mod of modules) {
                 await new Promise((resolve, reject) => {
                     const script = document.createElement('script');
@@ -884,6 +885,11 @@
                                     <div class="eis-recommendation__score">${Math.round(col.score)}% match · ${col.confidence || 0}% confidence</div>
                                 </div>
                                 <p class="eis-recommendation__why">${col.reasoning}</p>
+                                ${col.counterConsiderations && col.counterConsiderations.length ? `
+                                    <div style="margin-top:0.5rem; padding:0.75rem; background:rgba(212,175,55,0.06); border-left:2px solid var(--gold); font-size:0.85rem; color:var(--soft-silver);">
+                                        ${col.counterConsiderations.map(c => `<div>${c.message}</div>`).join('')}
+                                    </div>
+                                ` : ''}
                                 <a href="${col.url || 'datum-dahleez.store/collections.html'}" target="_blank" class="eis-recommendation__link">View Collection</a>
                             </div>
                         `).join('');
@@ -1008,9 +1014,11 @@
                             <div id="contributors-summary" style="margin-bottom:1rem;"></div>
                             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
                                 <button class="btn btn-primary" onclick="document.getElementById('walkthrough-render').scrollIntoView({behavior:'smooth'})">Experience Walkthrough</button>
+                                <button class="btn" id="view-blueprint-btn">View Blueprint</button>
                                 <a href="datum-dahleez.store/collections.html" class="btn">Browse All Solutions</a>
                                 <button class="btn" onclick="window.restart()">Start Over</button>
                             </div>
+                            <div id="blueprint-render" style="margin-top:2rem;"></div>
                         </div>
                     </div>
                 `;
@@ -1086,6 +1094,22 @@
                     renderContributors();
                 }
             });
+
+            const blueprintBtn = document.getElementById('view-blueprint-btn');
+            if (blueprintBtn) {
+                blueprintBtn.addEventListener('click', async () => {
+                    const container = document.getElementById('blueprint-render');
+                    if (!container) return;
+                    container.innerHTML = '<div class="processing"><div class="processing-text">Composing Blueprint</div><div class="processing-bar"></div></div>';
+                    
+                    setTimeout(async () => {
+                        const blueprintGen = new BlueprintGenerator({ dataLoader: new DataLoader() });
+                        const blueprint = await blueprintGen.generate(window.eisEngine.getState());
+                        container.innerHTML = blueprintGen.renderToHTML(blueprint);
+                        container.scrollIntoView({ behavior: 'smooth' });
+                    }, 800);
+                });
+            }
         });
     </script>
 </body>

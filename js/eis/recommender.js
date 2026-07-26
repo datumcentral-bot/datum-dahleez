@@ -68,11 +68,16 @@ class Recommender {
                 themesData
             });
 
+            const reasoning = this.buildReasoning(rule, score, targetEmotion, selectedSpace, selectedTheme, themesData);
+            const counters = this.generateCounterSuggestions(state, rule);
+
             return {
                 ...rule,
                 score,
                 confidence: Math.round(score * (confidence.confidence / 100)),
-                reasoning: this.buildReasoning(rule, score, targetEmotion, selectedSpace, selectedTheme, themesData)
+                reasoning: reasoning.full,
+                reasoningBreakdown: reasoning,
+                counterConsiderations: counters
             };
         });
 
@@ -202,6 +207,7 @@ class Recommender {
 
     buildReasoning(rule, score, targetEmotion, selectedSpace, selectedTheme, themesData) {
         const reasons = [];
+        const counterConsiderations = [];
 
         if (targetEmotion && rule.emotions.includes(targetEmotion)) {
             reasons.push(`Aligns with your ${targetEmotion} emotional goal`);
@@ -234,7 +240,42 @@ class Recommender {
             reasons.push(topCollection.why);
         }
 
-        return reasons.join('. ') + '.';
+        return {
+            primary: reasons[0] || 'Recommended for your space',
+            supporting: reasons.slice(1),
+            counterConsiderations,
+            full: reasons.join('. ') + '.'
+        };
+    }
+
+    generateCounterSuggestions(state, rule) {
+        const counters = [];
+        const selectedSpace = state.metadata?.selectedSpace || state.metadata?.selectedCategory;
+        const budgetTier = state.metadata?.budgetTier;
+        const stylePreference = state.metadata?.stylePreference;
+
+        if (selectedSpace && rule.spaces.includes('*')) {
+            counters.push({
+                type: 'space-fit',
+                message: `This is a universal recommendation. Space-specific collections may offer better results for ${selectedSpace.replace(/-/g, ' ')}.`
+            });
+        }
+
+        if (budgetTier === 'comfort' && rule.collections.some(c => c.tier === 'luxury')) {
+            counters.push({
+                type: 'budget-fit',
+                message: `Some items in this collection exceed your Comfort budget. Premium alternatives are available with similar emotional impact.`
+            });
+        }
+
+        if (stylePreference && !rule.collections.some(c => c.id.includes(stylePreference))) {
+            counters.push({
+                type: 'style-fit',
+                message: `This collection is not style-filtered. Better ${stylePreference.replace(/-/g, ' ')} matches may exist.`
+            });
+        }
+
+        return counters;
     }
 
     async getSingleRecommendation(state, context) {

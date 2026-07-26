@@ -5,7 +5,7 @@
 
 class Router {
     constructor(stagesData) {
-        this.stages = stagesData.stages;
+        this.stages = (stagesData && Array.isArray(stagesData.stages)) ? stagesData.stages : [];
         this.rules = new Map();
         this.buildRules();
     }

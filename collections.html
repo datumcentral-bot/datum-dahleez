@@ -203,7 +203,7 @@
 
         document.addEventListener('DOMContentLoaded', async () => {
             try {
-                allProducts = await dataLoader.load('products', '../data/products.json');
+                allProducts = await dataLoader.load('products', 'data/products.json');
                 filteredProducts = [...allProducts];
                 populateCategoryFilter();
                 renderProducts();

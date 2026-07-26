@@ -798,7 +798,7 @@
             const recommender = new Recommender({ dataLoader });
             const walkthrough = new Walkthrough({ dataLoader });
 
-            const themesData = await dataLoader.load('themes', '../data/themes.json').catch(() => ({ themes: [] }));
+            const themesData = await dataLoader.load('themes', 'data/themes.json').catch(() => ({ themes: [] }));
             window.__eisThemeData = themesData;
 
             const engine = new ConversationEngine({

@@ -55,17 +55,17 @@ class DataLoader {
 
     getUrlForKey(key) {
         const map = {
-            stages: '../data/stages.json',
-            emotions: '../data/emotions.json',
-            sensory: '../data/sensory.json',
-            recommendations: '../data/recommendations.json',
-            services: '../data/services.json',
-            roadmap: '../data/roadmap.json',
-            membership: '../data/membership.json',
-            budgetTiers: '../data/budget-tiers.json',
-            spaces: '../data/spaces.json'
+            stages: 'data/stages.json',
+            emotions: 'data/emotions.json',
+            sensory: 'data/sensory.json',
+            recommendations: 'data/recommendations.json',
+            services: 'data/services.json',
+            roadmap: 'data/roadmap.json',
+            membership: 'data/membership.json',
+            budgetTiers: 'data/budget-tiers.json',
+            spaces: 'data/spaces.json'
         };
-        return map[key] || `../data/${key}.json`;
+        return map[key] || `data/${key}.json`;
     }
 
     clear() {

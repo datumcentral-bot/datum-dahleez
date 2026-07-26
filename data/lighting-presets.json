@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Lighting Presets - Scene-based lighting configurations",
+  "presets": [
+    {"id": "circadian-day", "name": "Circadian Day", "description": "Cool white (6500K) at high brightness to suppress melatonin and energize", "colorTempK": 6500, "brightness": 100, "sceneDuration": "30min", "transitionTime": "15min", "suitableFor": ["work", "study", "kitchen", "office"]},
+    {"id": "circadian-evening", "name": "Circadian Evening", "description": "Warm amber (2700K) at low brightness to prepare body for sleep", "colorTempK": 2700, "brightness": 30, "sceneDuration": "2hr", "transitionTime": "30min", "suitableFor": ["bedroom", "living-room", "spa", "meditation"]},
+    {"id": "task-focused", "name": "Task Focused", "description": "High CRI neutral white (4000K) at maximum task illuminance", "colorTempK": 4000, "brightness": 100, "sceneDuration": "variable", "transitionTime": "instant", "suitableFor": ["desk", "workstation", "kitchen-counter", "vanity"]},
+    {"id": "ambient-glow", "name": "Ambient Glow", "description": "Soft warm (2200K) at low brightness for relaxation and atmosphere", "colorTempK": 2200, "brightness": 20, "sceneDuration": "continuous", "transitionTime": "slow", "suitableFor": ["living-room", "bedroom", "hotel-lobby", "lounge"]},
+    {"id": "cinematic", "name": "Cinematic", "description": "Dimmed warm (2000K) at very low brightness for media and drama", "colorTempK": 2000, "brightness": 10, "sceneDuration": "continuous", "transitionTime": "slow", "suitableFor": ["home-theater", "media-room", "event-stage", "cocktail-bar"]},
+    {"id": "color-therapy", "name": "Color Therapy", "description": "Dynamic hue rotation for emotional regulation and biophilic effect", "colorTempK": 3000, "brightness": 50, "sceneDuration": "15min", "transitionTime": "5min", "suitableFor": ["spa", "wellness-room", "meditation-room", "therapy-space"]},
+    {"id": "energize", "name": "Energize", "description": "Full spectrum cool white (6000K) at full brightness for morning activation", "colorTempK": 6000, "brightness": 100, "sceneDuration": "30min", "transitionTime": "instant", "suitableFor": ["gym", "kitchen", "office", "classroom"]},
+    {"id": "focus", "name": "Deep Focus", "description": "Neutral white (3500K) at high brightness with zero glare", "colorTempK": 3500, "brightness": 100, "sceneDuration": "90min", "transitionTime": "instant", "suitableFor": ["home-office", "study-room", "software-engineering-office", "lab"]},
+    {"id": "sunset", "name": "Sunset Glow", "description": "Amber to orange gradient mimicking golden hour", "colorTempK": 2200, "brightness": 40, "sceneDuration": "1hr", "transitionTime": "slow", "suitableFor": ["terrace", "rooftop", "dining-room", "outdoor-living"]},
+    {"id": "nightlight", "name": "Nightlight", "description": "Deep red (1800K) at 1% brightness preserving night vision", "colorTempK": 1800, "brightness": 1, "sceneDuration": "continuous", "transitionTime": "slow", "suitableFor": ["bedroom", "nursery", "child-bedroom", "bathroom"]}
+  ]
+}

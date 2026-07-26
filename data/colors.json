@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Color Intelligence Database - Colors linked to emotion, energy, and spatial effect",
+  "colors": [
+    {"id": "white", "name": "Pure White", "hex": "#FFFFFF", "emotionEffect": "calm", "energyLevel": 1, "lightReflectance": 0.9, "heatAbsorption": "low", "roomDirection": ["north", "south", "east", "west"], "complementary": ["black", "gray"], "analogous": ["cream", "ivory"], "triadic": ["blue", "red"], "description": "Expands space, neutral, clean"},
+    {"id": "cream", "name": "Cream", "hex": "#FFFDD0", "emotionEffect": "calm", "energyLevel": 1, "lightReflectance": 0.85, "heatAbsorption": "low", "roomDirection": ["north", "south", "east", "west"], "complementary": ["charcoal"], "analogous": ["white", "ivory"], "triadic": ["navy", "burgundy"], "description": "Warm neutral, soothing"},
+    {"id": "ivory", "name": "Ivory", "hex": "#FFFFF0", "emotionEffect": "calm", "energyLevel": 1, "lightReflectance": 0.85, "heatAbsorption": "low", "roomDirection": ["north", "south", "east", "west"], "complementary": ["charcoal"], "analogous": ["white", "cream"], "triadic": ["navy", "burgundy"], "description": "Soft, elegant neutral"},
+    {"id": "black", "name": "Black", "hex": "#000000", "emotionEffect": "mysterious", "energyLevel": 2, "lightReflectance": 0.05, "heatAbsorption": "high", "roomDirection": ["south"], "complementary": ["white"], "analogous": ["charcoal", "gray"], "triadic": ["red", "blue"], "description": "Dramatic, absorbs light"},
+    {"id": "charcoal", "name": "Charcoal", "hex": "#36454F", "emotionEffect": "mysterious", "energyLevel": 3, "lightReflectance": 0.1, "heatAbsorption": "medium", "roomDirection": ["south"], "complementary": ["cream"], "analogous": ["black", "gray"], "triadic": ["red", "blue"], "description": "Sophisticated dark"},
+    {"id": "gray", "name": "Gray", "hex": "#808080", "emotionEffect": "neutral", "energyLevel": 2, "lightReflectance": 0.3, "heatAbsorption": "medium", "roomDirection": ["north", "south", "east", "west"], "complementary": ["white"], "analogous": ["black", "charcoal"], "triadic": ["red", "blue"], "description": "Balanced, versatile"},
+    {"id": "navy", "name": "Navy", "hex": "#000080", "emotionEffect": "safe", "energyLevel": 3, "lightReflectance": 0.1, "heatAbsorption": "high", "roomDirection": ["south"], "complementary": ["gold"], "analogous": ["blue", "teal"], "triadic": ["red", "yellow"], "description": "Deep, secure, authoritative"},
+    {"id": "navy-blue", "name": "Navy Blue", "hex": "#000080", "emotionEffect": "safe", "energyLevel": 3, "lightReflectance": 0.1, "heatAbsorption": "high", "roomDirection": ["south"], "complementary": ["gold"], "analogous": ["blue", "teal"], "triadic": ["red", "yellow"], "description": "Deep, secure, authoritative"},
+    {"id": "burgundy", "name": "Burgundy", "hex": "#800020", "emotionEffect": "luxurious", "energyLevel": 4, "lightReflectance": 0.15, "heatAbsorption": "high", "roomDirection": ["south"], "complementary": ["gold"], "analogous": ["red", "maroon"], "triadic": ["blue", "yellow"], "description": "Rich, warm, indulgent"},
+    {"id": "red", "name": "Red", "hex": "#FF0000", "emotionEffect": "energized", "energyLevel": 10, "lightReflectance": 0.2, "heatAbsorption": "high", "roomDirection": ["south"], "complementary": ["green"], "analogous": ["orange", "burgundy"], "triadic": ["blue", "yellow"], "description": "Passionate, intense, stimulating"},
+    {"id": "orange", "name": "Orange", "hex": "#FFA500", "emotionEffect": "energized", "energyLevel": 9, "lightReflectance": 0.4, "heatAbsorption": "medium", "roomDirection": ["south", "east"], "complementary": ["blue"], "analogous": ["red", "yellow"], "triadic": ["blue", "green"], "description": "Warm, creative, social"},
+    {"id": "yellow", "name": "Yellow", "hex": "#FFFF00", "emotionEffect": "energized", "energyLevel": 8, "lightReflectance": 0.7, "heatAbsorption": "low", "roomDirection": ["north", "east"], "complementary": ["purple"], "analogous": ["orange", "gold"], "triadic": ["blue", "red"], "description": "Cheerful, bright, optimistic"},
+    {"id": "gold", "name": "Gold", "hex": "#FFD700", "emotionEffect": "luxurious", "energyLevel": 6, "lightReflectance": 0.7, "heatAbsorption": "low", "roomDirection": ["north", "east"], "complementary": ["navy"], "analogous": ["yellow", "orange"], "triadic": ["blue", "red"], "description": "Premium, opulent, warm"},
+    {"id": "green", "name": "Green", "hex": "#008000", "emotionEffect": "grounded", "energyLevel": 4, "lightReflectance": 0.3, "heatAbsorption": "medium", "roomDirection": ["north", "east", "west"], "complementary": ["red"], "analogous": ["teal", "lime"], "triadic": ["orange", "purple"], "description": "Natural, balancing, healing"},
+    {"id": "teal", "name": "Teal", "hex": "#008080", "emotionEffect": "calm", "energyLevel": 4, "lightReflectance": 0.3, "heatAbsorption": "medium", "roomDirection": ["north", "east", "west"], "complementary": ["coral"], "analogous": ["blue", "green"], "triadic": ["orange", "red"], "description": "Refreshing, sophisticated"},
+    {"id": "blue", "name": "Blue", "hex": "#0000FF", "emotionEffect": "calm", "energyLevel": 3, "lightReflectance": 0.2, "heatAbsorption": "low", "roomDirection": ["north", "east", "west"], "complementary": ["orange"], "analogous": ["teal", "navy"], "triadic": ["red", "yellow"], "description": "Peaceful, trustworthy, expansive"},
+    {"id": "light-blue", "name": "Light Blue", "hex": "#ADD8E6", "emotionEffect": "calm", "energyLevel": 2, "lightReflectance": 0.6, "heatAbsorption": "low", "roomDirection": ["north", "east"], "complementary": ["coral"], "analogous": ["blue", "navy"], "triadic": ["red", "yellow"], "description": "Airy, tranquil, spa-like"},
+    {"id": "purple", "name": "Purple", "hex": "#800080", "emotionEffect": "mysterious", "energyLevel": 5, "lightReflectance": 0.2, "heatAbsorption": "medium", "roomDirection": ["north"], "complementary": ["yellow"], "analogous": ["magenta", "navy"], "triadic": ["orange", "green"], "description": "Creative, spiritual, royal"},
+    {"id": "pink", "name": "Pink", "hex": "#FFC0CB", "emotionEffect": "playful", "energyLevel": 5, "lightReflectance": 0.7, "heatAbsorption": "low", "roomDirection": ["north", "east"], "complementary": ["green"], "analogous": ["red", "magenta"], "triadic": ["blue", "yellow"], "description": "Soft, nurturing, romantic"},
+    {"id": "brown", "name": "Brown", "hex": "#8B4513", "emotionEffect": "grounded", "energyLevel": 2, "lightReflectance": 0.15, "heatAbsorption": "medium", "roomDirection": ["north", "west"], "complementary": ["blue"], "analogous": ["orange", "gold"], "triadic": ["green", "red"], "description": "Earthy, stable, warm"},
+    {"id": "beige", "name": "Beige", "hex": "#F5F5DC", "emotionEffect": "calm", "energyLevel": 1, "lightReflectance": 0.7, "heatAbsorption": "low", "roomDirection": ["north", "south", "east", "west"], "complementary": ["navy"], "analogous": ["white", "cream"], "triadic": ["blue", "burgundy"], "description": "Neutral, warm, versatile"},
+    {"id": "copper", "name": "Copper", "hex": "#B87333", "emotionEffect": "luxurious", "energyLevel": 5, "lightReflectance": 0.5, "heatAbsorption": "medium", "roomDirection": ["north", "east", "west"], "complementary": ["navy"], "analogous": ["gold", "bronze"], "triadic": ["blue", "red"], "description": "Warm metallic, premium"},
+    {"id": "bronze", "name": "Bronze", "hex": "#CD7F32", "emotionEffect": "luxurious", "energyLevel": 4, "lightReflectance": 0.4, "heatAbsorption": "medium", "roomDirection": ["north", "east"], "complementary": ["navy"], "analogous": ["copper", "gold"], "triadic": ["blue", "red"], "description": "Classic metallic, refined"}
+  ],
+  "palettes": [
+    {
+      "id": "palette-scandinavian",
+      "name": "Scandinavian",
+      "theme": "scandinavian",
+      "colors": ["white", "cream", "beige", "light-blue", "gray"],
+      "primary": "white",
+      "secondary": "beige",
+      "accent": "light-blue",
+      "neutral": "cream",
+      "statement": "gray",
+      "reasoning": "Light reflective base maximizes natural light in Nordic climates; soft accents add warmth without visual noise."
+    },
+    {
+      "id": "palette-japandi",
+      "name": "Japandi",
+      "theme": "japandi",
+      "colors": ["white", "cream", "beige", "brown", "gray"],
+      "primary": "white",
+      "secondary": "beige",
+      "accent": "brown",
+      "neutral": "gray",
+      "statement": "green",
+      "reasoning": "Wabi-sabi imperfection meets Scandinavian functionality. Earth tones ground the space while whites maintain breathability."
+    },
+    {
+      "id": "palette-luxury",
+      "name": "Luxury Dark",
+      "theme": "luxury",
+      "colors": ["black", "charcoal", "gold", "burgundy", "navy"],
+      "primary": "black",
+      "secondary": "charcoal",
+      "accent": "gold",
+      "neutral": "charcoal",
+      "statement": "burgundy",
+      "reasoning": "Deep absorbing surfaces create intimacy; gold accents catch light and signal premium quality."
+    },
+    {
+      "id": "palette-modern",
+      "name": "Modern Minimal",
+      "theme": "modern",
+      "colors": ["white", "gray", "black", "blue", "copper"],
+      "primary": "white",
+      "secondary": "gray",
+      "accent": "blue",
+      "neutral": "white",
+      "statement": "copper",
+      "reasoning": "High contrast neutrals with a single metallic accent create focused, functional elegance."
+    },
+    {
+      "id": "palette-organic",
+      "name": "Organic Biophilic",
+      "theme": "organic",
+      "colors": ["green", "brown", "cream", "beige", "terracotta"],
+      "primary": "cream",
+      "secondary": "green",
+      "accent": "brown",
+      "neutral": "beige",
+      "statement": "terracotta",
+      "reasoning": "Nature-derived palette lowers cortisol, connects occupants to natural cycles, and ages gracefully."
+    },
+    {
+      "id": "palette-industrial",
+      "name": "Industrial",
+      "theme": "industrial",
+      "colors": ["gray", "black", "brown", "copper", "white"],
+      "primary": "gray",
+      "secondary": "black",
+      "accent": "copper",
+      "neutral": "gray",
+      "statement": "brown",
+      "reasoning": "Raw material palette celebrates structural honesty; copper adds warmth against cold concrete."
+    }
+  ]
+}

@@ -14,6 +14,7 @@ class Recommender {
             styleMatch: 5,
             themeMatch: 5
         };
+        this.lightingEngine = new LightingEngine({ dataLoader: this.dataLoader });
     }
 
     async getRecommendations(state) {
@@ -32,6 +33,8 @@ class Recommender {
             this.dataLoader.load('themes', '../data/themes.json'),
             this.dataLoader.load('stages', '../data/stages.json')
         ]);
+
+        await this.lightingEngine.init();
 
         const targetEmotion = state.metadata?.targetEmotion;
         const currentEmotion = state.metadata?.currentEmotion;
@@ -75,6 +78,13 @@ class Recommender {
 
         scoredCollections.sort((a, b) => b.score - a.score);
 
+        let lightingPlan = null;
+        if (selectedSpace) {
+            const spaceDefaults = (spacesData.categories || []).flatMap(c => c.spaces || []).find(s => s.id === selectedSpace);
+            const areaSqft = spaceDefaults ? Math.round((spaceDefaults.areaSqftMin + spaceDefaults.areaSqftMax) / 2) : 300;
+            lightingPlan = this.lightingEngine.generateLightingPlan(selectedSpace, areaSqft, 3, state);
+        }
+
         return {
             collections: scoredCollections,
             inputProfile: {
@@ -87,6 +97,7 @@ class Recommender {
                 selectedTheme
             },
             confidence,
+            lightingPlan,
             generatedAt: new Date().toISOString()
         };
     }

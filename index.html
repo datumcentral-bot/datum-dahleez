@@ -984,6 +984,24 @@
                             <div id="walkthrough-render"></div>
                         </div>
 
+                        ${recs.lightingPlan ? `
+                        <div class="section">
+                            <div class="section-title">Lighting Intelligence Plan</div>
+                            <p style="color: var(--soft-silver); margin-bottom: 1rem;">Target ${recs.lightingPlan.luxRequirement.targetLux} lux · ${recs.lightingPlan.luxRequirement.totalLumens.toLocaleString()} lumens required</p>
+                            <div style="display:grid; gap:0.75rem;">
+                                ${(recs.lightingPlan.sceneRecommendations || []).slice(0, 3).map(s => `
+                                    <div style="padding:1rem; border:1px solid var(--border); background:var(--surface);">
+                                        <div style="font-size:0.85rem; font-weight:500; margin-bottom:0.25rem;">${s.name}</div>
+                                        <div style="font-size:0.8rem; color:var(--muted);">${s.colorTempK}K · ${s.brightness}% · ${s.description}</div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            <div style="margin-top:1rem; font-size:0.8rem; color:var(--subtle);">
+                                Suggested: ${recs.lightingPlan.estimatedFixtureCount.map(f => `${f.type} ×${f.count}`).join(', ')}
+                            </div>
+                        </div>
+                        ` : ''}
+
                         <div class="section">
                             <div class="section-title">Your Journey</div>
                             <p style="margin-bottom: 1rem; color: #999;">Your relationship with Datum Dahleez continues long after this project is complete.</p>

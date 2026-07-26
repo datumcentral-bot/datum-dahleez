@@ -85,15 +85,31 @@
         {"id": "guests", "label": "Guests / Visitors", "icon": "🚶"}
       ],
       "multiSelect": true,
-      "next": "daily-rhythm",
+      "next": "stakeholders",
       "logic": {
         "storeOccupants": true,
         "affectSafety": true
       }
     },
     {
-      "id": "daily-rhythm",
+      "id": "stakeholders",
       "order": 5,
+      "type": "selection",
+      "title": "Who are the stakeholders?",
+      "description": "Add anyone involved in this project. Each person can contribute their perspective.",
+      "options": [
+        {"id": "add-contributor", "label": "+ Add Stakeholder", "icon": "➕", "action": "open-contributor-widget"}
+      ],
+      "multiSelect": true,
+      "next": "daily-rhythm",
+      "logic": {
+        "storeContributors": true,
+        "enableMultiStakeholder": true
+      }
+    },
+    {
+      "id": "daily-rhythm",
+      "order": 6,
       "type": "selection",
       "title": "What is the daily rhythm?",
       "description": "When is this space most active?",

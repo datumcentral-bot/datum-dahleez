@@ -696,6 +696,17 @@
         .eis-card__title { font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin: 0; line-height: 1.2; }
         .eis-card__subtitle { color: var(--muted); font-size: 1rem; margin-top: 0.75rem; }
         .eis-card__body { margin-top: 1.5rem; }
+        .eis-contributor-widget { position: fixed; bottom: 1.25rem; right: 1.25rem; z-index: 50; display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-end; }
+        .eis-contributor-widget__toggle { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; display: grid; place-items: center; font-size: 1.1rem; }
+        .eis-contributor-widget__toggle:hover { border-color: var(--gold); color: var(--gold); }
+        .eis-contributor-widget__panel { background: var(--surface); border: 1px solid var(--border); padding: 0.75rem; display: none; flex-direction: column; gap: 0.5rem; min-width: 220px; max-width: 280px; }
+        .eis-contributor-widget__panel.open { display: flex; }
+        .eis-contributor-widget__list { display: flex; flex-direction: column; gap: 0.35rem; max-height: 180px; overflow-y: auto; }
+        .eis-contributor-widget__item { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--soft-silver); }
+        .eis-contributor-widget__remove { background: transparent; border: none; color: var(--error); cursor: pointer; font-size: 0.75rem; }
+        .eis-contributor-widget__form { display: flex; gap: 0.35rem; }
+        .eis-contributor-widget__input { flex: 1; background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 0.35rem 0.5rem; font-size: 0.8rem; font-family: inherit; }
+        .eis-contributor-widget__add { background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 0.35rem 0.6rem; font-size: 0.75rem; cursor: pointer; font-family: inherit; text-transform: uppercase; letter-spacing: 0.08em; }
         .eis-selection__description { color: var(--soft-silver); font-size: 0.95rem; margin-bottom: 1.5rem; }
         .eis-options { display: grid; gap: 1rem; }
         .eis-options--grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
@@ -976,6 +987,7 @@
                         <div class="section">
                             <div class="section-title">Your Journey</div>
                             <p style="margin-bottom: 1rem; color: #999;">Your relationship with Datum Dahleez continues long after this project is complete.</p>
+                            <div id="contributors-summary" style="margin-bottom:1rem;"></div>
                             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
                                 <button class="btn btn-primary" onclick="document.getElementById('walkthrough-render').scrollIntoView({behavior:'smooth'})">Experience Walkthrough</button>
                                 <a href="datum-dahleez.store/collections.html" class="btn">Browse All Solutions</a>
@@ -995,6 +1007,67 @@
         // Initialize EIS
         document.addEventListener('DOMContentLoaded', () => {
             boot();
+
+            const widget = document.createElement('div');
+            widget.className = 'eis-contributor-widget';
+            widget.innerHTML = `
+                <button class="eis-contributor-widget__toggle" id="contributor-toggle" title="Stakeholders">👥</button>
+                <div class="eis-contributor-widget__panel" id="contributor-panel">
+                    <div class="eis-contributor-widget__list" id="contributor-list"></div>
+                    <div class="eis-contributor-widget__form">
+                        <input class="eis-contributor-widget__input" id="contributor-name" placeholder="Name" />
+                        <input class="eis-contributor-widget__input" id="contributor-role" placeholder="Role" />
+                        <button class="eis-contributor-widget__add" id="contributor-add">Add</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(widget);
+
+            const toggle = widget.querySelector('#contributor-toggle');
+            const panel = widget.querySelector('#contributor-panel');
+            const list = widget.querySelector('#contributor-list');
+            const nameInput = widget.querySelector('#contributor-name');
+            const roleInput = widget.querySelector('#contributor-role');
+            const addBtn = widget.querySelector('#contributor-add');
+
+            const renderContributors = () => {
+                const contributors = window.eisEngine ? window.eisEngine.getContributors() : [];
+                list.innerHTML = contributors.length === 0 
+                    ? '<div style="font-size:0.75rem;color:var(--muted);">No stakeholders added</div>'
+                    : contributors.map((c, i) => `
+                        <div class="eis-contributor-widget__item">
+                            <span>${c.name} <span style="color:var(--subtle);">(${c.role})</span></span>
+                            <button class="eis-contributor-widget__remove" data-index="${i}">✕</button>
+                        </div>
+                    `).join('');
+            };
+
+            toggle.addEventListener('click', () => {
+                panel.classList.toggle('open');
+                renderContributors();
+            });
+
+            addBtn.addEventListener('click', () => {
+                const name = nameInput.value.trim();
+                const role = roleInput.value.trim();
+                if (!name) return;
+                if (window.eisEngine) {
+                    window.eisEngine.addContributor(role || 'Stakeholder', name);
+                }
+                nameInput.value = '';
+                roleInput.value = '';
+                renderContributors();
+            });
+
+            list.addEventListener('click', (e) => {
+                if (e.target.classList.contains('eis-contributor-widget__remove')) {
+                    const index = parseInt(e.target.dataset.index, 10);
+                    if (window.eisEngine) {
+                        window.eisEngine.removeContributor(index);
+                    }
+                    renderContributors();
+                }
+            });
         });
     </script>
 </body>

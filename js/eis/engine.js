@@ -40,6 +40,11 @@ class ConversationEngine {
             if (savedSession && savedSession.metadata && savedSession.metadata.resumedFrom) {
                 this.state = savedSession;
                 this.state.metadata.resumedFrom = this.state.currentStageId;
+            } else {
+                const profile = this.loadCustomerProfile();
+                if (profile && profile.preferences) {
+                    this.applyCustomerProfile();
+                }
             }
             const stagesData = await this.dataLoader.load('stages', '../data/stages.json');
             this.router = new Router(stagesData);
@@ -274,8 +279,77 @@ class ConversationEngine {
                 persistedAt: new Date().toISOString()
             };
             localStorage.setItem(this.storageKey, JSON.stringify(payload));
+            this.persistCustomerProfile();
         } catch (e) {
             console.warn('Failed to persist EIS session:', e);
+        }
+    }
+
+    persistCustomerProfile() {
+        try {
+            const profile = {
+                preferences: {
+                    selectedSpace: this.state.metadata?.selectedSpace,
+                    selectedCategory: this.state.metadata?.selectedCategory,
+                    purpose: this.state.metadata?.purpose,
+                    rhythm: this.state.metadata?.rhythm,
+                    lightPreference: this.state.metadata?.lightPreference,
+                    acousticNeeds: this.state.metadata?.acousticNeeds,
+                    airQuality: this.state.metadata?.airQuality,
+                    temperaturePreference: this.state.metadata?.temperaturePreference,
+                    targetEmotion: this.state.metadata?.targetEmotion,
+                    currentEmotion: this.state.metadata?.currentEmotion,
+                    sensoryPriority: this.state.metadata?.sensoryPriority,
+                    budgetTier: this.state.metadata?.budgetTier,
+                    stylePreference: this.state.metadata?.stylePreference,
+                    theme: this.state.metadata?.theme,
+                    timeline: this.state.metadata?.timeline
+                },
+                projectHistory: [],
+                updatedAt: new Date().toISOString()
+            };
+            const existing = JSON.parse(localStorage.getItem('eis_customer_profile') || '{}');
+            const history = existing.projectHistory || [];
+            if (this.state.metadata?.completedAt) {
+                history.push({
+                    completedAt: this.state.metadata.completedAt,
+                    space: this.state.metadata.selectedSpace || this.state.metadata.selectedCategory,
+                    emotion: this.state.metadata.targetEmotion,
+                    budget: this.state.metadata.budgetTier
+                });
+                if (history.length > 20) history.shift();
+                profile.projectHistory = history;
+            }
+            localStorage.setItem('eis_customer_profile', JSON.stringify(profile));
+        } catch (e) {
+            console.warn('Failed to persist customer profile:', e);
+        }
+    }
+
+    loadCustomerProfile() {
+        try {
+            const raw = localStorage.getItem('eis_customer_profile');
+            return raw ? JSON.parse(raw) : null;
+        } catch (e) {
+            return null;
+        }
+    }
+
+    applyCustomerProfile() {
+        const profile = this.loadCustomerProfile();
+        if (!profile || !profile.preferences) return;
+        const prefs = profile.preferences;
+        const meta = this.state.metadata;
+        
+        Object.keys(prefs).forEach(key => {
+            if (prefs[key] && !meta[key]) {
+                meta[key] = prefs[key];
+            }
+        });
+        
+        const history = profile.projectHistory || [];
+        if (history.length > 0) {
+            meta.previousProjects = history;
         }
     }
 

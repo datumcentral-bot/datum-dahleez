@@ -96,6 +96,15 @@ class Renderer {
             header.appendChild(icon);
         }
 
+        const memoryIndicator = document.createElement('span');
+        memoryIndicator.className = 'eis-memory-indicator';
+        memoryIndicator.style.cssText = 'font-size:0.7rem;color:var(--gold);font-family:JetBrains Mono,monospace;letter-spacing:0.08em;text-transform:uppercase;margin-left:0.5rem;';
+        const hasProfile = typeof window !== 'undefined' && window.eisEngine && window.eisEngine.loadCustomerProfile();
+        if (hasProfile) {
+            memoryIndicator.textContent = '● Memory Active';
+            header.querySelector('.eis-card__title-group').appendChild(memoryIndicator);
+        }
+
         const titleGroup = document.createElement('div');
         titleGroup.className = 'eis-card__title-group';
 
@@ -180,6 +189,15 @@ class Renderer {
             }
 
             optionEl.addEventListener('click', () => {
+                if (option.action === 'open-contributor-widget') {
+                    const toggle = document.getElementById('contributor-toggle');
+                    const panel = document.getElementById('contributor-panel');
+                    if (toggle && panel) {
+                        panel.classList.add('open');
+                        toggle.click();
+                    }
+                    return;
+                }
                 if (callbacks.onOptionSelect) {
                     callbacks.onOptionSelect(stage, option, optionEl);
                 }

@@ -24,6 +24,15 @@ class BlueprintGenerator {
             this.dataLoader.load('budgetTiers', '../data/budget-tiers.json')
         ]);
 
+        let hvacData = null;
+        let airQualityData = null;
+        try {
+            hvacData = await this.dataLoader.load('hvac', '../data/environmental/hvac.json');
+            airQualityData = await this.dataLoader.load('airQuality', '../data/environmental/air-quality.json');
+        } catch (e) {
+            console.warn('Environmental data not available:', e);
+        }
+
         const spaceName = (state.metadata.selectedSpace || state.metadata.selectedCategory || 'Your Space').replace(/-/g, ' ');
         const themeName = state.metadata.theme ? state.metadata.theme.replace(/-/g, ' ') : null;
         const targetEmotion = state.metadata.targetEmotion || 'calm';
@@ -45,7 +54,7 @@ class BlueprintGenerator {
             this.sectionDesignPhilosophy(stylePreference, themeName, targetEmotion),
             this.sectionMaterialStrategy(state, spacesData),
             this.sectionLightingPlan(state),
-            this.sectionAirWellnessStrategy(airQuality, temperaturePreference),
+            this.sectionAirWellnessStrategy(airQuality, temperaturePreference, hvacData, airQualityData),
             this.sectionFurnitureStrategy(state, recommendations),
             this.sectionTechnologyStrategy(state),
             this.sectionBudgetOptions(budgetTier, budgetData, recommendations),
@@ -259,6 +268,10 @@ class BlueprintGenerator {
                         <p style="color: var(--soft-silver); margin: 0; font-size: 0.95rem;">${section.content}</p>
                     </div>
                 `).join('')}
+                <div class="blueprint__actions" style="margin-top: 3rem; display: flex; gap: 1rem; justify-content: center;">
+                    <button class="btn btn--primary" onclick="window.printBlueprint()">Print / PDF</button>
+                    <button class="btn" onclick="window.emailBlueprint()">Email Report</button>
+                </div>
                 <div class="blueprint__footer" style="margin-top: 3rem; padding-top: 1.5rem; border-top: 2px solid var(--border); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--muted); text-align: center;">
                     DATUM DAHLEEZ Environmental Intelligence Platform · Confidential Client Document
                 </div>

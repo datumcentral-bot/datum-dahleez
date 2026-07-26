@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <style>
-        :root { --bg: #090909; --surface: #141414; --border: #313131; --gold: #D4AF37; --text: #f0f0f0; --muted: #888; --soft-silver: #B6BCC5; }
+        :root { --bg: #090909; --surface: #141414; --border: #313131; --gold: #D4AF37; --text: #f0f0f0; --muted: #888; --soft-silver: #B6BCC5; --error: #E53935; --success: #4CAF50; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
         .display { font-family: 'Cormorant Garamond', Georgia, serif; }
@@ -22,19 +22,41 @@
         .admin { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
         .admin__header { margin-bottom: 2.5rem; }
         .admin__title { font-size: 2rem; margin: 0; }
-        .admin__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-        .admin__card { padding: 1.5rem; border: 1px solid var(--border); background: var(--surface); cursor: pointer; transition: all 0.35s ease; }
-        .admin__card:hover { border-color: var(--gold); transform: translateY(-2px); }
-        .admin__card-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
-        .admin__card-title { font-size: 1rem; font-weight: 500; margin-bottom: 0.25rem; }
-        .admin__card-desc { font-size: 0.85rem; color: var(--muted); }
-        .admin__section { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
-        .admin__section-title { font-size: 1.25rem; margin-bottom: 1rem; color: var(--gold); }
-        .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .admin__tabs { display: flex; gap: 0.5rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border); }
+        .admin__tab { padding: 0.75rem 1.25rem; background: transparent; border: none; border-bottom: 2px solid transparent; color: var(--muted); font-family: inherit; font-size: 0.85rem; cursor: pointer; transition: all 0.3s; }
+        .admin__tab:hover { color: var(--text); }
+        .admin__tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+        .admin__panel { display: none; }
+        .admin__panel.active { display: block; }
+        .admin__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
         .stat-card { padding: 1.25rem; border: 1px solid var(--border); background: var(--surface); }
         .stat-card__label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold); font-family: 'JetBrains Mono', monospace; }
         .stat-card__value { font-size: 2rem; font-weight: 600; margin-top: 0.5rem; }
         .stat-card__change { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.9rem; }
+        .data-table th { text-align: left; padding: 0.75rem; border-bottom: 1px solid var(--border); color: var(--gold); font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; }
+        .data-table td { padding: 0.75rem; border-bottom: 1px solid var(--border); }
+        .data-table tr:hover { background: var(--surface); }
+        .btn { padding: 0.5rem 1rem; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: inherit; font-size: 0.8rem; cursor: pointer; transition: all 0.35s; }
+        .btn:hover { border-color: var(--gold); color: var(--gold); }
+        .btn--primary { border-color: var(--gold); color: var(--gold); }
+        .btn--primary:hover { background: var(--gold); color: var(--bg); }
+        .btn--danger { border-color: var(--error); color: var(--error); }
+        .btn--danger:hover { background: var(--error); color: var(--bg); }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold); margin-bottom: 0.35rem; font-family: 'JetBrains Mono', monospace; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.6rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: inherit; font-size: 0.9rem; }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 100; align-items: center; justify-content: center; }
+        .modal.open { display: flex; }
+        .modal__content { background: var(--surface); border: 1px solid var(--border); padding: 2rem; max-width: 600px; width: 90%; max-height: 90vh; overflow-y: auto; }
+        .modal__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+        .modal__title { font-size: 1.25rem; }
+        .modal__close { background: none; border: none; color: var(--text); font-size: 1.5rem; cursor: pointer; }
+        .empty-state { text-align: center; padding: 3rem; color: var(--muted); }
+        .toast { position: fixed; bottom: 2rem; right: 2rem; padding: 1rem 1.5rem; background: var(--surface); border: 1px solid var(--gold); color: var(--text); font-size: 0.9rem; z-index: 200; display: none; }
+        .toast.show { display: block; animation: slideIn 0.3s ease; }
+        @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
     </style>
 </head>
 <body>
@@ -53,98 +75,522 @@
             <p style="color: var(--muted); margin-top: 0.5rem;">Platform management, content administration, and analytics.</p>
         </div>
 
-        <div class="admin__grid">
-            <div class="admin__card" onclick="alert('Product management UI - coming in next iteration')">
-                <div class="admin__card-icon">📦</div>
-                <div class="admin__card-title">Products</div>
-                <div class="admin__card-desc">Manage catalog, pricing, and inventory</div>
+        <div class="admin__tabs">
+            <button class="admin__tab active" data-tab="overview">Overview</button>
+            <button class="admin__tab" data-tab="products">Products</button>
+            <button class="admin__tab" data-tab="materials">Materials</button>
+            <button class="admin__tab" data-tab="customers">Customers</button>
+            <button class="admin__tab" data-tab="orders">Orders</button>
+            <button class="admin__tab" data-tab="rules">Rules</button>
+        </div>
+
+        <div id="panel-overview" class="admin__panel active">
+            <div class="admin__grid" id="stats-grid"></div>
+            <div class="admin__section">
+                <h2 class="admin__section-title display">Export Data</h2>
+                <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+                    <button class="btn btn--primary" onclick="adminApp.exportProductsCSV()">Export Products CSV</button>
+                    <button class="btn btn--primary" onclick="adminApp.exportMaterialsCSV()">Export Materials CSV</button>
+                    <button class="btn btn--primary" onclick="adminApp.exportCustomersCSV()">Export Customers CSV</button>
+                    <button class="btn btn--primary" onclick="adminApp.exportOrdersCSV()">Export Orders CSV</button>
+                </div>
             </div>
-            <div class="admin__card" onclick="alert('Material library editor - coming in next iteration')">
-                <div class="admin__card-icon">🧱</div>
-                <div class="admin__card-title">Materials</div>
-                <div class="admin__card-desc">Material library and compatibility rules</div>
-            </div>
-            <div class="admin__card" onclick="alert('Category management - coming in next iteration')">
-                <div class="admin__card-icon">📂</div>
-                <div class="admin__card-title">Categories</div>
-                <div class="admin__card-desc">Taxonomy and classification</div>
-            </div>
-            <div class="admin__card" onclick="alert('Recommendation rule editor - coming in next iteration')">
-                <div class="admin__card-icon">🧠</div>
-                <div class="admin__card-title">AI Rules</div>
-                <div class="admin__card-desc">Recommendation logic and prompt templates</div>
-            </div>
-            <div class="admin__card" onclick="alert('Customer CRM - coming in next iteration')">
-                <div class="admin__card-icon">👥</div>
-                <div class="admin__card-title">Customers</div>
-                <div class="admin__card-desc">CRM, profiles, and consultation history</div>
-            </div>
-            <div class="admin__card" onclick="alert('Order management - coming in next iteration')">
-                <div class="admin__card-icon">📋</div>
-                <div class="admin__card-title">Orders</div>
-                <div class="admin__card-desc">Quotes, BOQ, procurement, and delivery</div>
-            </div>
-            <div class="admin__card" onclick="alert('Analytics dashboard - coming in next iteration')">
-                <div class="admin__card-icon">📊</div>
-                <div class="admin__card-title">Analytics</div>
-                <div class="admin__card-desc">Platform metrics and insights</div>
-            </div>
-            <div class="admin__card" onclick="alert('Content management - coming in next iteration')">
-                <div class="admin__card-icon">✏️</div>
-                <div class="admin__card-title">Content</div>
-                <div class="admin__card-desc">Pages, themes, and media</div>
+            <div class="admin__section">
+                <h2 class="admin__section-title display">Analytics Overview</h2>
+                <div id="analytics-content"></div>
             </div>
         </div>
 
-        <div class="admin__section">
-            <h2 class="admin__section-title display">Platform Stats</h2>
-            <div class="stat-grid">
-                <div class="stat-card">
-                    <div class="stat-card__label">Products</div>
-                    <div class="stat-card__value" id="stat-products">--</div>
-                    <div class="stat-card__change">In catalog</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-card__label">Spaces</div>
-                    <div class="stat-card__value" id="stat-spaces">--</div>
-                    <div class="stat-card__change">In taxonomy</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-card__label">Materials</div>
-                    <div class="stat-card__value" id="stat-materials">--</div>
-                    <div class="stat-card__change">In library</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-card__label">Sessions</div>
-                    <div class="stat-card__value" id="stat-sessions">--</div>
-                    <div class="stat-card__change">Local storage</div>
-                </div>
+        <div id="panel-products" class="admin__panel">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                <h2 class="admin__section-title display" style="margin:0;">Products</h2>
+                <button class="btn btn--primary" onclick="adminApp.openProductModal()">+ Add Product</button>
             </div>
+            <div id="products-table"></div>
+        </div>
+
+        <div id="panel-materials" class="admin__panel">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                <h2 class="admin__section-title display" style="margin:0;">Materials Library</h2>
+                <button class="btn btn--primary" onclick="adminApp.openMaterialModal()">+ Add Material</button>
+            </div>
+            <div id="materials-table"></div>
+        </div>
+
+        <div id="panel-customers" class="admin__panel">
+            <h2 class="admin__section-title display">Customers</h2>
+            <div id="customers-table"></div>
+        </div>
+
+        <div id="panel-orders" class="admin__panel">
+            <h2 class="admin__section-title display">Orders</h2>
+            <div id="orders-table"></div>
+        </div>
+
+        <div id="panel-rules" class="admin__panel">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+                <h2 class="admin__section-title display" style="margin:0;">Recommendation Rules</h2>
+                <button class="btn btn--primary" onclick="adminApp.openRuleModal()">+ Add Rule</button>
+            </div>
+            <div id="rules-table"></div>
         </div>
     </main>
 
+    <div class="modal" id="product-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title display">Product</h3>
+                <button class="modal__close" onclick="adminApp.closeModal('product-modal')">×</button>
+            </div>
+            <form id="product-form" onsubmit="event.preventDefault(); adminApp.saveProductFromForm();">
+                <input type="hidden" id="prod-id">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="prod-name" required>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <input type="text" id="prod-category" required>
+                </div>
+                <div class="form-group">
+                    <label>Price Range Min (AED)</label>
+                    <input type="number" id="prod-min" required>
+                </div>
+                <div class="form-group">
+                    <label>Price Range Max (AED)</label>
+                    <input type="number" id="prod-max" required>
+                </div>
+                <div class="form-group">
+                    <label>Tags (comma separated)</label>
+                    <input type="text" id="prod-tags" placeholder="calm, modern, bedroom">
+                </div>
+                <button type="submit" class="btn btn--primary">Save Product</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="material-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title display">Material</h3>
+                <button class="modal__close" onclick="adminApp.closeModal('material-modal')">×</button>
+            </div>
+            <form id="material-form" onsubmit="event.preventDefault(); adminApp.saveMaterialFromForm();">
+                <input type="hidden" id="mat-id">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="mat-name" required>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <input type="text" id="mat-category" required>
+                </div>
+                <div class="form-group">
+                    <label>Texture Description</label>
+                    <input type="text" id="mat-texture">
+                </div>
+                <div class="form-group">
+                    <label>Tactile Rating (1-5)</label>
+                    <input type="number" id="mat-tactile" min="1" max="5" value="3">
+                </div>
+                <div class="form-group">
+                    <label>Durability</label>
+                    <select id="mat-durability">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Cost Tier</label>
+                    <select id="mat-cost">
+                        <option value="comfort">Comfort</option>
+                        <option value="premium">Premium</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="bespoke">Bespoke</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn--primary">Save Material</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="rule-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title display">Recommendation Rule</h3>
+                <button class="modal__close" onclick="adminApp.closeModal('rule-modal')">×</button>
+            </div>
+            <form id="rule-form" onsubmit="event.preventDefault(); adminApp.saveRuleFromForm();">
+                <input type="hidden" id="rule-id">
+                <div class="form-group">
+                    <label>ID</label>
+                    <input type="text" id="rule-rule-id" required placeholder="e.g. RULE_CALM_BEDROOM">
+                </div>
+                <div class="form-group">
+                    <label>Emotions (comma separated)</label>
+                    <input type="text" id="rule-emotions" required placeholder="calm, relaxed, cozy">
+                </div>
+                <div class="form-group">
+                    <label>Spaces (comma separated)</label>
+                    <input type="text" id="rule-spaces" required placeholder="bedroom, living-room">
+                </div>
+                <div class="form-group">
+                    <label>Collections (comma separated)</label>
+                    <input type="text" id="rule-collections" required placeholder="linen, minimalist">
+                </div>
+                <div class="form-group">
+                    <label>Materials (comma separated)</label>
+                    <input type="text" id="rule-materials" placeholder="wood, linen">
+                </div>
+                <div class="form-group">
+                    <label>Lighting (comma separated)</label>
+                    <input type="text" id="rule-lighting" placeholder="warm-led, dimmable">
+                </div>
+                <button type="submit" class="btn btn--primary">Save Rule</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
     <script src="js/eis/loader.js"></script>
+    <script src="js/admin/engine.js"></script>
     <script>
-        async function loadStats() {
-            try {
-                const dl = new DataLoader();
-                const [products, spaces, materials] = await Promise.all([
-                    dl.load('products', '../data/products.json'),
-                    dl.load('spaces', '../data/spaces.json'),
-                    dl.load('materials', '../data/materials.json')
-                ]);
-                document.getElementById('stat-products').textContent = Array.isArray(products) ? products.length : '?';
-                const spaceCount = (spaces.categories || []).reduce((sum, c) => sum + (c.spaces || []).length, 0);
-                document.getElementById('stat-spaces').textContent = spaceCount;
-                const matCount = (materials.categories || []).reduce((sum, c) => sum + (c.materials || []).length, 0);
-                document.getElementById('stat-materials').textContent = matCount;
-                const sessions = JSON.parse(localStorage.getItem('eis_sessions_history') || '[]');
-                document.getElementById('stat-sessions').textContent = sessions.length;
-            } catch (e) {
-                console.error('Stats load error:', e);
+        const adminApp = {
+            engine: new AdminEngine(),
+            currentTab: 'overview',
+
+            init() {
+                this.bindTabs();
+                this.loadOverview();
+                this.loadProducts();
+                this.loadMaterials();
+                this.loadCustomers();
+                this.loadOrders();
+                this.loadRules();
+            },
+
+            bindTabs() {
+                document.querySelectorAll('.admin__tab').forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        document.querySelectorAll('.admin__tab').forEach(t => t.classList.remove('active'));
+                        document.querySelectorAll('.admin__panel').forEach(p => p.classList.remove('active'));
+                        tab.classList.add('active');
+                        document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+                        this.currentTab = tab.dataset.tab;
+                    });
+                });
+            },
+
+            loadOverview() {
+                const analytics = this.engine.getAnalytics();
+                document.getElementById('stats-grid').innerHTML = `
+                    <div class="stat-card">
+                        <div class="stat-card__label">Total Sessions</div>
+                        <div class="stat-card__value">${analytics.totalSessions}</div>
+                        <div class="stat-card__change">Local storage</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__label">Customers</div>
+                        <div class="stat-card__value">${analytics.totalCustomers}</div>
+                        <div class="stat-card__change">Registered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__label">Orders</div>
+                        <div class="stat-card__value">${analytics.totalOrders}</div>
+                        <div class="stat-card__change">Total</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__label">Products</div>
+                        <div class="stat-card__value">${analytics.totalProducts}</div>
+                        <div class="stat-card__change">In catalog</div>
+                    </div>
+                `;
+
+                let analyticsHTML = '';
+                if (analytics.topEmotions.length > 0) {
+                    analyticsHTML += '<h3 style="color:var(--gold); margin: 1.5rem 0 0.75rem; font-size:1rem;">Top Emotions</h3><ul class="dashboard__list">' +
+                        analytics.topEmotions.map(([emotion, count]) => `
+                            <li class="dashboard__list-item"><strong>${emotion}</strong> <span class="dashboard__list-meta">${count} sessions</span></li>
+                        `).join('') + '</ul>';
+                }
+                if (analytics.topSpaces.length > 0) {
+                    analyticsHTML += '<h3 style="color:var(--gold); margin: 1.5rem 0 0.75rem; font-size:1rem;">Top Spaces</h3><ul class="dashboard__list">' +
+                        analytics.topSpaces.map(([space, count]) => `
+                            <li class="dashboard__list-item"><strong>${space.replace(/-/g, ' ')}</strong> <span class="dashboard__list-meta">${count} sessions</span></li>
+                        `).join('') + '</ul>';
+                }
+                document.getElementById('analytics-content').innerHTML = analyticsHTML || '<div class="empty-state">No analytics data yet. Complete consultations to see insights.</div>';
+            },
+
+            loadProducts() {
+                const products = this.engine.getProducts();
+                const container = document.getElementById('products-table');
+                if (products.length === 0) {
+                    container.innerHTML = '<div class="empty-state">No products yet. Add your first product.</div>';
+                    return;
+                }
+                container.innerHTML = `
+                    <table class="data-table">
+                        <thead><tr><th>Name</th><th>Category</th><th>Price Range</th><th>Tags</th><th>Actions</th></tr></thead>
+                        <tbody>${products.map(p => `
+                            <tr>
+                                <td>${p.name}</td>
+                                <td>${p.category}</td>
+                                <td>AED ${p.min || 0} - ${p.max || 0}</td>
+                                <td>${(p.tags || []).join(', ')}</td>
+                                <td>
+                                    <button class="btn btn--primary" onclick="adminApp.editProduct('${p.id}')">Edit</button>
+                                    <button class="btn btn--danger" onclick="adminApp.deleteProduct('${p.id}')">Delete</button>
+                                </td>
+                            </tr>
+                        `).join('')}</tbody>
+                    </table>
+                `;
+            },
+
+            loadMaterials() {
+                const materials = this.engine.getMaterials();
+                const container = document.getElementById('materials-table');
+                if (materials.length === 0) {
+                    container.innerHTML = '<div class="empty-state">No materials yet. Add your first material.</div>';
+                    return;
+                }
+                container.innerHTML = `
+                    <table class="data-table">
+                        <thead><tr><th>Name</th><th>Category</th><th>Texture</th><th>Rating</th><th>Durability</th><th>Cost Tier</th></tr></thead>
+                        <tbody>${materials.map(m => `
+                            <tr>
+                                <td>${m.name}</td>
+                                <td>${m.category}</td>
+                                <td>${m.textureDescription || '-'}</td>
+                                <td>${m.tactileRating || '-'}/5</td>
+                                <td>${m.durability || '-'}</td>
+                                <td>${m.costTier || '-'}</td>
+                            </tr>
+                        `).join('')}</tbody>
+                    </table>
+                `;
+            },
+
+            loadCustomers() {
+                const customers = this.engine.getCustomers();
+                const container = document.getElementById('customers-table');
+                if (customers.length === 0) {
+                    container.innerHTML = '<div class="empty-state">No customers yet. They will appear after completing consultations.</div>';
+                    return;
+                }
+                container.innerHTML = `
+                    <table class="data-table">
+                        <thead><tr><th>Name</th><th>Email</th><th>Space</th><th>Emotion</th><th>Budget</th><th>Created</th></tr></thead>
+                        <tbody>${customers.map(c => `
+                            <tr>
+                                <td>${c.name || 'N/A'}</td>
+                                <td>${c.email || 'N/A'}</td>
+                                <td>${(c.space || 'N/A').replace(/-/g, ' ')}</td>
+                                <td>${c.emotion || 'N/A'}</td>
+                                <td>${c.budget || 'N/A'}</td>
+                                <td>${c.createdAt ? new Date(c.createdAt).toLocaleDateString() : 'N/A'}</td>
+                            </tr>
+                        `).join('')}</tbody>
+                    </table>
+                `;
+            },
+
+            loadOrders() {
+                const orders = this.engine.getOrders();
+                const container = document.getElementById('orders-table');
+                if (orders.length === 0) {
+                    container.innerHTML = '<div class="empty-state">No orders yet.</div>';
+                    return;
+                }
+                container.innerHTML = `
+                    <table class="data-table">
+                        <thead><tr><th>Order #</th><th>Project</th><th>Emotion</th><th>Budget</th><th>Date</th></tr></thead>
+                        <tbody>${orders.map(o => `
+                            <tr>
+                                <td>${o.orderNumber || 'N/A'}</td>
+                                <td>${(o.project || 'N/A').replace(/-/g, ' ')}</td>
+                                <td>${o.emotion || 'N/A'}</td>
+                                <td>${o.budget || 'N/A'}</td>
+                                <td>${o.createdAt ? new Date(o.createdAt).toLocaleDateString() : 'N/A'}</td>
+                            </tr>
+                        `).join('')}</tbody>
+                    </table>
+                `;
+            },
+
+            loadRules() {
+                const rules = this.engine.getRules();
+                const container = document.getElementById('rules-table');
+                if (rules.length === 0) {
+                    container.innerHTML = '<div class="empty-state">No recommendation rules found.</div>';
+                    return;
+                }
+                container.innerHTML = `
+                    <table class="data-table">
+                        <thead><tr><th>ID</th><th>Emotions</th><th>Spaces</th><th>Collections</th><th>Materials</th><th>Lighting</th><th>Actions</th></tr></thead>
+                        <tbody>${rules.map(r => `
+                            <tr>
+                                <td>${r.id}</td>
+                                <td>${(r.emotions || []).join(', ')}</td>
+                                <td>${(r.spaces || []).join(', ')}</td>
+                                <td>${(r.collections || []).join(', ')}</td>
+                                <td>${(r.materials || []).join(', ')}</td>
+                                <td>${(r.lighting || []).join(', ')}</td>
+                                <td>
+                                    <button class="btn btn--primary" onclick="adminApp.editRule('${r.id}')">Edit</button>
+                                    <button class="btn btn--danger" onclick="adminApp.deleteRule('${r.id}')">Delete</button>
+                                </td>
+                            </tr>
+                        `).join('')}</tbody>
+                    </table>
+                `;
+            },
+
+            openRuleModal() {
+                document.getElementById('rule-form').reset();
+                document.getElementById('rule-id').value = '';
+                document.getElementById('rule-rule-id').value = '';
+                document.getElementById('rule-modal').classList.add('open');
+            },
+
+            saveRuleFromForm() {
+                const rule = {
+                    id: document.getElementById('rule-rule-id').value || 'RULE-' + Date.now(),
+                    emotions: document.getElementById('rule-emotions').value.split(',').map(s => s.trim()).filter(Boolean),
+                    spaces: document.getElementById('rule-spaces').value.split(',').map(s => s.trim()).filter(Boolean),
+                    collections: document.getElementById('rule-collections').value.split(',').map(s => s.trim()).filter(Boolean),
+                    materials: document.getElementById('rule-materials').value.split(',').map(s => s.trim()).filter(Boolean),
+                    lighting: document.getElementById('rule-lighting').value.split(',').map(s => s.trim()).filter(Boolean)
+                };
+                this.engine.saveRule(rule);
+                this.closeModal('rule-modal');
+                this.loadRules();
+                this.showToast('Rule saved');
+            },
+
+            editRule(ruleId) {
+                const rule = this.engine.getRules().find(r => r.id === ruleId);
+                if (!rule) return;
+                document.getElementById('rule-id').value = rule.id;
+                document.getElementById('rule-rule-id').value = rule.id;
+                document.getElementById('rule-emotions').value = (rule.emotions || []).join(', ');
+                document.getElementById('rule-spaces').value = (rule.spaces || []).join(', ');
+                document.getElementById('rule-collections').value = (rule.collections || []).join(', ');
+                document.getElementById('rule-materials').value = (rule.materials || []).join(', ');
+                document.getElementById('rule-lighting').value = (rule.lighting || []).join(', ');
+                document.getElementById('rule-modal').classList.add('open');
+            },
+
+            deleteRule(ruleId) {
+                if (!confirm('Delete this rule?')) return;
+                this.engine.deleteRule(ruleId);
+                this.loadRules();
+                this.showToast('Rule deleted');
+            },
+
+            exportProductsCSV() {
+                const products = this.engine.getProducts().map(p => ({ name: p.name, category: p.category, min: p.priceRange?.min, max: p.priceRange?.max, tags: (p.tags || []).join(';') }));
+                this.engine.exportCSV(products, 'products.csv');
+            },
+
+            exportMaterialsCSV() {
+                const materials = this.engine.getMaterials().map(m => ({ name: m.name, category: m.category, texture: m.textureDescription, rating: m.tactileRating, durability: m.durability, costTier: m.costTier }));
+                this.engine.exportCSV(materials, 'materials.csv');
+            },
+
+            exportCustomersCSV() {
+                const customers = this.engine.getCustomers().map(c => ({ name: c.name, email: c.email, space: c.space, emotion: c.emotion, budget: c.budget, createdAt: c.createdAt }));
+                this.engine.exportCSV(customers, 'customers.csv');
+            },
+
+            exportOrdersCSV() {
+                const orders = this.engine.getOrders().map(o => ({ orderNumber: o.orderNumber, project: o.project, emotion: o.emotion, budget: o.budget, createdAt: o.createdAt }));
+                this.engine.exportCSV(orders, 'orders.csv');
+            },
+
+            openProductModal() {
+                document.getElementById('product-form').reset();
+                document.getElementById('prod-id').value = '';
+                document.getElementById('product-modal').classList.add('open');
+            },
+
+            saveProductFromForm() {
+                const product = {
+                    id: document.getElementById('prod-id').value || 'prod-' + Date.now(),
+                    name: document.getElementById('prod-name').value,
+                    category: document.getElementById('prod-category').value,
+                    priceRange: {
+                        min: parseFloat(document.getElementById('prod-min').value) || 0,
+                        max: parseFloat(document.getElementById('prod-max').value) || 0,
+                        currency: 'AED'
+                    },
+                    tags: document.getElementById('prod-tags').value.split(',').map(t => t.trim()).filter(Boolean)
+                };
+                this.engine.saveProduct(product);
+                this.closeModal('product-modal');
+                this.loadProducts();
+                this.showToast('Product saved');
+                this.loadOverview();
+            },
+
+            editProduct(productId) {
+                const product = this.engine.getProducts().find(p => p.id === productId);
+                if (!product) return;
+                document.getElementById('prod-id').value = product.id;
+                document.getElementById('prod-name').value = product.name || '';
+                document.getElementById('prod-category').value = product.category || '';
+                document.getElementById('prod-min').value = product.priceRange?.min || 0;
+                document.getElementById('prod-max').value = product.priceRange?.max || 0;
+                document.getElementById('prod-tags').value = (product.tags || []).join(', ');
+                document.getElementById('product-modal').classList.add('open');
+            },
+
+            deleteProduct(productId) {
+                if (!confirm('Delete this product?')) return;
+                this.engine.deleteProduct(productId);
+                this.loadProducts();
+                this.showToast('Product deleted');
+                this.loadOverview();
+            },
+
+            openMaterialModal() {
+                document.getElementById('material-form').reset();
+                document.getElementById('mat-id').value = '';
+                document.getElementById('material-modal').classList.add('open');
+            },
+
+            saveMaterialFromForm() {
+                const material = {
+                    id: document.getElementById('mat-id').value || 'mat-' + Date.now(),
+                    name: document.getElementById('mat-name').value,
+                    category: document.getElementById('mat-category').value,
+                    textureDescription: document.getElementById('mat-texture').value,
+                    tactileRating: parseInt(document.getElementById('mat-tactile').value) || 3,
+                    durability: document.getElementById('mat-durability').value,
+                    costTier: document.getElementById('mat-cost').value
+                };
+                this.engine.saveMaterial(material);
+                this.closeModal('material-modal');
+                this.loadMaterials();
+                this.showToast('Material saved');
+            },
+
+            closeModal(modalId) {
+                document.getElementById(modalId).classList.remove('open');
+            },
+
+            showToast(message) {
+                const toast = document.getElementById('toast');
+                toast.textContent = message;
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2500);
             }
-        }
-        document.addEventListener('DOMContentLoaded', loadStats);
+        };
+
+        document.addEventListener('DOMContentLoaded', () => adminApp.init());
     </script>
 </body>
 </html>

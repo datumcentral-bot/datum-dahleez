@@ -96,15 +96,6 @@ class Renderer {
             header.appendChild(icon);
         }
 
-        const memoryIndicator = document.createElement('span');
-        memoryIndicator.className = 'eis-memory-indicator';
-        memoryIndicator.style.cssText = 'font-size:0.7rem;color:var(--gold);font-family:JetBrains Mono,monospace;letter-spacing:0.08em;text-transform:uppercase;margin-left:0.5rem;';
-        const hasProfile = typeof window !== 'undefined' && window.eisEngine && window.eisEngine.loadCustomerProfile();
-        if (hasProfile) {
-            memoryIndicator.textContent = '● Memory Active';
-            header.querySelector('.eis-card__title-group').appendChild(memoryIndicator);
-        }
-
         const titleGroup = document.createElement('div');
         titleGroup.className = 'eis-card__title-group';
 
@@ -120,6 +111,15 @@ class Renderer {
             titleGroup.appendChild(subtitle);
         } else {
             titleGroup.appendChild(title);
+        }
+
+        const memoryIndicator = document.createElement('span');
+        memoryIndicator.className = 'eis-memory-indicator';
+        memoryIndicator.style.cssText = 'font-size:0.7rem;color:var(--gold);font-family:JetBrains Mono,monospace;letter-spacing:0.08em;text-transform:uppercase;margin-left:0.5rem;';
+        const hasProfile = typeof window !== 'undefined' && window.eisEngine && window.eisEngine.loadCustomerProfile();
+        if (hasProfile) {
+            memoryIndicator.textContent = '● Memory Active';
+            titleGroup.appendChild(memoryIndicator);
         }
 
         header.appendChild(titleGroup);

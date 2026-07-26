@@ -684,6 +684,17 @@
             .card, .product, .btn, input, textarea, select { cursor: auto; }
         }
 
+        .nav { position: fixed; top: 0; left: 0; right: 0; padding: 1rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; z-index: 50; background: linear-gradient(to bottom, var(--bg) 60%, transparent); }
+        .nav__logo { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; letter-spacing: 0.05em; }
+        .nav__links { display: flex; gap: 1.5rem; }
+        .nav__link { color: var(--text); text-decoration: none; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
+        .nav__link:hover { color: var(--gold); }
+        @media (max-width: 640px) {
+            .nav { padding: 0.75rem 1rem; }
+            .nav__links { gap: 1rem; }
+            .nav__link { font-size: 0.75rem; }
+        }
+
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-track { background: var(--bg); }
         ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
@@ -777,9 +788,26 @@
             .eis-options--grid { grid-template-columns: 1fr; }
             .eis-theme-grid { grid-template-columns: 1fr; }
         }
+
+        .doc { max-width: 900px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+        .doc-header { border-bottom: 2px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+        .doc-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+        .doc-title { font-size: clamp(2rem, 4vw, 2.8rem); margin: 0; line-height: 1.2; }
+        .doc-subtitle { color: var(--muted); font-size: 1rem; margin-top: 0.75rem; }
+        .doc-section { margin-bottom: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+        .doc-section-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; margin: 0 0 0.75rem; color: var(--gold); }
     </style>
 </head>
 <body>
+    <nav class="nav">
+        <div class="nav__logo">Datum Dahleez</div>
+        <div class="nav__links">
+            <a href="index.html" class="nav__link">EIS Platform</a>
+            <a href="collections.html" class="nav__link">Collections</a>
+            <a href="customer.html" class="nav__link">Dashboard</a>
+            <a href="admin.html" class="nav__link">Admin</a>
+        </div>
+    </nav>
     <div id="cursor"></div>
     <div class="progress-track"><div class="progress-fill" id="progress"></div></div>
     <div id="eis-container" class="screen active"></div>
@@ -794,9 +822,13 @@
 
         // Load EIS engine modules and bootstrap
         async function boot() {
+            const container = document.getElementById('eis-container');
+            const progress = document.getElementById('progress');
+            container.innerHTML = '<div class="processing"><div class="processing-text">Loading Experience</div><div class="processing-bar"></div></div>';
+
             const eisDir = 'js/eis/';
-            const modules = ['icons.js', 'loader.js', 'router.js', 'engine.js', 'renderer.js', 'recommender.js', 'lighting.js', 'walkthrough.js', 'blueprint.js'];
-            for (const mod of modules) {
+            const eisModules = ['icons.js', 'loader.js', 'router.js', 'engine.js', 'renderer.js', 'recommender.js', 'lighting.js', 'walkthrough.js', 'blueprint.js'];
+            for (const mod of eisModules) {
                 await new Promise((resolve, reject) => {
                     const script = document.createElement('script');
                     script.src = eisDir + mod;
@@ -806,8 +838,17 @@
                 });
             }
 
-            const container = document.getElementById('eis-container');
-            const progress = document.getElementById('progress');
+            const dicDir = 'js/dic/';
+            const dicModules = ['core.js', 'agents.js', 'bootstrap.js'];
+            for (const mod of dicModules) {
+                await new Promise((resolve, reject) => {
+                    const script = document.createElement('script');
+                    script.src = dicDir + mod;
+                    script.onload = resolve;
+                    script.onerror = () => reject(new Error('Failed to load DIC/' + mod));
+                    document.head.appendChild(script);
+                });
+            }
 
             const dataLoader = new DataLoader();
             const router = new Router();
@@ -818,25 +859,57 @@
             const themesData = await dataLoader.load('themes', 'data/themes.json').catch(() => ({ themes: [] }));
             window.__eisThemeData = themesData;
 
+            const membershipData = await dataLoader.load('membership', 'data/membership.json').catch(() => ({ tiers: [] }));
+            window.__eisMembershipData = membershipData;
+
+            const dicAgentsData = await dataLoader.load('dic-agents', 'data/dic/agents.json').catch(() => ({ agents: [] }));
+            window.__dicAgentsData = dicAgentsData;
+
             const engine = new ConversationEngine({
                 dataLoader,
                 router,
                 renderer,
                 onStageChange(nextStage, state) {
-                    renderer.render(nextStage, state, stageCallbacks);
-                    const p = engine.getProgress();
-                    if (progress) progress.style.width = p.percentage + '%';
+                    try {
+                        renderer.render(nextStage, state, stageCallbacks);
+                        const p = engine.getProgress();
+                        if (progress) progress.style.width = p.percentage + '%';
+                    } catch (e) {
+                        console.error('Stage render error:', e);
+                        renderer.showError('Something went wrong. Please try again.');
+                    }
                 },
                 onComplete(state) {
-                    showResults(state);
+                    try {
+                        showResults(state);
+                        if (window.dicEngine && window.dicEngine.registry) {
+                            window.dicEngine.setActiveAgent('dd-concierge');
+                        }
+                    } catch (e) {
+                        console.error('Show results error:', e);
+                        container.innerHTML = '<p style="color: var(--muted);">We could not generate your results. Please restart.</p>';
+                    }
                 },
                 onError(err) {
                     console.error('EIS Error:', err);
-                    renderer.showError(err.message || 'Something went wrong');
+                    try {
+                        renderer.showError(err.message || 'Something went wrong');
+                    } catch (e) {
+                        container.innerHTML = `<div class="eis-error">${err.message || 'Something went wrong'}</div>`;
+                    }
                 }
             });
 
             window.eisEngine = engine;
+
+            let dicEngine = null;
+            try {
+                dicEngine = new DIC.DICEngine();
+                await DICBootstrap.bootstrap(dicEngine);
+                window.dicEngine = dicEngine;
+            } catch (e) {
+                console.warn('DIC bootstrap failed:', e);
+            }
 
             const stageCallbacks = {
                 onStart() {
@@ -898,10 +971,29 @@
                     });
                 },
                 onConversionReady(stage, container) {
+                    const membershipData = window.__eisMembershipData || { tiers: [] };
+                    const currentTier = localStorage.getItem('eis_membership_tier') || 'comfort';
+                    const tier = membershipData.tiers.find(t => t.id === currentTier) || membershipData.tiers[0];
+                    
                     container.innerHTML = `
                         <div class="section">
-                            <div class="section-title">Membership</div>
-                            <p style="margin-bottom: 1rem; color: #999;">Join for exclusive access.</p>
+                            <div class="section-title">Unlock Your Full Potential</div>
+                            <p style="margin-bottom: 1rem; color: #999;">Join the DATUM DAHLEEZ membership for exclusive access.</p>
+                            ${tier ? `
+                            <div style="padding: 1.5rem; border: 1px solid var(--gold); background: rgba(212, 175, 55, 0.06); margin-bottom: 1.5rem; text-align: center;">
+                                <div style="font-size: 1.25rem; color: ${tier.color || 'var(--gold)'}; margin-bottom: 0.5rem;">${tier.name} Plan</div>
+                                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem;">
+                                    ${tier.priceMonthly ? `AED ${tier.priceMonthly}/month` : 'Free'}${tier.priceYearly ? ` · AED ${tier.priceYearly}/year` : ''}
+                                </div>
+                                <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem;">
+                                    ${(membershipData.tiers || []).map(t => `
+                                        <button class="btn ${t.id === currentTier ? 'btn--primary' : ''}" onclick="localStorage.setItem('eis_membership_tier', '${t.id}'); showToast('Updated to ${t.name}');" ${t.id === currentTier ? 'disabled' : ''}>
+                                            ${t.name}
+                                        </button>
+                                    `).join('')}
+                                </div>
+                            </div>
+                            ` : ''}
                             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
                                 <a href="datum-dahleez.store/collections.html" class="btn btn-primary">Browse Collections</a>
                                 <button class="btn" onclick="window.restart()">Start Over</button>
@@ -922,13 +1014,25 @@
                 }
             };
 
-            const initialized = await engine.init();
-            if (!initialized) {
-                container.innerHTML = '<p style="color: var(--muted);">Loading conversation data...</p>';
-                return;
-            }
+            try {
+                const initialized = await engine.init();
+                if (!initialized) {
+                    container.innerHTML = '<p style="color: var(--muted);">Loading conversation data...</p>';
+                    return;
+                }
 
-            engine.advance().then(() => {});
+                const currentStage = engine.getCurrentStage();
+                if (currentStage) {
+                    renderer.render(currentStage, engine.getState(), stageCallbacks);
+                    const p = engine.getProgress();
+                    if (progress) progress.style.width = p.percentage + '%';
+                } else {
+                    engine.advance().then(() => {});
+                }
+            } catch (e) {
+                console.error('Boot error:', e);
+                container.innerHTML = `<div class="eis-error">${e.message}</div>`;
+            }
         }
 
         window.restart = function() {
@@ -965,14 +1069,14 @@
                         </div>
 
                         ${theme ? `
-                        <div class="section">
-                            <div class="section-title">Selected Theme</div>
+                        <div class="doc-section">
+                            <div class="doc-section-title">Selected Theme</div>
                             <p style="color: var(--soft-silver);">${themeLabel} — All material, color, and lighting recommendations below are curated to align with this theme.</p>
                         </div>
                         ` : ''}
 
-                        <div class="section">
-                            <div class="section-title">Curated Recommendations</div>
+                        <div class="doc-section">
+                            <div class="doc-section-title">Curated Recommendations</div>
                             <div class="eis-results__collections">${recs.collections.map(col => `
                                 <div class="eis-recommendation">
                                     <div class="eis-recommendation__head">
@@ -985,14 +1089,14 @@
                             `).join('')}</div>
                         </div>
 
-                        <div class="section">
-                            <div class="section-title">Dream Walkthrough</div>
+                        <div class="doc-section">
+                            <div class="doc-section-title">Dream Walkthrough</div>
                             <div id="walkthrough-render"></div>
                         </div>
 
                         ${recs.lightingPlan ? `
-                        <div class="section">
-                            <div class="section-title">Lighting Intelligence Plan</div>
+                        <div class="doc-section">
+                            <div class="doc-section-title">Lighting Intelligence Plan</div>
                             <p style="color: var(--soft-silver); margin-bottom: 1rem;">Target ${recs.lightingPlan.luxRequirement.targetLux} lux · ${recs.lightingPlan.luxRequirement.totalLumens.toLocaleString()} lumens required</p>
                             <div style="display:grid; gap:0.75rem;">
                                 ${(recs.lightingPlan.sceneRecommendations || []).slice(0, 3).map(s => `
@@ -1008,8 +1112,8 @@
                         </div>
                         ` : ''}
 
-                        <div class="section">
-                            <div class="section-title">Your Journey</div>
+                        <div class="doc-section">
+                            <div class="doc-section-title">Your Journey</div>
                             <p style="margin-bottom: 1rem; color: #999;">Your relationship with Datum Dahleez continues long after this project is complete.</p>
                             <div id="contributors-summary" style="margin-bottom:1rem;"></div>
                             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
@@ -1026,6 +1130,13 @@
                 const wtContainer = document.getElementById('walkthrough-render');
                 if (wtContainer) {
                     walkthrough.renderToDOM(wtContainer, wt);
+                }
+
+                const contributors = state.contributors || [];
+                const contributorsContainer = document.getElementById('contributors-summary');
+                if (contributorsContainer && contributors.length > 0) {
+                    contributorsContainer.innerHTML = '<div style="font-size:0.85rem; color:var(--gold); margin-bottom:0.5rem; font-family: JetBrains Mono, monospace; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Stakeholders</div>' +
+                        contributors.map(c => `<div style="font-size:0.9rem; padding:0.35rem 0; color: var(--soft-silver);">${c.name} <span style="color: var(--subtle);">(${c.role})</span></div>`).join('');
                 }
             }, 2400);
         };
@@ -1096,6 +1207,50 @@
             });
 
             const blueprintBtn = document.getElementById('view-blueprint-btn');
+
+            const dicToggle = document.getElementById('dic-concierge-toggle');
+            const dicPanel = document.getElementById('dic-concierge-panel');
+            const dicMessages = document.getElementById('dic-messages');
+            const dicInput = document.getElementById('dic-input');
+            const dicSend = document.getElementById('dic-send');
+
+            const renderDICMessages = () => {
+                if (!dicMessages || !window.dicEngine) return;
+                const messages = window.dicEngine.memory.getSession().messages || [];
+                dicMessages.innerHTML = messages.length === 0
+                    ? '<div style="font-size:0.8rem;color:var(--muted);padding:0.5rem;">Welcome. I am DD-CONCIERGE, your lead design consultant. How may I assist you?</div>'
+                    : messages.map(m => `<div style="padding:0.5rem;border-bottom:1px solid var(--border);font-size:0.85rem;color:var(--soft-silver);"><strong style="color:var(--gold);">${m.agent || 'CONCIERGE'}:</strong> ${m.text}</div>`).join('');
+            };
+
+            const sendDICMessage = () => {
+                const text = dicInput.value.trim();
+                if (!text || !window.dicEngine) return;
+                const session = window.dicEngine.memory.getSession();
+                const messages = session.messages || [];
+                messages.push({ agent: 'CLIENT', text, createdAt: new Date().toISOString() });
+                const response = { agent: 'DD-CONCIERGE', text: 'Thank you for sharing that. I will factor this into your consultation. In the meantime, would you like to continue the Environmental Intelligence consultation or explore a specific specialist area?', createdAt: new Date().toISOString() };
+                messages.push(response);
+                window.dicEngine.memory.saveSession({ ...session, messages: messages.slice(-50) });
+                dicInput.value = '';
+                renderDICMessages();
+            };
+
+            if (dicToggle && dicPanel) {
+                dicToggle.addEventListener('click', () => {
+                    dicPanel.classList.toggle('open');
+                    renderDICMessages();
+                });
+            }
+
+            if (dicSend) {
+                dicSend.addEventListener('click', sendDICMessage);
+            }
+
+            if (dicInput) {
+                dicInput.addEventListener('keypress', e => {
+                    if (e.key === 'Enter') sendDICMessage();
+                });
+            }
             if (blueprintBtn) {
                 blueprintBtn.addEventListener('click', async () => {
                     const container = document.getElementById('blueprint-render');
@@ -1106,8 +1261,90 @@
                         const blueprintGen = new BlueprintGenerator({ dataLoader: new DataLoader() });
                         const blueprint = await blueprintGen.generate(window.eisEngine.getState());
                         container.innerHTML = blueprintGen.renderToHTML(blueprint);
+                        window.printBlueprint = function() { window.print(); };
+                        window.emailBlueprint = function() {
+                            const subject = encodeURIComponent('Your Dream Space Blueprint - Datum Dahleez');
+                            const body = encodeURIComponent('Please find attached your Dream Space Blueprint from Datum Dahleez Environmental Intelligence Platform.');
+                            window.location.href = `mailto:?subject=${subject}&body=${body}`;
+                        };
+
+                        try {
+                            const history = JSON.parse(localStorage.getItem('eis_reports_history') || '[]');
+                            history.push({ title: blueprint.title, type: 'blueprint', generatedAt: blueprint.generatedAt, state: window.eisEngine.getState() });
+                            localStorage.setItem('eis_reports_history', JSON.stringify(history.slice(-20)));
+                        } catch (e) { console.warn('Could not save report history', e); }
+
                         container.scrollIntoView({ behavior: 'smooth' });
                     }, 800);
+                });
+            }
+
+            const agents = (window.dicEngine && window.dicEngine.registry && window.dicEngine.registry.getAll()) ? window.dicEngine.registry.getAll() : [];
+            const concierge = agents.find(a => a.id === 'dd-concierge');
+
+            const dicWidget = document.createElement('div');
+            dicWidget.className = 'eis-contributor-widget';
+            dicWidget.style.bottom = '1.25rem';
+            dicWidget.style.left = '1.25rem';
+            dicWidget.style.right = 'auto';
+            dicWidget.innerHTML = `
+                <button class="eis-contributor-widget__toggle" id="dic-concierge-toggle" title="Design Consultant" style="background:var(--gold);color:var(--bg);font-weight:600;">DC</button>
+                <div class="eis-contributor-widget__panel" id="dic-concierge-panel" style="min-width:320px;max-width:400px;">
+                    <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--gold);margin-bottom:0.5rem;font-family:'JetBrains Mono',monospace;">
+                        ${concierge ? concierge.name : 'DD-CONCIERGE'}
+                        ${concierge && concierge.role ? `<span style="color:var(--muted);font-weight:400;"> — ${concierge.role}</span>` : ''}
+                    </div>
+                    <div id="dic-messages" style="max-height:240px;overflow-y:auto;margin-bottom:0.75rem;border:1px solid var(--border);background:var(--bg);padding:0.5rem;"></div>
+                    <div class="eis-contributor-widget__form">
+                        <input class="eis-contributor-widget__input" id="dic-input" placeholder="Ask your design consultant..." />
+                        <button class="eis-contributor-widget__add" id="dic-send">Send</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(dicWidget);
+
+            const dicToggle = document.getElementById('dic-concierge-toggle');
+            const dicPanel = document.getElementById('dic-concierge-panel');
+            const dicMessages = document.getElementById('dic-messages');
+            const dicInput = document.getElementById('dic-input');
+            const dicSend = document.getElementById('dic-send');
+
+            const renderDICMessages = () => {
+                if (!dicMessages || !window.dicEngine) return;
+                const session = window.dicEngine.memory.getSession();
+                const messages = session.messages || [];
+                dicMessages.innerHTML = messages.length === 0
+                    ? '<div style="font-size:0.8rem;color:var(--muted);padding:0.5rem;">Welcome. I am DD-CONCIERGE, your lead design consultant. How may I assist you?</div>'
+                    : messages.map(m => `<div style="padding:0.5rem;border-bottom:1px solid var(--border);font-size:0.85rem;color:var(--soft-silver);"><strong style="color:var(--gold);">${m.agent || 'CONCIERGE'}:</strong> ${m.text}</div>`).join('');
+            };
+
+            const sendDICMessage = () => {
+                const text = dicInput.value.trim();
+                if (!text || !window.dicEngine) return;
+                const session = window.dicEngine.memory.getSession();
+                const messages = session.messages || [];
+                messages.push({ agent: 'CLIENT', text, createdAt: new Date().toISOString() });
+                const response = { agent: 'DD-CONCIERGE', text: 'Thank you for sharing that. I will factor this into your consultation. In the meantime, would you like to continue the Environmental Intelligence consultation or explore a specific specialist area?', createdAt: new Date().toISOString() };
+                messages.push(response);
+                window.dicEngine.memory.saveSession({ ...session, messages: messages.slice(-50) });
+                dicInput.value = '';
+                renderDICMessages();
+            };
+
+            if (dicToggle && dicPanel) {
+                dicToggle.addEventListener('click', () => {
+                    dicPanel.classList.toggle('open');
+                    renderDICMessages();
+                });
+            }
+
+            if (dicSend) {
+                dicSend.addEventListener('click', sendDICMessage);
+            }
+
+            if (dicInput) {
+                dicInput.addEventListener('keypress', e => {
+                    if (e.key === 'Enter') sendDICMessage();
                 });
             }
         });

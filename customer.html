@@ -69,6 +69,13 @@
 
         <div class="dashboard__grid">
             <div class="dashboard__card">
+                <div class="dashboard__card-title">Membership</div>
+                <div id="membership-summary">
+                    <div class="empty-state">Loading membership...</div>
+                </div>
+            </div>
+
+            <div class="dashboard__card">
                 <div class="dashboard__card-title">Profile Memory</div>
                 <div id="profile-summary">
                     <div class="empty-state">Loading profile...</div>
@@ -83,17 +90,34 @@
             </div>
 
             <div class="dashboard__card">
-                <div class="dashboard__card-title">Saved Preferences</div>
-                <div id="saved-preferences">
-                    <div class="empty-state">No saved preferences yet.</div>
+                <div class="dashboard__card-title">Quick Actions</div>
+                <div style="display:flex; flex-direction:column; gap:0.75rem;">
+                    <a href="index.html" class="btn btn--primary">Start New Consultation</a>
+                    <button class="btn" onclick="window.customerApp.generateBlueprint()">Generate Blueprint</button>
+                    <button class="btn" onclick="window.clearDashboard()">Clear All Data</button>
                 </div>
             </div>
 
             <div class="dashboard__card">
-                <div class="dashboard__card-title">Quick Actions</div>
-                <div style="display:flex; flex-direction:column; gap:0.75rem;">
-                    <a href="index.html" class="btn btn--primary">Start New Consultation</a>
-                    <button class="btn" onclick="window.clearDashboard()">Clear All Data</button>
+                <div class="dashboard__card-title">Reports</div>
+                <div id="reports-summary">
+                    <div class="empty-state">Generate a blueprint to see reports here.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard__grid" style="margin-top: 1.5rem;">
+            <div class="dashboard__card">
+                <div class="dashboard__card-title">Active Projects</div>
+                <div id="active-projects">
+                    <div class="empty-state">No active projects. Start a consultation to create one.</div>
+                </div>
+            </div>
+
+            <div class="dashboard__card">
+                <div class="dashboard__card-title">Saved Preferences</div>
+                <div id="saved-preferences">
+                    <div class="empty-state">No saved preferences yet.</div>
                 </div>
             </div>
         </div>
@@ -101,6 +125,73 @@
 
     <script src="js/eis/loader.js"></script>
     <script>
+        const MEMBERSHIP_KEY = 'eis_membership_tier';
+        const PROJECTS_KEY = 'eis_active_projects';
+
+        function getMembershipTier() {
+            return localStorage.getItem(MEMBERSHIP_KEY) || 'comfort';
+        }
+
+        function setMembershipTier(tier) {
+            localStorage.setItem(MEMBERSHIP_KEY, tier);
+        }
+
+        function getActiveProjects() {
+            try {
+                return JSON.parse(localStorage.getItem(PROJECTS_KEY) || '[]');
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function saveActiveProject(project) {
+            const projects = getActiveProjects();
+            projects.push({ ...project, createdAt: new Date().toISOString() });
+            localStorage.setItem(PROJECTS_KEY, JSON.stringify(projects.slice(0, 20)));
+        }
+
+        async function loadMembership() {
+            const container = document.getElementById('membership-summary');
+            try {
+                const dl = new DataLoader();
+                const membershipData = await dl.load('membership', '../data/membership.json');
+                const currentTier = getMembershipTier();
+                const tier = (membershipData.tiers || []).find(t => t.id === currentTier) || membershipData.tiers[0];
+                
+                if (!tier) {
+                    container.innerHTML = '<div class="empty-state">No membership data.</div>';
+                    return;
+                }
+
+                container.innerHTML = `
+                    <div style="margin-bottom: 1rem;">
+                        <div style="font-size: 1.25rem; font-weight: 500; color: ${tier.color || 'var(--gold)'};">${tier.name}</div>
+                        <div style="font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem;">
+                            ${tier.priceMonthly ? `AED ${tier.priceMonthly}/mo` : 'Free'}${tier.priceYearly ? ` · AED ${tier.priceYearly}/yr` : ''}
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        ${tier.benefits.map(b => `<div style="font-size: 0.85rem; padding: 0.25rem 0; color: var(--soft-silver);">• ${b}</div>`).join('')}
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        ${(membershipData.tiers || []).map(t => `
+                            <button class="btn ${t.id === currentTier ? 'btn--primary' : ''}" onclick="window.setMembership('${t.id}')" ${t.id === currentTier ? 'disabled' : ''}>
+                                ${t.name}
+                            </button>
+                        `).join('')}
+                    </div>
+                `;
+            } catch (e) {
+                container.innerHTML = '<div class="empty-state">Unable to load membership data.</div>';
+            }
+        }
+
+        window.setMembership = function(tierId) {
+            setMembershipTier(tierId);
+            loadMembership();
+            showToast('Membership updated to ' + tierId);
+        };
+
         function loadDashboard() {
             try {
                 const profile = JSON.parse(localStorage.getItem('eis_customer_profile') || '{}');
@@ -127,6 +218,32 @@
                     `).join('') + '</ul>';
                 }
 
+                const activeProjectsContainer = document.getElementById('active-projects');
+                const activeProjects = getActiveProjects();
+                if (activeProjects.length === 0) {
+                    activeProjectsContainer.innerHTML = '<div class="empty-state">No active projects. Start a consultation to create one.</div>';
+                } else {
+                    activeProjectsContainer.innerHTML = '<ul class="dashboard__list">' + activeProjects.slice(0, 5).map(p => `
+                        <li class="dashboard__list-item">
+                            <div>${p.name || 'Untitled Project'}</div>
+                            <div class="dashboard__list-meta">${p.space || 'N/A'} · ${p.status || 'In Progress'}</div>
+                        </li>
+                    `).join('') + '</ul>';
+                }
+
+                const reportsContainer = document.getElementById('reports-summary');
+                const reports = JSON.parse(localStorage.getItem('eis_reports_history') || '[]');
+                if (reports.length === 0) {
+                    reportsContainer.innerHTML = '<div class="empty-state">No reports yet. Generate a blueprint from the EIS platform.</div>';
+                } else {
+                    reportsContainer.innerHTML = '<ul class="dashboard__list">' + reports.slice(-5).reverse().map(r => `
+                        <li class="dashboard__list-item">
+                            <div>${r.title || 'Untitled Report'}</div>
+                            <div class="dashboard__list-meta">${r.type || 'blueprint'} · ${r.generatedAt ? new Date(r.generatedAt).toLocaleDateString() : 'N/A'}</div>
+                        </li>
+                    `).join('') + '</ul>';
+                }
+
                 const prefContainer = document.getElementById('saved-preferences');
                 const relevantPrefs = ['selectedSpace', 'targetEmotion', 'budgetTier', 'stylePreference', 'theme'];
                 const saved = relevantPrefs.map(k => ({ key: k, value: prefs[k] })).filter(p => p.value);
@@ -137,9 +254,19 @@
                         <li class="dashboard__list-item"><strong>${p.key}:</strong> ${p.value}</li>
                     `).join('') + '</ul>';
                 }
+
+                loadMembership();
             } catch (e) {
                 console.error('Dashboard load error:', e);
             }
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.style.cssText = 'position:fixed; bottom:2rem; right:2rem; padding:1rem 1.5rem; background:var(--surface); border:1px solid var(--gold); color:var(--text); z-index:200; animation: slideIn 0.3s ease;';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 2500);
         }
 
         window.clearDashboard = function() {
@@ -147,7 +274,40 @@
             localStorage.removeItem('eis_session_v1');
             localStorage.removeItem('eis_customer_profile');
             localStorage.removeItem('eis_sessions_history');
+            localStorage.removeItem(PROJECTS_KEY);
+            localStorage.removeItem(MEMBERSHIP_KEY);
             location.reload();
+        };
+
+        window.customerApp = {
+            async generateBlueprint() {
+                try {
+                    const blueprintGen = new BlueprintGenerator({ dataLoader: new DataLoader() });
+                    const state = window.eisEngine ? window.eisEngine.getState() : null;
+                    if (!state || !state.metadata || !state.metadata.selectedSpace) {
+                        alert('Please complete a consultation first to generate a blueprint.');
+                        return;
+                    }
+                    const blueprint = await blueprintGen.generate(state);
+                    
+                    try {
+                        const reports = JSON.parse(localStorage.getItem('eis_reports_history') || '[]');
+                        reports.push({ title: blueprint.title, type: 'blueprint', generatedAt: blueprint.generatedAt, state });
+                        localStorage.setItem('eis_reports_history', JSON.stringify(reports.slice(-20)));
+                    } catch (e) { console.warn('Could not save report history', e); }
+                    
+                    const html = blueprintGen.renderToHTML(blueprint);
+                    
+                    const win = window.open('', '_blank', 'width=900,height=800');
+                    win.document.write(`<!DOCTYPE html><html><head><title>Blueprint</title><link rel="stylesheet" href="css/main.css"></head><body>${html}</body></html>`);
+                    win.document.close();
+                    
+                    loadDashboard();
+                } catch (e) {
+                    console.error('Blueprint generation failed:', e);
+                    alert('Failed to generate blueprint. See console for details.');
+                }
+            }
         };
 
         document.addEventListener('DOMContentLoaded', loadDashboard);

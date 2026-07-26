@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "description": "DATUM DAHLEEZ Intelligence Council (DIC) agent definitions, prompts, and routing",
+  "concierge": {
+    "id": "dd-concierge",
+    "name": "DD-CONCIERGE",
+    "role": "Lead Design Consultant",
+    "prompt": "You are DD-CONCIERGE, the lead design consultant for DATUM DAHLEEZ. Your role is to understand the client before recommending any solutions. Ask one meaningful question at a time. Never rush to sell. Build trust before business.",
+    "discoveryFields": [
+      { "key": "projectType", "question": "What type of project is this? New construction, renovation, or refresh?", "options": ["new-construction", "renovation", "refresh", "extension"] },
+      { "key": "propertyType", "question": "What type of property are we designing?", "options": ["residential", "commercial", "hospitality", "retail", "healthcare", "education", "mixed-use"] },
+      { "key": "spaceType", "question": "Which space will be the primary focus?", "options": ["living-room", "bedroom", "kitchen", "bathroom", "office", "reception", "lobby", "retail-floor", "restaurant", "hotel-suite", "clinic", "classroom", "studio"] },
+      { "key": "occupants", "question": "Who will primarily use this space?", "options": ["individual", "couple", "family-young-children", "family-teens", "elderly", "employees", "clients", "patients", "students", "guests"] },
+      { "key": "lifestyle", "question": "How would you describe the daily lifestyle in this space?", "options": ["calm-quiet", "social-gathering", "focused-work", "creative", "healing-wellness", "entertainment", "mixed"] },
+      { "key": "painPoints", "question": "What are the main challenges with the current space?", "options": ["poor-lighting", "bad-acoustics", "uncomfortable-temperature", "cluttered", "outdated", "poor-flow", "lack-storage", "privacy-issues", "accessibility"] },
+      { "key": "dreamOutcome", "question": "What emotion or feeling should this space evoke?", "options": ["calm", "energized", "inspired", "safe", "connected", "focused", "luxurious", "grounded", "playful", "mysterious"] },
+      { "key": "budget", "question": "What investment range feels comfortable?", "options": ["comfort", "premium", "luxury", "signature", "bespoke"] },
+      { "key": "timeline", "question": "What is the desired timeline?", "options": ["asap", "short", "medium", "long", "phased", "no-rush"] },
+      { "key": "futurePlans", "question": "Are there future expansion or adaptability needs?", "options": ["no-plans", "expand-space", "add-tech", "multi-generational", "aging-in-place", "work-from-home"] },
+      { "key": "maintenance", "question": "How much maintenance effort is acceptable?", "options": ["low", "moderate", "high", "professional-only"] },
+      { "key": "technology", "question": "How important is smart technology integration?", "options": ["none", "basic", "moderate", "extensive", "fully-automated"] },
+      { "key": "sustainability", "question": "How strong is the focus on sustainability?", "options": ["standard", "important", "essential", "net-zero-target"] },
+      { "key": "accessibility", "question": "Are there specific accessibility requirements?", "options": ["none", "general", "wheelchair", "visual", "auditory", "multi-need"] }
+    ]
+  },
+  "agents": [
+    { "id": "dd-concierge", "name": "DD-CONCIERGE", "role": "Lead Design Consultant", "produces": ["Consultation Summary", "Project Direction", "Specialist Referrals"] },
+    { "id": "dd-interior", "name": "DD-INTERIOR", "role": "Interior Designer", "produces": ["Interior Concepts", "Layout Recommendations", "Mood Boards", "Design Narratives"] },
+    { "id": "dd-bse", "name": "DD-BSE", "role": "Building Services Engineer", "produces": ["Building Services Strategy", "Utility Coordination", "Service Routing Advice"] },
+    { "id": "dd-bim", "name": "DD-BIM", "role": "BIM Consultant", "produces": ["BIM Strategy", "Model Coordination Advice", "Information Management Plans"] },
+    { "id": "dd-struct", "name": "DD-STRUCT", "role": "Structural Engineer", "produces": ["Structural Coordination Notes"] },
+    { "id": "dd-electra", "name": "DD-ELECTRA", "role": "Electrical Engineer", "produces": ["Electrical Coordination Notes"] },
+    { "id": "dd-mech", "name": "DD-MECH", "role": "Mechanical Engineer", "produces": ["Comfort Strategies", "Mechanical Coordination Advice"] },
+    { "id": "dd-lux", "name": "DD-LUX", "role": "Lighting Designer", "produces": ["Complete Lighting Concepts"] },
+    { "id": "dd-color", "name": "DD-COLOR", "role": "Color Psychology Expert", "produces": ["Color Palettes", "Emotional Color Strategies", "Finish Coordination"] },
+    { "id": "dd-material", "name": "DD-MATERIAL", "role": "Material Scientist", "produces": ["Material Selection Reports"] },
+    { "id": "dd-future", "name": "DD-FUTURE", "role": "Future Technology Consultant", "produces": ["Future-Ready Technology Roadmaps"] },
+    { "id": "dd-wellness", "name": "DD-WELLNESS", "role": "Wellness Consultant", "produces": ["Wellness Strategies"] },
+    { "id": "dd-acoustics", "name": "DD-ACOUSTICS", "role": "Acoustic Engineer", "produces": ["Acoustic Designs", "Noise Control Strategies"] },
+    { "id": "dd-hospitality", "name": "DD-HOSPITALITY", "role": "Hospitality Designer", "produces": ["Hospitality Concepts", "Guest Experience Strategies"] },
+    { "id": "dd-retail", "name": "DD-RETAIL", "role": "Retail Experience Consultant", "produces": ["Retail Strategies", "Customer Journey Maps"] },
+    { "id": "dd-workplace", "name": "DD-WORKPLACE", "role": "Workplace Strategist", "produces": ["Workplace Strategies", "Space Utilizations"] },
+    { "id": "dd-qs", "name": "DD-QS", "role": "Quantity Surveyor", "produces": ["Cost Comparisons", "Quantity-Based Estimates"] },
+    { "id": "dd-pm", "name": "DD-PM", "role": "Project Manager", "produces": ["Project Roadmaps", "Installation Plans"] },
+    { "id": "dd-sustain", "name": "DD-SUSTAIN", "role": "Sustainability Consultant", "produces": ["Sustainability Reports", "Green Strategies"] },
+    { "id": "dd-code", "name": "DD-CODE", "role": "Standards & Compliance Advisor", "produces": ["Compliance Checklists", "Coordination Notes"] }
+  ]
+}

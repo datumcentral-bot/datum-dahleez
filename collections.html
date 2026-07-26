@@ -91,7 +91,7 @@
         </div>
     </section>
 
-    <script src="js/data/loader.js"></script>
+    <script src="js/eis/loader.js"></script>
     <script src="js/eis/router.js"></script>
     <script src="js/eis/engine.js"></script>
     <script src="js/eis/renderer.js"></script>
@@ -118,7 +118,7 @@
                             <span class="product-card__price">${price}</span>
                             <div class="product-card__actions">
                                 <span class="badge badge--gold">L${product.level}</span>
-                                <button class="btn btn--sm" onclick="alert('Product inquiry: ${product.id}')">Inquire</button>
+                                <button class="btn btn--sm" onclick="window.location.href='mailto:info@datum-dahleez.store?subject=Inquiry: ${encodeURIComponent(product.name)}'">Inquire</button>
                             </div>
                         </div>
                     </div>

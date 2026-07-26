@@ -33,7 +33,7 @@ class ShoppingCart {
             this.cart.push({ ...product, quantity: 1 });
         }
         this.saveCart();
-        this.showNotification(`Rs.{product.name} added to cart!`);
+        this.showNotification(`${product.name} added to cart!`);
         if (typeof renderCart === 'function') {
             renderCart();
         }

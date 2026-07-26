@@ -1208,49 +1208,6 @@
 
             const blueprintBtn = document.getElementById('view-blueprint-btn');
 
-            const dicToggle = document.getElementById('dic-concierge-toggle');
-            const dicPanel = document.getElementById('dic-concierge-panel');
-            const dicMessages = document.getElementById('dic-messages');
-            const dicInput = document.getElementById('dic-input');
-            const dicSend = document.getElementById('dic-send');
-
-            const renderDICMessages = () => {
-                if (!dicMessages || !window.dicEngine) return;
-                const messages = window.dicEngine.memory.getSession().messages || [];
-                dicMessages.innerHTML = messages.length === 0
-                    ? '<div style="font-size:0.8rem;color:var(--muted);padding:0.5rem;">Welcome. I am DD-CONCIERGE, your lead design consultant. How may I assist you?</div>'
-                    : messages.map(m => `<div style="padding:0.5rem;border-bottom:1px solid var(--border);font-size:0.85rem;color:var(--soft-silver);"><strong style="color:var(--gold);">${m.agent || 'CONCIERGE'}:</strong> ${m.text}</div>`).join('');
-            };
-
-            const sendDICMessage = () => {
-                const text = dicInput.value.trim();
-                if (!text || !window.dicEngine) return;
-                const session = window.dicEngine.memory.getSession();
-                const messages = session.messages || [];
-                messages.push({ agent: 'CLIENT', text, createdAt: new Date().toISOString() });
-                const response = { agent: 'DD-CONCIERGE', text: 'Thank you for sharing that. I will factor this into your consultation. In the meantime, would you like to continue the Environmental Intelligence consultation or explore a specific specialist area?', createdAt: new Date().toISOString() };
-                messages.push(response);
-                window.dicEngine.memory.saveSession({ ...session, messages: messages.slice(-50) });
-                dicInput.value = '';
-                renderDICMessages();
-            };
-
-            if (dicToggle && dicPanel) {
-                dicToggle.addEventListener('click', () => {
-                    dicPanel.classList.toggle('open');
-                    renderDICMessages();
-                });
-            }
-
-            if (dicSend) {
-                dicSend.addEventListener('click', sendDICMessage);
-            }
-
-            if (dicInput) {
-                dicInput.addEventListener('keypress', e => {
-                    if (e.key === 'Enter') sendDICMessage();
-                });
-            }
             if (blueprintBtn) {
                 blueprintBtn.addEventListener('click', async () => {
                     const container = document.getElementById('blueprint-render');
@@ -1313,9 +1270,16 @@
                 if (!dicMessages || !window.dicEngine) return;
                 const session = window.dicEngine.memory.getSession();
                 const messages = session.messages || [];
+                const current = window.dicEngine.state;
+                const answers = current.answers || {};
+                const phase = current.phase || 'discovery';
+                
                 dicMessages.innerHTML = messages.length === 0
                     ? '<div style="font-size:0.8rem;color:var(--muted);padding:0.5rem;">Welcome. I am DD-CONCIERGE, your lead design consultant. How may I assist you?</div>'
-                    : messages.map(m => `<div style="padding:0.5rem;border-bottom:1px solid var(--border);font-size:0.85rem;color:var(--soft-silver);"><strong style="color:var(--gold);">${m.agent || 'CONCIERGE'}:</strong> ${m.text}</div>`).join('');
+                    : messages.map(m => {
+                        const isUser = m.agent === 'CLIENT';
+                        return `<div style="padding:0.5rem;border-bottom:1px solid var(--border);font-size:0.85rem;color:${isUser ? 'var(--text)' : 'var(--soft-silver)'};"><strong style="color:var(--gold);">${m.agent || 'CONCIERGE'}:</strong> ${m.text}</div>`;
+                    }).join('');
             };
 
             const sendDICMessage = () => {
@@ -1324,8 +1288,33 @@
                 const session = window.dicEngine.memory.getSession();
                 const messages = session.messages || [];
                 messages.push({ agent: 'CLIENT', text, createdAt: new Date().toISOString() });
-                const response = { agent: 'DD-CONCIERGE', text: 'Thank you for sharing that. I will factor this into your consultation. In the meantime, would you like to continue the Environmental Intelligence consultation or explore a specific specialist area?', createdAt: new Date().toISOString() };
-                messages.push(response);
+
+                let reply = '';
+                const current = window.dicEngine.state;
+                if (current.consultationComplete) {
+                    reply = 'Your consultation is complete. Our specialist council is preparing your integrated recommendation. In the meantime, I can help you explore products or connect you with a human designer.';
+                } else {
+                    try {
+                        const response = window.DDAgents.ConciergeAgent.prototype.answerQuestion.call(
+                            { engine: window.dicEngine },
+                            text
+                        );
+                        if (response.type === 'question') {
+                            reply = response.question;
+                        } else if (response.type === 'clarify') {
+                            reply = response.question;
+                        } else if (response.type === 'summary') {
+                            reply = response.message;
+                        } else {
+                            reply = 'Thank you for that. Let me continue guiding you.';
+                        }
+                    } catch (e) {
+                        console.error('Concierge response error:', e);
+                        reply = 'I appreciate your input. Would you like to continue the consultation or explore specific products?';
+                    }
+                }
+
+                messages.push({ agent: 'DD-CONCIERGE', text: reply, createdAt: new Date().toISOString() });
                 window.dicEngine.memory.saveSession({ ...session, messages: messages.slice(-50) });
                 dicInput.value = '';
                 renderDICMessages();

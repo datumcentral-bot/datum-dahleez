@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#0a0a0a">
     <title>Your Shopping Cart | Datum Dahleez Store</title>
     <style>
         body { background: #0a0a0a; color: #fff; font-family: Inter, Arial, sans-serif; }
@@ -17,24 +17,21 @@
         .btn-secondary { background: #222; }
         .empty { text-align: center; padding: 4rem 1rem; color: #888; }
         .total { font-size: 1.5rem; font-weight: 700; text-align: right; margin: 2rem 0; }
-        #cart-summary { display: none; }
-        #checkout-btn { display: none; }
-        .cart-count { display: none; background: #0071e3; color: #fff; border-radius: 50%; padding: 0.1rem 0.4rem; font-size: 0.75rem; margin-left: 0.5rem; }
+        .cart-count { display: inline-block; background: #0071e3; color: #fff; border-radius: 50%; padding: 0.1rem 0.4rem; font-size: 0.75rem; margin-left: 0.5rem; }
+        .qty-input { width: 70px; padding: 0.4rem; background: #0a0a0a; border: 1px solid #333; border-radius: 8px; color: #fff; }
     </style>
 </head>
 <body>
     <div class="header page-width">
-        <a href="index.html" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; display: block;">DATUM DAHLEEZ <span class="cart-count cart-count">0</span></a>
-        <nav class="header__menu" role="navigation" aria-label="Primary">
-            <ul class="flex flex-wrap list-menu with-block" role="list">
-                <li><a href="collections.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">ALL CATEGORIES</a></li><li><a href="interior-decorative-products.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">INTERIOR DECORATIVE PRODUCTS</a></li><li><a href="luxury-wall-finishes.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">LUXURY WALL FINISHES</a></li><li><a href="epoxy-resin-systems.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">EPOXY & RESIN SYSTEMS</a></li><li><a href="ceiling-systems.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">CEILING SYSTEMS</a></li><li><a href="architectural-lighting.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">ARCHITECTURAL LIGHTING</a></li><li><a href="decorative-lighting.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">DECORATIVE LIGHTING</a></li><li><a href="smart-home-products.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">SMART HOME PRODUCTS</a></li><li><a href="furniture.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">FURNITURE</a></li><li><a href="soft-furnishings.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">SOFT FURNISHINGS</a></li><li><a href="decorative-accessories.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">DECORATIVE ACCESSORIES</a></li><li><a href="podcast-studio-products.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">PODCAST STUDIO PRODUCTS</a></li><li><a href="event-stage-equipment.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">EVENT & STAGE EQUIPMENT</a></li><li><a href="stage-lighting.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">STAGE LIGHTING</a></li><li><a href="audio-systems.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">AUDIO SYSTEMS</a></li><li><a href="exhibition-retail-display.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">EXHIBITION & RETAIL DISPLAY</a></li><li><a href="outdoor-products.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">OUTDOOR PRODUCTS</a></li><li><a href="hospitality-products.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">HOSPITALITY PRODUCTS</a></li><li><a href="commercial-interior.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">COMMERCIAL INTERIOR PRODUCTS</a></li><li><a href="creative-experimental.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">CREATIVE & EXPERIMENTAL PRODUCTS</a></li><li><a href="datum-dahleez-services.html" class="menu__item text-sm-lg flex items-center font-medium z-2 relative cursor-pointer">DATUM DAHLEEZ SERVICES</a></li>
-            </ul>
+        <a href="../index.html">DATUM DAHLEEZ <span class="cart-count" id="cart-count">0</span></a>
+        <nav>
+            <a href="checkout.html" class="btn" style="margin-left:auto;">Checkout</a>
         </nav>
         <hr style="border-color: #222; margin: 1rem 0;" />
     </div>
     <div class="page-width">
         <h1>Your Shopping Cart</h1>
-        <div id="cart-empty" class="empty">
+        <div id="cart-empty" class="empty" style="display:none;">
             <p>Your cart is empty.</p>
             <a href="collections.html" class="btn">Continue Shopping</a>
         </div>
@@ -46,31 +43,72 @@
                 <tbody id="cart-items"></tbody>
             </table>
             <div class="total">Total: Rs. <span id="cart-total">0</span></div>
-            <div style="background: #111; border: 1px solid #222; border-radius: 12px; padding: 2rem; max-width: 500px;">
-                <h2 style="margin-bottom: 1rem;">Cash on Delivery Information</h2>
-                <p style="color: #888; margin-bottom: 1.5rem;">Pay cash when your order arrives at your doorstep.</p>
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <input type="text" id="cod-name" placeholder="Full Name *" style="padding: 0.75rem; background: #0a0a0a; border: 1px solid #333; border-radius: 8px; color: #fff;">
-                    <input type="tel" id="cod-phone" placeholder="Phone Number *" style="padding: 0.75rem; background: #0a0a0a; border: 1px solid #333; border-radius: 8px; color: #fff;">
-                    <input type="text" id="cod-address" placeholder="Full Address *" style="padding: 0.75rem; background: #0a0a0a; border: 1px solid #333; border-radius: 8px; color: #fff;">
-                    <input type="text" id="cod-city" placeholder="City *" style="padding: 0.75rem; background: #0a0a0a; border: 1px solid #333; border-radius: 8px; color: #fff;">
-                    <textarea id="cod-notes" placeholder="Order Notes (optional)" rows="3" style="padding: 0.75rem; background: #0a0a0a; border: 1px solid #333; border-radius: 8px; color: #fff; resize: vertical;"></textarea>
-                    <button type="button" id="checkout-btn" class="btn" onclick="checkout()">Place Order - Rs. <span id="checkout-total">0</span></button>
-                </div>
+            <div style="display:flex; gap:1rem; justify-content:flex-end; flex-wrap:wrap; margin-top:1rem;">
+                <a href="checkout.html" class="btn">Proceed to Checkout</a>
+                <button type="button" class="btn btn-secondary" onclick="clearCart()">Clear Cart</button>
             </div>
-            <br>
-            <button type="button" class="btn btn-secondary" onclick="clearCart(); alert('Cart cleared!'); window.location.href='collections.html';">Clear Cart</button>
         </div>
     </div>
-    <script src="shopping-cart.js"></script>
-    <script src="payment.js"></script>
+    <script src="../js/store-layout.js"></script>
+    <script src="../js/shopping-cart.js"></script>
+    <script src="../js/payment.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        function renderCart() {
+            const cart = window.shoppingCart ? window.shoppingCart.cart : [];
+            const container = document.getElementById('cart-items');
+            const emptyEl = document.getElementById('cart-empty');
+            const summaryEl = document.getElementById('cart-summary');
+            const totalEl = document.getElementById('cart-total');
+            const countEl = document.getElementById('cart-count');
+
+            if (!container) return;
+            if (countEl) countEl.textContent = window.shoppingCart ? window.shoppingCart.getItemCount() : 0;
+
+            if (!cart.length) {
+                if (emptyEl) emptyEl.style.display = 'block';
+                if (summaryEl) summaryEl.style.display = 'none';
+                return;
+            }
+            if (emptyEl) emptyEl.style.display = 'none';
+            if (summaryEl) summaryEl.style.display = 'block';
+
+            container.innerHTML = cart.map(item => `
+                <tr>
+                    <td>${item.name}</td>
+                    <td>Rs. ${item.price.toLocaleString()}</td>
+                    <td>
+                        <input type="number" class="qty-input" value="${item.quantity}" min="1" onchange="updateCartQty('${item.id}', this.value)" />
+                    </td>
+                    <td>Rs. ${(item.price * item.quantity).toLocaleString()}</td>
+                    <td><button type="button" class="btn btn-secondary" style="padding:0.4rem 0.8rem; font-size:0.8rem;" onclick="removeCartItem('${item.id}')">Remove</button></td>
+                </tr>
+            `).join('');
+
+            const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            if (totalEl) totalEl.textContent = total.toLocaleString();
+        }
+
+        function updateCartQty(productId, qty) {
+            if (!window.shoppingCart) return;
+            window.shoppingCart.updateQuantity(productId, parseInt(qty, 10));
             renderCart();
-            updateCartCount();
-            const totalEl = document.getElementById('checkout-total');
-            if (totalEl) totalEl.textContent = getCartTotal().toLocaleString();
-        });
+        }
+
+        function removeCartItem(productId) {
+            if (!window.shoppingCart) return;
+            window.shoppingCart.removeItem(productId);
+            renderCart();
+        }
+
+        function clearCart() {
+            if (!window.shoppingCart) return;
+            if (confirm('Clear all items from your cart?')) {
+                window.shoppingCart.clearCart();
+                renderCart();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', renderCart);
     </script>
 </body>
 </html>

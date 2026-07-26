@@ -1,6 +1,6 @@
 /**
  * Datum Dahleez Store - Payment Processing
- * Professional payment system with manual and Stripe options
+ * Professional payment system with cash on delivery and placeholder card option
  */
 
 class PaymentProcessor {
@@ -13,7 +13,6 @@ class PaymentProcessor {
     }
 
     attachEventListeners() {
-        // Checkout button
         const checkoutBtn = document.getElementById('checkout-btn');
         if (checkoutBtn) {
             checkoutBtn.addEventListener('click', () => this.initiateCheckout());
@@ -26,33 +25,27 @@ class PaymentProcessor {
             alert('Your cart is empty!');
             return;
         }
-
         const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-
-        // Show checkout options
         const checkoutOptions = `
-            <div id="checkout-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-btn">&times;</span>
-                    <h2>Checkout - Cash on Delivery</h2>
-                    <div class="checkout-options">
-                        <div class="checkout-option">
-                            <h3>Cash on Delivery</h3>
-                            <p>Pay with cash when your order is delivered. Available in all major cities of Pakistan.</p>
-                            <button onclick="paymentProcessor.processCashOnDelivery()">Place Order - Cash on Delivery</button>
-                        </div>
+            <div id="checkout-modal" class="modal" style="display:flex;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:100;align-items:center;justify-content:center;">
+                <div class="modal-content" style="background:#111;border:1px solid #222;padding:2rem;max-width:500px;width:90%;border-radius:12px;">
+                    <span class="close-btn" style="float:right;font-size:1.5rem;cursor:pointer;" onclick="document.getElementById('checkout-modal').remove()">&times;</span>
+                    <h2 style="margin-bottom:1rem;">Checkout - Cash on Delivery</h2>
+                    <p style="color:#888;margin-bottom:1.5rem;">Pay with cash when your order is delivered.</p>
+                    <div style="display:flex;flex-direction:column;gap:1rem;">
+                        <input type="text" id="cod-name" placeholder="Full Name *" style="padding:0.75rem;background:#0a0a0a;border:1px solid #333;border-radius:8px;color:#fff;" />
+                        <input type="tel" id="cod-phone" placeholder="Phone Number *" style="padding:0.75rem;background:#0a0a0a;border:1px solid #333;border-radius:8px;color:#fff;" />
+                        <input type="text" id="cod-address" placeholder="Full Address *" style="padding:0.75rem;background:#0a0a0a;border:1px solid #333;border-radius:8px;color:#fff;" />
+                        <input type="text" id="cod-city" placeholder="City *" style="padding:0.75rem;background:#0a0a0a;border:1px solid #333;border-radius:8px;color:#fff;" />
+                        <button class="btn" onclick="paymentProcessor.processCashOnDelivery()">Place Order - Rs. ${total.toLocaleString()}</button>
                     </div>
                 </div>
             </div>
+        `;
         document.body.insertAdjacentHTML('beforeend', checkoutOptions);
-        this.showModal();
     }
 
-    processCashOnDelivery() {
-        const cart = JSON.parse(localStorage.getItem('datum_dahleez_cart') || '[]');
-        const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-
-        // Generate order ID
+    processCashOnDelivery(cart, total) {
         const orderId = 'DD-' + Date.now();
         const order = {
             id: orderId,
@@ -63,53 +56,52 @@ class PaymentProcessor {
             createdAt: new Date().toISOString()
         };
 
-        // Save order
         const orders = JSON.parse(localStorage.getItem('datum_dahleez_orders') || '[]');
         orders.push(order);
         localStorage.setItem('datum_dahleez_orders', JSON.stringify(orders));
 
-        // Clear cart
         localStorage.removeItem('datum_dahleez_cart');
 
-        alert(`Order placed successfully!\n\nOrder ID: ${orderId}\nTotal: Rs. ${total.toFixed(2)}\n\nPayment: Cash on Delivery\n\nThank you for shopping with Datum Dahleez!`);
-        this.hideModal();
+        alert(`Order placed successfully!\n\nOrder ID: ${orderId}\nTotal: Rs. ${total.toLocaleString()}\nPayment: Cash on Delivery\n\nThank you for shopping with Datum Dahleez!`);
+        const modal = document.getElementById('checkout-modal');
+        if (modal) modal.remove();
         window.location.reload();
     }
 
     processCardPayment() {
-        // In production, integrate Stripe or similar payment processor
-        alert('Card payment integration requires Stripe setup.\n\nFor now, please use manual payment option.\n\nContact us for card payment setup.');
-        this.hideModal();
+        alert('Card payment integration requires Stripe setup.\n\nFor now, please use cash on delivery.\n\nContact us for card payment setup.');
+        const modal = document.getElementById('checkout-modal');
+        if (modal) modal.remove();
     }
 
-    showModal() {
-        const modal = document.getElementById('checkout-modal');
-        if (modal) {
-            modal.style.display = 'block';
-            const closeBtn = modal.querySelector('.close-btn');
-            if (closeBtn) {
-                closeBtn.onclick = () => this.hideModal();
-            }
+    placeOrder(cart, customer, paymentMethod) {
+        if (!cart || !cart.length) {
+            alert('Your cart is empty.');
+            return;
         }
-    }
-
-    hideModal() {
-        const modal = document.getElementById('checkout-modal');
-        if (modal) {
-            modal.remove();
-        }
+        const orderId = 'DD-' + Date.now();
+        const order = {
+            id: orderId,
+            items: cart,
+            total: cart.reduce((sum, item) => sum + (item.price * item.quantity), 0),
+            customer: customer || {},
+            paymentMethod: paymentMethod || 'cash_on_delivery',
+            status: 'pending',
+            createdAt: new Date().toISOString()
+        };
+        const orders = JSON.parse(localStorage.getItem('datum_dahleez_orders') || '[]');
+        orders.push(order);
+        localStorage.setItem('datum_dahleez_orders', JSON.stringify(orders));
+        return order;
     }
 
     getOrderHistory() {
-        const orders = JSON.parse(localStorage.getItem('datum_dahleez_orders') || '[]');
-        return orders;
+        return JSON.parse(localStorage.getItem('datum_dahleez_orders') || '[]');
     }
 
     getOrderById(orderId) {
-        const orders = this.getOrderHistory();
-        return orders.find(o => o.id === orderId);
+        return this.getOrderHistory().find(o => o.id === orderId);
     }
 }
 
-// Initialize payment processor
-const paymentProcessor = new PaymentProcessor();
+window.paymentProcessor = new PaymentProcessor();

@@ -99,7 +99,7 @@ class ShoppingCart {
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #667eea;
+            background: #0071e3;
             color: white;
             padding: 15px 25px;
             border-radius: 8px;
@@ -112,5 +112,24 @@ class ShoppingCart {
     }
 }
 
+function addToCart(name, price, image, category, id) {
+    const product = {
+        id: id || 'prod-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7),
+        name: name || 'Product',
+        price: typeof price === 'string' ? parseFloat(price.replace(/[^0-9.]/g, '')) || 0 : (price || 0),
+        image: image || '',
+        category: category || 'general',
+        inStock: true,
+        unit: 'piece'
+    };
+    if (window.shoppingCart) {
+        window.shoppingCart.addItem(product);
+    } else {
+        console.warn('ShoppingCart not initialized');
+    }
+}
+
+window.addToCart = addToCart;
+
 // Initialize shopping cart
-const shoppingCart = new ShoppingCart();
+window.shoppingCart = new ShoppingCart();
